@@ -1,0 +1,33 @@
+<div class="footer">
+  <div class="container">
+    <div class="content">
+      <div class="website-logo">
+        <img
+          src="../../../assets/images/website-logo-light.svg"
+          alt="website-logo"
+        />
+      </div>
+      <div class="navigation">
+        <ul>
+          <li *ngFor="let item of navigationItems" (onItemClick)="onItemClick($event)">
+            {{ item.text }}
+          </li>
+        </ul>
+      </div>
+      <div class="socials">
+        <div>
+          <img src="../../../assets/images/twitter.svg"  alt="icon" />
+        </div>
+        <div>
+          <img src="../../../assets/images/in.svg" alt="icon" />
+        </div>
+        <div>
+          <img src="../../../assets/images/youtube.svg" alt="icon" />
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2022 Kline & Company | Privacy Policy | Kline Employees</p>
+    </div>
+  </div>
+</div>

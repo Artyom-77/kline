@@ -1,0 +1,28 @@
+<div class="webinars">
+  <div class="webinars-header">
+    <p class="webinars-header-desc">
+      Our webinars are an excellent source of information that help you gain key
+      market insights quickly and efficiently. Select the industry below and
+      find the topic in which you are interested.
+    </p>
+    <h1 class="webinars-header-title">Webinars</h1>
+  </div>
+  <div class="webinars-body">
+      <div class="webinars-body-cards">
+        <div class="card" *ngFor="let item of arr">
+        <div class="card-img">
+          <img [src]="item.img" alt="card-img">
+        </div>
+        <div class="card-body">
+          <p class="card-body-date"> <b>Date:</b> {{ item.date }}</p>
+          <h3 class="card-body-title" >{{ item.title }}</h3>
+          <p class="card-body-industry"><b>Industry:</b> {{ item.industry }}</p>
+          <p class="card-body-desc"> {{ item.desc }}</p>
+          <div class="card-body-action">
+            <button type="button">Read More</button>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>

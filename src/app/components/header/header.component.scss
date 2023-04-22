@@ -1,0 +1,262 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: white;
+  border-bottom: 1px solid #3f3f3f27;
+  > .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    padding: 0 20px;
+    .website-logo {
+      display: flex;
+      align-items: center;
+      > img {
+        width: 106px;
+        height: 100%;
+      }
+      > span {
+        font-size: 12px;
+        margin-left: 8px;
+        margin-top: 8px;
+      }
+    }
+    .user-icon {
+      > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .toolbar-section {
+      display: flex;
+      .search-bar {
+        display: flex;
+        align-items: center;
+        min-height: 32px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #008083;
+        .serach-input {
+          > input {
+            border: none;
+            height: 100%;
+            color: #3f3f3f;
+            &::placeholder {
+              color: #3f3f3f77;
+            }
+          }
+        }
+        .serach-btn {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .ask-analyst-btn {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        margin-left: 12px;
+        background: transparent;
+        border: 1px solid #008083;
+        cursor: pointer;
+        transition: 0.3s;
+        > svg {
+          width: 24px;
+          height: 24px;
+          margin-right: 4px;
+          path {
+            fill: #008083;
+          }
+        }
+        > span {
+          color: #008083;
+          font-size: 14px;
+          font-weight: 600;
+          display: none;
+        }
+        &:hover {
+          background-color: #008083;
+          > svg {
+            path {
+              fill: white !important;
+              // stroke: #fff;
+            }
+          }
+          > span {
+            color: white;
+            display: block;
+          }
+        }
+      }
+    }
+    .navigation {
+      > ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        > li {
+          padding: 0 20px;
+          color: #3f3f3f;
+          font-weight: 600;
+          cursor: pointer;
+          height: 69px;
+          display: flex;
+          align-items: center;
+          &:hover {
+            padding-top: 4px;
+            border-bottom: 4px solid #df7b2e;
+          }
+        }
+      }
+    }
+  }
+  .header-dropdown {
+    border-top: 1px solid #3f3f3f27;
+    min-height: 68px;
+    padding: 24px;
+    .coverage-dropdown,
+    .market-dropdown {
+      display: grid;
+      grid-template-columns: 300px repeat(auto-fit, minmax(200px, 1fr));
+      .coverage-info,
+      .market-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-right: 0.5px solid #3f3f3f27;
+        .title {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 39px;
+          text-align: center;
+          letter-spacing: 0.055em;
+          color: #3f3f3f;
+          width: 100%;
+          padding: 0 20px;
+        }
+        .desc {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 27px;
+          letter-spacing: 0.09em;
+          font-feature-settings: "liga" off, "kern" off;
+          color: #3f3f3f;
+          padding: 0 20px;
+          margin-top: 8px;
+        }
+      }
+      .coverages-item {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &-title {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 39px;
+          text-align: center;
+          letter-spacing: 0.055em;
+          color: #3f3f3f;
+          width: 100%;
+          padding: 0 20px;
+          > span {
+            display: block;
+            font-weight: 600;
+            font-size: 16px;
+          }
+        }
+        &-list {
+          position: relative;
+          margin-top: 8px;
+          width: 100%;
+          padding: 0 20px;
+          cursor: pointer;
+          ul {
+            li {
+              margin-bottom: 8px;
+              color: #3f3f3f;
+              list-style: none;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 8px;
+              transition: 0.3s;
+              a {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 27px;
+                letter-spacing: 0.09em;
+                font-feature-settings: "liga" off, "kern" off;
+                color: #3f3f3f;
+                text-decoration: none;
+              }
+              > img {
+                margin-left: 12px;
+                width: 20px;
+              }
+              &:hover {
+                background: #3f3f3f27;
+                border-left: 4px solid #df7b2e;
+              }
+            }
+          }
+        }
+        &:not(:last-of-type) {
+          border-right: 0.5px solid #3f3f3f27;
+        }
+        &:last-of-type {
+          .coverages-item-title {
+            padding: 0 64px;
+          }
+        }
+      }
+    }
+    .market-dropdown {
+      .featured {
+        display: grid;
+        grid-gap: 8px;
+        padding: 0 20px;
+        &-title {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 39px;
+          text-align: center;
+          letter-spacing: 0.055em;
+          color: #3f3f3f;
+        }
+        > div {
+          display: flex;
+          align-items: center;
+          > img {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+          }
+          .desc {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 27px;
+            letter-spacing: 0.09em;
+            font-feature-settings: "liga" off, "kern" off;
+            color: #3f3f3f;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dx-toolbar-items-container {
+  height: 68px;
+}

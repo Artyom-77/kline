@@ -1,0 +1,6 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+.bio-basestocks {
+  min-height: calc(100vh - 135px);
+  padding-top: 69px;
+}

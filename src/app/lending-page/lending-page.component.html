@@ -1,0 +1,195 @@
+<div class="lending-page-content">
+  <div class="lending-page">
+    <div class="hero-section">
+      <div class="hero-section-content">
+        <h1>Basestock Intelligence Center</h1>
+        <h3>
+          Your single source for the latest data, insights, and news on the
+          Global Basestocks Market
+        </h3>
+      </div>
+      <div class="hero-section-background">
+        <!-- <img src="../../assets/images/bg-image.png" alt="bg" /> -->
+        <dx-gallery
+          [dataSource]="slides"
+          [slideshowDelay]="slideshowDelay"
+          [loop]="true"
+          [width]="600"
+          [height]="500"
+          [showNavButtons]="false"
+          [showIndicator]="false"
+        >
+          <div class="slider" *dxTemplate="let item of 'item'">
+            <img [src]="item.imageUrl" [alt]="item.caption" />
+            <div class="slider-name">
+              <h3>{{ item.caption }}</h3>
+              <span class="asd">{{ item.desc }}</span>
+            </div>
+          </div>
+        </dx-gallery>
+        <div class="line-up">
+          <img src="../../assets/images/hero-line-up.svg" alt="bg" />
+        </div>
+        <div class="line-down">
+          <img src="../../assets/images/hero-line-down.svg" alt="bg" />
+        </div>
+      </div>
+    </div>
+    <div class="our-coverage">
+      <div class="title-section">
+        <hr />
+        <h3 class="kline-insigts-title">Our Coverage</h3>
+        <hr />
+      </div>
+      <div class="coverages">
+        <div class="coverages-item" *ngFor="let item of coveragesList">
+          <h3 class="coverages-item-title">
+           {{ item.title }} <span>{{ item.subtitle }}</span>
+          </h3>
+          <div class="coverages-item-list">
+            <ul>
+              <li *ngFor="let listItem of item.list">
+                <a [routerLink]="listItem.path" >{{ listItem.name }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="kline-insigts">
+      <div class="title-section">
+        <hr />
+        <h3 class="kline-insigts-title">Insights</h3>
+        <hr />
+      </div>
+      <div class="insigts-items">
+        <div
+          class="insigts-item"
+          [ngClass]="{
+            'show':scrollPosition >= 500,
+            'hide':scrollPosition < 500,
+          }"
+        >
+          <div
+            class="insight-img"
+            [ngClass]="{
+              'show':scrollPosition >= 500,
+              'hide':scrollPosition < 500,
+            }"
+          >
+            <img src="../../assets/images/bg-image.png" alt="insights-img" />
+          </div>
+          <div class="insight-content">
+            <div
+              class="visible-area"
+              [ngClass]="{
+                'show':scrollPosition >= 500,
+                'hide':scrollPosition < 500,
+              }"
+            >
+              <div>
+                <h3 class="item-name">Quarterly Newsletters</h3>
+                <p class="item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore
+                </p>
+                <div class="icon-section">
+                  <div class="icon">
+                    <img src="../../assets/images/speaker.svg" alt="icon" />
+                    <div class="btn-text">
+                      <p>Subscribe</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="insigts-item"
+          [ngClass]="{
+            'show':scrollPosition >= 712,
+            'hide':scrollPosition < 712,
+          }"
+        >
+          <div
+            class="insight-img"
+            [ngClass]="{
+              'show':scrollPosition >= 712,
+              'hide':scrollPosition < 712,
+            }"
+          >
+            <img src="../../assets/images/bg-image.png" alt="insights-img" />
+          </div>
+          <div class="insight-content">
+            <div
+              class="visible-area"
+              [ngClass]="{
+                'show':scrollPosition >= 712,
+                'hide':scrollPosition < 712,
+              }"
+            >
+              <div>
+                <h3 class="item-name">Reports & Presentations</h3>
+                <p class="item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore
+                </p>
+                <div class="icon-section">
+                  <div class="icon">
+                    <img src="../../assets/images/paper.svg" alt="icon" />
+                    <div class="btn-text">
+                      <p>Published Articles</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="insigts-item"
+          [ngClass]="{
+            'show':scrollPosition >= 1039,
+            'hide':scrollPosition < 1039,
+          }"
+        >
+          <div
+            class="insight-img"
+            [ngClass]="{
+              'show':scrollPosition >= 1039,
+              'hide':scrollPosition < 1039,
+            }"
+          >
+            <img src="../../assets/images/bg-image.png" alt="insights-img" />
+          </div>
+          <div class="insight-content">
+            <div
+              class="visible-area"
+              [ngClass]="{
+                'show':scrollPosition >= 1039,
+                'hide':scrollPosition < 1039,
+              }"
+            >
+              <div>
+                <h3 class="item-name">Webinars</h3>
+                <p class="item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore
+                </p>
+                <div class="icon-section">
+                  <div class="icon">
+                    <img src="../../assets/images/blackboard.svg" alt="icon" />
+                    <div class="btn-text">
+                      <a routerLink="/webinars">View All</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
