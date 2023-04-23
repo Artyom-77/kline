@@ -1,0 +1,27 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+.btn-wrapper {
+  .btn {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 12px 36px 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    &.primary {
+      background: $orange;
+      color: #f7f7f7;
+    }
+    &.secondary {
+      background: #f7f7f7;
+      color: $orange;
+      &:hover {
+        background: $orange;
+        color: #f7f7f7;
+      }
+    }
+  }
+}

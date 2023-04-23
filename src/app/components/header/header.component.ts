@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LandingServiceService } from 'src/app/services/landing-service.service';
 
@@ -8,6 +8,7 @@ import { LandingServiceService } from 'src/app/services/landing-service.service'
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  // @Input() myProp: string | undefined;
   public dropdownOpen: boolean = false;
   public navId: any;
   public coveragesList: any[] = [];
@@ -36,25 +37,26 @@ export class HeaderComponent implements OnInit {
   ];
 
   constructor(private router: Router, private service: LandingServiceService) {
-    this.coveragesList = service.coveragesList.filter((item,index)=>index !== 3);
-    this.marketList = service.coveragesList.filter((item,index)=>index == 3);
+    this.coveragesList = service.coveragesList.filter(
+      (item, index) => index !== 3
+    );
+    this.marketList = service.coveragesList.filter((item, index) => index == 3);
   }
 
   ngOnInit(): void {}
 
   onOutclick() {
-      if (this.dropdownOpen === true) {
-        this.dropdownOpen = false;
-      }
-
+    if (this.dropdownOpen === true) {
+      this.dropdownOpen = false;
     }
+  }
 
   onItemClick(event: any, id: any) {
     if (id === 2 || id === 3) {
       this.navId = id;
       this.dropdownOpen = true;
     }
-    console.log('event',event)
+    console.log('event', event);
     // const path = event.itemData.path;
     if (event) {
       this.router.navigate([event]);

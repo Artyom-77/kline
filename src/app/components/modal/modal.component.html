@@ -1,0 +1,11 @@
+<div class="modal-wrapper">
+  <div class="modal">
+    <div class="modal-header">
+      <h1 class="title">{{ title }}</h1>
+    </div>
+    <ng-content></ng-content>
+    <button (click)="close()">
+      <img src="../../../assets/images/close.svg" alt="close" />
+    </button>
+  </div>
+</div>

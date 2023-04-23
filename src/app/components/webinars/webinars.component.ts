@@ -1,236 +1,89 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { WebinarsService } from 'src/app/services/webinars/webinars.service';
 import { v4 as uuidv4 } from 'uuid';
 @Component({
   selector: 'app-webinars',
   templateUrl: './webinars.component.html',
-  styleUrls: ['./webinars.component.scss']
+  styleUrls: ['./webinars.component.scss'],
 })
-export class WebinarsComponent {
+export class WebinarsComponent implements OnInit {
   public uniqueId: any = uuidv4();
-  public arr: any[] = [
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-1.png',
-      title: 'Trendwatch: The Global Lubricant Additives Market',
-      industry: 'Energy',
-      date: 'April 2023',
-      desc: 'A series of emerging trends are transforming the global lubricants additives industry. Among them: green lubricant additives, new specifications...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-2.png',
-      title: 'The Great Potential of the Wind Power Industry',
-      industry: 'Energy',
-      date: 'March 2023',
-      desc: 'Continuous industry growth, driven by clean energy and decarbonization targets, creates up-and-coming space for development for stakeholders operating on the...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-3.png',
-      title: 'Specialty Actives in Personal Care: New Market Trends and Opportunities',
-      industry: 'Chemicals & Materials',
-      date: 'February 2023',
-      desc: 'Multifunctional actives are gaining steam among cosmetic makers. One powerhouse ingredient is niacinamide, thanks to its multi-faceted benefits. Botanicals and...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-4.png',
-      title: 'Rat Out! Rodent Control Market Overview',
-      industry: 'Agrochemicals/Specialty Pesticides',
-      date: 'February 15, 2023',
-      desc: 'As rodent control is essential to prevent the spread of disease, cities, businesses, farmers, and consumers are utilizing several different...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-5.png',
-      title: "Who's Next? The Emerging Indie Beauty Companies Shaping the Global Beauty Market",
-      industry: 'Beauty and Wellbeing',
-      date: 'December 2022',
-      desc: 'Indie beauty drives innovation in the worldwide cosmetics industry. Watch this informative webinar when we take a deep dive into...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-6.png',
-      title: "Plant-Based Solutions for Heart Health",
-      industry: 'Food & Nutrition',
-      date: 'November 2022',
-      desc: 'A growing flexitarian, vegan, and vegetarian population is projected to positively impact the global plant-based industry in the coming years...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-7.png',
-      title: "State of the Jan/San Industry",
-      industry: 'Industrial & Institutional Cleaning',
-      date: 'November 2022',
-      desc: 'Labor shortages are impacting commercial end users, some of whom are using technology, such as IoT and robotics, to help...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-1.png',
-      title: 'Trendwatch: The Global Lubricant Additives Market',
-      industry: 'Energy',
-      date: 'April 2023',
-      desc: 'A series of emerging trends are transforming the global lubricants additives industry. Among them: green lubricant additives, new specifications...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-2.png',
-      title: 'The Great Potential of the Wind Power Industry',
-      industry: 'Energy',
-      date: 'March 2023',
-      desc: 'Continuous industry growth, driven by clean energy and decarbonization targets, creates up-and-coming space for development for stakeholders operating on the...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-3.png',
-      title: 'Specialty Actives in Personal Care: New Market Trends and Opportunities',
-      industry: 'Chemicals & Materials',
-      date: 'February 2023',
-      desc: 'Multifunctional actives are gaining steam among cosmetic makers. One powerhouse ingredient is niacinamide, thanks to its multi-faceted benefits. Botanicals and...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-4.png',
-      title: 'Rat Out! Rodent Control Market Overview',
-      industry: 'Agrochemicals/Specialty Pesticides',
-      date: 'February 15, 2023',
-      desc: 'As rodent control is essential to prevent the spread of disease, cities, businesses, farmers, and consumers are utilizing several different...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-5.png',
-      title: "Who's Next? The Emerging Indie Beauty Companies Shaping the Global Beauty Market",
-      industry: 'Beauty and Wellbeing',
-      date: 'December 2022',
-      desc: 'Indie beauty drives innovation in the worldwide cosmetics industry. Watch this informative webinar when we take a deep dive into...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-6.png',
-      title: "Plant-Based Solutions for Heart Health",
-      industry: 'Food & Nutrition',
-      date: 'November 2022',
-      desc: 'A growing flexitarian, vegan, and vegetarian population is projected to positively impact the global plant-based industry in the coming years...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-7.png',
-      title: "State of the Jan/San Industry",
-      industry: 'Industrial & Institutional Cleaning',
-      date: 'November 2022',
-      desc: 'Labor shortages are impacting commercial end users, some of whom are using technology, such as IoT and robotics, to help...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-1.png',
-      title: 'Trendwatch: The Global Lubricant Additives Market',
-      industry: 'Energy',
-      date: 'April 2023',
-      desc: 'A series of emerging trends are transforming the global lubricants additives industry. Among them: green lubricant additives, new specifications...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-2.png',
-      title: 'The Great Potential of the Wind Power Industry',
-      industry: 'Energy',
-      date: 'March 2023',
-      desc: 'Continuous industry growth, driven by clean energy and decarbonization targets, creates up-and-coming space for development for stakeholders operating on the...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-3.png',
-      title: 'Specialty Actives in Personal Care: New Market Trends and Opportunities',
-      industry: 'Chemicals & Materials',
-      date: 'February 2023',
-      desc: 'Multifunctional actives are gaining steam among cosmetic makers. One powerhouse ingredient is niacinamide, thanks to its multi-faceted benefits. Botanicals and...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-4.png',
-      title: 'Rat Out! Rodent Control Market Overview',
-      industry: 'Agrochemicals/Specialty Pesticides',
-      date: 'February 15, 2023',
-      desc: 'As rodent control is essential to prevent the spread of disease, cities, businesses, farmers, and consumers are utilizing several different...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-5.png',
-      title: "Who's Next? The Emerging Indie Beauty Companies Shaping the Global Beauty Market",
-      industry: 'Beauty and Wellbeing',
-      date: 'December 2022',
-      desc: 'Indie beauty drives innovation in the worldwide cosmetics industry. Watch this informative webinar when we take a deep dive into...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-6.png',
-      title: "Plant-Based Solutions for Heart Health",
-      industry: 'Food & Nutrition',
-      date: 'November 2022',
-      desc: 'A growing flexitarian, vegan, and vegetarian population is projected to positively impact the global plant-based industry in the coming years...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-7.png',
-      title: "State of the Jan/San Industry",
-      industry: 'Industrial & Institutional Cleaning',
-      date: 'November 2022',
-      desc: 'Labor shortages are impacting commercial end users, some of whom are using technology, such as IoT and robotics, to help...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-1.png',
-      title: 'Trendwatch: The Global Lubricant Additives Market',
-      industry: 'Energy',
-      date: 'April 2023',
-      desc: 'A series of emerging trends are transforming the global lubricants additives industry. Among them: green lubricant additives, new specifications...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-2.png',
-      title: 'The Great Potential of the Wind Power Industry',
-      industry: 'Energy',
-      date: 'March 2023',
-      desc: 'Continuous industry growth, driven by clean energy and decarbonization targets, creates up-and-coming space for development for stakeholders operating on the...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-3.png',
-      title: 'Specialty Actives in Personal Care: New Market Trends and Opportunities',
-      industry: 'Chemicals & Materials',
-      date: 'February 2023',
-      desc: 'Multifunctional actives are gaining steam among cosmetic makers. One powerhouse ingredient is niacinamide, thanks to its multi-faceted benefits. Botanicals and...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-4.png',
-      title: 'Rat Out! Rodent Control Market Overview',
-      industry: 'Agrochemicals/Specialty Pesticides',
-      date: 'February 15, 2023',
-      desc: 'As rodent control is essential to prevent the spread of disease, cities, businesses, farmers, and consumers are utilizing several different...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-5.png',
-      title: "Who's Next? The Emerging Indie Beauty Companies Shaping the Global Beauty Market",
-      industry: 'Beauty and Wellbeing',
-      date: 'December 2022',
-      desc: 'Indie beauty drives innovation in the worldwide cosmetics industry. Watch this informative webinar when we take a deep dive into...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-6.png',
-      title: "Plant-Based Solutions for Heart Health",
-      industry: 'Food & Nutrition',
-      date: 'November 2022',
-      desc: 'A growing flexitarian, vegan, and vegetarian population is projected to positively impact the global plant-based industry in the coming years...'
-    },
-    {
-      id: this.uniqueId,
-      img: '../../../assets/images/webinars/card-7.png',
-      title: "State of the Jan/San Industry",
-      industry: 'Industrial & Institutional Cleaning',
-      date: 'November 2022',
-      desc: 'Labor shortages are impacting commercial end users, some of whom are using technology, such as IoT and robotics, to help...'
-    },
-  ]
+  public industryFilterItems: any[] = [
+    'All',
+    'Agrochemicals/Specialty Pesticides',
+    'Beauty and Wellbeing',
+    'Chemicals & Materials',
+    'Energy',
+    'Food & Nutrition',
+    'Healthcare',
+    'Industrial & Institutional Cleaning',
+  ];
+  public selectedIndustry: string = '';
+  public webinarsList: any[] = [];
+  public filteredWebinarsList: any[] = [];
+  public dateList: string[] = ['All', '2021', '2022', '2023'];
+  public selectedDate: string = '';
+  public searchTerm: string = '';
+  public router: any;
+  public isOpen: boolean = false;
+  public isDateOpen: boolean = false;
+  public selectedOptions: string[] = [];
+  public isModalVisible: boolean = false;
+
+  constructor(
+    private webinaryService: WebinarsService,
+    private routers: Router
+  ) {
+    this.webinarsList = webinaryService.webinarsListDummyData;
+    this.router = routers;
+  }
+
+  ngOnInit(): void {
+    this.filteredWebinarsList = this.webinarsList;
+    console.log('this.webinarsList', this.webinarsList);
+  }
+
+  toggleDropdown() {
+    this.isOpen = !this.isOpen;
+  }
+  toggleDateDropdown() {
+    this.isDateOpen = !this.isDateOpen;
+  }
+
+  onOutclick() {
+    if (this.isOpen === true) {
+      this.isOpen = false;
+    }
+  }
+  onOutclickDate() {
+    if (this.isDateOpen === true) {
+      this.isDateOpen = false;
+    }
+  }
+
+  openModal() {
+    this.isModalVisible = true;
+    document.querySelector('.kline-app')?.classList.add('fixed');
+  }
+
+  onCloseModal() {
+    this.isModalVisible = false;
+    document.querySelector('.kline-app')?.classList.remove('fixed');
+    console.log('this.isModalVisible', this.isModalVisible);
+  }
+
+  toggleOption(option: string) {
+    this.selectedIndustry = option;
+  }
+  toggleDateOption(option: string) {
+    this.selectedDate = option;
+  }
+
+  removeFilters(): void {
+    this.searchTerm = '';
+    this.selectedDate = '';
+    this.selectedIndustry = '';
+    this.filteredWebinarsList = this.webinarsList;
+  }
 }
