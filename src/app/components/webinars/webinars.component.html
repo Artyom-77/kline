@@ -99,14 +99,27 @@
         (onClose)="onCloseModal()"
       >
         <div class="modal-content">
-          <p class="desc">Quarterly newsletter subscribtion</p>
-          <input type="text" placeholder="Enter your Email*" />
-          <app-button
-            [btnText]="'Get Code'"
-            [type]="'secondary'"
-            [icon]="false"
-            [iconName]="''"
-          ></app-button>
+          <div *ngIf="subscribeModalStep === 1" class="email-subscribe">
+            <p class="desc">Quarterly newsletter subscribtion</p>
+            <input type="email" [(ngModel)]="emailVal" placeholder="Enter your Email*" />
+            <app-button
+              [btnText]="'Get Code'"
+              [type]="'secondary'"
+              [icon]="false"
+              [iconName]="''"
+              (click)="goToSecondStep()"
+            ></app-button>
+          </div>
+          <div *ngIf="subscribeModalStep === 2">
+            <p class="desc">We have sent a verification code to you email.</p>
+            <input type="text" placeholder="Enter Code*" />
+            <app-button
+              [btnText]="'Subscribe'"
+              [type]="'secondary'"
+              [icon]="false"
+              [iconName]="''"
+            ></app-button>
+          </div>
         </div>
       </app-modal>
     </div>

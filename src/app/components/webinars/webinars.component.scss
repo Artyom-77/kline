@@ -38,10 +38,12 @@
     }
   }
   &-filters {
-    padding: 40px 24px 0;
+    padding: 40px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1210px;
+    margin: 0 auto;
     .filters {
       display: grid;
       grid-template-columns: auto auto auto auto;
@@ -105,25 +107,27 @@
     }
     .modal-content {
       padding: 20px 0 0;
-      display: grid;
-      justify-content: center;
-      grid-gap: 32px;
-      justify-items: center;
-      .desc {
-        font-size: 18px;
-        line-height: 26px;
-        font-weight: 500;
-        color: $gray;
-      }
-      > input {
-        padding: 8px;
-        width: 100%;
-        max-width: 300px;
-        border: none;
-        color: $gray;
-        border-bottom: 1px solid $orange;
-        font-size: 14px;
-        font-weight: 500;
+      > div {
+        display: grid;
+        justify-content: center;
+        grid-gap: 32px;
+        justify-items: center;
+        .desc {
+          font-size: 18px;
+          line-height: 26px;
+          font-weight: 500;
+          color: $gray;
+        }
+        > input {
+          padding: 8px;
+          width: 100%;
+          max-width: 300px;
+          border: none;
+          color: $gray;
+          border-bottom: 1px solid $orange;
+          font-size: 14px;
+          font-weight: 500;
+        }
       }
     }
   }

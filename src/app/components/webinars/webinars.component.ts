@@ -30,6 +30,8 @@ export class WebinarsComponent implements OnInit {
   public isDateOpen: boolean = false;
   public selectedOptions: string[] = [];
   public isModalVisible: boolean = false;
+  public subscribeModalStep: number = 1;
+  public emailVal: string = '';
 
   constructor(
     private webinaryService: WebinarsService,
@@ -73,11 +75,20 @@ export class WebinarsComponent implements OnInit {
     console.log('this.isModalVisible', this.isModalVisible);
   }
 
-  toggleOption(option: string) {
+  toggleOption(option: string): void {
     this.selectedIndustry = option;
   }
-  toggleDateOption(option: string) {
+  toggleDateOption(option: string): void {
     this.selectedDate = option;
+  }
+  goToSecondStep(): void {
+    if(this.emailVal === '' || !this.emailVal.includes('@') ) {
+      alert('Email field was requared!!!')
+    } else {
+      this.subscribeModalStep = 2
+    }
+console.log('emailVal',this.emailVal);
+
   }
 
   removeFilters(): void {

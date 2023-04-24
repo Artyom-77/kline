@@ -22,3 +22,13 @@ body {
 .fixed {
   overflow: hidden;
 }
+.circle-svg {
+  path {
+    &:not(.letter) {
+      fill: $gray-light;
+    }
+    &.letter {
+      fill: red !important;
+    }
+  }
+}
