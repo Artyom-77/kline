@@ -20,12 +20,12 @@ export class HeaderComponent implements OnInit {
       id: 1,
     },
     {
-      path: '/our-coverage',
+      // path: '/our-coverage',
       text: 'Our Coverage',
       id: 2,
     },
     {
-      path: '/market-watch',
+      // path: '/market-watch',
       text: 'Market Watch',
       id: 3,
     },
@@ -59,7 +59,10 @@ export class HeaderComponent implements OnInit {
     console.log('event', event);
     // const path = event.itemData.path;
     if (event) {
-      this.router.navigate([event]);
+      if (event !== 2 || id !== 3) {
+        this.router.navigate([event]);
+        this.dropdownOpen = false;
+      }
     }
   }
 }

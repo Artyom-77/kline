@@ -24,11 +24,18 @@ body {
 }
 .circle-svg {
   path {
-    &:not(.letter) {
-      fill: $gray-light;
+    &.bg-sec {
+      fill: $gray-light !important;
+      transition: all 0.3s;
+      &:hover {
+        fill: $orange !important;
+        & + .letter {
+          fill: white !important;
+        }
+      }
     }
     &.letter {
-      fill: red !important;
+      fill: white !important;
     }
   }
 }
