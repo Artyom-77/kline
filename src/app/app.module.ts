@@ -19,6 +19,7 @@ import { SelectDatePipe } from './pipes/filter/select-date.pipe';
 import { ButtonComponent } from './components/button/button.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { BasestocksIntroductionOverviewComponent } from './components/basestocks-introduction-overview/basestocks-introduction-overview.component';
+import { SelectCountryPipe } from './pipes/select-country.pipe';
 // import { BioBasestocksComponent } from './pages/bio-basestocks/bio-basestocks.component'
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { BasestocksIntroductionOverviewComponent } from './components/basestocks
     ButtonComponent,
     ModalComponent,
     BasestocksIntroductionOverviewComponent,
+    SelectCountryPipe,
   ],
   imports: [
     BrowserModule,

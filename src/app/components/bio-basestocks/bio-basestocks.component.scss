@@ -40,4 +40,409 @@
       }
     }
   }
+  &-filters {
+    padding: 40px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1210px;
+    margin: 0 auto;
+    .filters {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      justify-content: center;
+      grid-gap: 16px;
+      align-items: center;
+      > select {
+        border: none;
+        border-bottom: 1px solid $orange;
+        padding: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        max-width: 300px;
+        white-space: unset;
+        // margin-right: 16px;
+        color: $gray;
+        option {
+          padding: 8px;
+          background-color: #eee;
+          color: #333;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+      .search-section {
+        display: flex;
+        align-items: center;
+        min-height: 32px;
+        padding: 8px;
+        border-bottom: 1px solid $orange;
+        .serach-input {
+          > input {
+            border: none;
+            height: 100%;
+            color: $gray;
+            font-size: 14px;
+            font-weight: 500;
+            &::placeholder {
+              color: #3f3f3f77;
+            }
+          }
+        }
+      }
+      .filter-actions {
+        display: flex;
+        .serach-btn {
+          border: none;
+          background-color: transparent;
+          // margin-left: 10px;
+          cursor: pointer;
+          > svg {
+            display: block;
+            width: 20px;
+            height: 20px;
+            path {
+              fill: $orange;
+            }
+          }
+        }
+      }
+    }
+    .modal-content {
+      padding: 20px 0 0;
+      > div {
+        display: grid;
+        justify-content: center;
+        grid-gap: 32px;
+        justify-items: center;
+        .desc {
+          font-size: 18px;
+          line-height: 26px;
+          font-weight: 500;
+          color: $gray;
+        }
+        > input {
+          padding: 8px;
+          width: 100%;
+          max-width: 300px;
+          border: none;
+          color: $gray;
+          border-bottom: 1px solid $orange;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  &-body {
+    margin: 40px 0;
+    padding: 20px;
+    max-width: 1210px;
+    margin: 0 auto;
+    &-tabs {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      border: 4px solid $orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      .grid-area {
+        display: flex;
+        justify-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        > div {
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > div {
+            width: 231px;
+            height: 200px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .shape-bg {
+              position: absolute;
+              bottom: -4px;
+              width: 100%;
+            }
+            .text-svg {
+              transform: rotate(180deg);
+              position: unset;
+              width: auto;
+              margin-bottom: -40px;
+            }
+            > h4 {
+              position: relative;
+              z-index: 2;
+              margin-top: 75px;
+              max-width: 150px;
+              text-align: center;
+              font-size: 12px;
+              pointer-events: none;
+            }
+
+            &:hover {
+              .shape-bg {
+                path {
+                  fill: $orange;
+                }
+              }
+              h4 {
+                color: $white;
+              }
+            }
+          }
+          .active {
+            .shape-bg {
+              path {
+                fill: $orange;
+              }
+            }
+            h4 {
+              color: $white;
+            }
+          }
+        }
+        .div_1 {
+          transform: rotate(180deg);
+          top: 0;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          h4 {
+            transform: rotate(180deg) !important;
+          }
+        }
+        .div_2 {
+          transform: rotate(90deg);
+          top: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto 0;
+          h4 {
+            transform: rotate(-90deg);
+            max-width: 3px !important;
+            word-break: break-all;
+          }
+        }
+        .div_3 {
+          transform: rotate(-90deg);
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto 0;
+          h4 {
+            transform: rotate(90deg);
+            max-width: 3px !important;
+            word-break: break-all;
+          }
+        }
+        .div_4 {
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          h4 {
+            transform: rotate(360deg);
+          }
+        }
+      }
+      .div_5 {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        z-index: 2;
+        position: absolute;
+        border: 15px solid white;
+        pointer-events: none;
+      }
+      .div_6 {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: white;
+        z-index: 1;
+        position: absolute;
+      }
+      .div_7 {
+        position: absolute;
+        transition: all 0.3s ease;
+        animation: example 8s infinite ease;
+        transform: rotate(180deg);
+        pointer-events: none;
+        .div_1 {
+          width: 225px;
+          height: 212px;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: -112px;
+          top: 24px;
+          > div {
+            width: 100%;
+            height: 100%;
+            > svg {
+              width: 100%;
+              height: 100%;
+              path {
+                fill: $orangeOp;
+                transition: all 0.3s ease;
+                animation: example2 8s infinite ease;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  &.date-dropdown {
+    width: 200px;
+  }
+}
+
+.dropdown-header {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 300px;
+  white-space: unset;
+  // margin-right: 16px;
+  color: $gray;
+  border-bottom: 1px solid $orange;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-icon {
+  width: 12px;
+  position: absolute;
+  right: 8px;
+  top: 15px;
+  &.rotate {
+    transform: rotate(180deg);
+  }
+  // margin-left: 5px;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+  z-index: 12;
+  padding: 8px 0;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 300px;
+  white-space: unset;
+  color: $gray;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: $gray-light;
+}
+
+.bio-basestocks-body {
+  display: flex;
+}
+
+@keyframes example {
+  0% {
+    transform: rotate(180deg);
+  }
+  10% {
+    transform: rotate(180deg);
+  }
+  20% {
+    transform: rotate(270deg);
+  }
+  30% {
+    transform: rotate(270deg);
+  }
+  40% {
+    transform: rotate(270deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: rotate(360deg);
+  }
+  80% {
+    transform: rotate(90deg);
+  }
+  90% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes example2 {
+  0% {
+    fill: $orangeOp;
+  }
+  10% {
+    fill: none;
+  }
+  20% {
+    fill: none;
+  }
+  30% {
+    fill: $orangeOp;
+  }
+  40% {
+    fill: none;
+  }
+  50% {
+    fill: none;
+  }
+  60% {
+    fill: $orangeOp;
+  }
+  70% {
+    fill: none;
+  }
+  80% {
+    fill: none;
+  }
+  90% {
+    fill: $orangeOp;
+  }
+  100% {
+    fill: none;
+  }
 }
