@@ -4,11 +4,13 @@ import { BioBasestocksComponent } from './components/bio-basestocks/bio-basestoc
 import { WebinarsComponent } from './components/webinars/webinars.component';
 import { LendingPageComponent } from './lending-page/lending-page.component';
 import { BasestocksIntroductionOverviewComponent } from './components/basestocks-introduction-overview/basestocks-introduction-overview.component';
+import { BioCompareCountriesComponent } from './components/bio-compare-countries/bio-compare-countries.component';
 const routes: Routes = [
   { path: '', component: LendingPageComponent },
   { path: 'bio-basestocks', component: BioBasestocksComponent },
+  { path: 'bio-compare', component: BioCompareCountriesComponent },
   { path: 'basestocks-introduction-overview', component: BasestocksIntroductionOverviewComponent },
-  { path: 'webinars', component: WebinarsComponent },
+  { path: 'insights', component: WebinarsComponent },
 ];
 
 @NgModule({

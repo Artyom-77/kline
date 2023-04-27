@@ -56,7 +56,6 @@ export class HeaderComponent implements OnInit {
       this.navId = id;
       this.dropdownOpen = true;
     }
-    console.log('event', event);
     // const path = event.itemData.path;
     if (event) {
       if (event !== 2 || id !== 3) {

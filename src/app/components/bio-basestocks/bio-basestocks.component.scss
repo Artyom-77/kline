@@ -41,7 +41,7 @@
     }
   }
   &-filters {
-    padding: 40px 0 0;
+    padding: 40px 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,63 +135,85 @@
     }
   }
   &-body {
-    margin: 40px 0;
+    // margin: 40px 0;
     padding: 20px;
     max-width: 1210px;
-    margin: 0 auto;
-    &-tabs {
-      position: relative;
-      width: 400px;
-      height: 400px;
-      border-radius: 50%;
-      border: 4px solid $orange;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      .grid-area {
-        display: flex;
-        justify-items: center;
+    margin: 40px auto;
+    &-country-name {
+      // text-align: center;
+      margin-bottom: 20px;
+      > h1 {
+        color: $gray;
+      }
+    }
+    &-tabs-content {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      grid-gap: 32px;
+      .bio-basestocks-body-tabs {
         position: relative;
-        width: 100%;
-        height: 100%;
-        > div {
-          width: 200px;
-          height: 200px;
-          position: absolute;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        border: 4px solid $orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        .grid-area {
           display: flex;
-          justify-content: center;
-          align-items: center;
+          justify-items: center;
+          position: relative;
+          width: 100%;
+          height: 100%;
           > div {
-            width: 231px;
+            width: 200px;
             height: 200px;
             position: absolute;
             display: flex;
             justify-content: center;
             align-items: center;
-
-            .shape-bg {
+            > div {
+              width: 231px;
+              height: 200px;
               position: absolute;
-              bottom: -4px;
-              width: 100%;
-            }
-            .text-svg {
-              transform: rotate(180deg);
-              position: unset;
-              width: auto;
-              margin-bottom: -40px;
-            }
-            > h4 {
-              position: relative;
-              z-index: 2;
-              margin-top: 75px;
-              max-width: 150px;
-              text-align: center;
-              font-size: 12px;
-              pointer-events: none;
-            }
+              display: flex;
+              justify-content: center;
+              align-items: center;
 
-            &:hover {
+              .shape-bg {
+                position: absolute;
+                bottom: -4px;
+                width: 100%;
+              }
+              .text-svg {
+                transform: rotate(180deg);
+                position: unset;
+                width: auto;
+                margin-bottom: -40px;
+              }
+              > h4 {
+                position: relative;
+                z-index: 2;
+                margin-top: 75px;
+                max-width: 150px;
+                text-align: center;
+                font-size: 12px;
+                pointer-events: none;
+              }
+
+              &:hover {
+                .shape-bg {
+                  path {
+                    fill: $orange;
+                  }
+                }
+                h4 {
+                  color: $white;
+                }
+              }
+            }
+            .active {
               .shape-bg {
                 path {
                   fill: $orange;
@@ -202,107 +224,311 @@
               }
             }
           }
-          .active {
-            .shape-bg {
-              path {
-                fill: $orange;
-              }
-            }
+          .div_1 {
+            transform: rotate(180deg);
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
             h4 {
-              color: $white;
+              transform: rotate(180deg) !important;
+            }
+          }
+          .div_2 {
+            transform: rotate(90deg);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto 0;
+            h4 {
+              transform: rotate(-90deg);
+              max-width: 3px !important;
+              word-break: break-all;
+            }
+          }
+          .div_3 {
+            transform: rotate(-90deg);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto 0;
+            h4 {
+              transform: rotate(90deg);
+              max-width: 3px !important;
+              word-break: break-all;
+            }
+          }
+          .div_4 {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            h4 {
+              transform: rotate(360deg);
             }
           }
         }
-        .div_1 {
-          transform: rotate(180deg);
-          top: 0;
-          left: 0;
-          right: 0;
-          margin: 0 auto;
-          h4 {
-            transform: rotate(180deg) !important;
-          }
-        }
-        .div_2 {
-          transform: rotate(90deg);
-          top: 0;
-          left: 0;
-          bottom: 0;
-          margin: auto 0;
-          h4 {
-            transform: rotate(-90deg);
-            max-width: 3px !important;
-            word-break: break-all;
-          }
-        }
-        .div_3 {
-          transform: rotate(-90deg);
-          top: 0;
-          right: 0;
-          bottom: 0;
-          margin: auto 0;
-          h4 {
-            transform: rotate(90deg);
-            max-width: 3px !important;
-            word-break: break-all;
-          }
-        }
-        .div_4 {
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin: 0 auto;
-          h4 {
-            transform: rotate(360deg);
-          }
-        }
-      }
-      .div_5 {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        z-index: 2;
-        position: absolute;
-        border: 15px solid white;
-        pointer-events: none;
-      }
-      .div_6 {
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        background-color: white;
-        z-index: 1;
-        position: absolute;
-      }
-      .div_7 {
-        position: absolute;
-        transition: all 0.3s ease;
-        animation: example 8s infinite ease;
-        transform: rotate(180deg);
-        pointer-events: none;
-        .div_1 {
-          width: 225px;
-          height: 212px;
+        .div_5 {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          z-index: 2;
           position: absolute;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          left: -112px;
-          top: 24px;
-          > div {
-            width: 100%;
-            height: 100%;
-            > svg {
+          border: 15px solid white;
+          pointer-events: none;
+        }
+        .div_6 {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          background-color: white;
+          z-index: 1;
+          position: absolute;
+        }
+        .div_7 {
+          position: absolute;
+          transition: all 0.3s ease;
+          animation: example 4s infinite ease;
+          transform: rotate(180deg);
+          pointer-events: none;
+          .div_1 {
+            width: 225px;
+            height: 212px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: -112px;
+            top: 24px;
+            > div {
               width: 100%;
               height: 100%;
-              path {
-                fill: $orangeOp;
-                transition: all 0.3s ease;
-                animation: example2 8s infinite ease;
+              > svg {
+                width: 100%;
+                height: 100%;
+                path {
+                  fill: $orangeOp;
+                  transition: all 0.3s ease;
+                  animation: example2 4s infinite ease;
+                }
               }
             }
           }
         }
+      }
+    }
+    .timeline-title {
+      font-size: 32px;
+      color: $gray;
+      margin: 80px 0;
+      text-align: center;
+    }
+    &-timeline {
+      margin: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      position: relative;
+      .timeline-card {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 20px;
+        padding-bottom: 50px;
+        position: relative;
+        border-left: 1px solid $orange;
+        margin-right: 100px;
+
+        .card-content {
+          width: 250px;
+          display: flex;
+          flex-direction: column;
+          .year {
+            background-color: $orange;
+            color: $white;
+            padding: 8px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: -12px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > svg {
+              width: 24px;
+              height: 22px;
+              margin-right: 10px;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              transform: rotate(45deg);
+              left: -3px;
+              top: 13px;
+              background: $orange;
+            }
+          }
+          .desc {
+            margin-top: 16px;
+            // text-align: center;
+          }
+        }
+        .circle-top {
+          position: absolute;
+          top: 0px;
+          left: -8px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background: $orange;
+        }
+        .circle-bottom {
+          position: absolute;
+          bottom: -10px;
+          left: -10px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: $orange;
+        }
+        &:nth-child(2) {
+          border-color: #5e9d9f;
+          .circle-top {
+            background: #5e9d9f;
+          }
+          .circle-bottom {
+            background: #5e9d9f;
+          }
+          .card-content {
+            .year {
+              background: #5e9d9f;
+              &::before {
+                background: #5e9d9f;
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          border-color: $gray;
+          .circle-top {
+            background: $gray;
+          }
+          .circle-bottom {
+            background: $gray;
+          }
+          .card-content {
+            .year {
+              background: $gray;
+              &::before {
+                background: $gray;
+              }
+            }
+          }
+        }
+        &:nth-child(4) {
+          border-color: #d08ad3;
+          .circle-top {
+            background: #d08ad3;
+          }
+          .circle-bottom {
+            background: #d08ad3;
+          }
+          .card-content {
+            .year {
+              background: #d08ad3;
+              &::before {
+                background: #d08ad3;
+              }
+            }
+          }
+        }
+        &:nth-child(5) {
+          border-color: #8abe67;
+          .circle-top {
+            background: #8abe67;
+          }
+          .circle-bottom {
+            background: #8abe67;
+          }
+          .card-content {
+            .year {
+              background: #8abe67;
+              &::before {
+                background: #8abe67;
+              }
+            }
+          }
+        }
+        &:nth-child(6) {
+          border-color: #fdbb89;
+          .circle-top {
+            background: #fdbb89;
+          }
+          .circle-bottom {
+            background: #fdbb89;
+          }
+          .card-content {
+            .year {
+              background: #fdbb89;
+              &::before {
+                background: #fdbb89;
+              }
+            }
+          }
+        }
+        &:nth-child(7) {
+          border-color: #697dc0;
+          .circle-top {
+            background: #697dc0;
+          }
+          .circle-bottom {
+            background: #697dc0;
+          }
+          .card-content {
+            .year {
+              background: #697dc0;
+              &::before {
+                background: #697dc0;
+              }
+            }
+          }
+        }
+        &:nth-child(7),
+        &:nth-child(5),
+        &:nth-child(6) {
+          justify-content: flex-end;
+          padding-bottom: 0;
+          padding-top: 50px;
+          margin-left: 100px;
+          margin-right: 0px;
+          .card-content {
+            flex-direction: column-reverse;
+            .year {
+              margin-top: 0;
+              margin-bottom: -7px;
+            }
+            .desc {
+              margin-top: 0;
+              margin-bottom: 16px;
+            }
+          }
+          .circle-top {
+            top: unset;
+            bottom: 0px;
+          }
+          .circle-bottom {
+            top: -10px;
+            bottom: unset;
+          }
+        }
+      }
+      .middle-line {
+        position: absolute;
+        height: 4px;
+        background: #575656;
+        width: 100%;
+        top: calc(50% - 4px);
       }
     }
   }
@@ -371,36 +597,35 @@
   background-color: $gray-light;
 }
 
-.bio-basestocks-body {
-  display: flex;
-}
-
 @keyframes example {
   0% {
     transform: rotate(180deg);
   }
-  10% {
+  9% {
     transform: rotate(180deg);
   }
-  20% {
+  18% {
+    transform: rotate(180deg);
+  }
+  27% {
     transform: rotate(270deg);
   }
-  30% {
+  36% {
     transform: rotate(270deg);
   }
-  40% {
+  45% {
     transform: rotate(270deg);
   }
-  50% {
+  54% {
     transform: rotate(360deg);
   }
-  60% {
+  63% {
     transform: rotate(360deg);
   }
-  70% {
+  72% {
     transform: rotate(360deg);
   }
-  80% {
+  81% {
     transform: rotate(90deg);
   }
   90% {
@@ -413,30 +638,33 @@
 
 @keyframes example2 {
   0% {
+    fill: none;
+  }
+  9% {
     fill: $orangeOp;
   }
-  10% {
+  18% {
     fill: none;
   }
-  20% {
+  27% {
     fill: none;
   }
-  30% {
+  36% {
     fill: $orangeOp;
   }
-  40% {
+  45% {
     fill: none;
   }
-  50% {
+  54% {
     fill: none;
   }
-  60% {
+  63% {
     fill: $orangeOp;
   }
-  70% {
+  72% {
     fill: none;
   }
-  80% {
+  81% {
     fill: none;
   }
   90% {

@@ -11,7 +11,6 @@ export class SelectFilterPipe implements PipeTransform {
     const filteredItems = items.filter(
       (item) => item.industry === selectedOption
     );
-    console.log('filteredItems', filteredItems);
 
     return filteredItems;
   }

@@ -1,14 +1,13 @@
 <div class="webinars">
   <div class="webinars-header">
     <p class="webinars-header-desc">
-      Our webinars are an excellent source of information that help you gain key
-      market insights quickly and efficiently. Select the industry below and
-      find the topic in which you are interested.
+      A repository of the latest and archived news pertaining to global basestocks market from Kline Analysts
     </p>
-    <h1 class="webinars-header-title">Webinars</h1>
+    <h1 class="webinars-header-title">Insights</h1>
   </div>
+
   <div class="webinars-filters">
-    <div class="filters">
+    <!-- <div class="filters">
       <div
         class="custom-dropdown"
         outclick
@@ -84,72 +83,141 @@
           </svg>
         </button>
       </div>
-    </div>
+    </div> -->
     <div class="webinars-subscribe">
       <app-button
-        [btnText]="'Subscribe'"
-        [type]="'secondary'"
+        [btnText]="'My Kline'"
+        [type]="'primary'"
         [icon]="false"
         [iconName]="''"
-        (click)="openModal()"
       ></app-button>
-      <app-modal
-        [title]="'Subscribe'"
-        *ngIf="isModalVisible"
-        (onClose)="onCloseModal()"
-      >
-        <div class="modal-content">
-          <div *ngIf="subscribeModalStep === 1" class="email-subscribe">
-            <p class="desc">Quarterly newsletter subscribtion</p>
-            <input type="email" [(ngModel)]="emailVal" placeholder="Enter your Email*" />
-            <app-button
-              [btnText]="'Get Code'"
-              [type]="'secondary'"
-              [icon]="false"
-              [iconName]="''"
-              (click)="goToSecondStep()"
-            ></app-button>
-          </div>
-          <div *ngIf="subscribeModalStep === 2">
-            <p class="desc">We have sent a verification code to you email.</p>
-            <input type="text" placeholder="Enter Code*" />
-            <app-button
-              [btnText]="'Subscribe'"
-              [type]="'secondary'"
-              [icon]="false"
-              [iconName]="''"
-            ></app-button>
-          </div>
-        </div>
-      </app-modal>
+
+      <app-button
+      [btnText]="'More on Lubes'"
+      [type]="'primary'"
+      [icon]="false"
+      [iconName]="''"
+    ></app-button>
     </div>
   </div>
+
   <div class="webinars-body">
-    <div class="webinars-body-cards">
-      <div
-        class="card"
-        *ngFor="
-          let item of filteredWebinarsList
-            | filter : searchTerm
-            | selectFilter : selectedIndustry
-            | selectDate : selectedDate
-        "
-      >
-        <div class="card-img">
-          <img [src]="item.img" alt="card-img" />
+    <div class="published-articles">
+      <div class="published-articles-title">
+        <h3>Published Articles</h3>
+      </div>
+      <div class="arrow-prev" (click)="scrollRightPublished()">
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" >
+      </div>
+      <div class="arrow-next" (click)="scrollLeftPublished()">
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow"  >
+      </div>
+      <div class="published-articles-cards" #content>
+        <div
+          class="card"
+          *ngFor="
+            let item of filteredWebinarsList
+              | filter : searchTerm
+              | selectFilter : selectedIndustry
+              | selectDate : selectedDate
+          "
+        >
+          <div class="card-img">
+            <img [src]="item.img" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
+            <h3 class="card-body-title">{{ item.title }}</h3>
+            <p class="card-body-industry"><b>Industry:</b> {{ item.industry }}</p>
+            <p class="card-body-desc">{{ item.desc }}</p>
+            <div class="card-body-action">
+              <app-button
+                [btnText]="'Read More'"
+                [type]="'secondary'"
+                [icon]="false"
+                [iconName]="''"
+              ></app-button>
+            </div>
+          </div>
         </div>
-        <div class="card-body">
-          <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
-          <h3 class="card-body-title">{{ item.title }}</h3>
-          <p class="card-body-industry"><b>Industry:</b> {{ item.industry }}</p>
-          <p class="card-body-desc">{{ item.desc }}</p>
-          <div class="card-body-action">
-            <app-button
-              [btnText]="'Read More'"
-              [type]="'secondary'"
-              [icon]="false"
-              [iconName]="''"
-            ></app-button>
+      </div>
+    </div>
+    <div class="published-articles">
+      <div class="published-articles-title">
+        <h3>Analysis-Kline Base Oil Reports</h3>
+      </div>
+      <div class="arrow-prev" (click)="scrollRightAnalysis()">
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" >
+      </div>
+      <div class="arrow-next" (click)="scrollLeftAnalysis()">
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow"  >
+      </div>
+      <div class="published-articles-cards" #content1>
+        <div
+          class="card"
+          *ngFor="
+            let item of filteredWebinarsList
+              | filter : searchTerm
+              | selectFilter : selectedIndustry
+              | selectDate : selectedDate
+          "
+        >
+          <div class="card-img">
+            <img [src]="item.img" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
+            <h3 class="card-body-title">{{ item.title }}</h3>
+            <p class="card-body-industry"><b>Industry:</b> {{ item.industry }}</p>
+            <p class="card-body-desc">{{ item.desc }}</p>
+            <div class="card-body-action">
+              <app-button
+                [btnText]="'Read More'"
+                [type]="'secondary'"
+                [icon]="false"
+                [iconName]="''"
+              ></app-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="published-articles">
+      <div class="published-articles-title">
+        <h3>KIine Other Offerings</h3>
+      </div>
+      <div class="arrow-prev" (click)="scrollRightOfferings()">
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" >
+      </div>
+      <div class="arrow-next" (click)="scrollLeftOfferings()">
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow"  >
+      </div>
+      <div class="published-articles-cards" #content2>
+        <div
+          class="card"
+          *ngFor="
+            let item of filteredWebinarsList
+              | filter : searchTerm
+              | selectFilter : selectedIndustry
+              | selectDate : selectedDate
+          "
+        >
+          <div class="card-img">
+            <img [src]="item.img" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
+            <h3 class="card-body-title">{{ item.title }}</h3>
+            <p class="card-body-industry"><b>Industry:</b> {{ item.industry }}</p>
+            <p class="card-body-desc">{{ item.desc }}</p>
+            <div class="card-body-action">
+              <app-button
+                [btnText]="'Read More'"
+                [type]="'secondary'"
+                [icon]="false"
+                [iconName]="''"
+              ></app-button>
+            </div>
           </div>
         </div>
       </div>

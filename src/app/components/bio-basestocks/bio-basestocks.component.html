@@ -9,9 +9,7 @@
         ut labore et dolore magna aliqua.
       </p>
     </div>
-    <h1 class="bio-basestocks-header-title">
-      Basestocks Introduction Overview
-    </h1>
+    <h1 class="bio-basestocks-header-title">Bio-Basestocks</h1>
   </div>
   <div class="bio-basestocks-filters">
     <div class="filters">
@@ -43,6 +41,7 @@
           </div>
         </div>
       </div>
+
       <div
         class="custom-dropdown date-dropdown"
         outclick
@@ -89,173 +88,173 @@
         </button>
       </div> -->
     </div>
-    <!-- <div class="webinars-subscribe">
-      <app-button
-        [btnText]="'Subscribe'"
-        [type]="'secondary'"
-        [icon]="false"
-        [iconName]="''"
-        (click)="openModal()"
-      ></app-button>
-      <app-modal
-        [title]="'Subscribe'"
-        *ngIf="isModalVisible"
-        (onClose)="onCloseModal()"
-      >
-        <div class="modal-content">
-          <div *ngIf="subscribeModalStep === 1" class="email-subscribe">
-            <p class="desc">Quarterly newsletter subscribtion</p>
-            <input type="email" [(ngModel)]="emailVal" placeholder="Enter your Email*" />
-            <app-button
-              [btnText]="'Get Code'"
-              [type]="'secondary'"
-              [icon]="false"
-              [iconName]="''"
-              (click)="goToSecondStep()"
-            ></app-button>
-          </div>
-          <div *ngIf="subscribeModalStep === 2">
-            <p class="desc">We have sent a verification code to you email.</p>
-            <input type="text" placeholder="Enter Code*" />
-            <app-button
-              [btnText]="'Subscribe'"
-              [type]="'secondary'"
-              [icon]="false"
-              [iconName]="''"
-            ></app-button>
-          </div>
-        </div>
-      </app-modal>
-    </div> -->
+    <app-button
+      [btnText]="'Compare across countries'"
+      [type]="'icon secondary'"
+      [icon]="false"
+      [iconName]="''"
+      (click)="route.navigate(['/bio-compare'])"
+    ></app-button>
   </div>
   <div class="bio-basestocks-body">
-    <div class="bio-basestocks-body-tabs">
-      <div class="grid-area">
-        <div class="div_1">
-          <div [ngClass]="{ active: selectedTab === 'first' }" class="section-1">
-            <h4>CERTIFICATION PROGRAM</h4>
-            <svg
-              class="shape-bg"
-              width="308"
-              height="139"
-              viewBox="0 0 308 139"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              (click)="onCLick('first')"
+    <div class="bio-basestocks-body-tabs-content">
+      <div class="bio-basestocks-body-tabs">
+        <div class="grid-area">
+          <div class="div_1">
+            <div
+              [ngClass]="{ active: selectedTab === 'first' }"
+              class="section-1"
             >
-              <path
-                d="M234.599 1.7106L305.396 63.3956C309.643 66.2155 307.755 72.7952 306.281 75.7326C274.925 106.078 254.294 116.869 214.245 129.487C166.538 141.978 139.984 142.363 93.0069 129.487C55.1937 118.93 31.0099 103.881 3.62671 76.6138C-3.22739 69.7887 1.41434 64.8643 3.18423 62.5144C25.308 42.9808 70.5291 3.3849 74.4229 1.26999C79.2902 -1.37365 82.8454 0.784528 85.4848 1.7106C101.382 7.28816 146.541 44.6553 223.537 1.7106C226.82 -0.12047 232.092 0.682514 234.599 1.7106Z"
-                fill="#D9D9D9"
-              />
-            </svg>
-            <!-- <svg class="text-svg" style="float:left; max-width:800px; max-height:600px;" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path id="SunCatcherStudio" fill="none" stroke="#000000" d="m 31.233725,97.494818 c 0,0 61.574343,-56.261093 168.766275,-56.261093 121.84084,0 168.76627,56.261093 168.76627,56.261093" style="
-                  stroke: none;
-                  width: 0px;
-                  display: block;
-              "></path>
+              <h4>CERTIFICATION PROGRAM</h4>
+              <svg
+                class="shape-bg"
+                width="308"
+                height="139"
+                viewBox="0 0 308 139"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                (click)="onCLick('first')"
+              >
+                <path
+                  d="M234.599 1.7106L305.396 63.3956C309.643 66.2155 307.755 72.7952 306.281 75.7326C274.925 106.078 254.294 116.869 214.245 129.487C166.538 141.978 139.984 142.363 93.0069 129.487C55.1937 118.93 31.0099 103.881 3.62671 76.6138C-3.22739 69.7887 1.41434 64.8643 3.18423 62.5144C25.308 42.9808 70.5291 3.3849 74.4229 1.26999C79.2902 -1.37365 82.8454 0.784528 85.4848 1.7106C101.382 7.28816 146.541 44.6553 223.537 1.7106C226.82 -0.12047 232.092 0.682514 234.599 1.7106Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+              <!-- <svg class="text-svg" style="float:left; max-width:800px; max-height:600px;" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path id="SunCatcherStudio" fill="none" stroke="#000000" d="m 31.233725,97.494818 c 0,0 61.574343,-56.261093 168.766275,-56.261093 121.84084,0 168.76627,56.261093 168.76627,56.261093" style="
+                    stroke: none;
+                    width: 0px;
+                    display: block;
+                "></path>
 
-<text _ngcontent-qdo-c1="" font-size="22" fill="#000000" letter-spacing="2" font-family="montserrat" font-weight="bold" ><textPath _ngcontent-qdo-c1="" xlink:href="#SunCatcherStudio" side="left" startOffset="100">CERTIFICATION PROGRAM</textPath></text>
-              </svg> -->
+  <text _ngcontent-qdo-c1="" font-size="22" fill="#000000" letter-spacing="2" font-family="montserrat" font-weight="bold" ><textPath _ngcontent-qdo-c1="" xlink:href="#SunCatcherStudio" side="left" startOffset="100">CERTIFICATION PROGRAM</textPath></text>
+                </svg> -->
+            </div>
+          </div>
+          <div class="div_2">
+            <div [ngClass]="{ active: selectedTab === 'second' }">
+              <h4>REGULATIONS</h4>
+              <svg
+                class="shape-bg"
+                width="308"
+                height="139"
+                viewBox="0 0 308 139"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                (click)="onCLick('second')"
+              >
+                <path
+                  d="M234.599 1.7106L305.396 63.3956C309.643 66.2155 307.755 72.7952 306.281 75.7326C274.925 106.078 254.294 116.869 214.245 129.487C166.538 141.978 139.984 142.363 93.0069 129.487C55.1937 118.93 31.0099 103.881 3.62671 76.6138C-3.22739 69.7887 1.41434 64.8643 3.18423 62.5144C25.308 42.9808 70.5291 3.3849 74.4229 1.26999C79.2902 -1.37365 82.8454 0.784528 85.4848 1.7106C101.382 7.28816 146.541 44.6553 223.537 1.7106C226.82 -0.12047 232.092 0.682514 234.599 1.7106Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="div_3">
+            <div [ngClass]="{ active: selectedTab === 'third' }">
+              <h4>OTHER</h4>
+              <svg
+                class="shape-bg"
+                width="308"
+                height="139"
+                viewBox="0 0 308 139"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                (click)="onCLick('third')"
+              >
+                <path
+                  d="M234.599 1.7106L305.396 63.3956C309.643 66.2155 307.755 72.7952 306.281 75.7326C274.925 106.078 254.294 116.869 214.245 129.487C166.538 141.978 139.984 142.363 93.0069 129.487C55.1937 118.93 31.0099 103.881 3.62671 76.6138C-3.22739 69.7887 1.41434 64.8643 3.18423 62.5144C25.308 42.9808 70.5291 3.3849 74.4229 1.26999C79.2902 -1.37365 82.8454 0.784528 85.4848 1.7106C101.382 7.28816 146.541 44.6553 223.537 1.7106C226.82 -0.12047 232.092 0.682514 234.599 1.7106Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="div_4">
+            <div [ngClass]="{ active: selectedTab === 'forth' }">
+              <h4>IMPACT ON BIO-LUBRICANTS DEMAND</h4>
+              <svg
+                class="shape-bg"
+                width="308"
+                height="139"
+                viewBox="0 0 308 139"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                (click)="onCLick('forth')"
+              >
+                <
+                <path
+                  d="M234.599 1.7106L305.396 63.3956C309.643 66.2155 307.755 72.7952 306.281 75.7326C274.925 106.078 254.294 116.869 214.245 129.487C166.538 141.978 139.984 142.363 93.0069 129.487C55.1937 118.93 31.0099 103.881 3.62671 76.6138C-3.22739 69.7887 1.41434 64.8643 3.18423 62.5144C25.308 42.9808 70.5291 3.3849 74.4229 1.26999C79.2902 -1.37365 82.8454 0.784528 85.4848 1.7106C101.382 7.28816 146.541 44.6553 223.537 1.7106C226.82 -0.12047 232.092 0.682514 234.599 1.7106Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
           </div>
         </div>
-        <div class="div_2">
-          <div [ngClass]="{ active: selectedTab === 'second' }">
-            <h4>REGULATIONS</h4>
-            <svg
-              class="shape-bg"
-              width="308"
-              height="139"
-              viewBox="0 0 308 139"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              (click)="onCLick('second')"
-            >
-              <path
-                d="M234.599 1.7106L305.396 63.3956C309.643 66.2155 307.755 72.7952 306.281 75.7326C274.925 106.078 254.294 116.869 214.245 129.487C166.538 141.978 139.984 142.363 93.0069 129.487C55.1937 118.93 31.0099 103.881 3.62671 76.6138C-3.22739 69.7887 1.41434 64.8643 3.18423 62.5144C25.308 42.9808 70.5291 3.3849 74.4229 1.26999C79.2902 -1.37365 82.8454 0.784528 85.4848 1.7106C101.382 7.28816 146.541 44.6553 223.537 1.7106C226.82 -0.12047 232.092 0.682514 234.599 1.7106Z"
-                fill="#D9D9D9"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="div_3">
-          <div [ngClass]="{ active: selectedTab === 'third' }">
-            <h4>OTHER</h4>
-            <svg
-              class="shape-bg"
-              width="308"
-              height="139"
-              viewBox="0 0 308 139"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              (click)="onCLick('third')"
-            >
-              <path
-                d="M234.599 1.7106L305.396 63.3956C309.643 66.2155 307.755 72.7952 306.281 75.7326C274.925 106.078 254.294 116.869 214.245 129.487C166.538 141.978 139.984 142.363 93.0069 129.487C55.1937 118.93 31.0099 103.881 3.62671 76.6138C-3.22739 69.7887 1.41434 64.8643 3.18423 62.5144C25.308 42.9808 70.5291 3.3849 74.4229 1.26999C79.2902 -1.37365 82.8454 0.784528 85.4848 1.7106C101.382 7.28816 146.541 44.6553 223.537 1.7106C226.82 -0.12047 232.092 0.682514 234.599 1.7106Z"
-                fill="#D9D9D9"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="div_4">
-          <div [ngClass]="{ active: selectedTab === 'forth' }">
-            <h4>IMPACT ON BIO-LUBRICANTS DEMAND</h4>
-            <svg
-              class="shape-bg"
-              width="308"
-              height="139"
-              viewBox="0 0 308 139"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              (click)="onCLick('forth')"
-            >
-              <
-              <path
-                d="M234.599 1.7106L305.396 63.3956C309.643 66.2155 307.755 72.7952 306.281 75.7326C274.925 106.078 254.294 116.869 214.245 129.487C166.538 141.978 139.984 142.363 93.0069 129.487C55.1937 118.93 31.0099 103.881 3.62671 76.6138C-3.22739 69.7887 1.41434 64.8643 3.18423 62.5144C25.308 42.9808 70.5291 3.3849 74.4229 1.26999C79.2902 -1.37365 82.8454 0.784528 85.4848 1.7106C101.382 7.28816 146.541 44.6553 223.537 1.7106C226.82 -0.12047 232.092 0.682514 234.599 1.7106Z"
-                fill="#D9D9D9"
-              />
-            </svg>
+        <div class="div_5"></div>
+        <div class="div_6"></div>
+        <div class="div_7">
+          <div class="div_1">
+            <div>
+              <svg
+                class="shape-bg"
+                width="308"
+                height="139"
+                viewBox="0 0 308 139"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                (click)="onCLick('first')"
+              >
+                <path
+                  d="M234.599 1.7106L305.396 63.3956C309.643 66.2155 307.755 72.7952 306.281 75.7326C274.925 106.078 254.294 116.869 214.245 129.487C166.538 141.978 139.984 142.363 93.0069 129.487C55.1937 118.93 31.0099 103.881 3.62671 76.6138C-3.22739 69.7887 1.41434 64.8643 3.18423 62.5144C25.308 42.9808 70.5291 3.3849 74.4229 1.26999C79.2902 -1.37365 82.8454 0.784528 85.4848 1.7106C101.382 7.28816 146.541 44.6553 223.537 1.7106C226.82 -0.12047 232.092 0.682514 234.599 1.7106Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-      <div class="div_5"></div>
-      <div class="div_6"></div>
-      <div class="div_7">
-        <div class="div_1">
-          <div>
-            <svg
-              class="shape-bg"
-              width="308"
-              height="139"
-              viewBox="0 0 308 139"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              (click)="onCLick('first')"
-            >
-              <path
-                d="M234.599 1.7106L305.396 63.3956C309.643 66.2155 307.755 72.7952 306.281 75.7326C274.925 106.078 254.294 116.869 214.245 129.487C166.538 141.978 139.984 142.363 93.0069 129.487C55.1937 118.93 31.0099 103.881 3.62671 76.6138C-3.22739 69.7887 1.41434 64.8643 3.18423 62.5144C25.308 42.9808 70.5291 3.3849 74.4229 1.26999C79.2902 -1.37365 82.8454 0.784528 85.4848 1.7106C101.382 7.28816 146.541 44.6553 223.537 1.7106C226.82 -0.12047 232.092 0.682514 234.599 1.7106Z"
-                fill="#D9D9D9"
-              />
-            </svg>
-            <!-- <svg class="text-svg" style="float:left; max-width:800px; max-height:600px;" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path id="SunCatcherStudio" fill="none" stroke="#000000" d="m 31.233725,97.494818 c 0,0 61.574343,-56.261093 168.766275,-56.261093 121.84084,0 168.76627,56.261093 168.76627,56.261093" style="
-                  stroke: none;
-                  width: 0px;
-                  display: block;
-              "></path>
 
-<text _ngcontent-qdo-c1="" font-size="22" fill="#000000" letter-spacing="2" font-family="montserrat" font-weight="bold" ><textPath _ngcontent-qdo-c1="" xlink:href="#SunCatcherStudio" side="left" startOffset="100">CERTIFICATION PROGRAM</textPath></text>
-              </svg> -->
-          </div>
+      <div class="bio-basestocks-body-details">
+        <div class="bio-basestocks-body-country-name">
+          <h1>{{ curent_data.name }}</h1>
         </div>
+        <app-bio-tabs
+          [selectedTabName]="selectedTab"
+          [bioData]="curent_data"
+        ></app-bio-tabs>
       </div>
     </div>
-    <div class="bio-basestocks-body-details">
-      <h1>{{ curent_data.name }}</h1>
-      <div *ngIf="selectedTab === 'first'">11111111111111</div>
-      <div *ngIf="selectedTab === 'second'">22222222222222222</div>
-      <div *ngIf="selectedTab === 'third'">3333333333333</div>
-      <div *ngIf="selectedTab === 'forth'">44444444444444</div>
+    <h3 class="timeline-title">
+      TIMELINE- Bio-lubricants Policy Changes in {{ curent_data.name }}
+    </h3>
+    <div class="bio-basestocks-body-timeline">
+      <div class="middle-line"></div>
+      <div class="timeline-card" *ngFor="let item of curent_data.timeline">
+        <div class="card-content">
+          <h4 class="year">
+            <svg
+              width="36"
+              height="31"
+              viewBox="0 0 36 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.33325 16.0001H4.66659M31.3333 16.0001H34.6666M2.99992 29.3501L3.01659 29.3318M7.99992 22.6835L8.01659 22.6651M12.9999 29.3501L13.0166 29.3318M22.9999 29.3501L23.0166 29.3318M27.9999 22.6835L28.0166 22.6651M32.9999 29.3501L33.0166 29.3318M18.6599 1.66012L23.8333 6.83345C24.9871 7.9872 25.7729 9.45721 26.0913 11.0576C26.4097 12.6579 26.2464 14.3168 25.622 15.8243C24.9976 17.3319 23.9402 18.6204 22.5835 19.5269C21.2267 20.4335 19.6316 20.9174 17.9999 20.9174C16.3682 20.9174 14.7731 20.4335 13.4164 19.5269C12.0597 18.6204 11.0022 17.3319 10.3778 15.8243C9.75343 14.3168 9.5901 12.6579 9.9085 11.0576C10.2269 9.45721 11.0127 7.9872 12.1666 6.83345L17.3399 1.66012C17.4266 1.57344 17.5295 1.50468 17.6427 1.45777C17.756 1.41086 17.8773 1.38672 17.9999 1.38672C18.1225 1.38672 18.2439 1.41086 18.3571 1.45777C18.4704 1.50468 18.5732 1.57344 18.6599 1.66012Z"
+                stroke="white"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            {{ item.year }}
+          </h4>
+          <p class="desc">{{ item.text }}</p>
+        </div>
+        <div class="circle-top"></div>
+        <div class="circle-bottom"></div>
+      </div>
     </div>
   </div>
 </div>

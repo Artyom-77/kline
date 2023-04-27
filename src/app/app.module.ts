@@ -20,6 +20,10 @@ import { ButtonComponent } from './components/button/button.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { BasestocksIntroductionOverviewComponent } from './components/basestocks-introduction-overview/basestocks-introduction-overview.component';
 import { SelectCountryPipe } from './pipes/select-country.pipe';
+import { BioTabsComponent } from './components/bio-tabs/bio-tabs.component';
+import { BioCompareCountriesComponent } from './components/bio-compare-countries/bio-compare-countries.component';
+import { ThreeItemsOnlyPipe } from './pipes/three-items-only.pipe';
+import { DxDataGridModule, DxCheckBoxModule } from 'devextreme-angular';
 // import { BioBasestocksComponent } from './pages/bio-basestocks/bio-basestocks.component'
 @NgModule({
   declarations: [
@@ -38,12 +42,17 @@ import { SelectCountryPipe } from './pipes/select-country.pipe';
     ModalComponent,
     BasestocksIntroductionOverviewComponent,
     SelectCountryPipe,
+    BioTabsComponent,
+    BioCompareCountriesComponent,
+    ThreeItemsOnlyPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DxToolbarModule,
     DxGalleryModule,
+    DxDataGridModule,
+    DxCheckBoxModule,
     FormsModule,
   ],
   providers: [],

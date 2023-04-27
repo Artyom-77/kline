@@ -26,12 +26,31 @@ export class LendingPageComponent implements OnInit {
     },
   ];
 
-
+  public showDownladedIcon: boolean = false
   slideshowDelay = 2000;
   public coveragesList: any[] = []
   constructor(public service: LandingServiceService) {
     this.coveragesList = service.coveragesList
   }
+  public downladsList: any[] = [
+    {
+      text: 'March 2023',
+      id: 1,
+      downladed: false
+    },
+    {
+      text: 'August 2022',
+      id: 2,
+      downladed: false
+
+    },
+    {
+      text: 'April 2022',
+      id: 3,
+      downladed: false
+    }
+
+  ]
 
   ngOnInit(): void {
   }
@@ -45,5 +64,32 @@ export class LendingPageComponent implements OnInit {
 
   valueChanged(e: any) {
     this.slideshowDelay = e.value ? 2000 : 0;
+  }
+  downloadNewsletter (id: number) {
+    console.log(id)
+    this.downladsList.find(item => {
+     if( item.id === id) {
+      item.downladed = true
+     }
+    })
+  }
+  public subscribeModalStep: number = 1;
+  public isModalVisible: boolean = false;
+  public emailVal: string = '';
+  openModal() {
+    this.isModalVisible = true;
+    document.querySelector('.kline-app')?.classList.add('fixed');
+  }
+  onCloseModal() {
+    this.isModalVisible = false;
+    document.querySelector('.kline-app')?.classList.remove('fixed');
+  }
+  goToSecondStep(): void {
+    if(this.emailVal === '' || !this.emailVal.includes('@') ) {
+      alert('Email field was requared!!!')
+    } else {
+      this.subscribeModalStep = 2
+    }
+
   }
 }

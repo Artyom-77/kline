@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { WebinarsService } from 'src/app/services/webinars/webinars.service';
 import { v4 as uuidv4 } from 'uuid';
@@ -43,7 +43,6 @@ export class WebinarsComponent implements OnInit {
 
   ngOnInit(): void {
     this.filteredWebinarsList = this.webinarsList;
-    console.log('this.webinarsList', this.webinarsList);
   }
 
   toggleDropdown() {
@@ -72,7 +71,6 @@ export class WebinarsComponent implements OnInit {
   onCloseModal() {
     this.isModalVisible = false;
     document.querySelector('.kline-app')?.classList.remove('fixed');
-    console.log('this.isModalVisible', this.isModalVisible);
   }
 
   toggleOption(option: string): void {
@@ -87,7 +85,6 @@ export class WebinarsComponent implements OnInit {
     } else {
       this.subscribeModalStep = 2
     }
-console.log('emailVal',this.emailVal);
 
   }
 
@@ -97,4 +94,55 @@ console.log('emailVal',this.emailVal);
     this.selectedIndustry = '';
     this.filteredWebinarsList = this.webinarsList;
   }
+
+  @ViewChild('content', { static: true }) contentRef?: ElementRef ;
+  @ViewChild('content1', { static: true }) contentRef1?: ElementRef ;
+  @ViewChild('content2', { static: true }) contentRef2?: ElementRef ;
+
+  scrollLeftPublished() {
+
+    this.contentRef?.nativeElement.scrollBy({
+      left: 586,
+      behavior: 'smooth'
+    });
+  }
+
+  scrollRightPublished() {
+
+    this.contentRef?.nativeElement.scrollBy({
+      left: -586,
+      behavior: 'smooth'
+    });
+  }
+
+  scrollLeftAnalysis() {
+
+    this.contentRef1?.nativeElement.scrollBy({
+      left: 586,
+      behavior: 'smooth'
+    });
+  }
+
+  scrollRightAnalysis() {
+    this.contentRef1?.nativeElement.scrollBy({
+      left: -586,
+      behavior: 'smooth'
+    });
+  }
+
+  scrollLeftOfferings() {
+
+    this.contentRef2?.nativeElement.scrollBy({
+      left: 586,
+      behavior: 'smooth'
+    });
+  }
+
+  scrollRightOfferings() {
+    this.contentRef2?.nativeElement.scrollBy({
+      left: -586,
+      behavior: 'smooth'
+    });
+  }
+
 }

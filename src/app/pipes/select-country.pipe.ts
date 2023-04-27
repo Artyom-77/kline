@@ -12,7 +12,6 @@ export class SelectCountryPipe implements PipeTransform {
     const filteredItems = items.filter(
       (item) => item.regions === selectedOption
     );
-    console.log('filteredItems', filteredItems);
 
     return filteredItems;
   }

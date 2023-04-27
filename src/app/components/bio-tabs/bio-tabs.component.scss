@@ -1,0 +1,22 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.tabs-content-wrapper {
+  .tabs-content-header {
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      padding: 10px 0 20px;
+      color: $gray;
+    }
+  }
+  .tabs-content-body {
+    max-width: 500px;
+    // margin: 0 auto;
+
+    .desc {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}
