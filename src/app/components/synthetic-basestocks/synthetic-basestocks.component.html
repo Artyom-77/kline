@@ -2,24 +2,215 @@
   <div class="synthetic-basestocks-header">
     <div class="synthetic-basestocks-header-desc">
       <p>
-        An interactive model to analyse lubricant basestock demand and supply trends based on demand growth, quality shifts, changes in blending approaches and changes to basestock supply including new capacity addition and anticipated closures.
-Provides a view of historical demand, supply and growth as well.
+        An interactive model to analyse lubricant basestock demand and supply
+        trends based on demand growth, quality shifts, changes in blending
+        approaches and changes to basestock supply including new capacity
+        addition and anticipated closures. Provides a view of historical demand,
+        supply and growth as well.
       </p>
     </div>
-    <h1 class="synthetic-basestocks-header-title">Synthetic Basestocks Deblend Model</h1>
+    <h1 class="synthetic-basestocks-header-title">
+      Synthetic Basestocks Deblend Model
+    </h1>
   </div>
-  <dx-pivot-grid
-  [allowSortingBySummary]="true"
-  [allowSorting]="true"
-  [allowFiltering]="true"
-  [allowExpandAll]="true"
-  [height]="570"
-  [showBorders]="true"
-  [dataSource]="dataSource"
->
-  <dxo-field-chooser [allowSearch]="true"></dxo-field-chooser>
-</dx-pivot-grid>
-  <div>
-    <iframe title="Deblen Dashboard v1.2" width="1200" height="690" src="https://app.powerbi.com/reportEmbed?reportId=6338e043-7ec2-49b7-810f-cc9332d1ba92&amp;autoAuth=true&amp;ctid=6614e0da-1c72-4a24-a4e9-96c46265649a" frameborder="0" allowfullscreen="true"></iframe>
+  <div class="synthetic-basestocks-filters">
+    <!-- <div class="filters">
+      <div
+        class="custom-dropdown date-dropdown"
+        outclick
+        (outclick)="onOutclickDate()"
+        (click)="toggleDateDropdown()"
+      >
+        <div class="dropdown-header">
+          <span>{{
+            selectedRegion !== "" ? selectedRegion : "Select Region"
+          }}</span>
+          <img
+            class="dropdown-icon"
+            [class.rotate]="isRegionOpen"
+            [class.defalut]="!isRegionOpen"
+            src="../../../assets/images/small-arrow.svg"
+            alt="arrow"
+          />
+        </div>
+        <div class="dropdown-list" *ngIf="isRegionOpen">
+          <div
+            class="dropdown-item"
+            *ngFor="let option of regionsList"
+            (click)="toggleDateOption(option)"
+          >
+            {{ option }}
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="custom-dropdown date-dropdown"
+        outclick
+        (outclick)="onOutclickCountry()"
+        (click)="toggleCountryDropdown()"
+      >
+        <div class="dropdown-header">
+          <span>{{
+            selectedCountry !== "" ? selectedCountry : "Select Country"
+          }}</span>
+          <img
+            class="dropdown-icon"
+            [class.rotate]="isCountryOpen"
+            [class.defalut]="!isCountryOpen"
+            src="../../../assets/images/small-arrow.svg"
+            alt="arrow"
+          />
+        </div>
+        <div class="dropdown-list" *ngIf="isCountryOpen">
+          <div
+            class="dropdown-item"
+            *ngFor="let option of contriesList | selectCountry : selectedRegion"
+            (click)="toggleCountryOption(option.name)"
+          >
+            {{ option.name }}
+          </div>
+        </div>
+      </div>
+
+
+    </div> -->
+    <app-button
+      [btnText]="'Demand'"
+      [type]="'secondary small'"
+      [icon]="false"
+      [iconName]="''"
+      (click)="selectedTab = 1"
+    ></app-button>
+    <app-button
+      [btnText]="'Consumption by synthetic Ester Type'"
+      [type]="'secondary small'"
+      [icon]="false"
+      [iconName]="''"
+      (click)="selectedTab = 2"
+    ></app-button>
+    <app-button
+      [btnText]="'Consumption by PAG Type'"
+      [type]="'secondary small'"
+      [icon]="false"
+      [iconName]="''"
+      (click)="selectedTab = 3"
+    ></app-button>
+    <app-button
+      [btnText]="'Synthetic Basestock Demand Split by Application'"
+      [type]="'secondary small'"
+      [icon]="false"
+      [iconName]="''"
+      (click)="selectedTab = 4"
+    ></app-button>
+    <app-button
+      [btnText]="'Growth Rates for Synthetic Basestocks'"
+      [type]="'secondary small'"
+      [icon]="false"
+      [iconName]="''"
+      (click)="selectedTab = 5"
+    ></app-button>
+  </div>
+  <div class="synthetic-basestocks-body">
+    <div *ngIf="selectedTab === 1" class="synthetic-basestocks-body-pivot">
+      <dx-pivot-grid
+        [allowSortingBySummary]="true"
+        [allowSorting]="true"
+        [allowFiltering]="true"
+        [allowExpandAll]="true"
+        [showBorders]="true"
+        [dataSource]="dataSource"
+      >
+        <dxo-field-panel
+          [showDataFields]="false"
+          [showRowFields]="showRowFields"
+          [showColumnFields]="false"
+          [showFilterFields]="false"
+          [allowFieldDragging]="false"
+          [visible]="true"
+        >
+        </dxo-field-panel>
+      </dx-pivot-grid>
+    </div>
+    <div *ngIf="selectedTab === 2" class="synthetic-basestocks-body-pivot">
+      <dx-pivot-grid
+        [allowSortingBySummary]="true"
+        [allowSorting]="true"
+        [allowFiltering]="true"
+        [allowExpandAll]="true"
+        [showBorders]="true"
+        [dataSource]="dataSource"
+      >
+        <dxo-field-panel
+          [showDataFields]="false"
+          [showRowFields]="showRowFields"
+          [showColumnFields]="false"
+          [showFilterFields]="false"
+          [allowFieldDragging]="false"
+          [visible]="true"
+        >
+        </dxo-field-panel>
+      </dx-pivot-grid>
+    </div>
+    <div *ngIf="selectedTab === 3" class="synthetic-basestocks-body-pivot">
+      <dx-pivot-grid
+        [allowSortingBySummary]="true"
+        [allowSorting]="true"
+        [allowFiltering]="true"
+        [allowExpandAll]="true"
+        [showBorders]="true"
+        [dataSource]="dataSource"
+      >
+        <dxo-field-panel
+          [showDataFields]="false"
+          [showRowFields]="showRowFields"
+          [showColumnFields]="false"
+          [showFilterFields]="false"
+          [allowFieldDragging]="false"
+          [visible]="true"
+        >
+        </dxo-field-panel>
+      </dx-pivot-grid>
+    </div>
+    <div *ngIf="selectedTab === 4" class="synthetic-basestocks-body-pivot">
+      <dx-pivot-grid
+        [allowSortingBySummary]="true"
+        [allowSorting]="true"
+        [allowFiltering]="true"
+        [allowExpandAll]="true"
+        [showBorders]="true"
+        [dataSource]="dataSource"
+      >
+        <dxo-field-panel
+          [showDataFields]="false"
+          [showRowFields]="showRowFields"
+          [showColumnFields]="false"
+          [showFilterFields]="false"
+          [allowFieldDragging]="false"
+          [visible]="true"
+        >
+        </dxo-field-panel>
+      </dx-pivot-grid>
+    </div>
+    <div *ngIf="selectedTab === 5" class="synthetic-basestocks-body-pivot">
+      <dx-pivot-grid
+        [allowSortingBySummary]="true"
+        [allowSorting]="true"
+        [allowFiltering]="true"
+        [allowExpandAll]="true"
+        [showBorders]="true"
+        [dataSource]="dataSource"
+      >
+        <dxo-field-panel
+          [showDataFields]="false"
+          [showRowFields]="showRowFields"
+          [showColumnFields]="false"
+          [showFilterFields]="false"
+          [allowFieldDragging]="false"
+          [visible]="true"
+        >
+        </dxo-field-panel>
+      </dx-pivot-grid>
+    </div>
   </div>
 </div>

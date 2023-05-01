@@ -25,7 +25,9 @@ import { BioCompareCountriesComponent } from './components/bio-compare-countries
 import { ThreeItemsOnlyPipe } from './pipes/three-items-only.pipe';
 import { DxDataGridModule, DxCheckBoxModule } from 'devextreme-angular';
 import { SyntheticBasestocksComponent } from './components/synthetic-basestocks/synthetic-basestocks.component';
-// import { BioBasestocksComponent } from './pages/bio-basestocks/bio-basestocks.component'
+import { HttpClientModule } from '@angular/common/http';
+import { SynteticTabsComponent } from './components/syntetic-tabs/syntetic-tabs.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +48,8 @@ import { SyntheticBasestocksComponent } from './components/synthetic-basestocks/
     BioTabsComponent,
     BioCompareCountriesComponent,
     ThreeItemsOnlyPipe,
-    SyntheticBasestocksComponent
+    SyntheticBasestocksComponent,
+    SynteticTabsComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,6 +60,7 @@ import { SyntheticBasestocksComponent } from './components/synthetic-basestocks/
     DxDataGridModule,
     DxCheckBoxModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

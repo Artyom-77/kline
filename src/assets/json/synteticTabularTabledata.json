@@ -1,0 +1,6402 @@
+[
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 15.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 100
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 12.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 2.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 80.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 18.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-16",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 308
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 100
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 245.6
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 43.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 2.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0.6
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 84
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 15
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 40.4
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 100
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 31.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 6.4
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.3
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 82.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 16.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 8.7
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 100
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 6.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 1.4
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 82.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 16.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 56.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 119.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 243
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 28.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 58
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 125.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 8.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 3.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 91.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 6.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 2.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0.6
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 298.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 406.3
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 174.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 46.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 19.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 370.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 22.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 8.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 2.3
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 91.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 5.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0.6
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 8.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 87.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 4.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 7.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0.4
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 92.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 1.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 100
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "5W-50",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 137.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 27.6
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 27.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 14.3
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 14.4
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 28.7
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.3
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 98.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 1.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 27.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 2.7
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 6.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 8.6
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 2.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 98.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 1.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 15.7
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0.3
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 1.7
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 100
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 537.3
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 937.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 448.4
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 49
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 23
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 831.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 85.6
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 14.7
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 3.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "PCMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 24.3
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 26.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 45
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 13.6
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 18.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 1.4
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 3.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 2.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 71.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 5.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 15
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "2T/4T",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 96
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 71.9
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 9.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 40.4
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 5.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 65.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 3.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.7
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 94
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "ATF",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 13.3
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 6.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 33.6
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 4
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 1.5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 62
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 24
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 12
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 7.4
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 1.2
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0.7
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 12.4
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 7.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 75
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 10
+  },
+  {
+    "Segment": "CONSUMER AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 10
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 90
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-20",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 10
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 4
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 100
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 1.3
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 2.3
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 35
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 60
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 11.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 100
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 3.7
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 6.4
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 35
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 60
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "0W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 7.7
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 66.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 7.7
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 81.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 9.4
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 54.7
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 5.7
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 3.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 86
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 9
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 1.5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 22.5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 93.9
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 18.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 2.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 1.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 85
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 10
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "5W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 140.9
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 16.6
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 72.7
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 7.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 31.6
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 20.7
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 1.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 1.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 90
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-30",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 22.7
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 0.9
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 2.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 3.5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 8.3
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 1.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "10W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 100
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 849.3
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 46.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 67.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 4.8
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 7
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 50.6
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "15W-40",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 100
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 29.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO",
+    "ViscosityGrade": "All other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 100
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 1051.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 167.6
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 149.6
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 12
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 11
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 150.3
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 6.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "HDMO Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 381.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 56.4
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 40.5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 11.8
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 8.5
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 51.3
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 5.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 1.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 89
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 9
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Hydraulic and Transmission fluid",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 72.3
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 10.9
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 1.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 12.9
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 1.3
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 7.3
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 1.3
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 10
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 70
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 12
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 8
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 49.3
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 8
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 3.8
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 13.1
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 6.2
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 4.6
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 1.4
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.9
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 60
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 18
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 10
+  },
+  {
+    "Segment": "COMMERCIAL AUTOMOTIVE",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 12
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 544.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 127.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 19
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 52.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 8.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 24.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 1.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 13.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 20.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 43.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 7.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 20.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 11
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Hydraulic Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 17
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 31.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 31.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 3.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 48
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 4.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 3.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 6.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 5.7
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 3.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 11.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 10.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 20.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 18.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 10.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Compressor Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 37.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 17.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 28.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 61.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 2.7
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 4.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 15
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 4.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 10
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 16
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 55
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Refrigeration Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 18
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 136.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 31.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 18.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 9.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 3.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 1.7
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 2.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 12.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 31.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 13
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 5.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Turbine & circulating Oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 41.7
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 169.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 36.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 17.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 8.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 10.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 6.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 5.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 26
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 32
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 20
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 18
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Gear Oil",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 27.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 3.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 37
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 30
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 0.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 11
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "General Industrial Oils",
+    "ViscosityGrade": "Other general industrial oils",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 21.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 926.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 257.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 3.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 22
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 74.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 32.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 43.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 15.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 52.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 16.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " General Industrial Oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 208.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 10.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 6.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 4.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 3.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 6.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 2.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 70
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 22
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Marine EO",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 106
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 5.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 3.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 4.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 3.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 3.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 76
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 19
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Railroad EO",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 5.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 0.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 4.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 3.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 20
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 75
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Aviation piston",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 252
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 12.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 8.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 4.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 3.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 8.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 1.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 1.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 70
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 12
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Natural gas EO",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 13
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 46.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 2.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 1.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 4.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 3.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 1.7
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 20
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils",
+    "ViscosityGrade": "Other",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 75
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 618.7
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 30.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 20.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 19.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 5.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 1.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Industrial engine oils Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 3.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 169.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 36.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 61.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 13.7
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 23
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 7
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 2.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 76.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Removal Fluids",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 22.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 120.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 54
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 48
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 24.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 21.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 5.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 1.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 2.3
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 76.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Forming Fluids",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 20.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 47.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 11.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 19.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 80
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Protecting Fluids",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 20
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 44.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 2.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 5.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 0.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 0.8
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAG",
+    "SumofValues": 30
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 25
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Metalworking Fluids",
+    "ViscosityGrade": "Treating Fluids",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 45
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 381.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 104.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 109.6
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 18
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 18
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 0.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 13
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": " Metalworking Fluids Total",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 4.4
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Mineral",
+    "SumofValues": 92.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Synthetic",
+    "SumofValues": 12.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Lubricant Demand (KT)",
+    "BSType": "Semi-syn",
+    "SumofValues": 6.1
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Synthetic",
+    "SumofValues": 10.9
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Share in total demand (%)",
+    "BSType": "Semi-syn",
+    "SumofValues": 5.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 3.5
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAO",
+    "SumofValues": 3.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PAG",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "PIB",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Phosphate esters",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Alkylated Aromatics",
+    "SumofValues": 0
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Consumption of synthetic basestock (KT)",
+    "BSType": "Other",
+    "SumofValues": 1.2
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Group III / Group III+",
+    "SumofValues": 30
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PAO",
+    "SumofValues": 28
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "PIB",
+    "SumofValues": 15
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Synthetic esters",
+    "SumofValues": 17
+  },
+  {
+    "Segment": "INDUSTRIAL OILS AND FLUIDS",
+    "Sector": "Grease",
+    "mainColumn": "Share of basestock in total synthetic basestock demand (%)",
+    "BSType": "Other",
+    "SumofValues": 10
+  }
+]
