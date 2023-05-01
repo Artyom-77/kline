@@ -63,7 +63,7 @@
         <div class="dropdown-list" *ngIf="isCountryOpen">
           <div
             class="dropdown-item"
-            *ngFor="let option of contriesList"
+            *ngFor="let option of list"
             (click)="toggleCountryOption(option.name)"
           >
             <input
@@ -92,46 +92,36 @@
       </div> -->
     </div>
   </div>
-  <dx-data-grid
-  *ngIf="selectedCountry.length === 4"
-  id="gridContainer"
-  [dataSource]="contriesList"
-  [showColumnLines]="true"
-  [showRowLines]="true"
-  [showBorders]="true"
-  [rowAlternationEnabled]="true"
->
-  <dxi-column dataField="regions" [width]="80" caption="Title"></dxi-column>
-  <dxi-column dataField="name"></dxi-column>
-  <dxi-column dataField="timePeriods.text"></dxi-column>
-  <!-- <dxi-column dataField="City"></dxi-column>
-  <dxi-column dataField="State"></dxi-column>
-  <dxi-column dataField="Position" [width]="130"></dxi-column>
-  <dxi-column dataField="BirthDate" [width]="100" dataType="date"></dxi-column>
-  <dxi-column dataField="HireDate" [width]="100" dataType="date"></dxi-column> -->
-</dx-data-grid>
-
-<!-- <div class="options">
-  <div class="caption">Options</div>
-  <div class="option">
-    <dx-check-box text="Show Column Lines" [(value)]="grid.showColumnLines">
-    </dx-check-box>
-  </div>
-  <div class="option">
-    <dx-check-box text="Show Row Lines" [(value)]="grid.showRowLines">
-    </dx-check-box>
-  </div>
-  <div class="option">
-    <dx-check-box text="Show Borders" [(value)]="grid.showBorders">
-    </dx-check-box>
-  </div>
-  <div class="option">
-    <dx-check-box
-      text="Alternating Row Color"
-      [(value)]="grid.rowAlternationEnabled"
+  <div class="bio-compare-body">
+    <div class="bio-compare-body-criterias-table">
+      <dx-data-grid
+      id="gridContainer"
+      *ngIf="selectedCountry.length === 4"
+      [dataSource]="curent_data_times"
+      [showColumnLines]="true"
+      [showRowLines]="true"
+      [showBorders]="true"
+      [rowAlternationEnabled]="true"
     >
-    </dx-check-box>
+    </dx-data-grid>
+    </div>
+    <div class="bio-compare-body-timeperiod-table">
+      <h3 class="bio-compare-body-timeperiod-table-title"  *ngIf="selectedCountry.length === 4">
+        TIMELINE- Bio-lubricants Policy Changes in Selected Countries
+      </h3>
+      <dx-data-grid
+      cssClass="custom-column"
+      id="gridContainer1"
+      height="auto"
+      *ngIf="selectedCountry.length === 4"
+      [dataSource]="curent_data"
+      [showColumnLines]="true"
+      [showRowLines]="true"
+      [showBorders]="true"
+      [rowAlternationEnabled]="false"
+      >
+      </dx-data-grid>
+    </div>
   </div>
-</div> -->
 
 </div>
