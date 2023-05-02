@@ -25,6 +25,33 @@
         </div>
       </div>
     </div>
+
+    <div
+      class="custom-dropdown date-dropdown"
+      (click)="toggleSectorDropdown()"
+      style="width: 100%"
+    >
+      <div class="dropdown-header">
+        <span>{{ selectedSector }}</span>
+        <img
+          class="dropdown-icon"
+          [class.rotate]="isSectorDropdownOpen"
+          [class.defalut]="!isSectorDropdownOpen"
+          src="../../../assets/images/small-arrow.svg"
+          alt="arrow"
+        />
+      </div>
+      <div class="dropdown-list" *ngIf="isSectorDropdownOpen">
+        <div
+          class="dropdown-item"
+          *ngFor="let option of sectorList"
+          (click)="toggleSectorOption(option)"
+        >
+          {{ option }}
+        </div>
+      </div>
+    </div>
+
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleYearDropdown()"
@@ -41,11 +68,7 @@
         />
       </div>
       <div class="dropdown-list" *ngIf="isYearDropdownOpen">
-        <div
-          class="dropdown-item"
-          *ngFor="let option of yearList"
-          (click)="toggleYearOption(option)"
-        >
+        <div class="dropdown-item" *ngFor="let option of combinedYearList">
           {{ option }}
         </div>
       </div>
@@ -53,7 +76,7 @@
   </div>
   <dx-chart
     id="chart"
-    title="Share of Synthetic Basestock by Segment (KT)"
+    title="Growth Rates (%CAGR)"
     [dataSource]="segmentChartData"
     [rotated]="false"
   >
@@ -64,6 +87,7 @@
       argumentField="BSType"
       valueField="SumofValues"
     >
+      <!-- <dxo-label [visible]="true" format="percent"></dxo-label> -->
     </dxi-series>
     <dxo-legend [visible]="false"></dxo-legend>
   </dx-chart>

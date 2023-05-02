@@ -2,24 +2,24 @@
   <div class="filters">
     <div
       class="custom-dropdown date-dropdown"
-      (click)="toggleSegmentDropdown()"
+      (click)="toggleBSTypeDropdown()"
       style="width: 100%"
     >
       <div class="dropdown-header">
-        <span>{{ selectedSegment }}</span>
+        <span>{{ selectedBSType }}</span>
         <img
           class="dropdown-icon"
-          [class.rotate]="isSegmentDropdownOpen"
-          [class.defalut]="!isSegmentDropdownOpen"
+          [class.rotate]="isBSTypeDropdownOpen"
+          [class.defalut]="!isBSTypeDropdownOpen"
           src="../../../assets/images/small-arrow.svg"
           alt="arrow"
         />
       </div>
-      <div class="dropdown-list" *ngIf="isSegmentDropdownOpen">
+      <div class="dropdown-list" *ngIf="isBSTypeDropdownOpen">
         <div
           class="dropdown-item"
-          *ngFor="let option of segmentList"
-          (click)="toggleSegmentOption(option)"
+          *ngFor="let option of BSTypeList"
+          (click)="toggleBSTypeOption(option)"
         >
           {{ option }}
         </div>
@@ -51,20 +51,21 @@
       </div>
     </div>
   </div>
-  <dx-chart
-    id="chart"
-    title="Share of Synthetic Basestock by Segment (KT)"
-    [dataSource]="segmentChartData"
-    [rotated]="false"
+  <dx-pie-chart
+    id="pie"
+    title="Share of Synthetic Basestock by Product (KT)"
+    palette="bright"
+    [dataSource]="viscosityGradeChartData"
   >
-    <dxi-series
-      color="#79cac4"
-      type="bar"
-      width="50"
-      argumentField="BSType"
-      valueField="SumofValues"
-    >
+    <dxi-series argumentField="ViscosityGrade" valueField="SumofValues">
+      <dxo-label [visible]="true" [customizeText]="customizeLabel"></dxo-label>
     </dxi-series>
-    <dxo-legend [visible]="false"></dxo-legend>
-  </dx-chart>
+    <dxo-size [width]="500"></dxo-size>
+    <dxo-legend
+      verticalAlignment="bottom"
+      horizontalAlignment="center"
+      itemTextPosition="right"
+    >
+    </dxo-legend>
+  </dx-pie-chart>
 </div>
