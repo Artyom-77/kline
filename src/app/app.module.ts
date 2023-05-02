@@ -32,6 +32,7 @@ import { ChartBySegmentComponent } from './components/charts/chart-by-segment/ch
 import { ChartGrowthRatesComponent } from './components/charts/chart-growth-rates/chart-growth-rates.component';
 import { PieChartByProductComponent } from './components/charts/pie-chart-by-product/pie-chart-by-product.component';
 import { PieChartSplitByViscosityGradeComponent } from './components/charts/pie-chart-split-by-viscosity-grade/pie-chart-split-by-viscosity-grade.component';
+import { RrboComponent } from './components/rrbo/rrbo.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { PieChartSplitByViscosityGradeComponent } from './components/charts/pie-
     ChartGrowthRatesComponent,
     PieChartByProductComponent,
     PieChartSplitByViscosityGradeComponent,
+    RrboComponent,
   ],
   imports: [
     BrowserModule,

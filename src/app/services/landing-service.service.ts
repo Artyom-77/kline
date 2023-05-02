@@ -70,7 +70,7 @@ export class LandingServiceService {
         },
         {
           itemId: this.uniqueId,
-          path: '/capacity-map',
+          path: '/rrbo',
           name: 'RRBO—Regulations, Capacity Map, and Material Balance'
         },
         {
