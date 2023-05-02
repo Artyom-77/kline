@@ -28,6 +28,7 @@ import { SyntheticBasestocksComponent } from './components/synthetic-basestocks/
 import { HttpClientModule } from '@angular/common/http';
 import { SynteticTabsComponent } from './components/syntetic-tabs/syntetic-tabs.component';
 import { SyntheticChartViewComponent } from './components/synthetic-chart-view/synthetic-chart-view.component';
+import { ChartBySegmentComponent } from './components/charts/chart-by-segment/chart-by-segment.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { SyntheticChartViewComponent } from './components/synthetic-chart-view/s
     SyntheticBasestocksComponent,
     SynteticTabsComponent,
     SyntheticChartViewComponent,
+    ChartBySegmentComponent,
   ],
   imports: [
     BrowserModule,
