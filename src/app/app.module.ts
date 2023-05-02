@@ -29,6 +29,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { SynteticTabsComponent } from './components/syntetic-tabs/syntetic-tabs.component';
 import { SyntheticChartViewComponent } from './components/synthetic-chart-view/synthetic-chart-view.component';
 import { ChartBySegmentComponent } from './components/charts/chart-by-segment/chart-by-segment.component';
+import { ChartGrowthRatesComponent } from './components/charts/chart-growth-rates/chart-growth-rates.component';
+import { PieChartByProductComponent } from './components/charts/pie-chart-by-product/pie-chart-by-product.component';
+import { PieChartSplitByViscosityGradeComponent } from './components/charts/pie-chart-split-by-viscosity-grade/pie-chart-split-by-viscosity-grade.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +57,9 @@ import { ChartBySegmentComponent } from './components/charts/chart-by-segment/ch
     SynteticTabsComponent,
     SyntheticChartViewComponent,
     ChartBySegmentComponent,
+    ChartGrowthRatesComponent,
+    PieChartByProductComponent,
+    PieChartSplitByViscosityGradeComponent,
   ],
   imports: [
     BrowserModule,
