@@ -860,7 +860,7 @@ export class BioCompareService {
 
   public criterias: any[] = [
     {
-      Criterias: 'Regulation',
+      Criteria: 'Regulation',
       Australia:
         'Australia Regulation Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus, odio asperiores iusto porro aliquam aliquid.',
       Canada:
@@ -885,7 +885,7 @@ export class BioCompareService {
       USA: 'USA Regulation Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus, odio asperiores iusto porro aliquam aliquid.',
     },
     {
-      Criterias: 'Certification',
+      Criteria: 'Certification',
       Australia:
         'Australia Certification Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus, odio asperiores iusto porro aliquam aliquid.',
       Canada:
@@ -910,7 +910,7 @@ export class BioCompareService {
       USA: 'USA Certification Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus, odio asperiores iusto porro aliquam aliquid.',
     },
     {
-      Criterias: 'Other',
+      Criteria: 'Other',
       Australia:
         'Australia Other Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus, odio asperiores iusto porro aliquam aliquid.',
       Canada:
@@ -935,7 +935,7 @@ export class BioCompareService {
       USA: 'USA Other Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus, odio asperiores iusto porro aliquam aliquid.',
     },
     {
-      Criterias: 'BioLubricantsDemand',
+      Criteria: 'BioLubricantsDemand',
       Australia:
         'Australia BioLubricantsDemand Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus, odio asperiores iusto porro aliquam aliquid.',
       Canada:
@@ -960,7 +960,7 @@ export class BioCompareService {
       USA: 'USA BioLubricantsDemand Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus, odio asperiores iusto porro aliquam aliquid.',
     },
     {
-      Criterias: 'OtherRemarks',
+      Criteria: 'OtherRemarks',
       Australia:
         'Australia OtherRemarks Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus, odio asperiores iusto porro aliquam aliquid.',
       Canada:

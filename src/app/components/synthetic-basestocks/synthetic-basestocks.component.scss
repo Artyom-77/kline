@@ -1,3 +1,6 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/_mixins.scss";
+
 .synthetic-basestocks {
   min-height: calc(100vh - 135px);
   padding-top: 69px;
@@ -41,20 +44,20 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    max-width: 1230px;
+    max-width: 1440px;
     padding: 0 20px;
     margin: 24px auto;
   }
   &-body {
     &-filters {
-      padding: 40px 0 20px;
+      padding: 40px 20px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 1210px;
+      max-width: 1440px;
       margin: 0 auto;
     }
-    max-width: 1230px;
+    max-width: 1440px;
     padding: 0 20px;
     margin: 0 auto;
     &-pivot {
@@ -65,38 +68,26 @@
     .dx-pivotgrid-toolbar {
       display: none !important;
     }
-    // .dx-pivotgrid {
-    //   table {
-    //     width: 200px !important;
-    //   }
-    //   .dx-area-description-cell {
-    //     .dx-pivotgrid-fields-area {
-    //       // display: grid !important;
-    //       // grid-template-columns: 1fr;
-    //       // align-items: flex-start !important;
-    //       height: 100% !important;
-    //       .dx-area-field-container {
-    //         width: 200px !important;
-    //         .dx-pivotgrid-fields-area-head {
-    //           tr {
-    //             display: grid;
-    //             grid-template-columns: 1fr;
-    //             justify-items: center;
-    //             justify-content: center;
-    //             grid-gap: 8px;
-    //             > td {
-    //               width: 150px;
-    //               // padding-left: 0;
-    //               padding: 0;
-    //             }
-    //           }
-    //         }
-    //         // position: absolute;
-    //         // top: -210px;
-    //         // left: 0;
-    //       }
-    //     }
-    //   }
-    // }
+    .dx-expand {
+      color: $orange !important;
+    }
+    .dx-area-box {
+      background-color: $teal;
+      color: $white;
+      font-weight: 500;
+      .dx-sort {
+        color: $white !important;
+      }
+      .dx-header-filter-empty {
+        color: $white !important;
+      }
+    }
+    .dx-scrollable-content {
+      td {
+        &:hover {
+          background-color: #00808378;
+        }
+      }
+    }
   }
 }
