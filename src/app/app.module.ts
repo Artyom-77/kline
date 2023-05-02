@@ -23,10 +23,11 @@ import { SelectCountryPipe } from './pipes/select-country.pipe';
 import { BioTabsComponent } from './components/bio-tabs/bio-tabs.component';
 import { BioCompareCountriesComponent } from './components/bio-compare-countries/bio-compare-countries.component';
 import { ThreeItemsOnlyPipe } from './pipes/three-items-only.pipe';
-import { DxDataGridModule, DxCheckBoxModule } from 'devextreme-angular';
+import { DxDataGridModule, DxCheckBoxModule, DxPieChartModule, DxChartModule } from 'devextreme-angular';
 import { SyntheticBasestocksComponent } from './components/synthetic-basestocks/synthetic-basestocks.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SynteticTabsComponent } from './components/syntetic-tabs/syntetic-tabs.component';
+import { SyntheticChartViewComponent } from './components/synthetic-chart-view/synthetic-chart-view.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { SynteticTabsComponent } from './components/syntetic-tabs/syntetic-tabs.
     ThreeItemsOnlyPipe,
     SyntheticBasestocksComponent,
     SynteticTabsComponent,
+    SyntheticChartViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +63,8 @@ import { SynteticTabsComponent } from './components/syntetic-tabs/syntetic-tabs.
     DxCheckBoxModule,
     FormsModule,
     HttpClientModule,
+    DxPieChartModule,
+    DxChartModule
   ],
   providers: [],
   bootstrap: [AppComponent],

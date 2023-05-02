@@ -13,105 +13,60 @@
       Synthetic Basestocks Deblend Model
     </h1>
   </div>
-  <div class="synthetic-basestocks-filters">
-    <!-- <div class="filters">
-      <div
-        class="custom-dropdown date-dropdown"
-        outclick
-        (outclick)="onOutclickDate()"
-        (click)="toggleDateDropdown()"
-      >
-        <div class="dropdown-header">
-          <span>{{
-            selectedRegion !== "" ? selectedRegion : "Select Region"
-          }}</span>
-          <img
-            class="dropdown-icon"
-            [class.rotate]="isRegionOpen"
-            [class.defalut]="!isRegionOpen"
-            src="../../../assets/images/small-arrow.svg"
-            alt="arrow"
-          />
-        </div>
-        <div class="dropdown-list" *ngIf="isRegionOpen">
-          <div
-            class="dropdown-item"
-            *ngFor="let option of regionsList"
-            (click)="toggleDateOption(option)"
-          >
-            {{ option }}
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="custom-dropdown date-dropdown"
-        outclick
-        (outclick)="onOutclickCountry()"
-        (click)="toggleCountryDropdown()"
-      >
-        <div class="dropdown-header">
-          <span>{{
-            selectedCountry !== "" ? selectedCountry : "Select Country"
-          }}</span>
-          <img
-            class="dropdown-icon"
-            [class.rotate]="isCountryOpen"
-            [class.defalut]="!isCountryOpen"
-            src="../../../assets/images/small-arrow.svg"
-            alt="arrow"
-          />
-        </div>
-        <div class="dropdown-list" *ngIf="isCountryOpen">
-          <div
-            class="dropdown-item"
-            *ngFor="let option of contriesList | selectCountry : selectedRegion"
-            (click)="toggleCountryOption(option.name)"
-          >
-            {{ option.name }}
-          </div>
-        </div>
-      </div>
-
-
-    </div> -->
+  <div class="synthetic-basestocks-tabs">
     <app-button
-      [btnText]="'Demand'"
-      [type]="'secondary small'"
-      [icon]="false"
-      [iconName]="''"
-      (click)="selectedTab = 1"
-    ></app-button>
-    <app-button
-      [btnText]="'Consumption by synthetic Ester Type'"
-      [type]="'secondary small'"
-      [icon]="false"
-      [iconName]="''"
-      (click)="selectedTab = 2"
-    ></app-button>
-    <app-button
-      [btnText]="'Consumption by PAG Type'"
-      [type]="'secondary small'"
-      [icon]="false"
-      [iconName]="''"
-      (click)="selectedTab = 3"
-    ></app-button>
-    <app-button
-      [btnText]="'Synthetic Basestock Demand Split by Application'"
-      [type]="'secondary small'"
-      [icon]="false"
-      [iconName]="''"
-      (click)="selectedTab = 4"
-    ></app-button>
-    <app-button
-      [btnText]="'Growth Rates for Synthetic Basestocks'"
-      [type]="'secondary small'"
-      [icon]="false"
-      [iconName]="''"
-      (click)="selectedTab = 5"
-    ></app-button>
+    [btnText]="'Tabular View'"
+    [type]="'secondary'"
+    [icon]="false"
+    [iconName]="''"
+    (click)="selectedMainTab = 1"
+  ></app-button>
+  <app-button
+    [btnText]="'Chart View'"
+    [type]="'secondary'"
+    [icon]="false"
+    [iconName]="''"
+    (click)="selectedMainTab = 2"
+  ></app-button>
   </div>
-  <div class="synthetic-basestocks-body">
+  <div *ngIf="selectedMainTab === 1" class="synthetic-basestocks-body">
+    <div class="synthetic-basestocks-body-filters">
+      <app-button
+        [btnText]="'Demand'"
+        [type]="'secondary small'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedTab = 1"
+      ></app-button>
+      <app-button
+        [btnText]="'Consumption by synthetic Ester Type'"
+        [type]="'secondary small'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedTab = 2"
+      ></app-button>
+      <app-button
+        [btnText]="'Consumption by PAG Type'"
+        [type]="'secondary small'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedTab = 3"
+      ></app-button>
+      <app-button
+        [btnText]="'Synthetic Basestock Demand Split by Application'"
+        [type]="'secondary small'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedTab = 4"
+      ></app-button>
+      <app-button
+        [btnText]="'Growth Rates for Synthetic Basestocks'"
+        [type]="'secondary small'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedTab = 5"
+      ></app-button>
+    </div>
     <div *ngIf="selectedTab === 1" class="synthetic-basestocks-body-pivot">
       <dx-pivot-grid
         [allowSortingBySummary]="true"
@@ -125,7 +80,7 @@
           [showDataFields]="false"
           [showRowFields]="showRowFields"
           [showColumnFields]="false"
-          [showFilterFields]="false"
+          [showFilterFields]="true"
           [allowFieldDragging]="false"
           [visible]="true"
         >
@@ -145,7 +100,7 @@
           [showDataFields]="false"
           [showRowFields]="showRowFields"
           [showColumnFields]="false"
-          [showFilterFields]="false"
+          [showFilterFields]="true"
           [allowFieldDragging]="false"
           [visible]="true"
         >
@@ -165,7 +120,7 @@
           [showDataFields]="false"
           [showRowFields]="showRowFields"
           [showColumnFields]="false"
-          [showFilterFields]="false"
+          [showFilterFields]="true"
           [allowFieldDragging]="false"
           [visible]="true"
         >
@@ -185,7 +140,7 @@
           [showDataFields]="false"
           [showRowFields]="showRowFields"
           [showColumnFields]="false"
-          [showFilterFields]="false"
+          [showFilterFields]="true"
           [allowFieldDragging]="false"
           [visible]="true"
         >
@@ -205,7 +160,7 @@
           [showDataFields]="false"
           [showRowFields]="showRowFields"
           [showColumnFields]="false"
-          [showFilterFields]="false"
+          [showFilterFields]="true"
           [allowFieldDragging]="false"
           [visible]="true"
         >
@@ -213,4 +168,8 @@
       </dx-pivot-grid>
     </div>
   </div>
+  <div *ngIf="selectedMainTab === 2" class="synthetic-basestocks-body">
+    <app-synthetic-chart-view [chartData]="dataSource.store"></app-synthetic-chart-view>
+  </div>
+
 </div>

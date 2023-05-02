@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 // @import "../node_modules/devextreme/dist/css/dx.common.css";
 // @import "../node_modules/devextreme/dist/css/dx.light.css";
-@import "../node_modules/devextreme/dist/css/dx.material.teal.light.compact.css";
 
 @import "./assets/scss/fonts.scss";
 @import "./assets/scss/variables.scss";
 @import "./assets/scss/_mixins.scss";
+@import "../node_modules/devextreme/dist/css/dx.material.teal.light.compact.css";
 * {
   margin: 0;
   padding: 0;
@@ -40,4 +40,67 @@ body {
       fill: white !important;
     }
   }
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  &.date-dropdown {
+    width: 200px;
+  }
+}
+
+.dropdown-header {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 300px;
+  white-space: unset;
+  // margin-right: 16px;
+  color: $gray;
+  border-bottom: 1px solid $orange;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-icon {
+  width: 12px;
+  position: absolute;
+  right: 8px;
+  top: 15px;
+  &.rotate {
+    transform: rotate(180deg);
+  }
+  // margin-left: 5px;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+  z-index: 12;
+  padding: 8px 0;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 300px;
+  white-space: unset;
+  color: $gray;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: $gray-light;
 }
