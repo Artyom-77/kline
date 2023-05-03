@@ -10,8 +10,11 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
   public viscosityGradeChartData: any[] = [];
 
   public isBSTypeDropdownOpen: boolean = false;
-  public selectedBSType?: string = 'PAO';
+  public isViscosityGradeDropdownOpen: boolean = false;
+  public selectedBSType?: string = 'PCMO';
+  public selectedViscosityGrade?: string = '0W-16';
   public BSTypeList: any[] = [];
+  public ViscosityGradeList: any[] = [];
 
   public isYearDropdownOpen: boolean = false;
   public selectedYear?: number = 2022;
@@ -19,8 +22,17 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
 
   ngOnInit(): void {
     this.chartData.map((data: any) => {
-      if (!this.BSTypeList.includes(data.BSType)) {
-        this.BSTypeList.push(data.BSType);
+      if (!this.BSTypeList.includes(data.Sector)) {
+        if(data.Sector === "PCMO" || data.Sector === "HDMO" ) {
+          this.BSTypeList.push(data.Sector);
+        }
+      }
+    });
+    this.chartData.map((data: any) => {
+      if (!this.ViscosityGradeList.includes(data.ViscosityGrade)) {
+        if(data.Sector === "PCMO" || data.Sector === "HDMO" ) {
+          this.ViscosityGradeList.push(data.ViscosityGrade);
+        }
       }
     });
     this.chartData.map((data: any) => {
@@ -30,7 +42,8 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
     });
     this.viscosityGradeChartData = this.chartData.filter(
       (item: any) =>
-        item.BSType == this.selectedBSType &&
+        item.Sector == this.selectedBSType &&
+        
         item.Year === this.selectedYear &&
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
@@ -40,16 +53,34 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
   toggleBSTypeDropdown() {
     this.isBSTypeDropdownOpen = !this.isBSTypeDropdownOpen;
   }
+  toggleViscosityGradeDropdown() {
+    this.isViscosityGradeDropdownOpen = !this.isViscosityGradeDropdownOpen;
+  }
 
   toggleBSTypeOption(option: string): void {
     this.selectedBSType = option;
     this.viscosityGradeChartData = this.chartData.filter(
       (item: any) =>
-        item.BSType == this.selectedBSType &&
+        item.Sector == this.selectedBSType &&
+        item.ViscosityGrade == this.selectedViscosityGrade &&
         item.Year === this.selectedYear &&
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
     );
+    console.log('this.viscosityGradeChartData',this.viscosityGradeChartData)
+  }
+
+  toggleViscosityGradeOption(option: string): void {
+    this.selectedViscosityGrade = option;
+    this.viscosityGradeChartData = this.chartData.filter(
+      (item: any) =>
+        item.Sector == this.selectedBSType &&
+        item.ViscosityGrade == this.selectedViscosityGrade &&
+        item.Year === this.selectedYear &&
+        item.mainColumn ===
+          'Share of basestock in total synthetic basestock demand (%)'
+    );
+    console.log('this.viscosityGradeChartData',this.viscosityGradeChartData)
   }
 
   toggleYearDropdown() {
@@ -60,13 +91,16 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
     this.selectedYear = option;
     this.viscosityGradeChartData = this.chartData.filter(
       (item: any) =>
-        item.Year == this.selectedYear &&
-        item.mainColumn ===
-          'Share of basestock in total synthetic basestock demand (%)'
+      item.Sector == this.selectedBSType &&
+      item.ViscosityGrade == this.selectedViscosityGrade &&
+      item.Year === this.selectedYear &&
+      item.mainColumn ===
+        'Share of basestock in total synthetic basestock demand (%)'
     );
   }
 
   customizeLabel(arg: any) {
+    console.log('arg', arg)
     return `${arg.percentText}`;
   }
 }
