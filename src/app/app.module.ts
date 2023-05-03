@@ -35,6 +35,7 @@ import { PieChartSplitByViscosityGradeComponent } from './components/charts/pie-
 import { RrboComponent } from './components/rrbo/rrbo.component';
 import { RegulationRrboComponent } from './components/regulation-rrbo/regulation-rrbo.component';
 import { SelectDropdownComponent } from './components/select-dropdown/select-dropdown.component';
+import { PieChartSplitByViscosityGradeSecondComponent } from './components/charts/pie-chart-split-by-viscosity-grade-second/pie-chart-split-by-viscosity-grade-second.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { SelectDropdownComponent } from './components/select-dropdown/select-dro
     RrboComponent,
     RegulationRrboComponent,
     SelectDropdownComponent,
+    PieChartSplitByViscosityGradeSecondComponent,
   ],
   imports: [
     BrowserModule,
