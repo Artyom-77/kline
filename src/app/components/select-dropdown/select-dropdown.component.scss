@@ -58,8 +58,7 @@
   white-space: unset;
   color: $gray;
   cursor: pointer;
-}
-
-.dropdown-item:hover {
-  background-color: $gray-light;
+  &:hover {
+    background-color: $gray-light;
+  }
 }

@@ -1,14 +1,22 @@
-<div class="regulations">
+<div class="regulations-table">
   <div class="regulations-filters">
-    <app-select-dropdown
-      [dropdownTitle]="'Region'"
-      [dropdownData]="dataD"
-      [dropdownDataKey]="'date'"
-    ></app-select-dropdown>
+  
     <app-select-dropdown
       [dropdownTitle]="'Country'"
-      [dropdownData]="dataD"
-      [dropdownDataKey]="''"
+      [dropdownData]="regions"
+      (itemEvent)="handleChange($event)"
     ></app-select-dropdown>
+  </div>
+  <div class="regulations-table">
+    <dx-data-grid
+    id="gridContainer"
+    [dataSource]="dataList"
+    [showColumnLines]="false"
+    [showRowLines]="false"
+    [showBorders]="false"
+    [rowAlternationEnabled]="true"
+  >
+ 
+  </dx-data-grid>
   </div>
 </div>

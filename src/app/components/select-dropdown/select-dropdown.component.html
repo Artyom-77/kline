@@ -1,7 +1,7 @@
 <div
   class="custom-dropdown"
   outclick
-  (outclick)="onOutclick()"
+  (outclick)="isDropdownOpen = false"
   (click)="toggleDropdown()"
 >
   <div class="dropdown-header">
@@ -17,31 +17,12 @@
     />
   </div>
   <div class="dropdown-list" *ngIf="isDropdownOpen">
-    <div class="dropdown-item" *ngIf="dropdownDataKey !== ''">
       <div
-        class="multiple"
+        class="dropdown-item"
         *ngFor="let item of dropdownData"
-        (click)="toggleMultipleOption(item.dropdownDataKey)"
+        (click)="toggleOption(item)"
       >
-        {{ item.dropdownDataKey }}
+        {{ item.label }}
       </div>
-    </div>
-    <div class="dropdown-item" *ngIf="dropdownDataKey === ''">
-      <div
-        class="single"
-        *ngFor="let item of dropdownData"
-        (click)="toggleMultipleOption(item)"
-      >
-        {{ item }}
-      </div>
-    </div>
-    <!-- <div
-      class="dropdown-item single"
-      *ngIf="dropdownDataKey === ''"
-      *ngFor="let option of dropdownData"
-      (click)="toggleOption(option)"
-    >
-      {{ option }}
-    </div> -->
   </div>
 </div>
