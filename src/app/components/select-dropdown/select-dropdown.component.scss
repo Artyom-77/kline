@@ -1,0 +1,65 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  &.date-dropdown {
+    width: 200px;
+  }
+}
+
+.dropdown-header {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 300px;
+  white-space: unset;
+  // margin-right: 16px;
+  color: $gray;
+  border-bottom: 1px solid $orange;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-icon {
+  width: 12px;
+  position: absolute;
+  right: 8px;
+  top: 15px;
+  &.rotate {
+    transform: rotate(180deg);
+  }
+  // margin-left: 5px;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+  z-index: 12;
+  padding: 8px 0;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 300px;
+  white-space: unset;
+  color: $gray;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: $gray-light;
+}

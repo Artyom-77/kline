@@ -1,0 +1,47 @@
+<div
+  class="custom-dropdown"
+  outclick
+  (outclick)="onOutclick()"
+  (click)="toggleDropdown()"
+>
+  <div class="dropdown-header">
+    <span>{{
+      selectedItem !== "" ? selectedItem : "Select " + dropdownTitle
+    }}</span>
+    <img
+      class="dropdown-icon"
+      [class.rotate]="isDropdownOpen"
+      [class.defalut]="!isDropdownOpen"
+      src="../../../assets/images/small-arrow.svg"
+      alt="arrow"
+    />
+  </div>
+  <div class="dropdown-list" *ngIf="isDropdownOpen">
+    <div class="dropdown-item" *ngIf="dropdownDataKey !== ''">
+      <div
+        class="multiple"
+        *ngFor="let item of dropdownData"
+        (click)="toggleMultipleOption(item.dropdownDataKey)"
+      >
+        {{ item.dropdownDataKey }}
+      </div>
+    </div>
+    <div class="dropdown-item" *ngIf="dropdownDataKey === ''">
+      <div
+        class="single"
+        *ngFor="let item of dropdownData"
+        (click)="toggleMultipleOption(item)"
+      >
+        {{ item }}
+      </div>
+    </div>
+    <!-- <div
+      class="dropdown-item single"
+      *ngIf="dropdownDataKey === ''"
+      *ngFor="let option of dropdownData"
+      (click)="toggleOption(option)"
+    >
+      {{ option }}
+    </div> -->
+  </div>
+</div>
