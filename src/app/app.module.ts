@@ -23,7 +23,13 @@ import { SelectCountryPipe } from './pipes/select-country.pipe';
 import { BioTabsComponent } from './components/bio-tabs/bio-tabs.component';
 import { BioCompareCountriesComponent } from './components/bio-compare-countries/bio-compare-countries.component';
 import { ThreeItemsOnlyPipe } from './pipes/three-items-only.pipe';
-import { DxDataGridModule, DxCheckBoxModule, DxPieChartModule, DxChartModule } from 'devextreme-angular';
+import {
+  DxDataGridModule,
+  DxCheckBoxModule,
+  DxPieChartModule,
+  DxChartModule,
+  DxMapModule,
+} from 'devextreme-angular';
 import { SyntheticBasestocksComponent } from './components/synthetic-basestocks/synthetic-basestocks.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SynteticTabsComponent } from './components/syntetic-tabs/syntetic-tabs.component';
@@ -36,6 +42,9 @@ import { RrboComponent } from './components/rrbo/rrbo.component';
 import { RegulationRrboComponent } from './components/regulation-rrbo/regulation-rrbo.component';
 import { SelectDropdownComponent } from './components/select-dropdown/select-dropdown.component';
 import { PieChartSplitByViscosityGradeSecondComponent } from './components/charts/pie-chart-split-by-viscosity-grade-second/pie-chart-split-by-viscosity-grade-second.component';
+import { RegulationSummaryTabComponent } from './components/regulation-summary-tab/regulation-summary-tab.component';
+import { RegulationUsedOilTabComponent } from './components/regulation-used-oil-tab/regulation-used-oil-tab.component';
+import { CapacityMapRrboComponent } from './components/capacity-map-rrbo/capacity-map-rrbo.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +77,9 @@ import { PieChartSplitByViscosityGradeSecondComponent } from './components/chart
     RegulationRrboComponent,
     SelectDropdownComponent,
     PieChartSplitByViscosityGradeSecondComponent,
+    RegulationSummaryTabComponent,
+    RegulationUsedOilTabComponent,
+    CapacityMapRrboComponent,
   ],
   imports: [
     BrowserModule,
@@ -80,7 +92,8 @@ import { PieChartSplitByViscosityGradeSecondComponent } from './components/chart
     FormsModule,
     HttpClientModule,
     DxPieChartModule,
-    DxChartModule
+    DxChartModule,
+    DxMapModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

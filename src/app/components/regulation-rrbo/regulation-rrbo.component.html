@@ -1,22 +1,45 @@
 <div class="regulations-table">
   <div class="regulations-filters">
-  
-    <app-select-dropdown
-      [dropdownTitle]="'Country'"
-      [dropdownData]="regions"
-      (itemEvent)="handleChange($event)"
-    ></app-select-dropdown>
+    <div class="fiter-actions">
+      <app-select-dropdown
+        [dropdownTitle]="'Region'"
+        [dropdownData]="regions"
+        (itemEvent)="handleChange($event)"
+      ></app-select-dropdown>
+      <app-select-dropdown
+        *ngIf="selectedTab === 2"
+        [dropdownTitle]="'Country'"
+        [dropdownData]="countriesList"
+        (itemEvent)="handleCountryChange($event)"
+      ></app-select-dropdown>
+    </div>
+    <div class="regulations-tabs">
+      <div
+        class="tab"
+        (click)="selectedTab = 1"
+        [ngClass]="{ active: selectedTab === 1 }"
+      >
+        <h3>Regulation Summary</h3>
+      </div>
+      <div
+        class="tab"
+        (click)="selectedTab = 2"
+        [ngClass]="{ active: selectedTab === 2 }"
+      >
+        <h3>Used Oil Generation Data</h3>
+      </div>
+    </div>
   </div>
-  <div class="regulations-table">
-    <dx-data-grid
-    id="gridContainer"
-    [dataSource]="dataList"
-    [showColumnLines]="false"
-    [showRowLines]="false"
-    [showBorders]="false"
-    [rowAlternationEnabled]="true"
-  >
- 
-  </dx-data-grid>
+  <div class="regulations-body">
+    <div class="regulations-table" *ngIf="selectedTab === 1">
+      <app-regulation-summary-tab
+        [tableData]="newData"
+      ></app-regulation-summary-tab>
+    </div>
+    <div class="regulation-oil-list" *ngIf="selectedTab === 2">
+      <app-regulation-used-oil-tab
+        [oilData]="selectedOilData"
+      ></app-regulation-used-oil-tab>
+    </div>
   </div>
 </div>

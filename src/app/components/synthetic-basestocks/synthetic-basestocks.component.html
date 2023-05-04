@@ -15,25 +15,25 @@
   </div>
   <div class="synthetic-basestocks-tabs">
     <app-button
-    [btnText]="'Tabular View'"
-    [type]="'secondary'"
-    [icon]="false"
-    [iconName]="''"
-    (click)="selectedMainTab = 1"
-  ></app-button>
-  <app-button
-    [btnText]="'Chart View'"
-    [type]="'secondary'"
-    [icon]="false"
-    [iconName]="''"
-    (click)="selectedMainTab = 2"
-  ></app-button>
+      [btnText]="'Tabular View'"
+      [type]="'secondary'"
+      [icon]="false"
+      [iconName]="''"
+      (click)="selectedMainTab = 1"
+    ></app-button>
+    <app-button
+      [btnText]="'Chart View'"
+      [type]="'secondary'"
+      [icon]="false"
+      [iconName]="''"
+      (click)="selectedMainTab = 2"
+    ></app-button>
   </div>
   <div *ngIf="selectedMainTab === 1" class="synthetic-basestocks-body">
     <div class="synthetic-basestocks-body-filters">
       <app-button
         [btnText]="'Demand'"
-        [type]="'secondary small'" 
+        [type]="'secondary small'"
         [icon]="false"
         [iconName]="'../../../assets/images/demand.png'"
         (click)="selectedTab = 1"
@@ -73,6 +73,7 @@
         [allowSorting]="true"
         [allowFiltering]="true"
         [allowExpandAll]="true"
+        [showColumnGrandTotals]="true"
         [showBorders]="true"
         [dataSource]="dataSource"
       >
@@ -169,7 +170,8 @@
     </div>
   </div>
   <div *ngIf="selectedMainTab === 2" class="synthetic-basestocks-body">
-    <app-synthetic-chart-view [chartData]="dataSource.store"></app-synthetic-chart-view>
+    <app-synthetic-chart-view
+      [chartData]="dataSource.store"
+    ></app-synthetic-chart-view>
   </div>
-
 </div>

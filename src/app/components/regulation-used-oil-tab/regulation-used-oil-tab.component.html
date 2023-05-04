@@ -1,0 +1,26 @@
+<div class="used-oil-tab-content">
+  <div class="header">
+    <h3>{{ oilData[0].country }}</h3>
+  </div>
+  <div class="body">
+    <div class="body-details" *ngFor="let item of oilData[0].details">
+      <div class="title">
+        <div>
+          {{ item.name }}
+          <div class="circle-left"></div>
+          <div class="circle-right"></div>
+        </div>
+      </div>
+      <div>
+        <div *ngFor="let li of item.list">
+          {{ li }}
+        </div>
+      </div>
+      <div>
+        <div *ngFor="let li of item.olList">
+          {{ li }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

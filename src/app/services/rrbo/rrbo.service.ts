@@ -1,32 +1,92 @@
 import { Injectable } from '@angular/core';
 import { v4 as uuidv4 } from 'uuid';
 
+export class MapSetting {
+  key?: string;
+
+  name?: string;
+}
+
+export class Tooltip {
+  isShown: boolean;
+
+  text: string;
+}
+
+export class Marker {
+  location: any;
+
+  tooltip: Tooltip;
+}
+
+const markerUrl =
+  'https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/maps/map-marker.png';
+
+const mapTypes: MapSetting[] = [
+  {
+    key: 'roadmap',
+    name: 'Road Map',
+  },
+  {
+    key: 'satellite',
+    name: 'Satellite (Photographic) Map',
+  },
+  {
+    key: 'hybrid',
+    name: 'Hybrid Map',
+  },
+];
+
+const markers: Marker[] = [
+  {
+    location: [40.755833, -73.986389],
+    tooltip: {
+      isShown: false,
+      text: 'Times Square',
+    },
+  },
+  {
+    location: '40.7825, -73.966111',
+    tooltip: {
+      isShown: false,
+      text: 'Central Park',
+    },
+  },
+  {
+    location: {
+      lat: 40.753889,
+      lng: -73.981389,
+    },
+    tooltip: {
+      isShown: false,
+      text: 'Fifth Avenue',
+    },
+  },
+  {
+    location: 'Brooklyn Bridge,New York,NY',
+    tooltip: {
+      isShown: false,
+      text: 'Brooklyn Bridge',
+    },
+  },
+];
+
 @Injectable({
   providedIn: 'root',
 })
 export class RrboService {
-  public europeCountries: any[] = [
-    'WesternEurope',
-    'Russia'
-  ]
-  public northAmericaCountries: any[] = [
-    'Brazil'
-  ]
-  public southAmericaCountries: any[] = [
-    'USA',
-    'Mexico',
-    'Canada'
-  ]
-  public africaCountries: any[] = []
+  public europeCountries: any[] = ['WesternEurope', 'Russia'];
+  public northAmericaCountries: any[] = ['USA', 'Mexico', 'Canada'];
+  public southAmericaCountries: any[] = ['Brazil'];
+  public africaCountries: any[] = ['India'];
   public asiaCountries: any[] = [
-    'India',
     'China',
     'Indonesia',
     'Japan',
     'SouthKorea',
     'Thailand',
-    'Malaysia'
-  ]
+    'Malaysia',
+  ];
   public reguliarSummary: any[] = [
     {
       question: 'Are there any requirements on who can collect used oil?​',
@@ -359,5 +419,762 @@ export class RrboService {
       WesternEurope: 'Yes​',
     },
   ];
+
+  public usedOilData: any[] = [
+    {
+      country: 'All',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'WesternEurope',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'USA',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'Canada',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'India',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'Indonesia',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'Japan',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'SouthKorea',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'Thailand',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'Malaysia',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'Brazil',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'Mexico',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'China',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+    {
+      country: 'Russia',
+      details: [
+        {
+          name: 'Generation',
+          list: [
+            'Generators are responsible for environmental release cleanup.',
+            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+          ],
+        },
+        {
+          name: 'Classification (Special Waste)',
+          list: [
+            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            'Used oil contaminated with PCBs',
+          ],
+          olList: [
+            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+            'Used oil with < 2 ppm may be managed as used oil.',
+            'TSCA requirements may not be avoided through dilution.',
+            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+          ],
+        },
+        {
+          name: 'Prohibitions',
+          list: [
+            'Used oil as a dust suppressant (effectively)',
+            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+            'Surface impoundments',
+          ],
+        },
+        {
+          name: 'Collections',
+          list: [
+            'Information or testing required to rebut the hazardous waste mixing presumption',
+            'Responsible for environmental release cleanup',
+          ],
+        },
+        {
+          name: ' Transportation and Storage',
+          list: [
+            'Minimum storage tank and container requirements:',
+            'Must be in good condition',
+            'Must be labeled “Used Oil”',
+            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            'Transportation & Transfer Facilities:',
+          ],
+        },
+      ],
+    },
+  ];
+
+  getMapTypes(): MapSetting[] {
+    return mapTypes;
+  }
+  getMarkerUrl(): string {
+    return markerUrl;
+  }
+
+  getMarkers(): Marker[] {
+    return markers;
+  }
+
   constructor() {}
 }

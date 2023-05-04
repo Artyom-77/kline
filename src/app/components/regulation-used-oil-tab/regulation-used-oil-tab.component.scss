@@ -1,0 +1,68 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/_mixins.scss";
+
+.used-oil-tab-content {
+  max-width: 1230px;
+  margin: 32px auto;
+  padding: 0 20px;
+  .header {
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    background: $teal;
+    margin-bottom: 70px;
+    > h3 {
+      color: $white;
+    }
+  }
+  .body {
+    display: grid;
+    grid-gap: 60px;
+    .body-details {
+      border: 1px solid $orange;
+      border-radius: 4px;
+      padding: 20px 32px 32px;
+      display: grid;
+      grid-gap: 32px;
+      .title {
+        text-align: center;
+        margin-top: -34px;
+        > div {
+          position: relative;
+          background-color: $white;
+          padding: 0 32px;
+          font-size: 24px;
+          font-weight: 600;
+          color: $gray;
+          width: auto;
+          .circle-left {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $orange;
+            left: 0;
+            top: calc(50% - 9.5px);
+          }
+          .circle-right {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $orange;
+            right: 0;
+            top: calc(50% - 9.5px);
+          }
+        }
+      }
+      > div {
+        display: grid;
+        justify-items: center;
+        grid-gap: 16px;
+        > div {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
