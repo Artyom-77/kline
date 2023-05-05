@@ -15,7 +15,7 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
   public selectedViscosityGrade?: string = '0W-16';
   public BSTypeList: any[] = [];
   public ViscosityGradeList: any[] = [];
-
+  public mergedObj: any[] = [];
   public isYearDropdownOpen: boolean = false;
   public selectedYear?: number = 2022;
   public yearList: any[] = [];
@@ -23,14 +23,14 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
   ngOnInit(): void {
     this.chartData.map((data: any) => {
       if (!this.BSTypeList.includes(data.Sector)) {
-        if(data.Sector === "PCMO" || data.Sector === "HDMO" ) {
+        if (data.Sector === 'PCMO' || data.Sector === 'HDMO') {
           this.BSTypeList.push(data.Sector);
         }
       }
     });
     this.chartData.map((data: any) => {
       if (!this.ViscosityGradeList.includes(data.ViscosityGrade)) {
-        if(data.Sector === "PCMO" || data.Sector === "HDMO" ) {
+        if (data.Sector === 'PCMO' || data.Sector === 'HDMO') {
           this.ViscosityGradeList.push(data.ViscosityGrade);
         }
       }
@@ -43,10 +43,24 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
     this.viscosityGradeChartData = this.chartData.filter(
       (item: any) =>
         item.Sector == this.selectedBSType &&
-        
         item.Year === this.selectedYear &&
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
+    );
+    this.mergedObj = this.viscosityGradeChartData.reduce(
+      (accumulator, current) => {
+        const existingObject = accumulator.find(
+          (item: any) => item.Segment === current.Segment
+        );
+
+        if (existingObject) {
+          Object.assign(existingObject, current);
+        } else {
+          accumulator.push(current);
+        }
+        return accumulator;
+      },
+      []
     );
   }
 
@@ -67,7 +81,22 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
     );
-    console.log('this.viscosityGradeChartData',this.viscosityGradeChartData)
+    this.mergedObj = this.viscosityGradeChartData.reduce(
+      (accumulator, current) => {
+        const existingObject = accumulator.find(
+          (item: any) => item.BSType === current.BSType
+        );
+
+        if (existingObject) {
+          Object.assign(existingObject, current);
+        } else {
+          accumulator.push(current);
+        }
+        return accumulator;
+      },
+      []
+    );
+    console.log('this.viscosityGradeChartData', this.viscosityGradeChartData);
   }
 
   toggleViscosityGradeOption(option: string): void {
@@ -80,7 +109,22 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
     );
-    console.log('this.viscosityGradeChartData',this.viscosityGradeChartData)
+    this.mergedObj = this.viscosityGradeChartData.reduce(
+      (accumulator, current) => {
+        const existingObject = accumulator.find(
+          (item: any) => item.BSType === current.BSType
+        );
+
+        if (existingObject) {
+          Object.assign(existingObject, current);
+        } else {
+          accumulator.push(current);
+        }
+        return accumulator;
+      },
+      []
+    );
+    console.log('this.viscosityGradeChartData', this.viscosityGradeChartData);
   }
 
   toggleYearDropdown() {
@@ -91,16 +135,31 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
     this.selectedYear = option;
     this.viscosityGradeChartData = this.chartData.filter(
       (item: any) =>
-      item.Sector == this.selectedBSType &&
-      item.ViscosityGrade == this.selectedViscosityGrade &&
-      item.Year === this.selectedYear &&
-      item.mainColumn ===
-        'Share of basestock in total synthetic basestock demand (%)'
+        item.Sector == this.selectedBSType &&
+        item.ViscosityGrade == this.selectedViscosityGrade &&
+        item.Year === this.selectedYear &&
+        item.mainColumn ===
+          'Share of basestock in total synthetic basestock demand (%)'
+    );
+    this.mergedObj = this.viscosityGradeChartData.reduce(
+      (accumulator, current) => {
+        const existingObject = accumulator.find(
+          (item: any) => item.BSType === current.BSType
+        );
+
+        if (existingObject) {
+          Object.assign(existingObject, current);
+        } else {
+          accumulator.push(current);
+        }
+        return accumulator;
+      },
+      []
     );
   }
 
   customizeLabel(arg: any) {
-    console.log('arg', arg)
+    // console.log('arg', arg)
     return `${arg.percentText}`;
   }
 }

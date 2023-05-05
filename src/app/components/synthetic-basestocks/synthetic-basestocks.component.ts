@@ -12,7 +12,7 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   public dataSource: any;
   public data: any;
   public allowSearch: boolean | null | undefined = true;
-  public selectedMainTab: number = 1;
+  public selectedMainTab: number = 2;
   public showRelevantValues: boolean | null | undefined = true;
   showRowFields = true;
   @Input() selectedTab: any = 1;
@@ -93,7 +93,7 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(): void {
-    console.log('selectedTab', this.selectedTab);
+    // console.log('selectedTab', this.selectedTab);
     // this.BioDetails = this.bioData.criterias.find((item: any) => item.tabName === this.selectedTabName);
   }
 }

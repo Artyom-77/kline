@@ -3,12 +3,12 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-pie-chart-by-product',
   templateUrl: './pie-chart-by-product.component.html',
-  styleUrls: ['./pie-chart-by-product.component.scss']
+  styleUrls: ['./pie-chart-by-product.component.scss'],
 })
 export class PieChartByProductComponent implements OnInit {
   @Input() chartData?: any;
   public productChartData: any[] = [];
-
+  public mergedObj: any[] = [];
   public isYearDropdownOpen: boolean = false;
   public selectedYear?: number = 2022;
   public yearList: any[] = [];
@@ -25,6 +25,18 @@ export class PieChartByProductComponent implements OnInit {
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
     );
+    this.mergedObj = this.productChartData.reduce((accumulator, current) => {
+      const existingObject = accumulator.find(
+        (item: any) => item.BSType === current.BSType
+      );
+
+      if (existingObject) {
+        Object.assign(existingObject, current);
+      } else {
+        accumulator.push(current);
+      }
+      return accumulator;
+    }, []);
   }
 
   toggleYearDropdown() {
@@ -39,5 +51,17 @@ export class PieChartByProductComponent implements OnInit {
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
     );
+    this.mergedObj = this.productChartData.reduce((accumulator, current) => {
+      const existingObject = accumulator.find(
+        (item: any) => item.BSType === current.BSType
+      );
+
+      if (existingObject) {
+        Object.assign(existingObject, current);
+      } else {
+        accumulator.push(current);
+      }
+      return accumulator;
+    }, []);
   }
 }

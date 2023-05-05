@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-pie-chart-split-by-viscosity-grade-second',
-  templateUrl: './pie-chart-split-by-viscosity-grade-second.component.html',
-  styleUrls: ['./pie-chart-split-by-viscosity-grade-second.component.scss'],
+  selector: 'app-pie-chart-by-product-second',
+  templateUrl: './pie-chart-by-product-second.component.html',
+  styleUrls: ['./pie-chart-by-product-second.component.scss'],
 })
-export class PieChartSplitByViscosityGradeSecondComponent {
+export class PieChartByProductSecondComponent {
   @Input() chartData?: any;
   public viscosityGradeChartData: any[] = [];
   public mergedObj: any[] = [];
@@ -54,7 +54,7 @@ export class PieChartSplitByViscosityGradeSecondComponent {
     this.mergedObj = this.viscosityGradeChartData.reduce(
       (accumulator, current) => {
         const existingObject = accumulator.find(
-          (item: any) => item.ViscosityGrade === current.ViscosityGrade
+          (item: any) => item.Sector === current.Sector
         );
 
         if (existingObject) {
@@ -80,7 +80,7 @@ export class PieChartSplitByViscosityGradeSecondComponent {
     this.viscosityGradeChartData = this.chartData.filter(
       (item: any) =>
         item.BSType == this.selectedBSType &&
-        (item.Sector === 'PCMO' || item.Sector === 'HDMO') &&
+        // (item.Sector === 'PCMO' || item.Sector === 'HDMO') &&
         // item.ViscosityGrade == this.selectedViscosityGrade &&
         item.Year === this.selectedYear &&
         item.mainColumn ===
@@ -89,7 +89,7 @@ export class PieChartSplitByViscosityGradeSecondComponent {
     this.mergedObj = this.viscosityGradeChartData.reduce(
       (accumulator, current) => {
         const existingObject = accumulator.find(
-          (item: any) => item.ViscosityGrade === current.ViscosityGrade
+          (item: any) => item.Sector === current.Sector
         );
 
         if (existingObject) {
@@ -126,7 +126,7 @@ export class PieChartSplitByViscosityGradeSecondComponent {
     this.viscosityGradeChartData = this.chartData.filter(
       (item: any) =>
         item.BSType == this.selectedBSType &&
-        (item.Sector === 'PCMO' || item.Sector === 'HDMO') &&
+        // (item.Sector === 'PCMO' || item.Sector === 'HDMO') &&
         // item.ViscosityGrade == this.selectedViscosityGrade &&
         item.Year === this.selectedYear &&
         item.mainColumn ===
@@ -135,7 +135,7 @@ export class PieChartSplitByViscosityGradeSecondComponent {
     this.mergedObj = this.viscosityGradeChartData.reduce(
       (accumulator, current) => {
         const existingObject = accumulator.find(
-          (item: any) => item.ViscosityGrade === current.ViscosityGrade
+          (item: any) => item.Sector === current.Sector
         );
 
         if (existingObject) {

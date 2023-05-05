@@ -10,7 +10,20 @@
   <div class="charts">
     <app-chart-by-segment [chartData]="chartData"></app-chart-by-segment>
     <app-chart-growth-rates [chartData]="chartData"></app-chart-growth-rates>
-    <app-pie-chart-by-product [chartData]="chartData"></app-pie-chart-by-product>
-    <app-pie-chart-split-by-viscosity-grade [chartData]="chartData"></app-pie-chart-split-by-viscosity-grade>
+    <app-pie-chart-by-product
+      [chartData]="chartData"
+    ></app-pie-chart-by-product>
+    <app-pie-chart-split-by-viscosity-grade
+      [chartData]="chartData"
+    ></app-pie-chart-split-by-viscosity-grade>
+    <app-pie-chart-split-by-viscosity-grade-second
+      [chartData]="chartData"
+    ></app-pie-chart-split-by-viscosity-grade-second>
+    <app-pie-chart-split-by-segment
+      [chartData]="chartData"
+    ></app-pie-chart-split-by-segment>
+    <app-pie-chart-by-product-second
+      [chartData]="chartData"
+    ></app-pie-chart-by-product-second>
   </div>
 </div>
