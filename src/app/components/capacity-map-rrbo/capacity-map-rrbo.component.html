@@ -1,15 +1,54 @@
 <div class="capacity-map-tab">
+  <div class="capacity-map-tab-filters">
+    <div class="select-fiters">
+      <app-select-dropdown
+        [dropdownTitle]="'Country'"
+        [dropdownData]="dropdownItems"
+        (itemEvent)="handleChange($event)"
+      ></app-select-dropdown>
+    </div>
+    <div class="filters-action">
+      <app-button
+        [btnText]="'Download Data'"
+        [type]="'secondary'"
+        [icon]="false"
+        [iconName]="''"
+      ></app-button>
+    </div>
+  </div>
   <div class="map-section">
     <dx-map
       #map
       [height]="600"
       width="100%"
       [controls]="true"
+      [zoom]="8"
       provider="bing"
       [apiKey]="keys"
       [markerIconSrc]="mapMarkerUrl"
       [markers]="markers"
     >
     </dx-map>
+  </div>
+  <div class="capacity-data-table">
+    <dx-data-grid
+      id="gridContainer"
+      [dataSource]="selectedCountry"
+      [showColumnLines]="false"
+      [showRowLines]="false"
+      [columnWidth]="150"
+      [showBorders]="false"
+      [rowAlternationEnabled]="true"
+    >
+      <dxo-scrolling rowRenderingMode="virtual"> </dxo-scrolling>
+      <!-- <dxo-paging [pageSize]="6"> </dxo-paging>
+    <dxo-pager
+      [visible]="true"
+      [showPageSizeSelector]="true"
+      [showInfo]="true"
+      [showNavigationButtons]="true"
+    >
+    </dxo-pager> -->
+    </dx-data-grid>
   </div>
 </div>

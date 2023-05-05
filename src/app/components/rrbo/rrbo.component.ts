@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rrbo.component.scss'],
 })
 export class RrboComponent implements OnInit {
-  public selectedTab: number = 1;
+  public selectedTab: number = 2;
 
   constructor() {}
 
