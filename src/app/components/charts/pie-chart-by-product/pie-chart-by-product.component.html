@@ -31,11 +31,16 @@
     title="Share of Synthetic Basestock by Product (KT)"
     palette="pastel"
     paletteExtensionMode="blend"
-    [dataSource]="productChartData"
+    [dataSource]="mergedObj"
   >
     <dxi-series argumentField="BSType" valueField="SumofValues">
       <dxo-label [visible]="true" format="percent"></dxo-label>
     </dxi-series>
-    <dxo-size [width]="500"></dxo-size>
+    <!-- <dxo-size [width]="300"></dxo-size> -->
+    <dxo-legend
+      verticalAlignment="bottom"
+      horizontalAlignment="center"
+      itemTextPosition="center"
+    ></dxo-legend>
   </dx-pie-chart>
 </div>

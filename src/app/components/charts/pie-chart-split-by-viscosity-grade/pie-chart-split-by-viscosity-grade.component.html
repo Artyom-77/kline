@@ -26,30 +26,30 @@
       </div>
     </div>
     <div
-    class="custom-dropdown date-dropdown"
-    (click)="toggleViscosityGradeDropdown()"
-    style="width: 100%"
-  >
-    <div class="dropdown-header">
-      <span>{{ selectedViscosityGrade }}</span>
-      <img
-        class="dropdown-icon"
-        [class.rotate]="isViscosityGradeDropdownOpen"
-        [class.defalut]="!isViscosityGradeDropdownOpen"
-        src="../../../assets/images/small-arrow.svg"
-        alt="arrow"
-      />
-    </div>
-    <div class="dropdown-list" *ngIf="isViscosityGradeDropdownOpen">
-      <div
-        class="dropdown-item"
-        *ngFor="let option of ViscosityGradeList"
-        (click)="toggleViscosityGradeOption(option)"
-      >
-        {{ option }}
+      class="custom-dropdown date-dropdown"
+      (click)="toggleViscosityGradeDropdown()"
+      style="width: 100%"
+    >
+      <div class="dropdown-header">
+        <span>{{ selectedViscosityGrade }}</span>
+        <img
+          class="dropdown-icon"
+          [class.rotate]="isViscosityGradeDropdownOpen"
+          [class.defalut]="!isViscosityGradeDropdownOpen"
+          src="../../../assets/images/small-arrow.svg"
+          alt="arrow"
+        />
+      </div>
+      <div class="dropdown-list" *ngIf="isViscosityGradeDropdownOpen">
+        <div
+          class="dropdown-item"
+          *ngFor="let option of ViscosityGradeList"
+          (click)="toggleViscosityGradeOption(option)"
+        >
+          {{ option }}
+        </div>
       </div>
     </div>
-  </div>
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleYearDropdown()"
@@ -78,15 +78,15 @@
   </div>
   <dx-pie-chart
     id="pie"
-    title="Share of Synthetic Basestock by Product (KT)"
+    title="Share of Synthetic Basestock by Viscosity Grade (KT)"
     palette="pastel"
     paletteExtensionMode="blend"
-    [dataSource]="viscosityGradeChartData"
+    [dataSource]="mergedObj"
   >
     <dxi-series argumentField="BSType" valueField="SumofValues">
       <dxo-label [visible]="true" [customizeText]="customizeLabel"></dxo-label>
     </dxi-series>
-    <dxo-size [width]="500"></dxo-size>
+    <!-- <dxo-size [width]="300"></dxo-size> -->
     <dxo-legend
       verticalAlignment="bottom"
       horizontalAlignment="center"

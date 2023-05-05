@@ -46,6 +46,8 @@ import { RegulationSummaryTabComponent } from './components/regulation-summary-t
 import { RegulationUsedOilTabComponent } from './components/regulation-used-oil-tab/regulation-used-oil-tab.component';
 import { CapacityMapRrboComponent } from './components/capacity-map-rrbo/capacity-map-rrbo.component';
 import { MaterialBalanceRrboComponent } from './components/material-balance-rrbo/material-balance-rrbo.component';
+import { PieChartSplitBySegmentComponent } from './components/charts/pie-chart-split-by-segment/pie-chart-split-by-segment.component';
+import { PieChartByProductSecondComponent } from './components/charts/pie-chart-by-product-second/pie-chart-by-product-second.component';
 
 @NgModule({
   declarations: [
@@ -82,6 +84,8 @@ import { MaterialBalanceRrboComponent } from './components/material-balance-rrbo
     RegulationUsedOilTabComponent,
     CapacityMapRrboComponent,
     MaterialBalanceRrboComponent,
+    PieChartSplitBySegmentComponent,
+    PieChartByProductSecondComponent,
   ],
   imports: [
     BrowserModule,

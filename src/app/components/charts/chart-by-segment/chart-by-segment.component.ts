@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ChartBySegmentComponent implements OnInit {
   @Input() chartData?: any;
   public segmentChartData: any[] = [];
-
+  public mergedObj: any[] = [];
   public isSegmentDropdownOpen: boolean = false;
   public selectedSegment?: string = 'CONSUMER AUTOMOTIVE';
   public segmentList: any[] = [];
@@ -35,6 +35,18 @@ export class ChartBySegmentComponent implements OnInit {
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
     );
+    this.mergedObj = this.segmentChartData.reduce((accumulator, current) => {
+      const existingObject = accumulator.find(
+        (item: any) => item.BSType === current.BSType
+      );
+
+      if (existingObject) {
+        Object.assign(existingObject, current);
+      } else {
+        accumulator.push(current);
+      }
+      return accumulator;
+    }, []);
   }
 
   toggleSegmentDropdown() {
@@ -50,6 +62,18 @@ export class ChartBySegmentComponent implements OnInit {
           'Share of basestock in total synthetic basestock demand (%)' &&
         item.Year === this.selectedYear
     );
+    this.mergedObj = this.segmentChartData.reduce((accumulator, current) => {
+      const existingObject = accumulator.find(
+        (item: any) => item.BSType === current.BSType
+      );
+
+      if (existingObject) {
+        Object.assign(existingObject, current);
+      } else {
+        accumulator.push(current);
+      }
+      return accumulator;
+    }, []);
   }
 
   toggleYearDropdown() {
@@ -64,5 +88,17 @@ export class ChartBySegmentComponent implements OnInit {
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
     );
+    this.mergedObj = this.segmentChartData.reduce((accumulator, current) => {
+      const existingObject = accumulator.find(
+        (item: any) => item.BSType === current.BSType
+      );
+
+      if (existingObject) {
+        Object.assign(existingObject, current);
+      } else {
+        accumulator.push(current);
+      }
+      return accumulator;
+    }, []);
   }
 }
