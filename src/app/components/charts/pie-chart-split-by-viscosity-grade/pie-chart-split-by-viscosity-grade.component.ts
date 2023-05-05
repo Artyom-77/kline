@@ -43,7 +43,7 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
     this.viscosityGradeChartData = this.chartData.filter(
       (item: any) =>
         item.Sector == this.selectedBSType &&
-        
+
         item.Year === this.selectedYear &&
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
@@ -100,7 +100,6 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
   }
 
   customizeLabel(arg: any) {
-    console.log('arg', arg)
     return `${arg.percentText}`;
   }
 }

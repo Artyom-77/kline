@@ -1401,6 +1401,253 @@ export class RrboService {
     //   comments: '',
     // },
   ];
+  public materialBalanceData: any[] = [
+    {
+      id: 1,
+      country: 'USA',
+      region: 'North America',
+      generation: {
+        lubricantLost: {
+          label: 'Lubricant Lost',
+          value: 4300
+        },
+        usedOilGenerated: {
+          label: 'Used Oil Generated',
+          value: 5600
+        },
+      },
+      collection: {
+        collected: {
+          label: 'Collected',
+          value: 3300
+        },
+        notCollected: {
+          label: 'Not Collected',
+          value: 5000
+        },
+      },
+      disposal: {
+        refined: {
+          label: 'Re-Refined-a',
+          value: 7300
+        },
+        fuel: {
+          label: 'Fuel',
+          value: 10600
+        },
+        others: {
+          label: 'All others-b',
+          value: 1000
+        },
+      },
+      refining: {
+        basestock: {
+          label: 'Basestock',
+          value: 2000
+        },
+        others: {
+          label: 'All other',
+          value: 6600
+        },
+      },
+    },
+    {
+      id: 2,
+      country: 'UK',
+      region: 'Europe',
+      generation: {
+        lubricantLost: {
+          label: 'Lubricant Lost',
+          value: 4300
+        },
+        usedOilGenerated: {
+          label: 'Used Oil Generated',
+          value: 5600
+        },
+      },
+      collection: {
+        collected: {
+          label: 'Collected',
+          value: 4300
+        },
+        notCollected: {
+          label: 'Not Collected',
+          value: 5600
+        },
+      },
+      disposal: {
+        refined: {
+          label: 'Re-Refined-a',
+          value: 4300
+        },
+        fuel: {
+          label: 'Fuel',
+          value: 5600
+        },
+        others: {
+          label: 'All others-b',
+          value: 500
+        },
+      },
+      refining: {
+        basestock: {
+          label: 'Basestock',
+          value: 4300
+        },
+        others: {
+          label: 'All other',
+          value: 3600
+        },
+      },
+    },
+    {
+      id: 3,
+      country: 'India',
+      region: 'Middle East and Africa',
+      generation: {
+        lubricantLost: {
+          label: 'Lubricant Lost',
+          value: 4300
+        },
+        usedOilGenerated: {
+          label: 'Used Oil Generated',
+          value: 5600
+        },
+      },
+      collection: {
+        collected: {
+          label: 'Collected',
+          value: 4300
+        },
+        notCollected: {
+          label: 'Not Collected',
+          value: 5600
+        },
+      },
+      disposal: {
+        refined: {
+          label: 'Re-Refined-a',
+          value: 4300
+        },
+        fuel: {
+          label: 'Fuel',
+          value: 5600
+        },
+        others: {
+          label: 'All others-b',
+          value: 500
+        },
+      },
+      refining: {
+        basestock: {
+          label: 'Basestock',
+          value: 4300
+        },
+        others: {
+          label: 'All other',
+          value: 3600
+        },
+      },
+    },
+    {
+      id: 4,
+      country: 'Indonesia',
+      region: 'APAC',
+      generation: {
+        lubricantLost: {
+          label: 'Lubricant Lost',
+          value: 4300
+        },
+        usedOilGenerated: {
+          label: 'Used Oil Generated',
+          value: 5600
+        },
+      },
+      collection: {
+        collected: {
+          label: 'Collected',
+          value: 4300
+        },
+        notCollected: {
+          label: 'Not Collected',
+          value: 5600
+        },
+      },
+      disposal: {
+        refined: {
+          label: 'Re-Refined-a',
+          value: 4300
+        },
+        fuel: {
+          label: 'Fuel',
+          value: 5600
+        },
+        others: {
+          label: 'All others-b',
+          value: 500
+        },
+      },
+      refining: {
+        basestock: {
+          label: 'Basestock',
+          value: 4300
+        },
+        others: {
+          label: 'All other',
+          value: 3600
+        },
+      },
+    },
+    {
+      id: 5,
+      country: 'Brazil',
+      region: 'South America',
+      generation: {
+        lubricantLost: {
+          label: 'Lubricant Lost',
+          value: 4300
+        },
+        usedOilGenerated: {
+          label: 'Used Oil Generated',
+          value: 5600
+        },
+      },
+      collection: {
+        collected: {
+          label: 'Collected',
+          value: 4300
+        },
+        notCollected: {
+          label: 'Not Collected',
+          value: 5600
+        },
+      },
+      disposal: {
+        refined: {
+          label: 'Re-Refined-a',
+          value: 4300
+        },
+        fuel: {
+          label: 'Fuel',
+          value: 5600
+        },
+        others: {
+          label: 'All others-b',
+          value: 500
+        },
+      },
+      refining: {
+        basestock: {
+          label: 'Basestock',
+          value: 4300
+        },
+        others: {
+          label: 'All other',
+          value: 3600
+        },
+      },
+    }
+  ]
 
   getMapTypes(): MapSetting[] {
     return mapTypes;

@@ -45,6 +45,7 @@ import { PieChartSplitByViscosityGradeSecondComponent } from './components/chart
 import { RegulationSummaryTabComponent } from './components/regulation-summary-tab/regulation-summary-tab.component';
 import { RegulationUsedOilTabComponent } from './components/regulation-used-oil-tab/regulation-used-oil-tab.component';
 import { CapacityMapRrboComponent } from './components/capacity-map-rrbo/capacity-map-rrbo.component';
+import { MaterialBalanceRrboComponent } from './components/material-balance-rrbo/material-balance-rrbo.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { CapacityMapRrboComponent } from './components/capacity-map-rrbo/capacit
     RegulationSummaryTabComponent,
     RegulationUsedOilTabComponent,
     CapacityMapRrboComponent,
+    MaterialBalanceRrboComponent,
   ],
   imports: [
     BrowserModule,

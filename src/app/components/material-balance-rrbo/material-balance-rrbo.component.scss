@@ -1,0 +1,23 @@
+.material-balance-tab {
+  padding: 20px;
+  .dropdowns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .material-balance-tab-body {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    margin: 50px 0px;
+    .pie-chart-total {
+      margin-top: 10px;
+      background-color: #008083;
+      padding: 4px;
+      text-align: center;
+      border-radius: 10px;
+      color: #ffffff;
+    }
+  }
+}
