@@ -11,13 +11,13 @@ export class PieChartByProductSecondComponent {
   public mergedObj: any[] = [];
   public isBSTypeDropdownOpen: boolean = false;
   public isViscosityGradeDropdownOpen: boolean = false;
-  public selectedBSType?: string = 'PAO';
+  public selectedBSType?: string = 'PIB';
   public selectedViscosityGrade?: string = '0W-16';
   public BSTypeList: any[] = [];
   public ViscosityGradeList: any[] = [];
 
   public isYearDropdownOpen: boolean = false;
-  public selectedYear?: number = 2022;
+  public selectedYear?: number = 2021;
   public yearList: any[] = [];
 
   ngOnInit(): void {

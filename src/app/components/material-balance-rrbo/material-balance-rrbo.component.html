@@ -5,119 +5,168 @@
         [dropdownTitle]="'Region'"
         [dropdownData]="regionOptions"
         (itemEvent)="handleChange($event)"
+        [firstItemSelected]="true"
       ></app-select-dropdown>
       <app-select-dropdown
         *ngIf="selectedRegion"
         [dropdownTitle]="'Country'"
         [dropdownData]="countryOptions"
         (itemEvent)="handleCountryChange($event)"
+        [firstItemSelected]="true"
       ></app-select-dropdown>
     </div>
   </div>
   <div class="material-balance-tab-body" *ngIf="selectedCountry">
-    <div>
-      <dx-pie-chart
-        id="pie"
-        title="USED OIL GENERATION"
-        palette="pastel"
-        paletteExtensionMode="blend"
-        [dataSource]="generationChartData"
-      >
-        <dxi-series argumentField="label" valueField="value">
-          <dxo-label
-            [visible]="true"
-            format="percent"
-            [customizeText]="customizeLabel"
-          ></dxo-label>
-        </dxi-series>
-        <dxo-legend
-          verticalAlignment="bottom"
-          horizontalAlignment="center"
-          itemTextPosition="right"
+    <div class="pie-charts">
+      <div>
+        <dx-pie-chart
+          id="pie"
+          title="USED OIL GENERATION"
+          palette="pastel"
+          paletteExtensionMode="blend"
+          [dataSource]="generationChartData"
         >
-        </dxo-legend>
-      </dx-pie-chart>
-      <div class="pie-chart-total">
-        Total: {{ generationChartTotal }} Kilotonnes
+          <dxi-series argumentField="label" valueField="value">
+            <dxo-label
+              [visible]="true"
+              format="percent"
+              [customizeText]="customizeLabel"
+            ></dxo-label>
+          </dxi-series>
+          <dxo-legend
+            verticalAlignment="bottom"
+            horizontalAlignment="center"
+            itemTextPosition="right"
+          >
+          </dxo-legend>
+        </dx-pie-chart>
+        <div class="pie-chart-total">
+          Total: {{ generationChartTotal }} Kilotonnes
+        </div>
+      </div>
+      <div>
+        <dx-pie-chart
+          id="pie2"
+          title="USED OIL COLLECTION"
+          palette="pastel"
+          paletteExtensionMode="blend"
+          [dataSource]="collectionChartData"
+        >
+          <dxi-series argumentField="label" valueField="value">
+            <dxo-label
+              [visible]="true"
+              format="percent"
+              [customizeText]="customizeLabel"
+            ></dxo-label>
+          </dxi-series>
+          <dxo-legend
+            verticalAlignment="bottom"
+            horizontalAlignment="center"
+            itemTextPosition="right"
+          >
+          </dxo-legend>
+        </dx-pie-chart>
+        <div class="pie-chart-total">
+          Total: {{ collectionChartTotal }} Kilotonnes
+        </div>
+      </div>
+      <div>
+        <dx-pie-chart
+          id="pie3"
+          title="USED OIL DISPOSAL"
+          palette="pastel"
+          paletteExtensionMode="blend"
+          [dataSource]="disposalChartData"
+        >
+          <dxi-series argumentField="label" valueField="value">
+            <dxo-label
+              [visible]="true"
+              format="percent"
+              [customizeText]="customizeLabel"
+            ></dxo-label>
+          </dxi-series>
+          <dxo-legend
+            verticalAlignment="bottom"
+            horizontalAlignment="center"
+            itemTextPosition="right"
+          >
+          </dxo-legend>
+        </dx-pie-chart>
+        <div class="pie-chart-total">
+          Total: {{ disposalChartTotal }} Kilotonnes
+        </div>
+      </div>
+      <div>
+        <dx-pie-chart
+          id="pie4"
+          title="USED OIL RE-REFINING"
+          palette="pastel"
+          paletteExtensionMode="blend"
+          [dataSource]="refiningChartData"
+        >
+          <dxi-series argumentField="label" valueField="value">
+            <dxo-label
+              [visible]="true"
+              format="percent"
+              [customizeText]="customizeLabel"
+            ></dxo-label>
+          </dxi-series>
+          <dxo-legend
+            verticalAlignment="bottom"
+            horizontalAlignment="center"
+            itemTextPosition="right"
+          >
+          </dxo-legend>
+        </dx-pie-chart>
+        <div class="pie-chart-total">
+          Total: {{ refiningChartTotal }} Kilotonnes
+        </div>
       </div>
     </div>
-    <div>
-      <dx-pie-chart
-        id="pie2"
-        title="USED OIL COLLECTION"
-        palette="pastel"
-        paletteExtensionMode="blend"
-        [dataSource]="collectionChartData"
-      >
-        <dxi-series argumentField="label" valueField="value">
-          <dxo-label
-            [visible]="true"
-            format="percent"
-            [customizeText]="customizeLabel"
-          ></dxo-label>
-        </dxi-series>
-        <dxo-legend
-          verticalAlignment="bottom"
-          horizontalAlignment="center"
-          itemTextPosition="right"
-        >
-        </dxo-legend>
-      </dx-pie-chart>
-      <div class="pie-chart-total">
-        Total: {{ collectionChartTotal }} Kilotonnes
-      </div>
+    <div class="info">
+      <p>
+        a- Includes used oil re-refined into basestocks or re-refined into
+        VGO/MDO or regeneration of transformer oil.​
+      </p>
+      <p>
+        b- Includes other application such as concerte demolding agents, blended
+        into HSFO/ANFO, etc.​
+      </p>
     </div>
     <div>
-      <dx-pie-chart
-        id="pie3"
-        title="USED OIL DISPOSAL"
-        palette="pastel"
-        paletteExtensionMode="blend"
-        [dataSource]="disposalChartData"
-      >
-        <dxi-series argumentField="label" valueField="value">
-          <dxo-label
-            [visible]="true"
-            format="percent"
-            [customizeText]="customizeLabel"
-          ></dxo-label>
-        </dxi-series>
-        <dxo-legend
-          verticalAlignment="bottom"
-          horizontalAlignment="center"
-          itemTextPosition="right"
-        >
-        </dxo-legend>
-      </dx-pie-chart>
-      <div class="pie-chart-total">
-        Total: {{ disposalChartTotal }} Kilotonnes
-      </div>
-    </div>
-    <div>
-      <dx-pie-chart
-        id="pie4"
-        title="USED OIL RE-REFINING"
-        palette="pastel"
-        paletteExtensionMode="blend"
-        [dataSource]="refiningChartData"
-      >
-        <dxi-series argumentField="label" valueField="value">
-          <dxo-label
-            [visible]="true"
-            format="percent"
-            [customizeText]="customizeLabel"
-          ></dxo-label>
-        </dxi-series>
-        <dxo-legend
-          verticalAlignment="bottom"
-          horizontalAlignment="center"
-          itemTextPosition="right"
-        >
-        </dxo-legend>
-      </dx-pie-chart>
-      <div class="pie-chart-total">
-        Total: {{ refiningChartTotal }} Kilotonnes
-      </div>
+      <ul>
+        <li>
+          Total lubricants consumption in the region accounted for 8,132.0
+          kilotonnes in 2020. Out of that 57% of lubricant consumption generated
+          as used oil.
+          <ul>
+            <li>
+              The used oil collection in the region is estimated at 73% of total
+              used oil generated. It is estimated that 51% of collected used oil
+              is re-refined into basestocks or VGO/MDO or regenerated into
+              transformer oil in 2020.
+            </li>
+            <li>
+              In 2020, used oil collection declined nearly by 11% as compared to
+              2018 due to decline in lubricant consumption as well as closure of
+              collection and service centers.
+            </li>
+          </ul>
+        </li>
+        <li>
+          40% of collected used oil burned as a fuel in industrial furnaces in
+          both the countries.
+          <ul>
+            <li>
+              Canada and parts of the United States face extreme cold
+              conditions, and the used oil is used as a fuel for space heaters
+              in industrial facilities in these countries. Used oil is either
+              burnt directly or filtered before burning, depending on the amount
+              of impurities present in it.
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

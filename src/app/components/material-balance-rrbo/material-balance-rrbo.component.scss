@@ -6,18 +6,31 @@
     gap: 20px;
   }
   .material-balance-tab-body {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
+    .pie-charts {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 50px;
+      .pie-chart-total {
+        margin-top: 10px;
+        background-color: #008083;
+        padding: 4px;
+        text-align: center;
+        border-radius: 10px;
+        color: #ffffff;
+      }
+    }
     margin: 50px 0px;
-    .pie-chart-total {
-      margin-top: 10px;
-      background-color: #008083;
-      padding: 4px;
-      text-align: center;
-      border-radius: 10px;
-      color: #ffffff;
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0px 60px;
+    }
+    ul {
+      padding-left: 40px;
+      margin: 20px 0px;
     }
   }
 }

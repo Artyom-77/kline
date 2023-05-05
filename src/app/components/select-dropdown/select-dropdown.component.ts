@@ -12,8 +12,13 @@ export class SelectDropdownComponent implements OnInit {
 
   @Input() dropdownData: any = [];
   @Input() dropdownTitle: string = '';
+  @Input() firstItemSelected: boolean | undefined;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if(this.firstItemSelected) {
+      this.selectedItem = this.dropdownData[0].label
+    }
+  }
 
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;

@@ -12,7 +12,7 @@ export class MaterialBalanceRrboComponent implements OnInit {
   public collectionChartData: any[] = [];
   public disposalChartData: any[] = [];
   public refiningChartData: any[] = [];
-  public selectedRegion: string = ''
+  public selectedRegion: string = 'North America'
   public selectedCountry: string = ''
   public regionOptions: any[] = [
     { id: 1, label: 'North America' },
@@ -32,7 +32,10 @@ export class MaterialBalanceRrboComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('this.list',this.list)
+    if(this.selectedRegion) {
+      this.handleChange(this.selectedRegion)
+      this.handleCountryChange(this.countryOptions[0].label)
+    }
   }
 
   handleChange(arg: string) {
@@ -43,6 +46,7 @@ export class MaterialBalanceRrboComponent implements OnInit {
         this.countryOptions.push({id: item.id, label: item.country})
       }
     })
+    this.selectedCountry = this.countryOptions[0].label
   }
 
   handleCountryChange(arg: string) {

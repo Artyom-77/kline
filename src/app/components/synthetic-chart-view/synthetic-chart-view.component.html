@@ -1,22 +1,64 @@
 <div class="synthetic-basestocks-body-chart-view">
   <div class="synthetic-basestocks-body-chart-view-filters">
-    <app-button
-      [btnText]="'Compare across countries'"
+    <div class="selects">
+      <app-select-dropdown
+        [dropdownTitle]="'Region'"
+        [dropdownData]="regionList"
+        (itemEvent)="handleRegionChange($event)"
+        [firstItemSelected]="false"
+      ></app-select-dropdown>
+      <app-select-dropdown
+      [dropdownTitle]="'Market Analyzed'"
+      [dropdownData]="analyzedList"
+      (itemEvent)="handleAnalyzedChange($event)"
+      [firstItemSelected]="true"
+    ></app-select-dropdown>
+    <app-select-dropdown
+      *ngIf="selectedTab === 3"
+      [dropdownTitle]="'Year'"
+      [dropdownData]="yearList"
+      (itemEvent)="handleYearChange($event)"
+      [firstItemSelected]="true"
+    ></app-select-dropdown>
+    </div>
+    <div class="actions">
+      <app-button
+        [btnText]="'Proceed'"
+        [type]="'icon secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="procesdedCLick()"
+      ></app-button>
+      <app-button
+      [btnText]="'Download Data'"
       [type]="'icon secondary'"
       [icon]="false"
       [iconName]="''"
     ></app-button>
+    </div>
   </div>
   <div class="charts">
-    <app-chart-by-segment [chartData]="chartData"></app-chart-by-segment>
-    <app-chart-growth-rates [chartData]="chartData"></app-chart-growth-rates>
-    <app-pie-chart-by-product
-      [chartData]="chartData"
-    ></app-pie-chart-by-product>
-    <app-pie-chart-split-by-viscosity-grade
-      [chartData]="chartData"
-    ></app-pie-chart-split-by-viscosity-grade>
-    <app-pie-chart-split-by-viscosity-grade-second
+    <div class="tab first-tab" *ngIf="selectedTab === 1">
+      <app-chart-by-segment [chartData]="chartData"></app-chart-by-segment>
+      <app-chart-growth-rates [chartData]="chartData"></app-chart-growth-rates>
+      <app-pie-chart-by-product
+        [chartData]="chartData"
+      ></app-pie-chart-by-product>
+      <app-pie-chart-split-by-viscosity-grade
+        [chartData]="chartData"
+      ></app-pie-chart-split-by-viscosity-grade>
+      <app-pie-chart-split-by-viscosity-grade-second
+        [chartData]="chartData"
+      ></app-pie-chart-split-by-viscosity-grade-second>
+      <app-pie-chart-split-by-segment
+        [chartData]="chartData"
+      ></app-pie-chart-split-by-segment>
+      <app-pie-chart-by-product-second
+        [chartData]="chartData"
+      ></app-pie-chart-by-product-second>
+    </div>
+    <div class="tab second-tab" *ngIf="selectedTab === 2">
+      <app-pie-chart-split-by-viscosity-grade-second
       [chartData]="chartData"
     ></app-pie-chart-split-by-viscosity-grade-second>
     <app-pie-chart-split-by-segment
@@ -25,5 +67,21 @@
     <app-pie-chart-by-product-second
       [chartData]="chartData"
     ></app-pie-chart-by-product-second>
+    </div>
+    <div class="tab first-tab" *ngIf="selectedTab === 3">
+      <app-pie-chart-split-by-viscosity-grade
+      [chartData]="chartData"
+    ></app-pie-chart-split-by-viscosity-grade>
+      <app-pie-chart-split-by-viscosity-grade-second
+      [chartData]="chartData"
+    ></app-pie-chart-split-by-viscosity-grade-second>
+    <app-pie-chart-split-by-segment
+      [chartData]="chartData"
+    ></app-pie-chart-split-by-segment>
+    <app-pie-chart-by-product-second
+      [chartData]="chartData"
+    ></app-pie-chart-by-product-second>
+    </div>
+
   </div>
 </div>
