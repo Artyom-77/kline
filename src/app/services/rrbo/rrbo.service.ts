@@ -1409,45 +1409,45 @@ export class RrboService {
       generation: {
         lubricantLost: {
           label: 'Lubricant Lost',
-          value: 4300
+          value: 4300,
         },
         usedOilGenerated: {
           label: 'Used Oil Generated',
-          value: 5600
+          value: 5600,
         },
       },
       collection: {
         collected: {
           label: 'Collected',
-          value: 3300
+          value: 3300,
         },
         notCollected: {
           label: 'Not Collected',
-          value: 5000
+          value: 5000,
         },
       },
       disposal: {
         refined: {
           label: 'Re-Refined-a',
-          value: 7300
+          value: 7300,
         },
         fuel: {
           label: 'Fuel',
-          value: 10600
+          value: 10600,
         },
         others: {
           label: 'All others-b',
-          value: 1000
+          value: 1000,
         },
       },
       refining: {
         basestock: {
           label: 'Basestock',
-          value: 2000
+          value: 2000,
         },
         others: {
           label: 'All other',
-          value: 6600
+          value: 6600,
         },
       },
     },
@@ -1458,45 +1458,45 @@ export class RrboService {
       generation: {
         lubricantLost: {
           label: 'Lubricant Lost',
-          value: 4300
+          value: 4300,
         },
         usedOilGenerated: {
           label: 'Used Oil Generated',
-          value: 5600
+          value: 5600,
         },
       },
       collection: {
         collected: {
           label: 'Collected',
-          value: 4300
+          value: 4300,
         },
         notCollected: {
           label: 'Not Collected',
-          value: 5600
+          value: 5600,
         },
       },
       disposal: {
         refined: {
           label: 'Re-Refined-a',
-          value: 4300
+          value: 4300,
         },
         fuel: {
           label: 'Fuel',
-          value: 5600
+          value: 5600,
         },
         others: {
           label: 'All others-b',
-          value: 500
+          value: 500,
         },
       },
       refining: {
         basestock: {
           label: 'Basestock',
-          value: 4300
+          value: 4300,
         },
         others: {
           label: 'All other',
-          value: 3600
+          value: 3600,
         },
       },
     },
@@ -1507,45 +1507,45 @@ export class RrboService {
       generation: {
         lubricantLost: {
           label: 'Lubricant Lost',
-          value: 4300
+          value: 4300,
         },
         usedOilGenerated: {
           label: 'Used Oil Generated',
-          value: 5600
+          value: 5600,
         },
       },
       collection: {
         collected: {
           label: 'Collected',
-          value: 4300
+          value: 4300,
         },
         notCollected: {
           label: 'Not Collected',
-          value: 5600
+          value: 5600,
         },
       },
       disposal: {
         refined: {
           label: 'Re-Refined-a',
-          value: 4300
+          value: 4300,
         },
         fuel: {
           label: 'Fuel',
-          value: 5600
+          value: 5600,
         },
         others: {
           label: 'All others-b',
-          value: 500
+          value: 500,
         },
       },
       refining: {
         basestock: {
           label: 'Basestock',
-          value: 4300
+          value: 4300,
         },
         others: {
           label: 'All other',
-          value: 3600
+          value: 3600,
         },
       },
     },
@@ -1556,45 +1556,45 @@ export class RrboService {
       generation: {
         lubricantLost: {
           label: 'Lubricant Lost',
-          value: 4300
+          value: 4300,
         },
         usedOilGenerated: {
           label: 'Used Oil Generated',
-          value: 5600
+          value: 5600,
         },
       },
       collection: {
         collected: {
           label: 'Collected',
-          value: 4300
+          value: 4300,
         },
         notCollected: {
           label: 'Not Collected',
-          value: 5600
+          value: 5600,
         },
       },
       disposal: {
         refined: {
           label: 'Re-Refined-a',
-          value: 4300
+          value: 4300,
         },
         fuel: {
           label: 'Fuel',
-          value: 5600
+          value: 5600,
         },
         others: {
           label: 'All others-b',
-          value: 500
+          value: 500,
         },
       },
       refining: {
         basestock: {
           label: 'Basestock',
-          value: 4300
+          value: 4300,
         },
         others: {
           label: 'All other',
-          value: 3600
+          value: 3600,
         },
       },
     },
@@ -1605,49 +1605,49 @@ export class RrboService {
       generation: {
         lubricantLost: {
           label: 'Lubricant Lost',
-          value: 4300
+          value: 4300,
         },
         usedOilGenerated: {
           label: 'Used Oil Generated',
-          value: 5600
+          value: 5600,
         },
       },
       collection: {
         collected: {
           label: 'Collected',
-          value: 4300
+          value: 4300,
         },
         notCollected: {
           label: 'Not Collected',
-          value: 5600
+          value: 5600,
         },
       },
       disposal: {
         refined: {
           label: 'Re-Refined-a',
-          value: 4300
+          value: 4300,
         },
         fuel: {
           label: 'Fuel',
-          value: 5600
+          value: 5600,
         },
         others: {
           label: 'All others-b',
-          value: 500
+          value: 500,
         },
       },
       refining: {
         basestock: {
           label: 'Basestock',
-          value: 4300
+          value: 4300,
         },
         others: {
           label: 'All other',
-          value: 3600
+          value: 3600,
         },
       },
-    }
-  ]
+    },
+  ];
 
   getMapTypes(): MapSetting[] {
     return mapTypes;

@@ -1,0 +1,129 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
+.pad-demand-body-chart-view {
+  &-filters {
+    padding: 40px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // max-width: 1210px;
+    // margin: 0 auto;
+    .selects {
+      display: flex;
+      gap: 10px;
+    }
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+    .filters {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      justify-content: center;
+      grid-gap: 16px;
+      align-items: center;
+
+      > select {
+        border: none;
+        border-bottom: 1px solid $orange;
+        padding: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        max-width: 300px;
+        white-space: unset;
+        // margin-right: 16px;
+        color: $gray;
+
+        option {
+          padding: 8px;
+          background-color: #eee;
+          color: #333;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+
+      .search-section {
+        display: flex;
+        align-items: center;
+        min-height: 32px;
+        padding: 8px;
+        border-bottom: 1px solid $orange;
+
+        .serach-input {
+          > input {
+            border: none;
+            height: 100%;
+            color: $gray;
+            font-size: 14px;
+            font-weight: 500;
+
+            &::placeholder {
+              color: #3f3f3f77;
+            }
+          }
+        }
+      }
+
+      .filter-actions {
+        display: flex;
+
+        .serach-btn {
+          border: none;
+          background-color: transparent;
+          // margin-left: 10px;
+          cursor: pointer;
+
+          > svg {
+            display: block;
+            width: 20px;
+            height: 20px;
+
+            path {
+              fill: $orange;
+            }
+          }
+        }
+      }
+    }
+
+    .modal-content {
+      padding: 20px 0 0;
+
+      > div {
+        display: grid;
+        justify-content: center;
+        grid-gap: 32px;
+        justify-items: center;
+
+        .desc {
+          font-size: 18px;
+          line-height: 26px;
+          font-weight: 500;
+          color: $gray;
+        }
+
+        > input {
+          padding: 8px;
+          width: 100%;
+          max-width: 300px;
+          border: none;
+          color: $gray;
+          border-bottom: 1px solid $orange;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .charts {
+    .tab {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px;
+      margin: 20px 0;
+    }
+  }
+}

@@ -4,42 +4,7 @@
 .synthetic-basestocks {
   min-height: calc(100vh - 135px);
   padding-top: 69px;
-  &-header {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    box-shadow: inset 0px 10px 9px rgba(63, 63, 63, 0.06);
-    border-bottom: 1px solid rgba(63, 63, 63, 0.1529411765);
-    &-title {
-      background: #f7f7f7;
-      color: #3f3f3f;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 36px;
-      letter-spacing: 0.05em;
-      padding: 35px;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 105%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &-desc {
-      max-width: 800px;
-      margin: 0 auto;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 26px;
-      letter-spacing: 0.05em;
-      color: #3f3f3f;
-      text-align: left;
-      padding: 32px 20px;
-      .subtitle {
-        font-size: 20px;
-        margin-bottom: 10px;
-      }
-    }
-  }
+
   &-tabs {
     display: flex;
     justify-content: flex-end;

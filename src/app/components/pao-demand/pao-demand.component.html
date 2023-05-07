@@ -1,0 +1,113 @@
+<div class="pao-demand">
+  <app-hero-section
+    title="PAO Demand Deblend Model"
+    desc="
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    "
+  ></app-hero-section>
+  <div class="pao-demand-tabs">
+    <app-button
+      [btnText]="'Tabular View'"
+      [type]="'secondary'"
+      [icon]="false"
+      [iconName]="''"
+      (click)="selectedMainTab = 1"
+    ></app-button>
+    <app-button
+      [btnText]="'Chart View'"
+      [type]="'secondary'"
+      [icon]="false"
+      [iconName]="''"
+      (click)="selectedMainTab = 2"
+    ></app-button>
+  </div>
+  <div *ngIf="selectedMainTab === 1" class="pao-demand-body">
+    <div class="pao-demand-body-filters">
+      <app-button
+        [btnText]="'PAO Demand in Lubricant Applications'"
+        [type]="'secondary small'"
+        [icon]="false"
+        [iconName]="'../../../assets/images/demand.png'"
+        (click)="selectedTab = 1"
+      ></app-button>
+      <app-button
+        [btnText]="'PAO Demand by PAO Type'"
+        [type]="'secondary small'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedTab = 2"
+      ></app-button>
+      <app-button
+        [btnText]="'PAO Demand by Viscosity Grades'"
+        [type]="'secondary small'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedTab = 3"
+      ></app-button>
+    </div>
+    <div *ngIf="selectedTab === 1" class="pao-demand-body-pivot">
+      <dx-pivot-grid
+        [allowSortingBySummary]="true"
+        [allowSorting]="true"
+        [allowFiltering]="true"
+        [allowExpandAll]="true"
+        [showColumnGrandTotals]="true"
+        [showBorders]="true"
+        [dataSource]="dataSource"
+      >
+        <dxo-field-panel
+          [showDataFields]="false"
+          [showRowFields]="showRowFields"
+          [showColumnFields]="false"
+          [showFilterFields]="true"
+          [allowFieldDragging]="false"
+          [visible]="true"
+        >
+        </dxo-field-panel>
+      </dx-pivot-grid>
+    </div>
+    <div *ngIf="selectedTab === 2" class="pao-demand-body-pivot">
+      <dx-pivot-grid
+        [allowSortingBySummary]="true"
+        [allowSorting]="true"
+        [allowFiltering]="true"
+        [allowExpandAll]="true"
+        [showBorders]="true"
+        [dataSource]="dataSource"
+      >
+        <dxo-field-panel
+          [showDataFields]="false"
+          [showRowFields]="showRowFields"
+          [showColumnFields]="false"
+          [showFilterFields]="true"
+          [allowFieldDragging]="false"
+          [visible]="true"
+        >
+        </dxo-field-panel>
+      </dx-pivot-grid>
+    </div>
+    <div *ngIf="selectedTab === 3" class="pao-demand-body-pivot">
+      <dx-pivot-grid
+        [allowSortingBySummary]="true"
+        [allowSorting]="true"
+        [allowFiltering]="true"
+        [allowExpandAll]="true"
+        [showBorders]="true"
+        [dataSource]="dataSource"
+      >
+        <dxo-field-panel
+          [showDataFields]="false"
+          [showRowFields]="showRowFields"
+          [showColumnFields]="false"
+          [showFilterFields]="true"
+          [allowFieldDragging]="false"
+          [visible]="true"
+        >
+        </dxo-field-panel>
+      </dx-pivot-grid>
+    </div>
+  </div>
+  <div *ngIf="selectedMainTab === 2" class="synthetic-basestocks-body">
+    <app-pao-chart-view [chartData]="dataSource.store"></app-pao-chart-view>
+  </div>
+</div>

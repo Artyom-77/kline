@@ -1,0 +1,48 @@
+<div class="pad-demand-body-chart-view">
+  <div class="pad-demand-body-chart-view-filters">
+    <div class="selects">
+      <app-select-dropdown
+        [dropdownTitle]="'Region'"
+        [dropdownData]="regionList"
+        (itemEvent)="handleRegionChange($event)"
+        [firstItemSelected]="false"
+      ></app-select-dropdown>
+    </div>
+    <div class="actions">
+      <app-button
+        [btnText]="'Download Data'"
+        [type]="'icon secondary'"
+        [icon]="false"
+        [iconName]="''"
+      ></app-button>
+    </div>
+  </div>
+  <div class="charts">
+    <div class="tab first-tab" *ngIf="selectedTab === 1">
+      <app-pao-chart-by-segment
+        [chartData]="chartData"
+      ></app-pao-chart-by-segment>
+      <app-pao-chart-by-growth
+        [chartData]="chartData"
+      ></app-pao-chart-by-growth>
+      <app-pao-chart-by-growth
+        [chartData]="chartData"
+      ></app-pao-chart-by-growth>
+      <app-pao-pie-chart-by-product
+        [chartData]="chartData"
+      ></app-pao-pie-chart-by-product>
+      <app-pao-pie-chart-by-product
+        [chartData]="chartData"
+      ></app-pao-pie-chart-by-product>
+      <app-pao-chart-growth-by-type
+        [chartData]="chartData"
+      ></app-pao-chart-growth-by-type>
+      <app-pao-chart-by-segment
+        [chartData]="chartData"
+      ></app-pao-chart-by-segment>
+      <app-pao-pie-chart-by-product
+        [chartData]="chartData"
+      ></app-pao-pie-chart-by-product>
+    </div>
+  </div>
+</div>

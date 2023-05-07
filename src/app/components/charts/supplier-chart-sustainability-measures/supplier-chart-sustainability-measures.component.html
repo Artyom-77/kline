@@ -1,0 +1,46 @@
+<div class="chart">
+  <h3 class="title">Sustainability Measures</h3>
+  <div class="list">
+    <dx-bar-gauge
+      id="gauge1"
+      [startValue]="0"
+      [endValue]="100"
+      [values]="chartData[0]"
+    >
+      <dxo-label [indent]="10" [customizeText]="customizeText"
+        ><dxo-format type="fixedPoint" [precision]="1"></dxo-format>
+      </dxo-label>
+    </dx-bar-gauge>
+    <dx-bar-gauge
+      id="gauge2"
+      [startValue]="0"
+      [endValue]="100"
+      [values]="chartData[1]"
+    >
+      <dxo-label [indent]="10" [customizeText]="customizeText"
+        ><dxo-format type="fixedPoint" [precision]="1"></dxo-format>
+      </dxo-label>
+    </dx-bar-gauge>
+    <dx-bar-gauge
+      id="gauge3"
+      [startValue]="0"
+      [endValue]="100"
+      [values]="chartData[2]"
+    >
+      <dxo-label [indent]="10" [customizeText]="customizeText"
+        ><dxo-format type="fixedPoint" [precision]="1"></dxo-format>
+      </dxo-label>
+    </dx-bar-gauge>
+    <dx-bar-gauge
+      id="gauge4"
+      [startValue]="0"
+      [endValue]="100"
+      [values]="chartData[3]"
+    >
+      <dxo-label [indent]="10" [customizeText]="customizeText"
+        ><dxo-format type="fixedPoint" [precision]="1"></dxo-format>
+      </dxo-label>
+    </dx-bar-gauge>
+  </div>
+  <p>{{ text }}</p>
+</div>

@@ -1,0 +1,57 @@
+<div class="supplier-profiles">
+  <app-hero-section
+    subtitle="Competitive Landscape"
+    title="Supplier Profiles"
+    desc="
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    "
+  ></app-hero-section>
+  <div class="supplier-profiles-filters">
+    <app-select-dropdown
+      [dropdownTitle]="'Supplier'"
+      [dropdownData]="supplierDropList"
+      (itemEvent)="handleSupplierChange($event)"
+      [firstItemSelected]="true"
+    ></app-select-dropdown>
+  </div>
+  <div class="supplier-profiles-body">
+    <div class="company-card">
+      <div class="card-header">
+        <div class="card-header-logo">
+          <img [src]="selectedCompany.logo" alt="logo" />
+        </div>
+        <div class="card-header-info">
+          <h3 class="title">{{ selectedCompany.Company }}</h3>
+          <h4 class="location">
+            Plant Location: {{ selectedCompany.City }},
+            {{ selectedCompany.Location }}
+          </h4>
+        </div>
+      </div>
+      <div class="card-body">
+        <app-supplier-chart-current-capacity
+          [chartData]="selectedCompany.CurrentBaseOilCapacity"
+          [text]="selectedCompany.CapasityDesc"
+        >
+        </app-supplier-chart-current-capacity>
+        <app-supplier-chart-sustainability-measures
+          [chartData]="selectedCompany.SustainabilityMeasures"
+          [text]="selectedCompany.SustainabilityMeasuresDesc"
+        ></app-supplier-chart-sustainability-measures>
+        <app-supplier-pie-chart-visgrade-yield
+          [chartData]="selectedCompany.BaseOilVisgradeYield"
+        ></app-supplier-pie-chart-visgrade-yield>
+        <app-supplier-pie-chart-oil-export
+          [chartData]="selectedCompany.BaseOilExports"
+        ></app-supplier-pie-chart-oil-export>
+        <app-supplier-pie-chart-sales-structure
+          [chartData]="selectedCompany.BaseOilSalesStructure"
+        >
+        </app-supplier-pie-chart-sales-structure>
+        <app-supplier-chart-production
+          [chartData]="selectedCompany.BaseOilProduction"
+        ></app-supplier-chart-production>
+      </div>
+    </div>
+  </div>
+</div>

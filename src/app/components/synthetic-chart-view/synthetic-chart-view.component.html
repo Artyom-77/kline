@@ -8,18 +8,18 @@
         [firstItemSelected]="false"
       ></app-select-dropdown>
       <app-select-dropdown
-      [dropdownTitle]="'Market Analyzed'"
-      [dropdownData]="analyzedList"
-      (itemEvent)="handleAnalyzedChange($event)"
-      [firstItemSelected]="true"
-    ></app-select-dropdown>
-    <app-select-dropdown
-      *ngIf="selectedTab === 3"
-      [dropdownTitle]="'Year'"
-      [dropdownData]="yearList"
-      (itemEvent)="handleYearChange($event)"
-      [firstItemSelected]="true"
-    ></app-select-dropdown>
+        [dropdownTitle]="'Market Analyzed'"
+        [dropdownData]="analyzedList"
+        (itemEvent)="handleAnalyzedChange($event)"
+        [firstItemSelected]="true"
+      ></app-select-dropdown>
+      <app-select-dropdown
+        *ngIf="selectedTab === 3"
+        [dropdownTitle]="'Year'"
+        [dropdownData]="yearList"
+        (itemEvent)="handleYearChange($event)"
+        [firstItemSelected]="true"
+      ></app-select-dropdown>
     </div>
     <div class="actions">
       <app-button
@@ -30,11 +30,11 @@
         (click)="procesdedCLick()"
       ></app-button>
       <app-button
-      [btnText]="'Download Data'"
-      [type]="'icon secondary'"
-      [icon]="false"
-      [iconName]="''"
-    ></app-button>
+        [btnText]="'Download Data'"
+        [type]="'icon secondary'"
+        [icon]="false"
+        [iconName]="''"
+      ></app-button>
     </div>
   </div>
   <div class="charts">
@@ -59,29 +59,28 @@
     </div>
     <div class="tab second-tab" *ngIf="selectedTab === 2">
       <app-pie-chart-split-by-viscosity-grade-second
-      [chartData]="chartData"
-    ></app-pie-chart-split-by-viscosity-grade-second>
-    <app-pie-chart-split-by-segment
-      [chartData]="chartData"
-    ></app-pie-chart-split-by-segment>
-    <app-pie-chart-by-product-second
-      [chartData]="chartData"
-    ></app-pie-chart-by-product-second>
+        [chartData]="chartData"
+      ></app-pie-chart-split-by-viscosity-grade-second>
+      <app-pie-chart-split-by-segment
+        [chartData]="chartData"
+      ></app-pie-chart-split-by-segment>
+      <app-pie-chart-by-product-second
+        [chartData]="chartData"
+      ></app-pie-chart-by-product-second>
     </div>
     <div class="tab first-tab" *ngIf="selectedTab === 3">
       <app-pie-chart-split-by-viscosity-grade
-      [chartData]="chartData"
-    ></app-pie-chart-split-by-viscosity-grade>
+        [chartData]="chartData"
+      ></app-pie-chart-split-by-viscosity-grade>
       <app-pie-chart-split-by-viscosity-grade-second
-      [chartData]="chartData"
-    ></app-pie-chart-split-by-viscosity-grade-second>
-    <app-pie-chart-split-by-segment
-      [chartData]="chartData"
-    ></app-pie-chart-split-by-segment>
-    <app-pie-chart-by-product-second
-      [chartData]="chartData"
-    ></app-pie-chart-by-product-second>
+        [chartData]="chartData"
+      ></app-pie-chart-split-by-viscosity-grade-second>
+      <app-pie-chart-split-by-segment
+        [chartData]="chartData"
+      ></app-pie-chart-split-by-segment>
+      <app-pie-chart-by-product-second
+        [chartData]="chartData"
+      ></app-pie-chart-by-product-second>
     </div>
-
   </div>
 </div>

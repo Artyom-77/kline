@@ -1,11 +1,10 @@
 <div class="webinars">
-  <div class="webinars-header">
-    <p class="webinars-header-desc">
-      A repository of the latest and archived news pertaining to global basestocks market from Kline Analysts
-    </p>
-    <h1 class="webinars-header-title">Insights</h1>
-  </div>
-
+  <app-hero-section
+    title="Insights"
+    desc="
+  A repository of the latest and archived news pertaining to global basestocks market from Kline Analysts
+  "
+  ></app-hero-section>
   <div class="webinars-filters">
     <!-- <div class="filters">
       <div
@@ -93,11 +92,11 @@
       ></app-button>
 
       <app-button
-      [btnText]="'More on Lubes'"
-      [type]="'primary'"
-      [icon]="false"
-      [iconName]="''"
-    ></app-button>
+        [btnText]="'More on Lubes'"
+        [type]="'primary'"
+        [icon]="false"
+        [iconName]="''"
+      ></app-button>
     </div>
   </div>
 
@@ -107,10 +106,10 @@
         <h3>Published Articles</h3>
       </div>
       <div class="arrow-prev" (click)="scrollRightPublished()">
-        <img src="../../../assets/images/small-arrow.svg" alt="arrow" >
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
       </div>
       <div class="arrow-next" (click)="scrollLeftPublished()">
-        <img src="../../../assets/images/small-arrow.svg" alt="arrow"  >
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
       </div>
       <div class="published-articles-cards" #content>
         <div
@@ -128,7 +127,9 @@
           <div class="card-body">
             <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
             <h3 class="card-body-title">{{ item.title }}</h3>
-            <p class="card-body-industry"><b>Industry:</b> {{ item.industry }}</p>
+            <p class="card-body-industry">
+              <b>Industry:</b> {{ item.industry }}
+            </p>
             <p class="card-body-desc">{{ item.desc }}</p>
             <div class="card-body-action">
               <app-button
@@ -147,10 +148,10 @@
         <h3>Analysis-Kline Base Oil Reports</h3>
       </div>
       <div class="arrow-prev" (click)="scrollRightAnalysis()">
-        <img src="../../../assets/images/small-arrow.svg" alt="arrow" >
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
       </div>
       <div class="arrow-next" (click)="scrollLeftAnalysis()">
-        <img src="../../../assets/images/small-arrow.svg" alt="arrow"  >
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
       </div>
       <div class="published-articles-cards" #content1>
         <div
@@ -168,7 +169,9 @@
           <div class="card-body">
             <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
             <h3 class="card-body-title">{{ item.title }}</h3>
-            <p class="card-body-industry"><b>Industry:</b> {{ item.industry }}</p>
+            <p class="card-body-industry">
+              <b>Industry:</b> {{ item.industry }}
+            </p>
             <p class="card-body-desc">{{ item.desc }}</p>
             <div class="card-body-action">
               <app-button
@@ -187,10 +190,10 @@
         <h3>KIine Other Offerings</h3>
       </div>
       <div class="arrow-prev" (click)="scrollRightOfferings()">
-        <img src="../../../assets/images/small-arrow.svg" alt="arrow" >
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
       </div>
       <div class="arrow-next" (click)="scrollLeftOfferings()">
-        <img src="../../../assets/images/small-arrow.svg" alt="arrow"  >
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
       </div>
       <div class="published-articles-cards" #content2>
         <div
@@ -208,7 +211,9 @@
           <div class="card-body">
             <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
             <h3 class="card-body-title">{{ item.title }}</h3>
-            <p class="card-body-industry"><b>Industry:</b> {{ item.industry }}</p>
+            <p class="card-body-industry">
+              <b>Industry:</b> {{ item.industry }}
+            </p>
             <p class="card-body-desc">{{ item.desc }}</p>
             <div class="card-body-action">
               <app-button

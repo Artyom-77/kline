@@ -1,0 +1,103 @@
+<div class="first-pie">
+  <!-- <div class="filters">
+    <div
+      class="custom-dropdown date-dropdown"
+      (click)="toggleSegmentDropdown()"
+      style="width: 100%"
+    >
+      <div class="dropdown-header">
+        <span>{{ selectedSegment }}</span>
+        <img
+          class="dropdown-icon"
+          [class.rotate]="isSegmentDropdownOpen"
+          [class.defalut]="!isSegmentDropdownOpen"
+          src="../../../assets/images/small-arrow.svg"
+          alt="arrow"
+        />
+      </div>
+      <div class="dropdown-list" *ngIf="isSegmentDropdownOpen">
+        <div
+          class="dropdown-item"
+          *ngFor="let option of segmentList"
+          (click)="toggleSegmentOption(option)"
+        >
+          {{ option }}
+        </div>
+      </div>
+    </div>
+    <div
+      class="custom-dropdown date-dropdown"
+      (click)="toggleYearDropdown()"
+      style="width: 100%"
+    >
+      <div class="dropdown-header">
+        <span>{{ selectedYear }}</span>
+        <img
+          class="dropdown-icon"
+          [class.rotate]="isYearDropdownOpen"
+          [class.defalut]="!isYearDropdownOpen"
+          src="../../../assets/images/small-arrow.svg"
+          alt="arrow"
+        />
+      </div>
+      <div class="dropdown-list" *ngIf="isYearDropdownOpen">
+        <div
+          class="dropdown-item"
+          *ngFor="let option of yearList"
+          (click)="toggleYearOption(option)"
+        >
+          {{ option }}
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- <dx-chart
+    id="chart"
+    title="Share of Synthetic Basestock by Segment (KT)"
+    [dataSource]="mergedObj"
+    [rotated]="false"
+  >
+    <dxi-series
+      color="#79cac4"
+      type="bar"
+      width="50"
+      argumentField="BSType"
+      valueField="SumofValues"
+    >
+    </dxi-series>
+    <dxo-legend [visible]="true"></dxo-legend>
+  </dx-chart> -->
+  <dx-chart
+    id="chart12"
+    title="PAO Demand Split by Segment (Kilotonnes)"
+    [dataSource]="mergedObj"
+  >
+    <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>
+    <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>
+    <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>
+    <!-- <dxi-series valueField="SumofValues" argumentField="Segment"></dxi-series>
+    <dxi-series valueField="SumofValues" argumentField="Segment"></dxi-series> -->
+    <!-- <dxi-value-axis position="right">
+          <dxo-title text="millions"></dxo-title>
+        </dxi-value-axis> -->
+    <dxo-common-series-settings
+      argumentField="Segment"
+      valueField="SumofValues"
+      type="stackedBar"
+    >
+    </dxo-common-series-settings>
+    <dxo-legend
+      verticalAlignment="bottom"
+      horizontalAlignment="center"
+      itemTextPosition="right"
+    >
+    </dxo-legend>
+    <!-- <dxo-export [enabled]="true"></dxo-export> -->
+    <!-- <dxo-tooltip
+          [enabled]="true"
+          location="edge"
+          [customizeTooltip]="customizeTooltip"
+        >
+        </dxo-tooltip> -->
+  </dx-chart>
+</div>

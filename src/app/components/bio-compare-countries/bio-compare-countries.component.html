@@ -1,19 +1,16 @@
 <div class="bio-compare">
-  <div class="bio-compare-header">
-    <div class="bio-compare-header-desc">
-      <p class="subtitle">Regulations & Industry Standards</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua.
-      </p>
-    </div>
-    <h1 class="bio-compare-header-title">Bio-Basestocks</h1>
-  </div>
+  <app-hero-section
+    subtitle="Regulations & Industry Standards"
+    title="Bio-Basestocks"
+    desc="
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua.
+  "
+  ></app-hero-section>
   <div class="bio-compare-filters">
     <div class="filters">
-    
       <div
         class="custom-dropdown date-dropdown"
         (click)="toggleCountryDropdown()"
@@ -25,12 +22,12 @@
               : "Select options"
           }}</span>
           <img
-          class="dropdown-icon"
-          [class.rotate]="isCountryOpen"
-          [class.defalut]="!isCountryOpen"
-          src="../../../assets/images/small-arrow.svg"
-          alt="arrow"
-        />
+            class="dropdown-icon"
+            [class.rotate]="isCountryOpen"
+            [class.defalut]="!isCountryOpen"
+            src="../../../assets/images/small-arrow.svg"
+            alt="arrow"
+          />
         </div>
         <div class="dropdown-list" *ngIf="isCountryOpen">
           <div
@@ -49,70 +46,72 @@
     </div>
     <div class="filters-action">
       <app-button
-      [btnText]="'Back to Country Data'"
-      [type]="'icon secondary'"
-      [icon]="false"
-      [iconName]="''"
-      (click)="route.navigate(['/bio-basestocks'])"
-    ></app-button>
-    <app-button
-    [btnText]="'Glossary'"
-    [type]="'icon secondary'"
-    [icon]="false"
-    [iconName]="''"
-    (click)="openModal()"
-  ></app-button>
+        [btnText]="'Back to Country Data'"
+        [type]="'icon secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="route.navigate(['/bio-basestocks'])"
+      ></app-button>
+      <app-button
+        [btnText]="'Glossary'"
+        [type]="'icon secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="openModal()"
+      ></app-button>
     </div>
   </div>
   <div class="bio-compare-body">
     <div class="bio-compare-body-criterias-table">
       <dx-data-grid
-      id="gridContainer"
-      *ngIf="selectedCountry.length === 4"
-      [dataSource]="curent_data_times"
-      [showColumnLines]="false"
-      [showRowLines]="false"
-      [showBorders]="false"
-      [rowAlternationEnabled]="true"
-    >
-    </dx-data-grid>
+        id="gridContainer"
+        *ngIf="selectedCountry.length === 4"
+        [dataSource]="curent_data_times"
+        [showColumnLines]="false"
+        [showRowLines]="false"
+        [showBorders]="false"
+        [rowAlternationEnabled]="true"
+      >
+      </dx-data-grid>
     </div>
     <div class="bio-compare-body-timeperiod-table">
-      <h3 class="bio-compare-body-timeperiod-table-title"  *ngIf="selectedCountry.length === 4">
+      <h3
+        class="bio-compare-body-timeperiod-table-title"
+        *ngIf="selectedCountry.length === 4"
+      >
         TIMELINE- Bio-lubricants Policy Changes in Selected Countries
       </h3>
       <dx-data-grid
-      cssClass="custom-column"
-      id="gridContainer1"
-      height="auto"
-      *ngIf="selectedCountry.length === 4"
-      [dataSource]="curent_data"
-      [showColumnLines]="false"
-      [showRowLines]="false"
-      [showBorders]="false"
-      [rowAlternationEnabled]="false"
+        cssClass="custom-column"
+        id="gridContainer1"
+        height="auto"
+        *ngIf="selectedCountry.length === 4"
+        [dataSource]="curent_data"
+        [showColumnLines]="false"
+        [showRowLines]="false"
+        [showBorders]="false"
+        [rowAlternationEnabled]="false"
       >
       </dx-data-grid>
     </div>
   </div>
   <div class="modal-area">
     <app-modal
-    [title]="'GLOSSARY'"
-    *ngIf="isModalVisible"
-    (onClose)="onCloseModal()"
-  >
-    <div class="modal-content">
-      <dx-data-grid
-      id="gridContainer"
-      [dataSource]="glossaryData"
-      [showColumnLines]="false"
-      [showRowLines]="false"
-      [showBorders]="false"
-      [rowAlternationEnabled]="true"
+      [title]="'GLOSSARY'"
+      *ngIf="isModalVisible"
+      (onClose)="onCloseModal()"
     >
-    </dx-data-grid>
-    
-    </div>
-  </app-modal>
+      <div class="modal-content">
+        <dx-data-grid
+          id="gridContainer"
+          [dataSource]="glossaryData"
+          [showColumnLines]="false"
+          [showRowLines]="false"
+          [showBorders]="false"
+          [rowAlternationEnabled]="true"
+        >
+        </dx-data-grid>
+      </div>
+    </app-modal>
   </div>
 </div>

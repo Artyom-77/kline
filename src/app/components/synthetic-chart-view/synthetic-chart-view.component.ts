@@ -81,18 +81,13 @@ export class SyntheticChartViewComponent implements OnInit {
     this.isCountryOpen = !this.isCountryOpen;
   }
 
-  handleRegionChange(arg: string) {
-  }
+  handleRegionChange(arg: string) {}
 
   handleAnalyzedChange(arg: string) {
     this.analyzed = arg;
   }
-  handleYearChange(arg: string) {
-  }
-  // customizeText(arg: any) {
-  //   // console.log('arg',arg)
-  //   return `Day ${arg.valueText}`;
-  // }
+  handleYearChange(arg: string) {}
+
   toggleCountryOption(option: string): void {
     this.firstSelect = option;
     this.selectedList = this.chartData.filter(

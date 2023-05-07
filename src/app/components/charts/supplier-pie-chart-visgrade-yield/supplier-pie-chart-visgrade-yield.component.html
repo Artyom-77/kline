@@ -1,0 +1,32 @@
+<div class="chart">
+  <div class="header">
+    <h3 class="title">Base Oil Visgrade Yield</h3>
+  </div>
+  <app-select-dropdown
+    [dropdownTitle]="'Year'"
+    [dropdownData]="yearData"
+    (itemEvent)="handleChange($event)"
+  ></app-select-dropdown>
+  <div class="chart-pie">
+    <dx-pie-chart
+      id="pie"
+      palette="pastel"
+      paletteExtensionMode="blend"
+      [dataSource]="chartData"
+    >
+      <dxi-series argumentField="label" valueField="value">
+        <dxo-label
+          [visible]="true"
+          [customizeText]="customizeLabel"
+        ></dxo-label>
+      </dxi-series>
+      <!-- <dxo-size [width]="300" ></dxo-size> -->
+      <dxo-legend
+        verticalAlignment="bottom"
+        horizontalAlignment="center"
+        itemTextPosition="right"
+      >
+      </dxo-legend>
+    </dx-pie-chart>
+  </div>
+</div>

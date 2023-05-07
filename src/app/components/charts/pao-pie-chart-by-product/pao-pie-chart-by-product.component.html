@@ -1,0 +1,47 @@
+<div class="first-pie">
+  <div class="filters">
+    <div
+      class="custom-dropdown date-dropdown"
+      (click)="toggleYearDropdown()"
+      style="width: 100%"
+    >
+      <div class="dropdown-header">
+        <span>{{ selectedYear }}</span>
+        <img
+          class="dropdown-icon"
+          [class.rotate]="isYearDropdownOpen"
+          [class.defalut]="!isYearDropdownOpen"
+          src="../../../assets/images/small-arrow.svg"
+          alt="arrow"
+        />
+      </div>
+      <div class="dropdown-list" *ngIf="isYearDropdownOpen">
+        <div
+          class="dropdown-item"
+          *ngFor="let option of yearList"
+          (click)="toggleYearOption(option)"
+        >
+          {{ option }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <dx-pie-chart
+    id="pie"
+    title="PAO Demand Split by Product (%)"
+    palette="pastel"
+    paletteExtensionMode="blend"
+    [dataSource]="mergedObj"
+  >
+    <dxi-series argumentField="Sector" valueField="SumofValues">
+      <!-- <dxo-label [visible]="true" format="percent"></dxo-label> -->
+      <dxo-label [visible]="true" [customizeText]="customizeLabel"></dxo-label>
+    </dxi-series>
+    <!-- <dxo-size [width]="300"></dxo-size> -->
+    <dxo-legend
+      verticalAlignment="bottom"
+      horizontalAlignment="center"
+      itemTextPosition="right"
+    ></dxo-legend>
+  </dx-pie-chart>
+</div>

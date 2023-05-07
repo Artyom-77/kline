@@ -29,6 +29,7 @@ import {
   DxPieChartModule,
   DxChartModule,
   DxMapModule,
+  DxBarGaugeModule,
 } from 'devextreme-angular';
 import { SyntheticBasestocksComponent } from './components/synthetic-basestocks/synthetic-basestocks.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -48,6 +49,20 @@ import { CapacityMapRrboComponent } from './components/capacity-map-rrbo/capacit
 import { MaterialBalanceRrboComponent } from './components/material-balance-rrbo/material-balance-rrbo.component';
 import { PieChartSplitBySegmentComponent } from './components/charts/pie-chart-split-by-segment/pie-chart-split-by-segment.component';
 import { PieChartByProductSecondComponent } from './components/charts/pie-chart-by-product-second/pie-chart-by-product-second.component';
+import { HeroSectionComponent } from './components/hero-section/hero-section.component';
+import { PaoDemandComponent } from './components/pao-demand/pao-demand.component';
+import { PaoChartViewComponent } from './components/pao-chart-view/pao-chart-view.component';
+import { PaoChartBySegmentComponent } from './components/charts/pao-chart-by-segment/pao-chart-by-segment.component';
+import { PaoChartByGrowthComponent } from './components/charts/pao-chart-by-growth/pao-chart-by-growth.component';
+import { PaoPieChartByProductComponent } from './components/charts/pao-pie-chart-by-product/pao-pie-chart-by-product.component';
+import { PaoChartGrowthByTypeComponent } from './components/charts/pao-chart-growth-by-type/pao-chart-growth-by-type.component';
+import { SupplierProfilesComponent } from './components/supplier-profiles/supplier-profiles.component';
+import { SupplierChartCurrentCapacityComponent } from './components/charts/supplier-chart-current-capacity/supplier-chart-current-capacity.component';
+import { SupplierChartSustainabilityMeasuresComponent } from './components/charts/supplier-chart-sustainability-measures/supplier-chart-sustainability-measures.component';
+import { SupplierPieChartVisgradeYieldComponent } from './components/charts/supplier-pie-chart-visgrade-yield/supplier-pie-chart-visgrade-yield.component';
+import { SupplierPieChartOilExportComponent } from './components/charts/supplier-pie-chart-oil-export/supplier-pie-chart-oil-export.component';
+import { SupplierPieChartSalesStructureComponent } from './components/charts/supplier-pie-chart-sales-structure/supplier-pie-chart-sales-structure.component';
+import { SupplierChartProductionComponent } from './components/charts/supplier-chart-production/supplier-chart-production.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +101,20 @@ import { PieChartByProductSecondComponent } from './components/charts/pie-chart-
     MaterialBalanceRrboComponent,
     PieChartSplitBySegmentComponent,
     PieChartByProductSecondComponent,
+    HeroSectionComponent,
+    PaoDemandComponent,
+    PaoChartViewComponent,
+    PaoChartBySegmentComponent,
+    PaoChartByGrowthComponent,
+    PaoPieChartByProductComponent,
+    PaoChartGrowthByTypeComponent,
+    SupplierProfilesComponent,
+    SupplierChartCurrentCapacityComponent,
+    SupplierChartSustainabilityMeasuresComponent,
+    SupplierPieChartVisgradeYieldComponent,
+    SupplierPieChartOilExportComponent,
+    SupplierPieChartSalesStructureComponent,
+    SupplierChartProductionComponent,
   ],
   imports: [
     BrowserModule,
@@ -100,6 +129,7 @@ import { PieChartByProductSecondComponent } from './components/charts/pie-chart-
     DxPieChartModule,
     DxChartModule,
     DxMapModule,
+    DxBarGaugeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
