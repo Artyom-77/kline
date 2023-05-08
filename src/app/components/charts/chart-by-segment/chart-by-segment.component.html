@@ -3,7 +3,6 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleSegmentDropdown()"
-      style="width: 100%"
     >
       <div class="dropdown-header">
         <span>{{ selectedSegment }}</span>
@@ -28,7 +27,6 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleYearDropdown()"
-      style="width: 100%"
     >
       <div class="dropdown-header">
         <span>{{ selectedYear }}</span>
@@ -56,11 +54,11 @@
     title="Share of Synthetic Basestock by Segment (KT)"
     [dataSource]="mergedObj"
     [rotated]="false"
+    palette="Dark Violet"
+    paletteExtensionMode="blend"
   >
     <dxi-series
-      color="#79cac4"
       type="bar"
-      width="50"
       argumentField="BSType"
       valueField="SumofValues"
     >

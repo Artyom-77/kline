@@ -1,76 +1,10 @@
 <div class="first-pie">
-  <!-- <div class="filters">
-    <div
-      class="custom-dropdown date-dropdown"
-      (click)="toggleSegmentDropdown()"
-      style="width: 100%"
-    >
-      <div class="dropdown-header">
-        <span>{{ selectedSegment }}</span>
-        <img
-          class="dropdown-icon"
-          [class.rotate]="isSegmentDropdownOpen"
-          [class.defalut]="!isSegmentDropdownOpen"
-          src="../../../assets/images/small-arrow.svg"
-          alt="arrow"
-        />
-      </div>
-      <div class="dropdown-list" *ngIf="isSegmentDropdownOpen">
-        <div
-          class="dropdown-item"
-          *ngFor="let option of segmentList"
-          (click)="toggleSegmentOption(option)"
-        >
-          {{ option }}
-        </div>
-      </div>
-    </div>
-    <div
-      class="custom-dropdown date-dropdown"
-      (click)="toggleYearDropdown()"
-      style="width: 100%"
-    >
-      <div class="dropdown-header">
-        <span>{{ selectedYear }}</span>
-        <img
-          class="dropdown-icon"
-          [class.rotate]="isYearDropdownOpen"
-          [class.defalut]="!isYearDropdownOpen"
-          src="../../../assets/images/small-arrow.svg"
-          alt="arrow"
-        />
-      </div>
-      <div class="dropdown-list" *ngIf="isYearDropdownOpen">
-        <div
-          class="dropdown-item"
-          *ngFor="let option of yearList"
-          (click)="toggleYearOption(option)"
-        >
-          {{ option }}
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!-- <dx-chart
-    id="chart"
-    title="Share of Synthetic Basestock by Segment (KT)"
-    [dataSource]="mergedObj"
-    [rotated]="false"
-  >
-    <dxi-series
-      color="#79cac4"
-      type="bar"
-      width="50"
-      argumentField="BSType"
-      valueField="SumofValues"
-    >
-    </dxi-series>
-    <dxo-legend [visible]="true"></dxo-legend>
-  </dx-chart> -->
   <dx-chart
     id="chart12"
     title="PAO Demand Split by Segment (Kilotonnes)"
     [dataSource]="mergedObj"
+    palette="Dark Violet"
+    paletteExtensionMode="blend"
   >
     <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>
     <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>

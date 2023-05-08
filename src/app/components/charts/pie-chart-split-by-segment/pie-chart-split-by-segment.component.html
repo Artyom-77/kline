@@ -3,7 +3,7 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleBSTypeDropdown()"
-      style="width: 100%"
+
     >
       <div class="dropdown-header">
         <span>{{ selectedBSType }}</span>
@@ -29,7 +29,7 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleYearDropdown()"
-      style="width: 100%"
+
     >
       <div class="dropdown-header">
         <span>{{ selectedYear }}</span>
@@ -55,7 +55,7 @@
   <dx-pie-chart
     id="pie"
     title="Synthetic Basestock Demand Split by Segment (KT)"
-    palette="pastel"
+    palette="Dark Violet"
     paletteExtensionMode="blend"
     [dataSource]="mergedObj"
   >

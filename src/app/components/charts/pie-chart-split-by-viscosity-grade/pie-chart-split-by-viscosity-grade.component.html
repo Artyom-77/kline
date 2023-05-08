@@ -3,7 +3,7 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleBSTypeDropdown()"
-      style="width: 100%"
+
     >
       <div class="dropdown-header">
         <span>{{ selectedBSType }}</span>
@@ -28,7 +28,7 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleViscosityGradeDropdown()"
-      style="width: 100%"
+
     >
       <div class="dropdown-header">
         <span>{{ selectedViscosityGrade }}</span>
@@ -53,7 +53,7 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleYearDropdown()"
-      style="width: 100%"
+
     >
       <div class="dropdown-header">
         <span>{{ selectedYear }}</span>
@@ -79,7 +79,7 @@
   <dx-pie-chart
     id="pie"
     title="Share of Synthetic Basestock by Viscosity Grade (KT)"
-    palette="pastel"
+    palette="Dark Violet"
     paletteExtensionMode="blend"
     [dataSource]="mergedObj"
   >

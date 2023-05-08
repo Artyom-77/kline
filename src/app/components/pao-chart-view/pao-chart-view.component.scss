@@ -2,6 +2,9 @@
 @import "../../../assets/scss/mixins.scss";
 
 .pad-demand-body-chart-view {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
   &-filters {
     padding: 40px 0 20px;
     display: flex;
@@ -121,9 +124,15 @@
   .charts {
     .tab {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 50px;
       margin: 20px 0;
+      align-items: flex-end;
+      > div {
+        &:nth-of-type(6) {
+          grid-column: 1/2;
+        }
+      }
     }
   }
 }

@@ -3,7 +3,7 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleYearDropdown()"
-      style="width: 100%"
+
     >
       <div class="dropdown-header">
         <span>{{ selectedYear }}</span>
@@ -29,7 +29,7 @@
   <dx-pie-chart
     id="pie"
     title="PAO Demand Split by Product (%)"
-    palette="pastel"
+    palette="Dark Violet"
     paletteExtensionMode="blend"
     [dataSource]="mergedObj"
   >

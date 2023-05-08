@@ -11,16 +11,41 @@
           <div class="circle-right"></div>
         </div>
       </div>
-      <div>
-        <div *ngFor="let li of item.list">
-          {{ li }}
+      <ul  *ngIf="item.list">
+        <li *ngFor="let li of item.list">
+          {{ li.text }}
+          <ul *ngIf="li.listDetails">
+            <li *ngFor="let el of li.listDetails">
+              {{ el }}
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ol *ngIf="item.olList">
+        <li *ngFor="let li of item.olList">
+          {{ li.text }}
+          <ul *ngIf="li.listDetails">
+              <li *ngFor="let el of li.listDetails">
+                  {{ el }}
+              </li>
+          </ul>
+        </li>
+      </ol>
+      <div class="tabs" *ngIf="item.tabs">
+        <div *ngFor="let tab of item.tabs">
+          <h4 class="tab-title">
+            {{ tab.title }}
+          </h4>
+          <ul *ngIf="tab.tabsList">
+            <li *ngFor="let el of tab.tabsList">
+              {{ el }}
+            </li>
+          </ul>
         </div>
       </div>
-      <div>
-        <div *ngFor="let li of item.olList">
-          {{ li }}
-        </div>
-      </div>
+      <p *ngIf="item.desc">
+        {{ item.desc }}
+      </p>
     </div>
   </div>
 </div>

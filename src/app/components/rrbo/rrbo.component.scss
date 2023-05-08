@@ -20,13 +20,13 @@
         border-radius: 4px;
         text-transform: uppercase;
         cursor: pointer;
-        &:nth-last-of-type(1) {
+        &:nth-last-of-type(3) {
           background-color: $teal;
         }
         &:nth-last-of-type(2) {
           background-color: $gray;
         }
-        &:nth-last-of-type(3) {
+        &:nth-last-of-type(1) {
           background-color: $orange;
         }
         &.active {

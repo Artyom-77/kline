@@ -1,5 +1,5 @@
 .filters {
   display: flex;
-  grid-template-columns: 1fr 1fr;
+  align-items: flex-end;
   grid-gap: 10px;
 }

@@ -19,30 +19,46 @@
   </div>
   <div class="charts">
     <div class="tab first-tab" *ngIf="selectedTab === 1">
-      <app-pao-chart-by-segment
-        [chartData]="chartData"
-      ></app-pao-chart-by-segment>
-      <app-pao-chart-by-growth
-        [chartData]="chartData"
-      ></app-pao-chart-by-growth>
-      <app-pao-chart-by-growth
-        [chartData]="chartData"
-      ></app-pao-chart-by-growth>
-      <app-pao-pie-chart-by-product
+      <div>
+        <app-pao-chart-by-segment
+          [chartData]="chartData"
+        ></app-pao-chart-by-segment>
+      </div>
+      <div>
+        <app-pao-chart-by-growth
+          [chartData]="chartData"
+        ></app-pao-chart-by-growth>
+      </div>
+      <div>
+        <app-pao-chart-by-growth
+          [chartData]="chartData"
+        ></app-pao-chart-by-growth>
+      </div>
+      <div>
+        <app-pao-chart-growth-by-type
+          [chartData]="chartData"
+        ></app-pao-chart-growth-by-type>
+      </div>
+      <div>
+        <app-pao-chart-by-segment
+          [chartData]="chartData"
+        ></app-pao-chart-by-segment>
+      </div>
+      <div>
+        <app-pao-pie-chart-by-product
         [chartData]="chartData"
       ></app-pao-pie-chart-by-product>
-      <app-pao-pie-chart-by-product
-        [chartData]="chartData"
-      ></app-pao-pie-chart-by-product>
-      <app-pao-chart-growth-by-type
-        [chartData]="chartData"
-      ></app-pao-chart-growth-by-type>
-      <app-pao-chart-by-segment
-        [chartData]="chartData"
-      ></app-pao-chart-by-segment>
-      <app-pao-pie-chart-by-product
-        [chartData]="chartData"
-      ></app-pao-pie-chart-by-product>
+      </div>
+      <div>
+        <app-pao-pie-chart-by-product
+          [chartData]="chartData"
+        ></app-pao-pie-chart-by-product>
+      </div>
+      <div>
+        <app-pao-pie-chart-by-product
+          [chartData]="chartData"
+        ></app-pao-pie-chart-by-product>
+      </div>
     </div>
   </div>
 </div>

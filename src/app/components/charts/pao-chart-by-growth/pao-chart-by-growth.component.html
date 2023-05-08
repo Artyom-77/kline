@@ -3,7 +3,7 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleSegmentDropdown()"
-      style="width: 100%"
+
     >
       <div class="dropdown-header">
         <span>{{ selectedSegment }}</span>
@@ -26,35 +26,18 @@
       </div>
     </div>
   </div>
-  <!-- <dx-chart
-      id="chart"
-      title="Share of Synthetic Basestock by Segment (KT)"
-      [dataSource]="mergedObj"
-      [rotated]="false"
-    >
-      <dxi-series
-        color="#79cac4"
-        type="bar"
-        width="50"
-        argumentField="BSType"
-        valueField="SumofValues"
-      >
-      </dxi-series>
-      <dxo-legend [visible]="true"></dxo-legend>
-    </dx-chart> -->
+
   <dx-chart
     id="chart12"
     title="PAO Demand Split by Segment (Kilotonnes)"
     [dataSource]="mergedObj"
+    palette="Dark Violet"
+    paletteExtensionMode="blend"
   >
     <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>
     <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>
     <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>
-    <!-- <dxi-series valueField="SumofValues" argumentField="Segment"></dxi-series>
-      <dxi-series valueField="SumofValues" argumentField="Segment"></dxi-series> -->
-    <!-- <dxi-value-axis position="right">
-            <dxo-title text="millions"></dxo-title>
-          </dxi-value-axis> -->
+
     <dxo-common-series-settings
       argumentField="Segment"
       valueField="SumofValues"
@@ -67,12 +50,6 @@
       itemTextPosition="right"
     >
     </dxo-legend>
-    <!-- <dxo-export [enabled]="true"></dxo-export> -->
-    <!-- <dxo-tooltip
-            [enabled]="true"
-            location="edge"
-            [customizeTooltip]="customizeTooltip"
-          >
-          </dxo-tooltip> -->
+
   </dx-chart>
 </div>

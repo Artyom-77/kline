@@ -441,739 +441,3287 @@ export class RrboService {
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'WesternEurope',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'USA',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'Canada',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'India',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'Indonesia',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'Japan',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'SouthKorea',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'Thailand',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'Malaysia',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'Brazil',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'Mexico',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'China',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
     {
       country: 'Russia',
-      details: [
+     details: [
         {
           name: 'Generation',
           list: [
-            'Generators are responsible for environmental release cleanup.',
-            'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            {
+              text: 'Generators are responsible for environmental release cleanup.',
+            },
+            {
+              text: 'Information or testing is required to ensure that the contaminants are under an acceptable limit.',
+            }
+
           ],
         },
         {
           name: 'Classification (Special Waste)',
           list: [
-            'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
-            'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
-            'Used oil contaminated with PCBs',
-          ],
-          olList: [
-            'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
-            'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
-            'Used oil with < 2 ppm may be managed as used oil.',
-            'TSCA requirements may not be avoided through dilution.',
-            'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+            {
+              text: 'Used oil is classified into on-specification and off-specification used oil for using it as a fuel. On-specification used oil has an arsenic concentration of up to 5 parts per million (ppm), cadmium up to 2 ppm, chromium up to 10 ppm, lead up to 100 ppm, total halogens up to 4,000 ppm, and a minimum flash point of 100°F. Used oil is classified as off-specification if it does not meet the criteria mentioned above. ',
+            },
+            {
+              text: 'However, if the total halogen concentration goes beyond 1,000 ppm, used oil is classified as a hazardous waste. In case of hazardous waste, used oil must be disposed of per criteria laid out under 40 CFR 260 through 266, 268, 270, and 124. In case of non-hazardous solid waste, it must comply with regulations included under 40 CFR 239 through 259.',
+            },
+            {
+              text: 'Used oil contaminated with PCBs',
+              listDetails: [
+                'Used oil with PCB concentrations ≥ 50 ppm is regulated for disposal under the Toxic Substances Control Act (TSCA).',
+                'Used oil with lower PCB concentrations (≥ 2 ppm and < 50 ppm) may be burned as a fuel, subject to restrictions listed in 40 CFR §761.20(e), 40 CFR part 279, and any applicable state and local laws.',
+                'Used oil with < 2 ppm may be managed as used oil.',
+                'TSCA requirements may not be avoided through dilution.',
+                'Contaminated oil must be disposed of in accordance with PCB regulations 40 CFR §761.79.',
+              ]
+            },
           ],
         },
         {
           name: 'Prohibitions',
           list: [
-            'Used oil as a dust suppressant (effectively)',
-            'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
-            'Surface impoundments',
+            {
+              text: 'Used oil as a dust suppressant (effectively)',
+              listDetails: [
+                'The regulations allow a state to petition the EPA for an exception; however, no states have been granted this permission.',
+                'Surface impoundments',
+                'Off-specification used oil fuel may only be burned for energy recovery in particular units'
+              ]
+            },
           ],
         },
         {
           name: 'Collections',
           list: [
-            'Information or testing required to rebut the hazardous waste mixing presumption',
-            'Responsible for environmental release cleanup',
+            {
+              text: 'Information or testing required to rebut the hazardous waste mixing presumption',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
           ],
         },
         {
           name: ' Transportation and Storage',
           list: [
-            'Minimum storage tank and container requirements:',
-            'Must be in good condition',
-            'Must be labeled “Used Oil”',
-            'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
-            'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
-            'Transportation & Transfer Facilities:',
+            {
+              text: 'Minimum storage tank and container requirements:',
+              listDetails: [
+                'Must be in good condition',
+                'Must be labeled “Used Oil”'
+              ]
+            },
+            {
+              text: 'Generators, transporters, processors/re-refiners, and burners are also subject to Spill Prevention, Control, and Countermeasures (40 CFR part 112).',
+            },
+            {
+              text: 'Storage in underground tanks is regulated under RCRA Subtitle I, 40 CFR 280.',
+            },
+
+            {
+              text: 'Transportation & Transfer Facilities:',
+              listDetails: [
+                'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+                'Secondary containment required (not for transporters)',
+                'Responsible for environmental release cleanup',
+                'EPA Identification Number and notification required',
+              ]
+            },
+            {
+              text: 'Acceptance and delivery records (three years) must be kept.',
+            },
+            {
+              text: 'Information or testing is needed to rebut the hazardous waste mixing presumption (keep records for three years).',
+            },
+            {
+              text: 'Persons transporting used oil that meets the definition of hazardous material in 49 CFR 171.8 must comply with all applicable USDOT regulations in 49 CFR parts 171 through 180.',
+            },
+
+
+
           ],
+        },
+        {
+          name: ' Disposal – Re-refining​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Required to keep acceptance and delivery records (three years)',
+            },
+            {
+              text:'Required to create and follow an analysis plan that details how the hazardous waste mixing presumption will be rebutted',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'A contingency plan and emergency procedures (same as Parts 264 & 265 subpart D)',
+            },
+            {
+              text:'Written report on biennial basis',
+            },
+          ],
+        },
+        {
+          name: 'Disposal – Fuel​​',
+          list: [
+            {
+              text: 'Secondary containment required',
+            },
+            {
+              text:'Responsible for environmental release cleanup',
+            },
+            {
+              text:'Required EPA Identification Number and notification',
+            },
+            {
+              text:'Must keep acceptance records (three years)',
+            },
+            {
+              text:'Information or testing needed to rebut the hazardous waste mixing presumption (keep records for three years)',
+            },
+            {
+              text:'Off-specification used oil fuel may be burned for energy recovery in only the following devices:',
+            },
+            {
+              text:'Industrial furnaces identified in §260.10',
+            },
+            {
+              text:'Boilers as defined in §260.10 and identified in §279.12',
+            },
+            {
+              text:'Hazardous waste incinerators subject to regulation under the Subpart O of parts 264 or 265',
+            },
+          ],
+        },
+        {
+          name: ' Regulations on Imports or Exports of Used Oil​',
+          list: [
+            {
+              text: 'Transporters who import or export used oil are subject to the requirements of 40 CFR Subpart E from the time the used oil enters until the time it exits the United States.',
+            },
+            {
+              text:'Anyone transporting used oil, except under the self-transport provisions of 279.24(a), must also comply with 40 CFR Subpart E.',
+            },
+
+          ],
+        },
+        {
+          name: 'Regulatory Enforcement',
+          olList: [
+            {
+              text: 'Responsible Agencies',
+              listDetails:[
+                'EPA',
+                'State, county, and/or municipal governments'
+              ]
+            },
+            {
+              text: ' Enforcement Mechanisms',
+              listDetails:[
+                'Federally required record-keeping',
+                'EPA notifications and identification numbers',
+                'State required reporting, registration, and/or notification',
+                'Federal EPA identification numbers',
+              ]
+            },
+            {
+              text: 'Effectiveness of Regulations Enforcement',
+              listDetails:[
+                'The federal regulations and standards dictate the minimum standards of used oil management programs in the individual states',
+                'Individual states’ oversight is far more effective and differs widely between states',
+              ]
+            },
+
+          ],
+        },
+        {
+          name: 'Key Influencers',
+          tabs: [
+            {
+              title: 'Public Sector',
+              tabsList:[
+                'EPA',
+                'DOE',
+                'State, county, and municipal governments',
+                'Executive Orders',
+              ]
+            },
+            {
+              title: 'Private Sector',
+              tabsList:[
+                'ExxonMobil',
+                'Chevron',
+                'Shell',
+                'Valvoline',
+                'ConocoPhillips',
+                'BP',
+                'Safety-Kleen',
+              ]
+            },
+
+          ]
+        },
+        {
+          name: 'Key Influencers',
+          desc : 'Federal used oil regulations and standards provide a general framework for used oil handlers to manage used oil operations and minimize the potential for environmental impact. However, the system largely relies on self-regulation and enforcement at the state and local levels. The implementation and oversight of a used oil management program is largely left to individual states, provided the state regulations are at least as strict as the federal used oil standards. Compliance and enforcement varies widely, with California (through CalRecycle) leading the way with state initiatives, which go well beyond Federal guidelines.'
         },
       ],
     },
@@ -1270,136 +3818,45 @@ export class RrboService {
       reganTransform: null,
       comments: 'Damaged by hurricane in late 2017, but operations restored',
     },
-    // {
-    //   country: '',
-    //   owner: '',
-    //   location: '',
-    //   ktonsYear1: 0,
-    //   ktonsYear2: 0,
-    //   GroupI: '',
-    //   GroupII: '',
-    //   GroupIII: '',
-    //   vgoMdo: '',
-    //   reganTransform: '',
-    //   comments: '',
-    // },
-    // {
-    //   country: '',
-    //   owner: '',
-    //   location: '',
-    //   ktonsYear1: 0,
-    //   ktonsYear2: 0,
-    //   GroupI: '',
-    //   GroupII: '',
-    //   GroupIII: '',
-    //   vgoMdo: '',
-    //   reganTransform: '',
-    //   comments: '',
-    // },
-    // {
-    //   country: '',
-    //   owner: '',
-    //   location: '',
-    //   ktonsYear1: 0,
-    //   ktonsYear2: 0,
-    //   GroupI: '',
-    //   GroupII: '',
-    //   GroupIII: '',
-    //   vgoMdo: '',
-    //   reganTransform: '',
-    //   comments: '',
-    // },
-    // {
-    //   country: '',
-    //   owner: '',
-    //   location: '',
-    //   ktonsYear1: 0,
-    //   ktonsYear2: 0,
-    //   GroupI: '',
-    //   GroupII: '',
-    //   GroupIII: '',
-    //   vgoMdo: '',
-    //   reganTransform: '',
-    //   comments: '',
-    // },
-    // {
-    //   country: '',
-    //   owner: '',
-    //   location: '',
-    //   ktonsYear1: 0,
-    //   ktonsYear2: 0,
-    //   GroupI: '',
-    //   GroupII: '',
-    //   GroupIII: '',
-    //   vgoMdo: '',
-    //   reganTransform: '',
-    //   comments: '',
-    // },
-    // {
-    //   country: '',
-    //   owner: '',
-    //   location: '',
-    //   ktonsYear1: 0,
-    //   ktonsYear2: 0,
-    //   GroupI: '',
-    //   GroupII: '',
-    //   GroupIII: '',
-    //   vgoMdo: '',
-    //   reganTransform: '',
-    //   comments: '',
-    // },
-    // {
-    //   country: '',
-    //   owner: '',
-    //   location: '',
-    //   ktonsYear1: 0,
-    //   ktonsYear2: 0,
-    //   GroupI: '',
-    //   GroupII: '',
-    //   GroupIII: '',
-    //   vgoMdo: '',
-    //   reganTransform: '',
-    //   comments: '',
-    // },
-    // {
-    //   country: '',
-    //   owner: '',
-    //   location: '',
-    //   ktonsYear1: 0,
-    //   ktonsYear2: 0,
-    //   GroupI: '',
-    //   GroupII: '',
-    //   GroupIII: '',
-    //   vgoMdo: '',
-    //   reganTransform: '',
-    //   comments: '',
-    // },
-    // {
-    //   country: '',
-    //   owner: '',
-    //   location: '',
-    //   ktonsYear1: 0,
-    //   ktonsYear2: 0,
-    //   GroupI: '',
-    //   GroupII: '',
-    //   GroupIII: '',
-    //   vgoMdo: '',
-    //   reganTransform: '',
-    //   comments: '',
-    // },
-    // {
-    //   country: '',
-    //   owner: '',
-    //   location: '',
-    //   ktonsYear1: 0,
-    //   ktonsYear2: 0,
-    //   GroupI: '',
-    //   GroupII: '',
-    //   GroupIII: '',
-    //   vgoMdo: '',
-    //   reganTransform: '',
-    //   comments: '',
-    // },
+    {
+      country: 'OPERATING RRFs PRODUCING BASE OIL',
+      owner: 'Olein Recovery	',
+      location: 'Yabucoa',
+      ktonsYear1: 131,
+      ktonsYear2: 439,
+      GroupI: null,
+      GroupII: null,
+      GroupIII: null,
+      vgoMdo: null,
+      reganTransform: null,
+      comments: '',
+    },
+    {
+      country: 'TOTAL LATIN AMERICA & CARIBBEAN',
+      owner: '',
+      location: '',
+      ktonsYear1: 640,
+      ktonsYear2: 297	,
+      GroupI: 124.7	,
+      GroupII: 175.3,
+      GroupIII: 175.3,
+      vgoMdo: 60.3,
+      reganTransform: 9,
+      comments: '',
+    },
+    {
+      country: 'TOTAL RRFs PRODUCING BASE OIL	',
+      owner: '',
+      location: '',
+      ktonsYear1: 134.3,
+      ktonsYear2: 449.2,
+      GroupI: null,
+      GroupII: null,
+      GroupIII: null,
+      vgoMdo: null,
+      reganTransform: null,
+      comments: '',
+    },
   ];
   public materialBalanceData: any[] = [
     {

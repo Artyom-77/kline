@@ -1,7 +1,11 @@
 <div class="chart">
   <h3>Base Oil Production ('000 Tonnes)</h3>
   <div>
-    <dx-chart [dataSource]="chartData">
+    <dx-chart
+      [dataSource]="chartData"
+      palette="Dark Violet"
+      paletteExtensionMode="blend"
+    >
       <dxi-series
         argumentField="year"
         valueField="capacity"
