@@ -1,0 +1,34 @@
+<div class="cards-section">
+  <div class="card" *ngFor="let item of cardsData">
+    <div class="card-header">
+      <div class="card-header-logo">
+        <img [src]="item.logo" alt="logo" />
+      </div>
+      <div class="card-header-info">
+        <h3 class="title">{{ item.Company }}</h3>
+        <h4 class="location">
+          Plant Location: {{ item.City }},
+          {{ item.Location }}
+        </h4>
+      </div>
+    </div>
+    <div class="card-body">
+      <app-supplier-chart-current-capacity
+        [chartData]="item.CurrentBaseOilCapacity"
+      ></app-supplier-chart-current-capacity>
+      <app-supplier-chart-production
+        [chartData]="item.BaseOilProduction"
+      ></app-supplier-chart-production>
+      <app-supplier-pie-chart-visgrade-yield
+        [chartData]="item.BaseOilVisgradeYield"
+      ></app-supplier-pie-chart-visgrade-yield>
+      <app-supplier-pie-chart-oil-export
+        [chartData]="item.BaseOilExports"
+      ></app-supplier-pie-chart-oil-export>
+      <app-supplier-pie-chart-sales-structure
+        [chartData]="item.BaseOilSalesStructure"
+      >
+      </app-supplier-pie-chart-sales-structure>
+    </div>
+  </div>
+</div>

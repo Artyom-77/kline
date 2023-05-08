@@ -63,6 +63,9 @@ import { SupplierPieChartVisgradeYieldComponent } from './components/charts/supp
 import { SupplierPieChartOilExportComponent } from './components/charts/supplier-pie-chart-oil-export/supplier-pie-chart-oil-export.component';
 import { SupplierPieChartSalesStructureComponent } from './components/charts/supplier-pie-chart-sales-structure/supplier-pie-chart-sales-structure.component';
 import { SupplierChartProductionComponent } from './components/charts/supplier-chart-production/supplier-chart-production.component';
+import { SupplierProfilesLargeCardComponent } from './components/supplier-profiles-large-card/supplier-profiles-large-card.component';
+import { SupplierProfilesFilteringCardsComponent } from './components/supplier-profiles-filtering-cards/supplier-profiles-filtering-cards.component';
+import { MultipleSelectDropdownComponent } from './components/multiple-select-dropdown/multiple-select-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -115,6 +118,9 @@ import { SupplierChartProductionComponent } from './components/charts/supplier-c
     SupplierPieChartOilExportComponent,
     SupplierPieChartSalesStructureComponent,
     SupplierChartProductionComponent,
+    SupplierProfilesLargeCardComponent,
+    SupplierProfilesFilteringCardsComponent,
+    MultipleSelectDropdownComponent,
   ],
   imports: [
     BrowserModule,

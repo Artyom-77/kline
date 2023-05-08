@@ -15,8 +15,8 @@ export class SelectDropdownComponent implements OnInit {
   @Input() firstItemSelected: boolean | undefined;
 
   ngOnInit(): void {
-    if(this.firstItemSelected) {
-      this.selectedItem = this.dropdownData[0].label
+    if (this.firstItemSelected) {
+      this.selectedItem = this.dropdownData[0].label;
     }
   }
 
@@ -27,17 +27,4 @@ export class SelectDropdownComponent implements OnInit {
     this.selectedItem = option.label;
     this.itemEvent.emit(this.selectedItem);
   }
-
-
-  // toggleMultipleOption(option: string): void {
-  //   this.selectedItem = option;
-  //   this.dropdownData.map((item: any) => {
-  //     this.keyItem = Object.keys(item).filter(
-  //       (elem) => elem === this.dropdownDataKey
-  //     );
-  //     // this.keyItem = Object.keys(item);
-  //     console.log('this.keyItem', this.keyItem[0]);
-  //     // console.log('this.keyItem', this.keyItem);
-  //   });
-  // }
 }

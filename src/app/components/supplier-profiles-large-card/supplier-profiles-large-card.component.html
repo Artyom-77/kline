@@ -1,0 +1,38 @@
+<div class="company-card">
+  <div class="card-header">
+    <div class="card-header-logo">
+      <img [src]="cardData.logo" alt="logo" />
+    </div>
+    <div class="card-header-info">
+      <h3 class="title">{{ cardData.Company }}</h3>
+      <h4 class="location">
+        Plant Location: {{ cardData.City }},
+        {{ cardData.Location }}
+      </h4>
+    </div>
+  </div>
+  <div class="card-body">
+    <app-supplier-chart-current-capacity
+      [chartData]="cardData.CurrentBaseOilCapacity"
+      [text]="cardData.CapasityDesc"
+    >
+    </app-supplier-chart-current-capacity>
+    <app-supplier-chart-sustainability-measures
+      [chartData]="cardData.SustainabilityMeasures"
+      [text]="cardData.SustainabilityMeasuresDesc"
+    ></app-supplier-chart-sustainability-measures>
+    <app-supplier-pie-chart-visgrade-yield
+      [chartData]="cardData.BaseOilVisgradeYield"
+    ></app-supplier-pie-chart-visgrade-yield>
+    <app-supplier-pie-chart-oil-export
+      [chartData]="cardData.BaseOilExports"
+    ></app-supplier-pie-chart-oil-export>
+    <app-supplier-pie-chart-sales-structure
+      [chartData]="cardData.BaseOilSalesStructure"
+    >
+    </app-supplier-pie-chart-sales-structure>
+    <app-supplier-chart-production
+      [chartData]="cardData.BaseOilProduction"
+    ></app-supplier-chart-production>
+  </div>
+</div>

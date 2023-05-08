@@ -8,7 +8,5 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SupplierChartCurrentCapacityComponent implements OnInit {
   @Input() chartData?: any;
   @Input() text?: string;
-  ngOnInit(): void {
-    console.log('chartData', this.chartData);
-  }
+  ngOnInit(): void {}
 }

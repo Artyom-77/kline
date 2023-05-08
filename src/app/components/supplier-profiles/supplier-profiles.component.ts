@@ -7,6 +7,7 @@ import { SupplierProfilesService } from 'src/app/services/supplier-profiles/supp
   styleUrls: ['./supplier-profiles.component.scss'],
 })
 export class SupplierProfilesComponent implements OnInit {
+  public selectedMainTab: number = 1;
   public companiesList: any[] = [];
   public supplierDropList: any[] = [
     {
@@ -34,6 +35,44 @@ export class SupplierProfilesComponent implements OnInit {
       label: 'S-Oil',
     },
   ];
+  public regionsList: any[] = [
+    {
+      id: 1,
+      label: 'Bahrain',
+    },
+    {
+      id: 2,
+      label: 'Abu Dhabi',
+    },
+    {
+      id: 3,
+      label: 'Qatar',
+    },
+    {
+      id: 4,
+      label: 'Malaysia',
+    },
+    {
+      id: 5,
+      label: 'Indonesia',
+    },
+    {
+      id: 6,
+      label: 'South Korea',
+    },
+  ];
+  public selectedCompanyList: any[] = [];
+
+  public unitList: any[] = [
+    {
+      id: 1,
+      label: 'KTPA',
+    },
+    {
+      id: 2,
+      label: 'B/D',
+    },
+  ];
   public selectedCompanyName: string = 'Bahrain Petroleum Company (BLBOC)';
   public selectedCompany?: any;
   constructor(private service: SupplierProfilesService) {
@@ -50,4 +89,13 @@ export class SupplierProfilesComponent implements OnInit {
       (item) => item.Company === arg
     )[0];
   }
+  handleMultipleSupplierChange(arg: any[]) {
+    this.selectedCompanyList = this.companiesList.filter((item) =>
+      arg.includes(item.Company)
+    );
+    console.log('this.selectedCompanyList', this.selectedCompanyList);
+  }
+  handleRegionChange(arg: string) {}
+  handleMultipleRegionChange(arg: any) {}
+  handleUnitChange(arg: string) {}
 }

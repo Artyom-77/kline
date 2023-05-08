@@ -5,13 +5,13 @@
       id="gauge1"
       [startValue]="0"
       [endValue]="100"
-      [values]="chartData[0]"
+      [values]="chartData"
     >
       <dxo-label [indent]="10" [customizeText]="customizeText"
         ><dxo-format type="fixedPoint" [precision]="1"></dxo-format>
       </dxo-label>
     </dx-bar-gauge>
-    <dx-bar-gauge
+    <!-- <dx-bar-gauge
       id="gauge2"
       [startValue]="0"
       [endValue]="100"
@@ -40,7 +40,7 @@
       <dxo-label [indent]="10" [customizeText]="customizeText"
         ><dxo-format type="fixedPoint" [precision]="1"></dxo-format>
       </dxo-label>
-    </dx-bar-gauge>
+    </dx-bar-gauge> -->
   </div>
   <p>{{ text }}</p>
 </div>

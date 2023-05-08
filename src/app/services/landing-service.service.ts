@@ -102,11 +102,6 @@ export class LandingServiceService {
         },
         {
           itemId: this.uniqueId,
-          path: '/trade-and-basestocks',
-          name: 'Always on Trade and Basestocks Production for Select Markets',
-        },
-        {
-          itemId: this.uniqueId,
           path: 'product-properties',
           name: 'Product Properties and Specification Sheets',
         },

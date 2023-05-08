@@ -1,21 +1,23 @@
 @import "../../../assets/scss/variables.scss";
 @import "../../../assets/scss/mixins.scss";
 
-.custom-dropdown {
+.custom-dropdown-c {
   position: relative;
   display: inline-block;
-  width: 300px;
+  margin-right: 16px;
   &.date-dropdown {
-    width: 200px;
+    // width: 200px;
   }
 }
 
 .dropdown-header {
-  padding: 8px;
+  padding: 8px 24px 8px 8px;
   font-size: 14px;
   font-weight: 500;
   max-width: 300px;
-  white-space: unset;
+  min-width: 140px;
+  white-space: nowrap;
+
   // margin-right: 16px;
   color: $gray;
   border-bottom: 1px solid $orange;

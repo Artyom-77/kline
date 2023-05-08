@@ -1,0 +1,37 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/_mixins.scss";
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0;
+    // border-bottom: 1px solid $orange;
+    &-logo {
+      width: 100px;
+      height: 100px;
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    &-info {
+      margin-left: 16px;
+      .title {
+        font-size: 20px;
+        font-weight: 600;
+        color: $gray;
+        margin-bottom: 10px;
+      }
+      .location {
+        font-size: 14px;
+        font-weight: 500;
+        color: $orange;
+      }
+    }
+  }
+}

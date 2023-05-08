@@ -7,51 +7,79 @@
     "
   ></app-hero-section>
   <div class="supplier-profiles-filters">
-    <app-select-dropdown
-      [dropdownTitle]="'Supplier'"
-      [dropdownData]="supplierDropList"
-      (itemEvent)="handleSupplierChange($event)"
-      [firstItemSelected]="true"
-    ></app-select-dropdown>
-  </div>
-  <div class="supplier-profiles-body">
-    <div class="company-card">
-      <div class="card-header">
-        <div class="card-header-logo">
-          <img [src]="selectedCompany.logo" alt="logo" />
-        </div>
-        <div class="card-header-info">
-          <h3 class="title">{{ selectedCompany.Company }}</h3>
-          <h4 class="location">
-            Plant Location: {{ selectedCompany.City }},
-            {{ selectedCompany.Location }}
-          </h4>
-        </div>
-      </div>
-      <div class="card-body">
-        <app-supplier-chart-current-capacity
-          [chartData]="selectedCompany.CurrentBaseOilCapacity"
-          [text]="selectedCompany.CapasityDesc"
-        >
-        </app-supplier-chart-current-capacity>
-        <app-supplier-chart-sustainability-measures
-          [chartData]="selectedCompany.SustainabilityMeasures"
-          [text]="selectedCompany.SustainabilityMeasuresDesc"
-        ></app-supplier-chart-sustainability-measures>
-        <app-supplier-pie-chart-visgrade-yield
-          [chartData]="selectedCompany.BaseOilVisgradeYield"
-        ></app-supplier-pie-chart-visgrade-yield>
-        <app-supplier-pie-chart-oil-export
-          [chartData]="selectedCompany.BaseOilExports"
-        ></app-supplier-pie-chart-oil-export>
-        <app-supplier-pie-chart-sales-structure
-          [chartData]="selectedCompany.BaseOilSalesStructure"
-        >
-        </app-supplier-pie-chart-sales-structure>
-        <app-supplier-chart-production
-          [chartData]="selectedCompany.BaseOilProduction"
-        ></app-supplier-chart-production>
-      </div>
+    <div class="selects">
+      <app-select-dropdown
+        *ngIf="selectedMainTab === 1"
+        [dropdownTitle]="'Supplier'"
+        [dropdownData]="supplierDropList"
+        (itemEvent)="handleSupplierChange($event)"
+        [firstItemSelected]="true"
+      ></app-select-dropdown>
+      <app-multiple-select-dropdown
+        *ngIf="selectedMainTab === 2"
+        [dropdownTitle]="'Suppliers'"
+        [dropdownData]="supplierDropList"
+        (itemEvent)="handleMultipleSupplierChange($event)"
+        [firstItemSelected]="false"
+        [maxLimit]="3"
+        [minLimit]="3"
+      ></app-multiple-select-dropdown>
+      <app-multiple-select-dropdown
+        *ngIf="selectedMainTab === 2"
+        [dropdownTitle]="'Regions'"
+        [dropdownData]="regionsList"
+        (itemEvent)="handleMultipleRegionChange($event)"
+        [firstItemSelected]="true"
+        [maxLimit]="3"
+        [minLimit]="3"
+      ></app-multiple-select-dropdown>
+      <app-select-dropdown
+        *ngIf="selectedMainTab === 1"
+        [dropdownTitle]="'Region'"
+        [dropdownData]="regionsList"
+        (itemEvent)="handleRegionChange($event)"
+        [firstItemSelected]="false"
+      ></app-select-dropdown>
+      <app-select-dropdown
+        [dropdownTitle]="'Unit'"
+        [dropdownData]="unitList"
+        (itemEvent)="handleUnitChange($event)"
+        [firstItemSelected]="true"
+      ></app-select-dropdown>
     </div>
+    <div class="actions">
+      <app-button
+        [btnText]="'Download Data'"
+        [type]="'secondary'"
+        [icon]="false"
+        [iconName]="''"
+      ></app-button>
+      <app-button
+        *ngIf="selectedMainTab === 1"
+        [btnText]="'Compare Supplier Profiles'"
+        [type]="'secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedMainTab = 2"
+      ></app-button>
+      <app-button
+        *ngIf="selectedMainTab === 2"
+        [btnText]="'Back to Profiles'"
+        [type]="'secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedMainTab = 1"
+      ></app-button>
+    </div>
+  </div>
+  <div class="supplier-profiles-body" *ngIf="selectedMainTab === 1">
+    <app-supplier-profiles-large-card
+      [cardData]="selectedCompany"
+    ></app-supplier-profiles-large-card>
+  </div>
+  <div class="supplier-profiles-body" *ngIf="selectedMainTab === 2">
+    <app-supplier-profiles-filtering-cards
+      [cardsData]="selectedCompanyList"
+    ></app-supplier-profiles-filtering-cards>
   </div>
 </div>

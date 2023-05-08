@@ -13,9 +13,7 @@ export class SupplierPieChartVisgradeYieldComponent implements OnInit {
       label: 2022,
     },
   ];
-  ngOnInit(): void {
-    console.log('chartData', this.chartData);
-  }
+  ngOnInit(): void {}
   handleChange(arg: string) {}
   customizeLabel(arg: any) {
     return `${arg.percentText}`;

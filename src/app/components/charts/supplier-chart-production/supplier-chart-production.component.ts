@@ -8,9 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SupplierChartProductionComponent implements OnInit {
   @Input() chartData?: any;
 
-  ngOnInit(): void {
-    console.log('chartData', this.chartData);
-  }
+  ngOnInit(): void {}
 
   customizeTooltip(arg: any) {
     return {
