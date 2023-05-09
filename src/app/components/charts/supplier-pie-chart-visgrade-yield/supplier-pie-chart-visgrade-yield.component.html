@@ -1,6 +1,6 @@
 <div class="chart">
   <div class="header">
-    <h3 class="title">Base Oil Visgrade Yield</h3>
+    <!-- <h3 class="title">Base Oil Visgrade Yield</h3> -->
   </div>
   <app-select-dropdown
     [dropdownTitle]="'Year'"
@@ -11,8 +11,11 @@
     <dx-pie-chart
       id="pie"
       palette="Dark Violet"
+      title="Base Oil Visgrade Yield"
       paletteExtensionMode="blend"
       [dataSource]="chartData"
+      [size]="{width: 300 }"
+
     >
       <dxi-series argumentField="label" valueField="value">
         <dxo-label

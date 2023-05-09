@@ -33,13 +33,14 @@
   (outclick)="isDropdownOpen = false"
   (click)="toggleDropdown()"
 >
+<div class="dropdown-icon">
   <img
-    class="dropdown-icon"
     [class.rotate]="isDropdownOpen"
     [class.defalut]="!isDropdownOpen"
     src="../../../assets/images/small-arrow.svg"
     alt="arrow"
   />
+</div>
   <div class="dropdown-header">
     <span>{{
       selectedItems.length

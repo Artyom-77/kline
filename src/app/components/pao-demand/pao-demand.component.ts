@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { SyntheticBasestocksService } from 'src/app/services/synthetic-basestocks/synthetic-basestocks.service';
 
 @Component({
@@ -14,15 +14,19 @@ export class PaoDemandComponent implements OnInit {
   public allowSearch: boolean | null | undefined = true;
   public selectedMainTab: number = 1;
   public showRelevantValues: boolean | null | undefined = true;
+  public openModal: boolean = false;
+  public gridItemData: any | undefined;
   showRowFields = true;
   @Input() selectedTab: any = 1;
   showColumnFields = true;
   showFilterFields = true;
-
+public modalDummyData: any[] = []
   constructor(
     private service: SyntheticBasestocksService,
     private http: HttpClient
-  ) {}
+  ) {
+    this.modalDummyData = service.modalData
+  }
 
   ngOnInit() {
     this.http
@@ -90,4 +94,25 @@ export class PaoDemandComponent implements OnInit {
         };
       });
   }
+
+  onCellClick(e: any) {
+    // && e.cell.columnType !== 'T'
+    if (e.area == 'data' && e.cell.rowType !== "GT"  && e.cell.columnType !== "GT"  ) {
+      this.openModal = true
+      document.querySelector('.kline-app')?.classList.add('fixed');
+      console.log('e',e)
+      this.gridItemData = e
+    }
+}
+
+// openModal() {
+//   this.openModal = true;
+// }
+onCloseModal() {
+  this.openModal = false;
+  document.querySelector('.kline-app')?.classList.remove('fixed');
+}
+onFocusedCellChanging(e: any) {
+  e.isHighlighted = true;
+}
 }

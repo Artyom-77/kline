@@ -1,7 +1,8 @@
 <div class="chart">
-  <h3>Base Oil Production ('000 Tonnes)</h3>
+  <!-- <h3>Base Oil Production ('000 Tonnes)</h3> -->
   <div>
     <dx-chart
+    title="Base Oil Production ('000 Tonnes)"
       [dataSource]="chartData"
       palette="Dark Violet"
       paletteExtensionMode="blend"
@@ -11,6 +12,7 @@
         valueField="capacity"
         type="bar"
         name="Group III"
+        color="#df7b2e"
       ></dxi-series>
       <dxi-series
         argumentField="year"
@@ -26,6 +28,7 @@
         horizontalAlignment="center"
         itemTextPosition="right"
       ></dxo-legend>
+      <!-- <dxo-size [width]="600"></dxo-size> -->
     </dx-chart>
   </div>
 </div>

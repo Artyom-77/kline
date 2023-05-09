@@ -47,6 +47,7 @@
     </div>
     <div *ngIf="selectedTab === 1" class="pao-demand-body-pivot">
       <dx-pivot-grid
+        (onCellClick)="onCellClick($event)"
         [allowSortingBySummary]="true"
         [allowSorting]="true"
         [allowFiltering]="true"
@@ -109,5 +110,50 @@
   </div>
   <div *ngIf="selectedMainTab === 2" class="synthetic-basestocks-body">
     <app-pao-chart-view [chartData]="dataSource.store"></app-pao-chart-view>
+  </div>
+  <div class="modal-area">
+    <app-modal
+      [title]="gridItemData.cell.rowPath[gridItemData.cell.rowPath.length - 1]"
+      *ngIf="openModal"
+      (onClose)="onCloseModal()"
+    >
+      <div class="modal-content">
+        <div class="action">
+          <app-button
+            [btnText]="'Save'"
+            [type]="'secondary'"
+            [icon]="false"
+            [iconName]="''"
+          ></app-button>
+        </div>
+        <div>
+          <dx-data-grid
+            id="gridContainer"
+            [dataSource]="modalDummyData"
+            keyExpr="id"
+            (onFocusedCellChanging)="onFocusedCellChanging($event)"
+            [showBorders]="true"
+            [columnAutoWidth]="true"
+          >
+
+            <dxo-paging [enabled]="true"> </dxo-paging>
+            <dxo-editing
+              mode="batch"
+              [allowUpdating]="true"
+              startEditAction="dblClick"
+            >
+            </dxo-editing>
+            <dxi-column dataField="Basestock Group"> </dxi-column>
+            <dxi-column dataField="Basestock"> </dxi-column>
+            <dxi-column dataField="Composition" [width]="170"> </dxi-column>
+            <!-- <dxi-column dataField="Prefix" [width]="70" caption="Title">
+            </dxi-column>
+            <dxi-column dataField="StateID" caption="State" [width]="125">
+            </dxi-column>
+            <dxi-column dataField="BirthDate" dataType="date"> </dxi-column> -->
+          </dx-data-grid>
+        </div>
+      </div>
+    </app-modal>
   </div>
 </div>

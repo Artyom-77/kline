@@ -13,22 +13,31 @@
       </div>
     </div>
     <div class="card-body">
-      <app-supplier-chart-current-capacity
-        [chartData]="item.CurrentBaseOilCapacity"
-      ></app-supplier-chart-current-capacity>
-      <app-supplier-chart-production
-        [chartData]="item.BaseOilProduction"
-      ></app-supplier-chart-production>
-      <app-supplier-pie-chart-visgrade-yield
-        [chartData]="item.BaseOilVisgradeYield"
-      ></app-supplier-pie-chart-visgrade-yield>
-      <app-supplier-pie-chart-oil-export
-        [chartData]="item.BaseOilExports"
-      ></app-supplier-pie-chart-oil-export>
-      <app-supplier-pie-chart-sales-structure
-        [chartData]="item.BaseOilSalesStructure"
-      >
-      </app-supplier-pie-chart-sales-structure>
+      <div class="chart-item">
+        <app-supplier-chart-current-capacity-small [chartData]="item.CurrentBaseOilCapacity"   [text]="item.CapasityDesc"></app-supplier-chart-current-capacity-small>
+      </div>
+      <div class="chart-item">
+        <app-supplier-chart-production
+          [chartData]="item.BaseOilProduction"
+        ></app-supplier-chart-production>
+      </div>
+      <div class="chart-item">
+
+        <app-supplier-pie-chart-visgrade-yield
+          [chartData]="item.BaseOilVisgradeYield"
+        ></app-supplier-pie-chart-visgrade-yield>
+      </div>
+      <div class="chart-item">
+        <app-supplier-pie-chart-oil-export
+          [chartData]="item.BaseOilExports"
+        ></app-supplier-pie-chart-oil-export>
+      </div>
+      <div class="chart-item">
+        <app-supplier-pie-chart-sales-structure
+          [chartData]="item.BaseOilSalesStructure"
+        >
+        </app-supplier-pie-chart-sales-structure>
+      </div>
     </div>
   </div>
 </div>

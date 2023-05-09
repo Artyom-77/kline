@@ -2,35 +2,53 @@
 @import "../../../assets/scss/_mixins.scss";
 .cards-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  .card-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px 0;
-    // border-bottom: 1px solid $orange;
-    &-logo {
-      width: 100px;
-      height: 100px;
-      > img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+  grid-template-columns: repeat(3, 33.3%);
+  // grid-gap: 20px;
+  .card {
+    padding: 10px;
+    overflow: hidden;
+    &:nth-of-type(2) {
+      border-left: 1px solid $gray-light;
+      border-right: 1px solid $gray-light;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 0;
+      border-bottom: 1px solid $gray-light;
+      margin-left: -10px;
+      margin-right: -10px;
+      padding-left: 10px;
+      margin-bottom: 16px;
+      // border-bottom: 1px solid $orange;
+      &-logo {
+        width: 60px;
+        height: 60px;
+        > img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      &-info {
+        margin-left: 16px;
+        .title {
+          font-size: 16px;
+          font-weight: 600;
+          color: $gray;
+          margin-bottom: 4px;
+        }
+        .location {
+          font-size: 12px;
+          font-weight: 500;
+          color: $orange;
+        }
       }
     }
-    &-info {
-      margin-left: 16px;
-      .title {
-        font-size: 20px;
-        font-weight: 600;
-        color: $gray;
-        margin-bottom: 10px;
-      }
-      .location {
-        font-size: 14px;
-        font-weight: 500;
-        color: $orange;
+    .card-body {
+      .chart-item {
+        margin-top: 16px;
       }
     }
   }

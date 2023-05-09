@@ -85,11 +85,7 @@ export class LandingServiceService {
       title: 'Basestock Market Watch',
       subtitle: '',
       list: [
-        {
-          itemId: this.uniqueId,
-          path: '/coverage-news-center',
-          name: 'News Center',
-        },
+
         {
           itemId: this.uniqueId,
           path: '/finished-lubricant',

@@ -8,13 +8,14 @@
     <span>{{
       selectedItem !== "" ? selectedItem : "Select " + dropdownTitle
     }}</span>
-    <img
-      class="dropdown-icon"
-      [class.rotate]="isDropdownOpen"
-      [class.defalut]="!isDropdownOpen"
-      src="../../../assets/images/small-arrow.svg"
-      alt="arrow"
-    />
+    <div class="dropdown-icon">
+      <img
+        [class.rotate]="isDropdownOpen"
+        [class.defalut]="!isDropdownOpen"
+        src="../../../assets/images/small-arrow.svg"
+        alt="arrow"
+      />
+    </div>
   </div>
   <div class="dropdown-list" *ngIf="isDropdownOpen">
     <div

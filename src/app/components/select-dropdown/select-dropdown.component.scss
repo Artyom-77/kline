@@ -17,8 +17,7 @@
   max-width: 300px;
   min-width: 140px;
   white-space: nowrap;
-
-  // margin-right: 16px;
+  overflow: hidden;
   color: $gray;
   border-bottom: 1px solid $orange;
   background-color: transparent;
@@ -27,12 +26,22 @@
 }
 
 .dropdown-icon {
-  width: 12px;
+  width: 24px;
+  height: 99%;
   position: absolute;
-  right: 8px;
-  top: 15px;
-  &.rotate {
-    transform: rotate(180deg);
+  right: 0;
+  top: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+
+  > img {
+    width: 12px;
+    &.rotate {
+      transform: rotate(180deg);
+    }
   }
   // margin-left: 5px;
 }

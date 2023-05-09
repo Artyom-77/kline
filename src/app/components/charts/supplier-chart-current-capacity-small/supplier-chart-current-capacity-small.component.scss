@@ -1,20 +1,18 @@
 @import "../../../../assets/scss/variables.scss";
 @import "../../../../assets/scss/_mixins.scss";
-.chart-capacity {
+.chart-capacity-small {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
   .title {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     font-size: 18px;
     font-weight: 600;
-    // text-align: center;
-    margin-top: 15px;
   }
   p {
-    margin-top: 36px;
-    font-size: 16px;
-    font-weight: 500;
+    // margin-top: 16px;
+    font-size: 12px;
+    font-weight: 400;
     color: $gray;
   }
   ::ng-deep {
@@ -26,12 +24,12 @@
       // background-color: red !important;
       td {
         display: block !important;
-        margin: 0px 10px 20px !important;
+        margin: 0px 10px 4px !important;
         border-radius: 4px !important;
         text-align: center !important;
         color: $white;
         text-transform: uppercase;
-        font-size: 14px !important;
+        font-size: 12px !important;
         font-weight: 600;
         // &:nth-of-type(odd) {
         //   background: #fdbb89;
@@ -50,24 +48,19 @@
     .dx-data-row {
       td {
         display: block !important;
-        margin: 10px !important;
+        margin: 0 10px 4px !important;
         border-radius: 4px !important;
+        text-align: center !important;
+
         &:nth-of-type(1) {
           text-align: center !important;
-          font-size: 13px;
+          font-size: 12px;
           display: flex !important;
           justify-content: center;
           align-items: center;
-          color: $white;
-          background: rgba(223, 123, 46, 0.5) !important;
+          // color: $white;
+          // background: rgba(223, 123, 46, 0.5) !important;
         }
-        // &:nth-of-type(odd) {
-        //   &:hover {
-        //     background: #f5c5a16e;
-        //   }
-        // }
-        // &:nth-of-type(even) {
-        // }
         &:hover {
           background: $gray-light !important;
         }
@@ -76,27 +69,6 @@
             background: $orange !important;
           }
         }
-        // &:nth-of-type(2) {
-        //   &:hover {
-        //     background: $gray-light !important;
-        //   }
-        // }
-        // &:nth-of-type(3) {
-        //   &:hover {
-        //     background: #cf9bd16e;
-        //   }
-        // }
-        // &:nth-of-type(4) {
-        //   &:hover {
-        //     background: #a0c28a6e;
-        //   }
-        // }
-        // &:nth-of-type(5) {
-        //   &:hover {
-        //     background: #f5c5a16e;
-        //   }
-        // }
-        // }
       }
     }
     .dx-row {
@@ -112,8 +84,15 @@
     tr {
       white-space: normal !important;
       display: grid;
-      grid-template-columns: repeat(3, 200px);
+      grid-template-columns: repeat(3, 100px);
       width: 100%;
+    }
+    .dx-datagrid
+      .dx-datagrid-content
+      .dx-datagrid-table
+      .dx-row
+      > td:not(.dx-validation-pending):not(.dx-datagrid-select-all) {
+      padding: 4px;
     }
   }
 }

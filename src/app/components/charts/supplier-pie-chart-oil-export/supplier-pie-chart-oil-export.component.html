@@ -1,6 +1,6 @@
 <div class="chart">
   <div class="header">
-    <h3 class="title">Base Oil Exports</h3>
+    <!-- <h3 class="title">Base Oil Exports</h3> -->
   </div>
   <app-select-dropdown
     [dropdownTitle]="'Year'"
@@ -10,9 +10,12 @@
   <div class="chart-pie">
     <dx-pie-chart
       id="pie"
+      title="Base Oil Exports"
       palette="Dark Violet"
       paletteExtensionMode="blend"
       [dataSource]="chartData"
+      [size]="{width: 300 }"
+
     >
       <dxi-series argumentField="label" valueField="value">
         <dxo-label
