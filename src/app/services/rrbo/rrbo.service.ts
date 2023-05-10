@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { v4 as uuidv4 } from 'uuid';
 
 export class MapSetting {
-  key?: string;
+  key: string;
 
   name?: string;
 }
@@ -26,15 +26,13 @@ const mapTypes: MapSetting[] = [
   {
     key: 'roadmap',
     name: 'Road Map',
-  },
-  {
+  }, {
     key: 'satellite',
     name: 'Satellite (Photographic) Map',
-  },
-  {
+  }, {
     key: 'hybrid',
     name: 'Hybrid Map',
-  },
+  }
 ];
 
 const markers: Marker[] = [

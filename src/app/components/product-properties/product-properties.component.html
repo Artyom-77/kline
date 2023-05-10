@@ -1,0 +1,28 @@
+<div class="product-properties">
+  <app-hero-section
+    title="Product Properties and Specification Sheets"
+    desc="
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+  "
+  ></app-hero-section>
+  <div class="product-properties-filters">
+    <div class="filters">
+      <app-select-dropdown
+      [dropdownTitle]="' Product'"
+      [dropdownData]="dropdownProductItems"
+      (itemEvent)="handleProductChange($event)"
+    ></app-select-dropdown>
+    <app-select-dropdown
+    [dropdownTitle]="'Company'"
+    [dropdownData]="dropdownCompanyItems"
+    (itemEvent)="handleCompanyChange($event)"
+  ></app-select-dropdown>
+    </div>
+  </div>
+  <div class="product-properties-body">
+    <dx-data-grid [dataSource]="productPropertiesFitred" [columns]="columns">
+      <dxo-paging [pageSize]="10"></dxo-paging>
+    </dx-data-grid>
+  </div>
+</div>
+

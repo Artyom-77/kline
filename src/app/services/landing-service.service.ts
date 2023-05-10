@@ -6,98 +6,97 @@ import { v4 as uuidv4 } from 'uuid';
   providedIn: 'root',
 })
 export class LandingServiceService {
-  public uniqueId: any = uuidv4();
   private scrollToValue = new BehaviorSubject<any>(window.scrollY);
   public coveragesList: any[] = [
     {
-      id: this.uniqueId,
+      id: uuidv4(),
       title: 'Market Fundamentals',
       subtitle: 'Group I, II, III, Naphthenic',
       list: [
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: '/basestocks-introduction-overview',
           name: 'Basestocks Introduction Overview',
         },
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: '/conventional-basestocks',
           name: 'Conventional Basestocks Supply and Demand Model',
         },
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: '/paraffinic-price',
           name: 'Paraffinic Price Forecast Model',
         },
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: '/naphthenic-price',
           name: 'Naphthenic Price Forecast Model',
         },
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: '/manufacturing-cost',
           name: 'Manufacturing Cost Model',
         },
       ],
     },
     {
-      id: this.uniqueId,
+      id: uuidv4(),
       title: 'Market Fundamentals',
       subtitle: 'Group III/III+, IV, and V',
       list: [
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: '/synthetic-basestocks',
           name: 'Synthetic Basestocks Deblend Model',
         },
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: '/pao-demand',
           name: 'PAO Demand Deblend Model',
         },
       ],
     },
     {
-      id: this.uniqueId,
+      id: uuidv4(),
       title: 'Sustainability focused Basestocks',
       subtitle: '',
       list: [
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: '/bio-basestocks',
           name: 'Bio-Basestocks—Regulatory Environment and Changes',
         },
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: '/rrbo',
           name: 'RRBO—Regulations, Capacity Map, and Material Balance',
         },
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: '/routes-to-decarbonization',
           name: 'Routes to Decarbonization',
         },
       ],
     },
     {
-      id: this.uniqueId,
+      id: uuidv4(),
       title: 'Basestock Market Watch',
       subtitle: '',
       list: [
 
         {
-          itemId: this.uniqueId,
-          path: '/finished-lubricant',
+          itemId: uuidv4(),
+          path: '/blender-database',
           name: 'Finished Lubricant Blender Database',
         },
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: '/supplier-profiles',
           name: 'Supplier Profiles and Competitive Landscape',
         },
         {
-          itemId: this.uniqueId,
+          itemId: uuidv4(),
           path: 'product-properties',
           name: 'Product Properties and Specification Sheets',
         },

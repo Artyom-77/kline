@@ -9,6 +9,9 @@ import { SyntheticBasestocksComponent } from './components/synthetic-basestocks/
 import { RrboComponent } from './components/rrbo/rrbo.component';
 import { PaoDemandComponent } from './components/pao-demand/pao-demand.component';
 import { SupplierProfilesComponent } from './components/supplier-profiles/supplier-profiles.component';
+import { ProductPropertiesComponent } from './components/product-properties/product-properties.component';
+import { BlenderDatabaseComponent } from './components/blender-database/blender-database.component';
+
 const routes: Routes = [
   { path: '', component: LendingPageComponent },
   { path: 'bio-basestocks', component: BioBasestocksComponent },
@@ -22,6 +25,9 @@ const routes: Routes = [
   { path: 'synthetic-basestocks', component: SyntheticBasestocksComponent },
   { path: 'pao-demand', component: PaoDemandComponent },
   { path: 'supplier-profiles', component: SupplierProfilesComponent },
+  { path: 'product-properties', component: ProductPropertiesComponent },
+  { path: 'blender-database', component: BlenderDatabaseComponent },
+
 ];
 
 @NgModule({

@@ -67,6 +67,8 @@ import { SupplierProfilesLargeCardComponent } from './components/supplier-profil
 import { SupplierProfilesFilteringCardsComponent } from './components/supplier-profiles-filtering-cards/supplier-profiles-filtering-cards.component';
 import { MultipleSelectDropdownComponent } from './components/multiple-select-dropdown/multiple-select-dropdown.component';
 import { SupplierChartCurrentCapacitySmallComponent } from './components/charts/supplier-chart-current-capacity-small/supplier-chart-current-capacity-small.component';
+import { ProductPropertiesComponent } from './components/product-properties/product-properties.component';
+import { BlenderDatabaseComponent } from './components/blender-database/blender-database.component';
 
 @NgModule({
   declarations: [
@@ -123,6 +125,8 @@ import { SupplierChartCurrentCapacitySmallComponent } from './components/charts/
     SupplierProfilesFilteringCardsComponent,
     MultipleSelectDropdownComponent,
     SupplierChartCurrentCapacitySmallComponent,
+    ProductPropertiesComponent,
+    BlenderDatabaseComponent,
   ],
   imports: [
     BrowserModule,
