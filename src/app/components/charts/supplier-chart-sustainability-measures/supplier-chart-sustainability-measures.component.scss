@@ -1,5 +1,14 @@
 .chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .list {
-    // display: flex;
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    max-width: 500px;
+    text-align: center;
   }
 }

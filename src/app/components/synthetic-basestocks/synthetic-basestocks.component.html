@@ -63,6 +63,43 @@
         (click)="selectedTab = 5"
       ></app-button>
     </div>
+    <!-- <div class="synthetic-basestocks-body-filters tabs">
+      <div
+        class="tab"
+        (click)="selectedTab = 1"
+        [ngClass]="{ active: selectedTab === 1 }"
+      >
+        <h3>Demand</h3>
+      </div>
+      <div
+        class="tab"
+        (click)="selectedTab = 2"
+        [ngClass]="{ active: selectedTab === 2 }"
+      >
+        <h3>Consumption by synthetic Ester Type</h3>
+      </div>
+      <div
+        class="tab"
+        (click)="selectedTab = 3"
+        [ngClass]="{ active: selectedTab === 3 }"
+      >
+        <h3>Consumption by PAG Type</h3>
+      </div>
+      <div
+        class="tab"
+        (click)="selectedTab = 4"
+        [ngClass]="{ active: selectedTab === 4 }"
+      >
+        <h3>Synthetic Basestock Demand Split by Application</h3>
+      </div>
+      <div
+        class="tab"
+        (click)="selectedTab = 5"
+        [ngClass]="{ active: selectedTab === 5 }"
+      >
+        <h3>Growth Rates for Synthetic Basestocks</h3>
+      </div>
+    </div> -->
     <div *ngIf="selectedTab === 1" class="synthetic-basestocks-body-pivot">
       <dx-pivot-grid
         [allowSortingBySummary]="true"

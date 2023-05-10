@@ -15,12 +15,34 @@
   }
   &-body {
     &-filters {
-      padding: 40px 20px 20px;
+      padding: 40px 0 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       max-width: 1440px;
       margin: 0 auto;
+      &.tabs {
+        .tab {
+          padding: 8px 16px;
+          background: $gray-light;
+          border-radius: 4px;
+          cursor: pointer;
+          > h3 {
+            color: $white;
+            font-size: 14px;
+            font-weight: 500;
+          }
+          &:last-child {
+            margin-left: 8px;
+          }
+          &:hover {
+            background: #fdbb89;
+          }
+          &.active {
+            background: $orange;
+          }
+        }
+      }
     }
     max-width: 1440px;
     padding: 0 20px;

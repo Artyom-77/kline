@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1210px;
+    max-width: 1440px;
     margin: 0 auto;
     .filters {
       display: grid;
@@ -26,7 +26,6 @@
         font-weight: 500;
         max-width: 300px;
         white-space: unset;
-        // margin-right: 16px;
         color: $gray;
         option {
           padding: 8px;
@@ -60,7 +59,6 @@
         .serach-btn {
           border: none;
           background-color: transparent;
-          // margin-left: 10px;
           cursor: pointer;
           > svg {
             display: block;
@@ -100,12 +98,10 @@
     }
   }
   &-body {
-    // margin: 40px 0;
     padding: 20px;
-    max-width: 1210px;
+    max-width: 1440px;
     margin: 40px auto;
     &-country-name {
-      // text-align: center;
       margin-bottom: 20px;
       > h1 {
         color: $gray;
@@ -336,7 +332,6 @@
           }
           .desc {
             margin-top: 16px;
-            // text-align: center;
           }
         }
         .circle-top {
@@ -514,7 +509,6 @@
   font-weight: 500;
   max-width: 300px;
   white-space: unset;
-  // margin-right: 16px;
   color: $gray;
   border-bottom: 1px solid $orange;
   background-color: transparent;
@@ -530,7 +524,6 @@
   &.rotate {
     transform: rotate(180deg);
   }
-  // margin-left: 5px;
 }
 
 .dropdown-list {

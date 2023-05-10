@@ -6,11 +6,11 @@
   padding-top: 69px;
 
   &-filters {
-    padding: 40px 0 20px;
+    padding: 40px 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1210px;
+    max-width: 1440px;
     margin: 0 auto;
     .filters {
       display: grid;
@@ -163,9 +163,7 @@
             display: flex !important;
             justify-content: center;
             align-items: center;
-            // font-weight: 600;
             color: $white;
-            // text-transform: uppercase;
             background: #5e9d9fbe !important;
           }
           &:nth-of-type(2) {
@@ -188,7 +186,6 @@
               background: #f5c5a16e;
             }
           }
-          // }
         }
       }
       .dx-row {
@@ -226,18 +223,6 @@
           &:nth-of-type(1) {
             background: #5e9d9f;
           }
-          // &:nth-of-type(2) {
-          //   background: $gray;
-          // }
-          // &:nth-of-type(3) {
-          //   background: $orange;
-          // }
-          // &:nth-of-type(4) {
-          //   background: #8abe67;
-          // }
-          // &:nth-of-type(5) {
-          //   background: #fdbb89;
-          // }
         }
       }
       .dx-datagrid-headers {
@@ -253,8 +238,6 @@
           justify-content: center;
           align-items: center;
           &:nth-of-type(1) {
-            // font-weight: 600;
-            // text-transform: uppercase;
             &:hover {
               background: #5e9d9fbe !important;
             }

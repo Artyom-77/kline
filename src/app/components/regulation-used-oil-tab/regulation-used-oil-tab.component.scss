@@ -6,10 +6,7 @@
   margin: 32px auto;
   padding: 0 20px;
   .header {
-    // text-align: center;
     padding: 8px;
-    // border-radius: 4px;
-    // background: $teal;
     margin-bottom: 8px;
     > h3 {
       color: $gray;
@@ -62,9 +59,6 @@
         display: grid;
         justify-items: center;
         grid-gap: 16px;
-        // > div {
-        //   text-align: center;
-        // }
       }
       ul,
       ol {
