@@ -5,21 +5,39 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     "
   ></app-hero-section>
+
   <div class="pao-demand-tabs">
-    <app-button
-      [btnText]="'Tabular View'"
-      [type]="'secondary'"
+    <div class="filters">
+      <app-button
+      [btnText]="'Build Your Own Recipe'"
+      [type]="'secondary right'"
       [icon]="false"
       [iconName]="''"
-      (click)="selectedMainTab = 1"
+      (click)="openRecipeModal()"
     ></app-button>
     <app-button
-      [btnText]="'Chart View'"
-      [type]="'secondary'"
+      [btnText]="'Download Model'"
+      [type]="'secondary right'"
       [icon]="false"
       [iconName]="''"
-      (click)="selectedMainTab = 2"
     ></app-button>
+    </div>
+    <div class="tabs">
+      <app-button
+        [btnText]="'Tabular View'"
+        [type]="'secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedMainTab = 1"
+      ></app-button>
+      <app-button
+        [btnText]="'Chart View'"
+        [type]="'secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedMainTab = 2"
+      ></app-button>
+    </div>
   </div>
   <div *ngIf="selectedMainTab === 1" class="pao-demand-body">
     <div class="pao-demand-body-filters">
@@ -115,7 +133,7 @@
   </div>
   <div class="modal-area">
     <app-modal
-      [title]="gridItemData.cell.rowPath[gridItemData.cell.rowPath.length - 1]"
+      [title]="'Build Your Own Recipe'"
       *ngIf="openModal"
       (onClose)="onCloseModal()"
     >

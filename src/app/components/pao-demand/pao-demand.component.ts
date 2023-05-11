@@ -41,12 +41,12 @@ public modalDummyData: any[] = []
               area: 'row',
             },
             {
-              caption: 'Sector',
+              caption: 'Lubricant Product',
               dataField: 'Sector',
               area: 'row',
             },
             {
-              caption: 'Products',
+              caption: 'Viscosity Grade/Product',
               dataField: 'Products',
               area: 'row',
             },
@@ -68,9 +68,15 @@ public modalDummyData: any[] = []
               dataField: 'Year',
               dataType: 'Year',
               area: 'column',
+
               // expanded: true,
               // runningTotal: 'column',
               // allowCrossGroupCalculation: true,
+            },
+            {
+              dataField: 'Year',
+              area: 'filter',
+              // filterValues: ['Region'],
             },
             {
               dataField: 'BSType',
@@ -95,14 +101,20 @@ public modalDummyData: any[] = []
       });
   }
 
+   openRecipeModal() {
+    this.openModal = true
+      document.querySelector('.kline-app')?.classList.add('fixed');
+  }
+
+
   onCellClick(e: any) {
     // && e.cell.columnType !== 'T'
-    if (e.area == 'data' && e.cell.rowType !== "GT"  && e.cell.columnType !== "GT"  ) {
-      this.openModal = true
-      document.querySelector('.kline-app')?.classList.add('fixed');
-      console.log('e',e)
-      this.gridItemData = e
-    }
+    // if (e.area == 'data' && e.cell.rowType !== "GT"  && e.cell.columnType !== "GT"  ) {
+    //   this.openModal = true
+    //   document.querySelector('.kline-app')?.classList.add('fixed');
+    //   console.log('e',e)
+    //   this.gridItemData = e
+    // }
 }
 
 // openModal() {

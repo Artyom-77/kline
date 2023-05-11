@@ -10,20 +10,37 @@
     "
   ></app-hero-section>
   <div class="synthetic-basestocks-tabs">
-    <app-button
-      [btnText]="'Tabular View'"
-      [type]="'secondary'"
+    <div class="filters">
+      <app-button
+      [btnText]="'Build Your Own Recipe'"
+      [type]="'secondary right'"
       [icon]="false"
       [iconName]="''"
-      (click)="selectedMainTab = 1"
+      (click)="openRecipeModal()"
     ></app-button>
     <app-button
-      [btnText]="'Chart View'"
-      [type]="'secondary'"
+      [btnText]="'Download Model'"
+      [type]="'secondary right'"
       [icon]="false"
       [iconName]="''"
-      (click)="selectedMainTab = 2"
     ></app-button>
+    </div>
+    <div class="tabs">
+      <app-button
+        [btnText]="'Tabular View'"
+        [type]="'secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedMainTab = 1"
+      ></app-button>
+      <app-button
+        [btnText]="'Chart View'"
+        [type]="'secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="selectedMainTab = 2"
+      ></app-button>
+    </div>
   </div>
   <div *ngIf="selectedMainTab === 1" class="synthetic-basestocks-body">
     <div class="synthetic-basestocks-body-filters">
@@ -214,7 +231,7 @@
   </div>
   <div class="modal-area">
     <app-modal
-      [title]="gridItemData.cell.rowPath[gridItemData.cell.rowPath.length - 1]"
+      [title]="'Build Your Own Recipe'"
       *ngIf="openModal"
       (onClose)="onCloseModal()"
     >

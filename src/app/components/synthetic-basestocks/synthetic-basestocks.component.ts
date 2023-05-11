@@ -43,12 +43,12 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
               area: 'row',
             },
             {
-              caption: 'Sector',
+              caption: 'Lubricant Product',
               dataField: 'Sector',
               area: 'row',
             },
             {
-              caption: 'ViscosityGrade',
+              caption: 'Viscosity Grade/Product',
               dataField: 'ViscosityGrade',
               area: 'row',
             },
@@ -98,18 +98,23 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
       });
   }
 
+  openRecipeModal() {
+    this.openModal = true
+      document.querySelector('.kline-app')?.classList.add('fixed');
+  }
+
   onCellClick(e: any) {
     // && e.cell.columnType !== 'T'
-    if (
-      e.area == 'data' &&
-      e.cell.rowType !== 'GT' &&
-      e.cell.columnType !== 'GT'
-    ) {
-      this.openModal = true;
-      document.querySelector('.kline-app')?.classList.add('fixed');
-      console.log('e', e);
-      this.gridItemData = e;
-    }
+    // if (
+    //   e.area == 'data' &&
+    //   e.cell.rowType !== 'GT' &&
+    //   e.cell.columnType !== 'GT'
+    // ) {
+    //   this.openModal = true;
+    //   document.querySelector('.kline-app')?.classList.add('fixed');
+    //   console.log('e', e);
+    //   this.gridItemData = e;
+    // }
   }
   onCloseModal() {
     this.openModal = false;

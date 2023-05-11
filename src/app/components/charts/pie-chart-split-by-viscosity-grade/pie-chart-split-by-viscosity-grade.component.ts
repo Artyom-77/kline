@@ -19,6 +19,8 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
   public isYearDropdownOpen: boolean = false;
   public selectedYear?: number = 2022;
   public yearList: any[] = [];
+  public tooltipColor: any;
+  public totalSum: number = 0;
 
   ngOnInit(): void {
     this.chartData.map((data: any) => {
@@ -63,7 +65,12 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
       },
       []
     );
-    console.log('this.mergedObj',this.mergedObj)
+    this.totalSum = 0
+
+    this.mergedObj.map(item => {
+      this.totalSum +=  item.SumofValues
+    })
+    console.log('this.totalSum',this.totalSum)
   }
 
   toggleBSTypeDropdown() {
@@ -98,6 +105,13 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
       },
       []
     );
+    this.totalSum = 0
+
+    this.mergedObj.map(item => {
+      this.totalSum +=  item.SumofValues
+    })
+    console.log('this.totalSum',this.totalSum)
+
   }
 
   toggleViscosityGradeOption(option: string): void {
@@ -125,6 +139,13 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
       },
       []
     );
+    this.totalSum = 0
+
+    this.mergedObj.map(item => {
+      this.totalSum +=  item.SumofValues
+    })
+    console.log('this.totalSum',this.totalSum)
+
   }
 
   toggleYearDropdown() {
@@ -156,9 +177,16 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
       },
       []
     );
+    this.totalSum = 0
+    this.mergedObj.map(item => {
+      this.totalSum +=  item.SumofValues
+    })
+    console.log('this.totalSum',this.totalSum)
+
   }
 
   customizeLabel(arg: any) {
-    return `${arg.percentText}`;
+    this.tooltipColor = arg.point.getColor();
+    return `${arg.argumentText}: ${arg.percentText}`;
   }
 }

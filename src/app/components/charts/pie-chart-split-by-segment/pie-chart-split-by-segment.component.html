@@ -60,8 +60,17 @@
     [dataSource]="mergedObj"
   >
     <dxi-series argumentField="Segment" valueField="SumofValues">
-      <dxo-label [visible]="true" [customizeText]="customizeLabel"></dxo-label>
+      <dxo-small-values-grouping
+      mode="smallValueThreshold"
+      [threshold]="4.5"
+    ></dxo-small-values-grouping>
+      <!-- <dxo-label [visible]="true" [customizeText]="customizeLabel"></dxo-label> -->
     </dxi-series>
+      <dxo-tooltip
+  [enabled]="true"
+  [contentTemplate]="customizeLabel"
+  [color]="tooltipColor"
+></dxo-tooltip>
     <!-- <dxo-size [width]="300" ></dxo-size> -->
     <dxo-legend
       verticalAlignment="bottom"
@@ -70,4 +79,6 @@
     >
     </dxo-legend>
   </dx-pie-chart>
+  <div class="pie-chart-total">Total: {{ totalSum.toFixed(1) }} Kilotonnes​ </div>
+
 </div>

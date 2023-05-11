@@ -12,6 +12,8 @@ export class PieChartByProductComponent implements OnInit {
   public isYearDropdownOpen: boolean = false;
   public selectedYear?: number = 2022;
   public yearList: any[] = [];
+  public tooltipColor: any;
+  public totalSum: number = 0;
 
   ngOnInit(): void {
     this.chartData.map((data: any) => {
@@ -37,6 +39,11 @@ export class PieChartByProductComponent implements OnInit {
       }
       return accumulator;
     }, []);
+    this.totalSum = 0
+
+    this.mergedObj.map(item => {
+      this.totalSum +=  item.SumofValues
+    })
   }
 
   toggleYearDropdown() {
@@ -63,5 +70,16 @@ export class PieChartByProductComponent implements OnInit {
       }
       return accumulator;
     }, []);
+    this.totalSum = 0
+    this.mergedObj.map(item => {
+      this.totalSum +=  item.SumofValues
+    })
+  }
+
+  customizeLabel(arg: any) {
+    console.log('arg', arg);
+    console.log('arg.point.getColor()', arg.point.getColor());
+    this.tooltipColor = arg.point.getColor();
+    return `${arg.argumentText}: ${arg.percentText}`;
   }
 }

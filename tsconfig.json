@@ -9,6 +9,7 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
@@ -20,9 +21,15 @@
     "module": "ES2022",
     "useDefineForClassFields": false,
     "strictPropertyInitialization": false,
-    "lib": [
-      "ES2022",
-      "dom"
+    "lib": ["ES2022", "dom"],
+    "paths": {
+      "@angular/*": ["../node_modules/@angular/*"],
+      "exceljs": ["../node_modules/exceljs/dist/exceljs.min"],
+      "jszip": ["../node_modules/jszip/dist/jszip.min.js"],
+      "typeRoots": ["../node_modules/@types"]
+    },
+    "typeRoots": [
+      "../node_modules/@types"
     ]
   },
   "angularCompilerOptions": {
@@ -30,5 +37,5 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
 }

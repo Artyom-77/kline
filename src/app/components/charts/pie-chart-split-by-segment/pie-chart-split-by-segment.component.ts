@@ -20,6 +20,8 @@ export class PieChartSplitBySegmentComponent {
   public isYearDropdownOpen: boolean = false;
   public selectedYear?: number = 2021;
   public yearList: any[] = [];
+  public tooltipColor: any;
+  public totalSum: number = 0;
 
   ngOnInit(): void {
     this.chartData.map((data: any) => {
@@ -59,6 +61,11 @@ export class PieChartSplitBySegmentComponent {
       },
       []
     );
+    this.totalSum = 0
+    this.mergedObj.map((item: any) => {
+      this.totalSum +=  item.SumofValues
+      console.log('item.SumofValues',item.SumofValues)
+    })
   }
 
   toggleBSTypeDropdown() {
@@ -90,6 +97,11 @@ export class PieChartSplitBySegmentComponent {
       },
       []
     );
+    this.totalSum = 0
+    this.mergedObj.map((item: any) => {
+      this.totalSum +=  item.SumofValues
+      console.log('item.SumofValues',item.SumofValues)
+    })
     // this.mergedObj = this.viscosityGradeChartData.reduce((acc, curr) => {
     //   if (acc[curr.Segment]) {
     //     acc[curr.Segment].SumofValues += curr.SumofValues;
@@ -130,9 +142,15 @@ export class PieChartSplitBySegmentComponent {
       },
       []
     );
+    this.totalSum = 0
+    this.mergedObj.map((item: any) => {
+      this.totalSum +=  item.SumofValues
+      console.log('item.SumofValues',item.SumofValues)
+    })
   }
 
   customizeLabel(arg: any) {
-    return `${arg.percentText}`;
+    this.tooltipColor = arg.point.getColor();
+    return `${arg.argumentText}: ${arg.percentText}`;
   }
 }

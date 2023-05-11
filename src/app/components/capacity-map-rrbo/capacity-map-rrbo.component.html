@@ -30,6 +30,45 @@
 
     >
     </dx-map>
+    <!-- <dx-vector-map  id="vector-map" [bounds]="[-180, 85, 180, -60]"
+                     [zoomFactor]="3">
+                    <dxo-size [height]="500">
+                    </dxo-size>
+                    <dxo-tooltip [enabled]="true" [customizeTooltip]="customizeTooltip"></dxo-tooltip>
+                    <dxi-layer [dataSource]="worldMap" [hoverEnabled]="false"></dxi-layer>
+                    <dxi-layer [dataSource]="markers" [minSize]="20" [maxSize]="40"
+                        [sizeGroups]="[0, 50, 150, 250, 500, 5000]" [opacity]="0.8" name="bubbles" elementType="bubble"
+                        dataField="value" [customize]="customizeMarkerLayer">
+                    </dxi-layer>
+                    <dxi-legend title="Capacity" markerShape="circle" [customizeText]="customizeText"
+                        [customizeItems]="customizeItems" horizontalAlignment="right" verticalAlignment="bottom">
+                        <dxo-source layer="bubbles" grouping="size"></dxo-source>
+                    </dxi-legend>
+                  </dx-vector-map> -->
+                  <!-- <dxi-legend title="Capacity" verticalAlignment="bottom" horizontalAlignment="right"
+                      [customizeText]="customizeText">
+                      <div *dxTemplate="let item of 'markerTemplate'">
+                          <svg width="100" height="100">
+                              <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                          </svg>
+                          <div>{{testMethod()}}</div>
+                      </div>
+                  </dxi-legend> -->
+                  <!-- <dxi-legend title="Capacity" markerShape="circle" markerTemplate="markerTemplate"
+                      horizontalAlignment="right" verticalAlignment="bottom">
+                      <dxo-source layer="bubbles" grouping="size"></dxo-source>
+                      <svg width="100" height="100">
+                          <text x="0" y="0" transform="translate(7,0)" text-anchor="start"
+                              style="white-space: pre;">Test</text>
+                      </svg>
+                      <div *dxTemplate="let item of 'markerTemplate'" attr.fill="red">
+                          <rect x="0" y="0" width="18" height="18" opacity="0.3" attr.fill="blue">
+                          </rect>
+                          <text x="0" y="0" transform="translate(7,0)" text-anchor="start"
+                              style="white-space: pre;">Test</text>
+                      <div>{{testMethod(item)}}</div>
+                      </div>
+                  </dxi-legend> -->
   </div>
   <div class="capacity-data-table">
     <dx-data-grid

@@ -4,7 +4,9 @@ import {
   Marker,
   RrboService,
 } from 'src/app/services/rrbo/rrbo.service';
-
+import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
+// import * as  mapsData  from 'vectormap-data/world.js';
+// @node_modulesdevextreme/dist/js/vectormap-data/world.js
 @Component({
   selector: 'app-capacity-map-rrbo',
   templateUrl: './capacity-map-rrbo.component.html',
@@ -51,10 +53,11 @@ export class CapacityMapRrboComponent implements OnInit {
     this.capacityData = service.capacityData;
     // this.keys['bing'] =
     //   'AtT_6S6HNv0CHmLGyavC3zzxSqE76igYhmudioJCcspySokNdN75eimgJZr_qk1S';
-    this.keys['google'] =
-      'AIzaSyCdOxElq-laCN8DL0YXZMquRTjlvWnjog8';
+    this.keys['google'] = 'AIzaSyCdOxElq-laCN8DL0YXZMquRTjlvWnjog8';
     this.customMarkerUrl = this.mapMarkerUrl = service.getMarkerUrl();
     this.originalMarkers = this.markers = service.getMarkers();
+
+        // this.customizeMarkerLayer = this.customizeMarkerLayer.bind(this);
   }
 
   ngOnInit(): void {
@@ -68,4 +71,46 @@ export class CapacityMapRrboComponent implements OnInit {
         ? this.capacityData
         : this.capacityData.filter((item) => item.country === arg);
   }
+
+  worldMap: any = mapsData.world;
+
+//   customizeMarkerLayer(elements) {
+//     elements.forEach((element) => {
+//         var color = element.attribute('color');
+//         element.applySettings({
+//             color: color,
+//         });
+
+//     });
+// }
+// customizeItems(items) {
+//   items.forEach(item => {
+
+//   });
+//   return items.reverse();
+// }
+
+// customizeText(arg) {
+//   return ['< 50', '50 to 150', '150 to 250', '250 to 500', '> 500'][arg.index];
+// }
+
+// // customizeTooltipSurplusDeficit(arg: any) {
+// //   return {
+// //       text: arg.seriesName + ", " + this.decimalPipe.transform(arg.valueText, "1.1-1") + " " + this.selectedUnitName,
+// //   };
+// // }
+
+// // customizeTooltipDemandSupply(arg: any) {
+// //   return {
+// //       text: arg.seriesName + ", " + this.decimalPipe.transform(arg.valueText, "1.1-1") + " " + this.selectedUnitName + " (" + arg.percentText + ")",
+// //   };
+// // }
+
+// customizeTooltip(arg: any) {
+//   // if (arg.layer.type === 'marker') {
+//       return {
+//           text: `<div style="text-align: left;">${arg.attribute('tooltip')}</div>`,
+//       };
+//   // }
+// }
 }

@@ -30,6 +30,7 @@ import {
   DxChartModule,
   DxMapModule,
   DxBarGaugeModule,
+  DxVectorMapModule
 } from 'devextreme-angular';
 import { SyntheticBasestocksComponent } from './components/synthetic-basestocks/synthetic-basestocks.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -142,6 +143,7 @@ import { BlenderDatabaseComponent } from './components/blender-database/blender-
     DxChartModule,
     DxMapModule,
     DxBarGaugeModule,
+    DxVectorMapModule
   ],
   providers: [],
   bootstrap: [AppComponent],
