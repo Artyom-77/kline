@@ -49,8 +49,10 @@ export class CapacityMapRrboComponent implements OnInit {
   constructor(service: RrboService) {
     this.mapTypes = service.getMapTypes();
     this.capacityData = service.capacityData;
-    this.keys['bing'] =
-      'AtT_6S6HNv0CHmLGyavC3zzxSqE76igYhmudioJCcspySokNdN75eimgJZr_qk1S';
+    // this.keys['bing'] =
+    //   'AtT_6S6HNv0CHmLGyavC3zzxSqE76igYhmudioJCcspySokNdN75eimgJZr_qk1S';
+    this.keys['google'] =
+      'AIzaSyCdOxElq-laCN8DL0YXZMquRTjlvWnjog8';
     this.customMarkerUrl = this.mapMarkerUrl = service.getMarkerUrl();
     this.originalMarkers = this.markers = service.getMarkers();
   }

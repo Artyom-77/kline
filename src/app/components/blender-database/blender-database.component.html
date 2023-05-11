@@ -35,16 +35,16 @@
   <div class="blender-database-body">
     <div class="map-section">
       <dx-map
-        #map
-        [height]="600"
+        #map1
+        [height]="510"
         width="100%"
         [controls]="true"
         [zoom]="8"
-        provider="bing"
+        provider="google"
         [apiKey]="keys"
         [markerIconSrc]="mapMarkerUrl"
         [markers]="markers"
-        [type]="mapTypes[2].key"
+        [type]="'Hybrid'"
       >
       </dx-map>
     </div>

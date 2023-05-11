@@ -27,8 +27,10 @@ export class BlenderDatabaseComponent implements OnInit {
     this.nameList = service.nameList;
     this.blanderData = service.blanderData;
     this.mapTypes = rrboService.getMapTypes();
-    this.keys['bing'] =
-      'AtT_6S6HNv0CHmLGyavC3zzxSqE76igYhmudioJCcspySokNdN75eimgJZr_qk1S';
+    // this.keys['bing'] =
+    //   'AtT_6S6HNv0CHmLGyavC3zzxSqE76igYhmudioJCcspySokNdN75eimgJZr_qk1S';
+    this.keys['google'] =
+      'AIzaSyCdOxElq-laCN8DL0YXZMquRTjlvWnjog8';
     this.customMarkerUrl = this.mapMarkerUrl = rrboService.getMarkerUrl();
     this.originalMarkers = this.markers = rrboService.getMarkers();
   }
