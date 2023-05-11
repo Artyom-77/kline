@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { LandingServiceService } from '../services/landing-service.service'
+import { LandingServiceService } from '../services/landing-service.service';
 
 @Component({
   selector: 'app-lending-page',
@@ -7,53 +7,54 @@ import { LandingServiceService } from '../services/landing-service.service'
   styleUrls: ['./lending-page.component.scss'],
 })
 export class LendingPageComponent implements OnInit {
-
   public slides = [
     {
-      imageUrl: '../../assets/images/bg-image.png',
+      imageUrl: '../../assets/images/slider-img2.jpg',
       caption: 'Latest Updates',
       desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
     },
     {
-      imageUrl: '../../assets/images/cavorage-bg.png',
+      imageUrl: '../../assets/images/slider-img1.jpg',
       caption: 'Latest Updates',
       desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
     },
     {
-      imageUrl: '../../assets/images/bg-image.png',
+      imageUrl: '../../assets/images/slider-img2.jpg',
+      caption: 'Latest Updates',
+      desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    },
+    {
+      imageUrl: '../../assets/images/slider-img1.jpg',
       caption: 'Latest Updates',
       desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
     },
   ];
 
-  public showDownladedIcon: boolean = false
+  public showDownladedIcon: boolean = false;
   slideshowDelay = 2000;
-  public coveragesList: any[] = []
+  public coveragesList: any[] = [];
   constructor(public service: LandingServiceService) {
-    this.coveragesList = service.coveragesList
+    this.coveragesList = service.coveragesList;
   }
   public downladsList: any[] = [
     {
       text: 'March 2023',
       id: 1,
-      downladed: false
+      downladed: false,
     },
     {
       text: 'August 2022',
       id: 2,
-      downladed: false
-
+      downladed: false,
     },
     {
       text: 'April 2022',
       id: 3,
-      downladed: false
-    }
+      downladed: false,
+    },
+  ];
 
-  ]
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   scrollPosition = 0;
 
@@ -65,13 +66,13 @@ export class LendingPageComponent implements OnInit {
   valueChanged(e: any) {
     this.slideshowDelay = e.value ? 2000 : 0;
   }
-  downloadNewsletter (id: number) {
-    console.log(id)
-    this.downladsList.find(item => {
-     if( item.id === id) {
-      item.downladed = true
-     }
-    })
+  downloadNewsletter(id: number) {
+    console.log(id);
+    this.downladsList.find((item) => {
+      if (item.id === id) {
+        item.downladed = true;
+      }
+    });
   }
   public subscribeModalStep: number = 1;
   public isModalVisible: boolean = false;
@@ -85,11 +86,10 @@ export class LendingPageComponent implements OnInit {
     document.querySelector('.kline-app')?.classList.remove('fixed');
   }
   goToSecondStep(): void {
-    if(this.emailVal === '' || !this.emailVal.includes('@') ) {
-      alert('Email field was requared!!!')
+    if (this.emailVal === '' || !this.emailVal.includes('@')) {
+      alert('Email field was requared!!!');
     } else {
-      this.subscribeModalStep = 2
+      this.subscribeModalStep = 2;
     }
-
   }
 }

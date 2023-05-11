@@ -27,7 +27,7 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
     private service: SyntheticBasestocksService,
     private http: HttpClient
   ) {
-    this.modalDummyData = service.modalData
+    this.modalDummyData = service.modalData;
   }
 
   ngOnInit() {
@@ -72,6 +72,7 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
               dataType: 'mainColumn',
               area: 'column',
               expanded: true,
+              showTotals: false,
             },
             {
               dataField: 'BSType',
@@ -80,6 +81,7 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
               expanded: true,
               runningTotal: 'column',
               allowCrossGroupCalculation: true,
+              showTotals: false,
             },
             {
               caption: 'Sales',
@@ -99,8 +101,8 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   }
 
   openRecipeModal() {
-    this.openModal = true
-      document.querySelector('.kline-app')?.classList.add('fixed');
+    this.openModal = true;
+    document.querySelector('.kline-app')?.classList.add('fixed');
   }
 
   onCellClick(e: any) {

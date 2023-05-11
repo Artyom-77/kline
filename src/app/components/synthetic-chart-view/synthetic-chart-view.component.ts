@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { SyntheticBasestocksService } from 'src/app/services/synthetic-basestocks/synthetic-basestocks.service';
 
 @Component({
   selector: 'app-synthetic-chart-view',
@@ -75,7 +76,12 @@ export class SyntheticChartViewComponent implements OnInit {
     // console.log('chartData', this.chartData)
     // this.PieByProduct = this.chartData.filter(item => )
   }
-  constructor() {}
+  public synteticEsterData: any[] = [];
+  public pagEsterData: any[] = [];
+  constructor(private syntheticBasestocksService: SyntheticBasestocksService) {
+    this.synteticEsterData = syntheticBasestocksService.sinteticEsterTypeData;
+    this.pagEsterData = syntheticBasestocksService.PAGEsterTypeData;
+  }
 
   toggleCountryDropdown() {
     this.isCountryOpen = !this.isCountryOpen;

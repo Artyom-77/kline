@@ -20,6 +20,9 @@
 
 body {
   overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 .fixed {
   overflow: hidden;

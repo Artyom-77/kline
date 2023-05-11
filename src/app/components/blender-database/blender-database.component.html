@@ -8,28 +8,28 @@
   <div class="blender-database-filters">
     <div class="filters">
       <app-select-dropdown
-      [dropdownTitle]="' Group'"
-      [dropdownData]="groupList"
-      (itemEvent)="handleGroupChange($event)"
-    ></app-select-dropdown>
-    <app-select-dropdown
-    [dropdownTitle]="'Region'"
-    [dropdownData]="regionsList"
-    (itemEvent)="handleRegionChange($event)"
-  ></app-select-dropdown>
-    <app-select-dropdown
-    [dropdownTitle]="'Name'"
-    [dropdownData]="nameList"
-    (itemEvent)="handleNameChange($event)"
-  ></app-select-dropdown>
+        [dropdownTitle]="' Group'"
+        [dropdownData]="groupList"
+        (itemEvent)="handleGroupChange($event)"
+      ></app-select-dropdown>
+      <app-select-dropdown
+        [dropdownTitle]="'City'"
+        [dropdownData]="regionsList"
+        (itemEvent)="handleRegionChange($event)"
+      ></app-select-dropdown>
+      <app-select-dropdown
+        [dropdownTitle]="'Name'"
+        [dropdownData]="nameList"
+        (itemEvent)="handleNameChange($event)"
+      ></app-select-dropdown>
     </div>
     <div class="action">
       <app-button
-      [btnText]="'Download'"
-      [type]="'icon secondary'"
-      [icon]="false"
-      [iconName]="''"
-    ></app-button>
+        [btnText]="'Download'"
+        [type]="'icon secondary'"
+        [icon]="false"
+        [iconName]="''"
+      ></app-button>
     </div>
   </div>
   <div class="blender-database-body">
@@ -49,7 +49,11 @@
       </dx-map>
     </div>
     <div class="blander-table">
-      <dx-data-grid [dataSource]="filtredData" [columns]="columns" [columnWidth]="150">
+      <dx-data-grid
+        [dataSource]="filtredData"
+        [columns]="columns"
+        [columnWidth]="150"
+      >
         <dxo-scrolling rowRenderingMode="virtual"> </dxo-scrolling>
         <dxo-paging [pageSize]="6"></dxo-paging>
       </dx-data-grid>

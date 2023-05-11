@@ -70,6 +70,13 @@ import { MultipleSelectDropdownComponent } from './components/multiple-select-dr
 import { SupplierChartCurrentCapacitySmallComponent } from './components/charts/supplier-chart-current-capacity-small/supplier-chart-current-capacity-small.component';
 import { ProductPropertiesComponent } from './components/product-properties/product-properties.component';
 import { BlenderDatabaseComponent } from './components/blender-database/blender-database.component';
+import { PieChartShareOfSynteticEsterComponent } from './components/charts/pie-chart-share-of-syntetic-ester/pie-chart-share-of-syntetic-ester.component';
+import { PieChartEsterBySegmentAndProductComponent } from './components/charts/pie-chart-ester-by-segment-and-product/pie-chart-ester-by-segment-and-product.component';
+import { PieChartEsterByProductComponent } from './components/charts/pie-chart-ester-by-product/pie-chart-ester-by-product.component';
+import { PieChartEsterByEsterComponent } from './components/charts/pie-chart-ester-by-ester/pie-chart-ester-by-ester.component';
+import { PieChartShareOfPagComponent } from './components/charts/pie-chart-share-of-pag/pie-chart-share-of-pag.component';
+import { PieChartPagBySegmentAndProductComponent } from './components/charts/pie-chart-pag-by-segment-and-product/pie-chart-pag-by-segment-and-product.component';
+import { PieChartPagByProductComponent } from './components/charts/pie-chart-pag-by-product/pie-chart-pag-by-product.component';
 
 @NgModule({
   declarations: [
@@ -128,6 +135,13 @@ import { BlenderDatabaseComponent } from './components/blender-database/blender-
     SupplierChartCurrentCapacitySmallComponent,
     ProductPropertiesComponent,
     BlenderDatabaseComponent,
+    PieChartShareOfSynteticEsterComponent,
+    PieChartEsterBySegmentAndProductComponent,
+    PieChartEsterByProductComponent,
+    PieChartEsterByEsterComponent,
+    PieChartShareOfPagComponent,
+    PieChartPagBySegmentAndProductComponent,
+    PieChartPagByProductComponent,
   ],
   imports: [
     BrowserModule,

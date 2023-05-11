@@ -2,7 +2,7 @@
   <div class="filters">
     <div class="custom-dropdown date-dropdown" (click)="toggleYearDropdown()">
       <div class="dropdown-header">
-        <span>{{ selectedYear }}</span>
+        <span>{{ selectedSinteticEster }}</span>
         <img
           class="dropdown-icon"
           [class.rotate]="isYearDropdownOpen"
@@ -14,7 +14,7 @@
       <div class="dropdown-list" *ngIf="isYearDropdownOpen">
         <div
           class="dropdown-item"
-          *ngFor="let option of yearList"
+          *ngFor="let option of sinteticEsterList"
           (click)="toggleYearOption(option)"
         >
           {{ option }}
@@ -24,12 +24,12 @@
   </div>
   <dx-pie-chart
     id="pie"
-    title="Share of Synthetic Basestock by Product (KT)"
+    title="PAG Demand Split by Product (Kilotonnes)"
     palette="Dark Violet"
     paletteExtensionMode="blend"
     [dataSource]="mergedObj"
   >
-    <dxi-series argumentField="BSType" valueField="SumofValues">
+    <dxi-series argumentField="product" valueField="value">
       <dxo-small-values-grouping
         mode="smallValueThreshold"
         [threshold]="4.5"
@@ -38,7 +38,6 @@
     <dxo-tooltip
       [enabled]="true"
       [contentTemplate]="customizeLabel"
-      [color]="tooltipColor"
     ></dxo-tooltip>
     <dxo-legend
       verticalAlignment="bottom"

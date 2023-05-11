@@ -58,29 +58,29 @@
       ></app-pie-chart-by-product-second>
     </div>
     <div class="tab second-tab" *ngIf="selectedTab === 2">
-      <app-pie-chart-split-by-viscosity-grade-second
-        [chartData]="chartData"
-      ></app-pie-chart-split-by-viscosity-grade-second>
-      <app-pie-chart-split-by-segment
-        [chartData]="chartData"
-      ></app-pie-chart-split-by-segment>
-      <app-pie-chart-by-product-second
-        [chartData]="chartData"
-      ></app-pie-chart-by-product-second>
+      <app-pie-chart-share-of-syntetic-ester
+        [chartData]="synteticEsterData"
+      ></app-pie-chart-share-of-syntetic-ester>
+      <app-pie-chart-ester-by-segment-and-product
+        [chartData]="synteticEsterData"
+      ></app-pie-chart-ester-by-segment-and-product>
+      <app-pie-chart-ester-by-product
+        [chartData]="synteticEsterData"
+      ></app-pie-chart-ester-by-product>
+      <app-pie-chart-ester-by-ester
+        [chartData]="synteticEsterData"
+      ></app-pie-chart-ester-by-ester>
     </div>
     <div class="tab first-tab" *ngIf="selectedTab === 3">
-      <app-pie-chart-split-by-viscosity-grade
-        [chartData]="chartData"
-      ></app-pie-chart-split-by-viscosity-grade>
-      <app-pie-chart-split-by-viscosity-grade-second
-        [chartData]="chartData"
-      ></app-pie-chart-split-by-viscosity-grade-second>
-      <app-pie-chart-split-by-segment
-        [chartData]="chartData"
-      ></app-pie-chart-split-by-segment>
-      <app-pie-chart-by-product-second
-        [chartData]="chartData"
-      ></app-pie-chart-by-product-second>
+      <app-pie-chart-share-of-pag
+        [chartData]="pagEsterData"
+      ></app-pie-chart-share-of-pag>
+      <app-pie-chart-pag-by-segment-and-product
+        [chartData]="pagEsterData"
+      ></app-pie-chart-pag-by-segment-and-product>
+      <app-pie-chart-pag-by-product
+        [chartData]="pagEsterData"
+      ></app-pie-chart-pag-by-product>
     </div>
   </div>
 </div>

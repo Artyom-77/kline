@@ -20,12 +20,12 @@ export class PaoDemandComponent implements OnInit {
   @Input() selectedTab: any = 1;
   showColumnFields = true;
   showFilterFields = true;
-public modalDummyData: any[] = []
+  public modalDummyData: any[] = [];
   constructor(
     private service: SyntheticBasestocksService,
     private http: HttpClient
   ) {
-    this.modalDummyData = service.modalData
+    this.modalDummyData = service.modalData;
   }
 
   ngOnInit() {
@@ -63,26 +63,24 @@ public modalDummyData: any[] = []
               dataType: 'mainColumn',
               area: 'column',
               expanded: true,
+              showTotals: false,
             },
             {
               dataField: 'Year',
               dataType: 'Year',
               area: 'column',
-
-              // expanded: true,
-              // runningTotal: 'column',
-              // allowCrossGroupCalculation: true,
+              showTotals: false,
             },
             {
               dataField: 'Year',
               area: 'filter',
-              // filterValues: ['Region'],
             },
             {
               dataField: 'BSType',
               dataType: 'BSType',
               area: 'column',
               expanded: true,
+              showTotals: false,
             },
             {
               caption: 'Sales',
@@ -101,11 +99,10 @@ public modalDummyData: any[] = []
       });
   }
 
-   openRecipeModal() {
-    this.openModal = true
-      document.querySelector('.kline-app')?.classList.add('fixed');
+  openRecipeModal() {
+    this.openModal = true;
+    document.querySelector('.kline-app')?.classList.add('fixed');
   }
-
 
   onCellClick(e: any) {
     // && e.cell.columnType !== 'T'
@@ -115,16 +112,16 @@ public modalDummyData: any[] = []
     //   console.log('e',e)
     //   this.gridItemData = e
     // }
-}
+  }
 
-// openModal() {
-//   this.openModal = true;
-// }
-onCloseModal() {
-  this.openModal = false;
-  document.querySelector('.kline-app')?.classList.remove('fixed');
-}
-onFocusedCellChanging(e: any) {
-  e.isHighlighted = true;
-}
+  // openModal() {
+  //   this.openModal = true;
+  // }
+  onCloseModal() {
+    this.openModal = false;
+    document.querySelector('.kline-app')?.classList.remove('fixed');
+  }
+  onFocusedCellChanging(e: any) {
+    e.isHighlighted = true;
+  }
 }

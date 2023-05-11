@@ -77,7 +77,7 @@
               'hide':scrollPosition < 500,
             }"
           >
-            <img src="../../assets/images/bg-image.png" alt="insights-img" />
+            <img src="../../assets/images/gold-oil.jpg" alt="insights-img" />
           </div>
           <div class="insight-content">
             <div
@@ -90,7 +90,11 @@
               <div>
                 <h3 class="item-name">Download Our Quarterly Newsletters</h3>
                 <div class="item-desc grid">
-                  <div class="desc-links" *ngFor="let item of downladsList" (click)="downloadNewsletter(item.id)" >
+                  <div
+                    class="desc-links"
+                    *ngFor="let item of downladsList"
+                    (click)="downloadNewsletter(item.id)"
+                  >
                     <svg
                       width="16"
                       height="9"
@@ -103,11 +107,11 @@
                         fill="#8e6b57"
                       />
                     </svg>
-                   <p> {{  item.text }}</p>
+                    <p>{{ item.text }}</p>
                     <svg
-                    *ngIf="item.downladed"
-                    class="downloaded-icon"
-                    width="36"
+                      *ngIf="item.downladed"
+                      class="downloaded-icon"
+                      width="36"
                       height="36"
                       viewBox="0 0 36 36"
                       fill="none"
@@ -137,98 +141,98 @@
                         fill="#8e6b57"
                       />
                     </svg>
-                </div>
-                <div class="icon-section">
-                  <div class="icon" (click)="openModal()">
-                    <img src="../../assets/images/speaker.svg" alt="icon" />
-                    <div class="btn-text" >
-                      <div  >Subscribe</div>
+                  </div>
+                  <div class="icon-section">
+                    <div class="icon" (click)="openModal()">
+                      <img src="../../assets/images/speaker.svg" alt="icon" />
+                      <div class="btn-text">
+                        <div>Subscribe</div>
+                      </div>
                     </div>
-
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="insigts-item"
-        [ngClass]="{
+        <div
+          class="insigts-item"
+          [ngClass]="{
           'show':scrollPosition >= 712,
           'hide':scrollPosition < 712,
         }"
-      >
-        <div
-          class="insight-img"
-          [ngClass]="{
+        >
+          <div
+            class="insight-img"
+            [ngClass]="{
             'show':scrollPosition >= 712,
             'hide':scrollPosition < 712,
           }"
-        >
-          <img src="../../assets/images/bg-image.png" alt="insights-img" />
-        </div>
-        <div class="insight-content">
-          <div
-            class="visible-area"
-            [ngClass]="{
+          >
+            <img src="../../assets/images/gold-oil.jpg" alt="insights-img" />
+          </div>
+          <div class="insight-content">
+            <div
+              class="visible-area"
+              [ngClass]="{
               'show':scrollPosition >= 712,
               'hide':scrollPosition < 712,
             }"
-          >
-            <div>
-              <h3 class="item-name">Reports & Presentations</h3>
-              <p class="item-desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore
-              </p>
-              <div class="icon-section">
-                <div class="icon">
-                  <img src="../../assets/images/paper.svg" alt="icon" />
-                  <div class="btn-text">
-                    <a routerLink="/insights">Published Articles</a>
+            >
+              <div>
+                <h3 class="item-name">Reports & Presentations</h3>
+                <p class="item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore
+                </p>
+                <div class="icon-section">
+                  <div class="icon">
+                    <img src="../../assets/images/paper.svg" alt="icon" />
+                    <div class="btn-text">
+                      <a routerLink="/insights">Published Articles</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="insigts-item"
-        [ngClass]="{
+        <div
+          class="insigts-item"
+          [ngClass]="{
           'show':scrollPosition >= 1039,
           'hide':scrollPosition < 1039,
         }"
-      >
-        <div
-          class="insight-img"
-          [ngClass]="{
+        >
+          <div
+            class="insight-img"
+            [ngClass]="{
             'show':scrollPosition >= 1039,
             'hide':scrollPosition < 1039,
           }"
-        >
-          <img src="../../assets/images/bg-image.png" alt="insights-img" />
-        </div>
-        <div class="insight-content">
-          <div
-            class="visible-area"
-            [ngClass]="{
+          >
+            <img src="../../assets/images/gold-oil.jpg" alt="insights-img" />
+          </div>
+          <div class="insight-content">
+            <div
+              class="visible-area"
+              [ngClass]="{
               'show':scrollPosition >= 1039,
               'hide':scrollPosition < 1039,
             }"
-          >
-            <div>
-              <h3 class="item-name">Webinars</h3>
-              <p class="item-desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore
-              </p>
-              <div class="icon-section">
-                <div class="icon">
-                  <img src="../../assets/images/blackboard.svg" alt="icon" />
-                  <div class="btn-text">
-                    <a routerLink="/insights">View All</a>
+            >
+              <div>
+                <h3 class="item-name">Webinars</h3>
+                <p class="item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore
+                </p>
+                <div class="icon-section">
+                  <div class="icon">
+                    <img src="../../assets/images/blackboard.svg" alt="icon" />
+                    <div class="btn-text">
+                      <a routerLink="/insights">View All</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -237,37 +241,40 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="webinars-subscribe">
-
-    <app-modal
-      [title]="'Subscribe'"
-      *ngIf="isModalVisible"
-      (onClose)="onCloseModal()"
-    >
-      <div class="modal-content">
-        <div *ngIf="subscribeModalStep === 1" class="email-subscribe">
-          <p class="desc">Quarterly newsletter subscribtion</p>
-          <input type="email" [(ngModel)]="emailVal" placeholder="Enter your Email*" />
-          <app-button
-            [btnText]="'Get Code'"
-            [type]="'secondary'"
-            [icon]="false"
-            [iconName]="''"
-            (click)="goToSecondStep()"
-          ></app-button>
+    <div class="webinars-subscribe">
+      <app-modal
+        [title]="'Subscribe'"
+        *ngIf="isModalVisible"
+        (onClose)="onCloseModal()"
+      >
+        <div class="modal-content">
+          <div *ngIf="subscribeModalStep === 1" class="email-subscribe">
+            <p class="desc">Quarterly newsletter subscribtion</p>
+            <input
+              type="email"
+              [(ngModel)]="emailVal"
+              placeholder="Enter your Email*"
+            />
+            <app-button
+              [btnText]="'Get Code'"
+              [type]="'secondary'"
+              [icon]="false"
+              [iconName]="''"
+              (click)="goToSecondStep()"
+            ></app-button>
+          </div>
+          <div *ngIf="subscribeModalStep === 2">
+            <p class="desc">We have sent a verification code to you email.</p>
+            <input type="text" placeholder="Enter Code*" />
+            <app-button
+              [btnText]="'Subscribe'"
+              [type]="'secondary'"
+              [icon]="false"
+              [iconName]="''"
+            ></app-button>
+          </div>
         </div>
-        <div *ngIf="subscribeModalStep === 2">
-          <p class="desc">We have sent a verification code to you email.</p>
-          <input type="text" placeholder="Enter Code*" />
-          <app-button
-            [btnText]="'Subscribe'"
-            [type]="'secondary'"
-            [icon]="false"
-            [iconName]="''"
-          ></app-button>
-        </div>
-      </div>
-    </app-modal>
+      </app-modal>
+    </div>
   </div>
 </div>

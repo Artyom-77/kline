@@ -2,7 +2,7 @@
   <div class="capacity-map-tab-filters">
     <div class="select-fiters">
       <app-select-dropdown
-        [dropdownTitle]="'Country'"
+        [dropdownTitle]="'City'"
         [dropdownData]="dropdownItems"
         (itemEvent)="handleChange($event)"
       ></app-select-dropdown>
@@ -27,7 +27,6 @@
       [apiKey]="keys"
       [markerIconSrc]="mapMarkerUrl"
       [markers]="markers"
-
     >
     </dx-map>
     <!-- <dx-vector-map  id="vector-map" [bounds]="[-180, 85, 180, -60]"
@@ -45,7 +44,7 @@
                         <dxo-source layer="bubbles" grouping="size"></dxo-source>
                     </dxi-legend>
                   </dx-vector-map> -->
-                  <!-- <dxi-legend title="Capacity" verticalAlignment="bottom" horizontalAlignment="right"
+    <!-- <dxi-legend title="Capacity" verticalAlignment="bottom" horizontalAlignment="right"
                       [customizeText]="customizeText">
                       <div *dxTemplate="let item of 'markerTemplate'">
                           <svg width="100" height="100">
@@ -54,7 +53,7 @@
                           <div>{{testMethod()}}</div>
                       </div>
                   </dxi-legend> -->
-                  <!-- <dxi-legend title="Capacity" markerShape="circle" markerTemplate="markerTemplate"
+    <!-- <dxi-legend title="Capacity" markerShape="circle" markerTemplate="markerTemplate"
                       horizontalAlignment="right" verticalAlignment="bottom">
                       <dxo-source layer="bubbles" grouping="size"></dxo-source>
                       <svg width="100" height="100">

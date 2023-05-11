@@ -1,51 +1,22 @@
-<!-- <div
-  class="custom-dropdown-c"
-  outclick
-  (outclick)="isDropdownOpen = false"
-  (click)="toggleDropdown()"
->
-  <div class="dropdown-header">
-    <span>{{
-      selectedItems !== "" ? selectedItem : "Choose " + dropdownTitle
-    }}</span>
-    <img
-      class="dropdown-icon"
-      [class.rotate]="isDropdownOpen"
-      [class.defalut]="!isDropdownOpen"
-      src="../../../assets/images/small-arrow.svg"
-      alt="arrow"
-    />
-  </div>
-  <div class="dropdown-list" *ngIf="isDropdownOpen">
-    <div
-      class="dropdown-item"
-      *ngFor="let item of dropdownData"
-      (click)="toggleOption(item)"
-    >
-      {{ item.label }}
-    </div>
-  </div>
-</div> -->
-
 <div
   class="multiple-custom-dropdown date-dropdown"
   outclick
   (outclick)="isDropdownOpen = false"
   (click)="toggleDropdown()"
 >
-<div class="dropdown-icon">
-  <img
-    [class.rotate]="isDropdownOpen"
-    [class.defalut]="!isDropdownOpen"
-    src="../../../assets/images/small-arrow.svg"
-    alt="arrow"
-  />
-</div>
+  <div class="dropdown-icon">
+    <img
+      [class.rotate]="isDropdownOpen"
+      [class.defalut]="!isDropdownOpen"
+      src="../../../assets/images/small-arrow.svg"
+      alt="arrow"
+    />
+  </div>
   <div class="dropdown-header">
     <span>{{
       selectedItems.length
         ? selectedItems.join(", ")
-        : "Select " + dropdownTitle
+        : "Choose " + dropdownTitle
     }}</span>
   </div>
   <div class="dropdown-list" *ngIf="isDropdownOpen">

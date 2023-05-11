@@ -2,7 +2,7 @@
   <div class="filters">
     <div class="custom-dropdown date-dropdown" (click)="toggleYearDropdown()">
       <div class="dropdown-header">
-        <span>{{ selectedYear }}</span>
+        <span>{{ selectedSegment }}</span>
         <img
           class="dropdown-icon"
           [class.rotate]="isYearDropdownOpen"
@@ -14,8 +14,32 @@
       <div class="dropdown-list" *ngIf="isYearDropdownOpen">
         <div
           class="dropdown-item"
-          *ngFor="let option of yearList"
+          *ngFor="let option of segmentList"
           (click)="toggleYearOption(option)"
+        >
+          {{ option }}
+        </div>
+      </div>
+    </div>
+    <div
+      class="custom-dropdown date-dropdown"
+      (click)="toggleProductDropdown()"
+    >
+      <div class="dropdown-header">
+        <span>{{ selectedProduct }}</span>
+        <img
+          class="dropdown-icon"
+          [class.rotate]="isProductDropdownOpen"
+          [class.defalut]="!isProductDropdownOpen"
+          src="../../../assets/images/small-arrow.svg"
+          alt="arrow"
+        />
+      </div>
+      <div class="dropdown-list" *ngIf="isProductDropdownOpen">
+        <div
+          class="dropdown-item"
+          *ngFor="let option of productList"
+          (click)="toggleProductOption(option)"
         >
           {{ option }}
         </div>
@@ -24,12 +48,12 @@
   </div>
   <dx-pie-chart
     id="pie"
-    title="Share of Synthetic Basestock by Product (KT)"
+    title="Share of Synthetic Ester by Segment and Product (KT)"
     palette="Dark Violet"
     paletteExtensionMode="blend"
     [dataSource]="mergedObj"
   >
-    <dxi-series argumentField="BSType" valueField="SumofValues">
+    <dxi-series argumentField="sinteticEster" valueField="value">
       <dxo-small-values-grouping
         mode="smallValueThreshold"
         [threshold]="4.5"
@@ -38,7 +62,6 @@
     <dxo-tooltip
       [enabled]="true"
       [contentTemplate]="customizeLabel"
-      [color]="tooltipColor"
     ></dxo-tooltip>
     <dxo-legend
       verticalAlignment="bottom"
