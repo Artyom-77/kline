@@ -3,6 +3,7 @@
     <!-- <h3 class="title">Base Oil Visgrade Yield</h3> -->
   </div>
   <app-select-dropdown
+  *ngIf="!hideDropdown"
     [dropdownTitle]="'Year'"
     [dropdownData]="yearData"
     (itemEvent)="handleChange($event)"

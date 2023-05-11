@@ -17,7 +17,7 @@
       ></app-select-dropdown>
       <app-multiple-select-dropdown
         *ngIf="selectedMainTab === 2"
-        [dropdownTitle]="'Suppliers'"
+        [dropdownTitle]="'a maximum of 3 Suppliers'"
         [dropdownData]="supplierDropList"
         (itemEvent)="handleMultipleSupplierChange($event)"
         [firstItemSelected]="false"
@@ -26,7 +26,7 @@
       ></app-multiple-select-dropdown>
       <app-multiple-select-dropdown
         *ngIf="selectedMainTab === 2"
-        [dropdownTitle]="'Regions'"
+        [dropdownTitle]="'a maximum of 3 Regions'"
         [dropdownData]="regionsList"
         (itemEvent)="handleMultipleRegionChange($event)"
         [firstItemSelected]="true"

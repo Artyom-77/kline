@@ -3,6 +3,7 @@
     <!-- <h3 class="title">Base Oil Sales Structure</h3> -->
   </div>
   <app-select-dropdown
+    *ngIf="!hideDropdown"
     [dropdownTitle]="'Year'"
     [dropdownData]="yearData"
     (itemEvent)="handleChange($event)"
@@ -10,11 +11,11 @@
   <div class="chart-pie">
     <dx-pie-chart
       id="pie"
-       palette="Dark Violet"
+      palette="Dark Violet"
       title="Base Oil Sales Structure"
       paletteExtensionMode="blend"
       [dataSource]="chartData"
-      [size]="{width: 300 }"
+      [size]="{ width: 300 }"
     >
       <dxi-series argumentField="label" valueField="value">
         <dxo-label

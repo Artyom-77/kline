@@ -14,6 +14,10 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   public allowSearch: boolean | null | undefined = true;
   public selectedMainTab: number = 1;
   public showRelevantValues: boolean | null | undefined = true;
+  public openModal: boolean = false;
+  public gridItemData: any | undefined;
+  public modalDummyData: any[] = [];
+
   showRowFields = true;
   @Input() selectedTab: any = 1;
   showColumnFields = true;
@@ -22,7 +26,9 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   constructor(
     private service: SyntheticBasestocksService,
     private http: HttpClient
-  ) {}
+  ) {
+    this.modalDummyData = service.modalData
+  }
 
   ngOnInit() {
     this.http
@@ -92,8 +98,26 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
       });
   }
 
-  ngOnChanges(): void {
-    // console.log('selectedTab', this.selectedTab);
-    // this.BioDetails = this.bioData.criterias.find((item: any) => item.tabName === this.selectedTabName);
+  onCellClick(e: any) {
+    // && e.cell.columnType !== 'T'
+    if (
+      e.area == 'data' &&
+      e.cell.rowType !== 'GT' &&
+      e.cell.columnType !== 'GT'
+    ) {
+      this.openModal = true;
+      document.querySelector('.kline-app')?.classList.add('fixed');
+      console.log('e', e);
+      this.gridItemData = e;
+    }
   }
+  onCloseModal() {
+    this.openModal = false;
+    document.querySelector('.kline-app')?.classList.remove('fixed');
+  }
+  onFocusedCellChanging(e: any) {
+    e.isHighlighted = true;
+  }
+
+  ngOnChanges(): void {}
 }

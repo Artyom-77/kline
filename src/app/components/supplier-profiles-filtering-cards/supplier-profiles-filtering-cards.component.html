@@ -19,22 +19,26 @@
       <div class="chart-item">
         <app-supplier-chart-production
           [chartData]="item.BaseOilProduction"
+
         ></app-supplier-chart-production>
       </div>
       <div class="chart-item">
 
         <app-supplier-pie-chart-visgrade-yield
           [chartData]="item.BaseOilVisgradeYield"
+          [hideDropdown]="true"
         ></app-supplier-pie-chart-visgrade-yield>
       </div>
       <div class="chart-item">
         <app-supplier-pie-chart-oil-export
           [chartData]="item.BaseOilExports"
+          [hideDropdown]="true"
         ></app-supplier-pie-chart-oil-export>
       </div>
       <div class="chart-item">
         <app-supplier-pie-chart-sales-structure
           [chartData]="item.BaseOilSalesStructure"
+          [hideDropdown]="true"
         >
         </app-supplier-pie-chart-sales-structure>
       </div>

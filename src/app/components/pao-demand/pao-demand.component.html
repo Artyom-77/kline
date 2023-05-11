@@ -69,6 +69,7 @@
     </div>
     <div *ngIf="selectedTab === 2" class="pao-demand-body-pivot">
       <dx-pivot-grid
+        (onCellClick)="onCellClick($event)"
         [allowSortingBySummary]="true"
         [allowSorting]="true"
         [allowFiltering]="true"
@@ -89,6 +90,7 @@
     </div>
     <div *ngIf="selectedTab === 3" class="pao-demand-body-pivot">
       <dx-pivot-grid
+        (onCellClick)="onCellClick($event)"
         [allowSortingBySummary]="true"
         [allowSorting]="true"
         [allowFiltering]="true"
@@ -135,7 +137,6 @@
             [showBorders]="true"
             [columnAutoWidth]="true"
           >
-
             <dxo-paging [enabled]="true"> </dxo-paging>
             <dxo-editing
               mode="batch"

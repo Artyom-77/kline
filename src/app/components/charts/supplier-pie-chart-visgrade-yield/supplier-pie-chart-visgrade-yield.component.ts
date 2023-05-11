@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SupplierPieChartVisgradeYieldComponent implements OnInit {
   @Input() chartData?: any;
+  @Input() hideDropdown?: boolean = false;
   public yearData: any[] = [
     {
       id: 1,

@@ -7,6 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class SupplierPieChartSalesStructureComponent {
   @Input() chartData?: any;
+  @Input() hideDropdown?: boolean = false;
+
   public yearData: any[] = [
     {
       id: 1,

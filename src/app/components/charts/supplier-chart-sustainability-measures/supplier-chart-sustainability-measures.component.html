@@ -6,15 +6,23 @@
       title="Sustainability Measures"
       [startValue]="0"
       [endValue]="100"
-      [values]="chartData"
+      [values]="dataValues"
       palette="Dark Violet"
       paletteExtensionMode="blend"
-      [size]="{width: 300 }"
-
+      [size]="{ width: 500 }"
     >
+
       <dxo-label [indent]="10" [customizeText]="customizeText"
         ><dxo-format type="fixedPoint" [precision]="1"></dxo-format>
       </dxo-label>
+      <dxo-legend
+
+        [visible]="true"
+        verticalAlignment="bottom"
+        horizontalAlignment="center"
+        itemTextPosition="right"
+        [customizeText]="customizeText1"
+      ></dxo-legend>
     </dx-bar-gauge>
   </div>
   <p>{{ text }}</p>

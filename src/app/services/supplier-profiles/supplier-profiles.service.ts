@@ -73,7 +73,24 @@ export class SupplierProfilesService {
         { year: '2021', capacity: 200 },
         { year: '2022', capacity: 150 },
       ],
-      SustainabilityMeasures: [40, 60, 30, 80],
+      SustainabilityMeasures: [
+        {
+          value: 40,
+          label: 'Parameter 1'
+        },
+        {
+          value: 60,
+          label: 'Parameter 2'
+        },
+        {
+          value: 30,
+          label: 'Parameter 3'
+        },
+        {
+          value: 80,
+          label: 'Parameter 4'
+        },
+      ],
       CurrentBaseOilCapacity: [
         {
           group: 'III',
@@ -154,7 +171,24 @@ export class SupplierProfilesService {
         { year: '2021', capacity: 400 },
         { year: '2022', capacity: 450 },
       ],
-      SustainabilityMeasures: [40, 60, 30, 80],
+      SustainabilityMeasures: [
+        {
+          value: 40,
+          label: 'Parameter 1'
+        },
+        {
+          value: 60,
+          label: 'Parameter 2'
+        },
+        {
+          value: 30,
+          label: 'Parameter 3'
+        },
+        {
+          value: 80,
+          label: 'Parameter 4'
+        },
+      ],
       CurrentBaseOilCapacity: [
         {
           group: 'III',
@@ -235,7 +269,24 @@ export class SupplierProfilesService {
         { year: '2021', capacity: 400 },
         { year: '2022', capacity: 450 },
       ],
-      SustainabilityMeasures: [40, 60, 30, 80],
+      SustainabilityMeasures: [
+        {
+          value: 40,
+          label: 'Parameter 1'
+        },
+        {
+          value: 60,
+          label: 'Parameter 2'
+        },
+        {
+          value: 30,
+          label: 'Parameter 3'
+        },
+        {
+          value: 80,
+          label: 'Parameter 4'
+        },
+      ],
       CurrentBaseOilCapacity: [
         {
           group: 'III',
@@ -316,7 +367,24 @@ export class SupplierProfilesService {
         { year: '2021', capacity: 400 },
         { year: '2022', capacity: 450 },
       ],
-      SustainabilityMeasures: [40, 60, 30, 80],
+      SustainabilityMeasures: [
+        {
+          value: 40,
+          label: 'Parameter 1'
+        },
+        {
+          value: 60,
+          label: 'Parameter 2'
+        },
+        {
+          value: 30,
+          label: 'Parameter 3'
+        },
+        {
+          value: 80,
+          label: 'Parameter 4'
+        },
+      ],
       CurrentBaseOilCapacity: [
         {
           group: 'III',
@@ -397,7 +465,24 @@ export class SupplierProfilesService {
         { year: '2021', capacity: 400 },
         { year: '2022', capacity: 450 },
       ],
-      SustainabilityMeasures: [40, 60, 30, 80],
+      SustainabilityMeasures: [
+        {
+          value: 40,
+          label: 'Parameter 1'
+        },
+        {
+          value: 60,
+          label: 'Parameter 2'
+        },
+        {
+          value: 30,
+          label: 'Parameter 3'
+        },
+        {
+          value: 80,
+          label: 'Parameter 4'
+        },
+      ],
       CurrentBaseOilCapacity: [
         {
           group: 'III',
@@ -478,7 +563,24 @@ export class SupplierProfilesService {
         { year: '2021', capacity: 400 },
         { year: '2022', capacity: 450 },
       ],
-      SustainabilityMeasures: [40, 60, 30, 80],
+      SustainabilityMeasures: [
+        {
+          value: 40,
+          label: 'Parameter 1'
+        },
+        {
+          value: 60,
+          label: 'Parameter 2'
+        },
+        {
+          value: 30,
+          label: 'Parameter 3'
+        },
+        {
+          value: 80,
+          label: 'Parameter 4'
+        },
+      ],
       CurrentBaseOilCapacity: [
         {
           group: 'III',
