@@ -6,17 +6,12 @@
     palette="Dark Violet"
     paletteExtensionMode="blend"
   >
-    <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>
-    <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>
-    <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>
-    <!-- <dxi-series valueField="SumofValues" argumentField="Segment"></dxi-series>
-    <dxi-series valueField="SumofValues" argumentField="Segment"></dxi-series> -->
-    <!-- <dxi-value-axis position="right">
-          <dxo-title text="millions"></dxo-title>
-        </dxi-value-axis> -->
+    <dxi-series valueField="SumofValues" argumentField="Year" name="Segment"></dxi-series>
+    <dxi-series valueField="SumofValues" argumentField="Year" name="Segment" ></dxi-series>
+    <dxi-series valueField="SumofValues" argumentField="Year" name="Segment"></dxi-series>
+
     <dxo-common-series-settings
       argumentField="Segment"
-      valueField="SumofValues"
       type="stackedBar"
     >
     </dxo-common-series-settings>
@@ -26,6 +21,10 @@
       itemTextPosition="right"
     >
     </dxo-legend>
+    <dxo-tooltip
+    [enabled]="true"
+    [contentTemplate]="customizeLabel"
+  ></dxo-tooltip>
     <!-- <dxo-export [enabled]="true"></dxo-export> -->
     <!-- <dxo-tooltip
           [enabled]="true"

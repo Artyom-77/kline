@@ -75,6 +75,6 @@ export class MaterialBalanceRrboComponent implements OnInit {
   }
 
   customizeLabel(arg: any) {
-    return `${arg.percentText}`;
+    return `${arg.argumentText}: ${arg.percentText}`;
   }
 }

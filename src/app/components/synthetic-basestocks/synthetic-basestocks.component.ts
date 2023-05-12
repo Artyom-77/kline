@@ -65,6 +65,14 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
             {
               dataField: 'Unit',
               area: 'filter',
+              filterType: {
+                showAll: false,
+               type: 'radio'
+              }
+              // filterType: 'radio',
+              // onCustomize: this.customizeCountryField
+                // filterType: "exclude",
+                // filterValues: [['B/D'], ['KTPA']],
               // filterValues: ['Region'],
             },
             {
@@ -103,6 +111,32 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   openRecipeModal() {
     this.openModal = true;
     document.querySelector('.kline-app')?.classList.add('fixed');
+  }
+
+  customizeCountryField(field: any) {
+    console.log('field',field)
+    return {
+      editorOptions: {
+        items: [
+          { value: 'include', text: 'Include' },
+          { value: 'exclude', text: 'Exclude' }
+        ],
+        displayExpr: 'text',
+        valueExpr: 'value',
+        onValueChanged: (event: any) => {
+          this.onFieldRadioChange(event, field);
+        }
+      }
+    };
+  }
+
+  onFieldRadioChange(event: any, field: any) {
+    console.log('field',field)
+    if (event.value === 'include') {
+      field.filterType('include');
+    } else {
+      field.filterType('exclude');
+    }
   }
 
   onCellClick(e: any) {

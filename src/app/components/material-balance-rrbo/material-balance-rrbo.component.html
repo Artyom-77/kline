@@ -27,12 +27,16 @@
           [dataSource]="generationChartData"
         >
           <dxi-series argumentField="label" valueField="value">
-            <dxo-label
+            <!-- <dxo-label
               [visible]="true"
               format="percent"
               [customizeText]="customizeLabel"
-            ></dxo-label>
+            ></dxo-label> -->
           </dxi-series>
+          <dxo-tooltip
+            [enabled]="true"
+            [contentTemplate]="customizeLabel"
+          ></dxo-tooltip>
           <dxo-legend
             verticalAlignment="bottom"
             horizontalAlignment="center"
@@ -53,12 +57,16 @@
           [dataSource]="collectionChartData"
         >
           <dxi-series argumentField="label" valueField="value">
-            <dxo-label
+            <!-- <dxo-label
               [visible]="true"
               format="percent"
               [customizeText]="customizeLabel"
-            ></dxo-label>
+            ></dxo-label> -->
           </dxi-series>
+          <dxo-tooltip
+            [enabled]="true"
+            [contentTemplate]="customizeLabel"
+          ></dxo-tooltip>
           <dxo-legend
             verticalAlignment="bottom"
             horizontalAlignment="center"
@@ -79,12 +87,16 @@
           [dataSource]="disposalChartData"
         >
           <dxi-series argumentField="label" valueField="value">
-            <dxo-label
+            <!-- <dxo-label
               [visible]="true"
               format="percent"
               [customizeText]="customizeLabel"
-            ></dxo-label>
+            ></dxo-label> -->
           </dxi-series>
+          <dxo-tooltip
+            [enabled]="true"
+            [contentTemplate]="customizeLabel"
+          ></dxo-tooltip>
           <dxo-legend
             verticalAlignment="bottom"
             horizontalAlignment="center"
@@ -105,12 +117,16 @@
           [dataSource]="refiningChartData"
         >
           <dxi-series argumentField="label" valueField="value">
-            <dxo-label
+            <!-- <dxo-label
               [visible]="true"
               format="percent"
               [customizeText]="customizeLabel"
-            ></dxo-label>
+            ></dxo-label> -->
           </dxi-series>
+          <dxo-tooltip
+            [enabled]="true"
+            [contentTemplate]="customizeLabel"
+          ></dxo-tooltip>
           <dxo-legend
             verticalAlignment="bottom"
             horizontalAlignment="center"

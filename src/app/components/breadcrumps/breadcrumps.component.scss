@@ -1,0 +1,37 @@
+.breadcrumps-section {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  > div {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 12px;
+    }
+    > .arrow {
+      margin: 16px 0;
+      transform: rotate(-90deg);
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .home {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    .home-img {
+      width: 100%;
+      height: 100%;
+      width: 14px;
+      height: 14px;
+    }
+    .arrow {
+      margin: 16px 0px;
+      transform: rotate(-90deg);
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

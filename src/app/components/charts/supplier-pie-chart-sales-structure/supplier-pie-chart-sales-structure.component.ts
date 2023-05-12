@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-supplier-pie-chart-sales-structure',
   templateUrl: './supplier-pie-chart-sales-structure.component.html',
   styleUrls: ['./supplier-pie-chart-sales-structure.component.scss'],
 })
-export class SupplierPieChartSalesStructureComponent {
+export class SupplierPieChartSalesStructureComponent implements OnInit {
   @Input() chartData?: any;
   @Input() hideDropdown?: boolean = false;
 
@@ -15,11 +15,16 @@ export class SupplierPieChartSalesStructureComponent {
       label: 2022,
     },
   ];
-  // ngOnInit(): void {
-  //   console.log('chartData', this.chartData);
-  // }
+  public totalSum: number = 0;
+
+  ngOnInit(): void {
+    this.totalSum = 0
+    this.chartData.map(item => {
+      this.totalSum +=  item.value
+    })
+  }
   handleChange(arg: string) {}
   customizeLabel(arg: any) {
-    return `${arg.percentText}`;
+    return `${arg.argumentText}: ${arg.percentText}`;
   }
 }

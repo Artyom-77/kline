@@ -9,6 +9,9 @@
   supply and growth as well.
     "
   ></app-hero-section>
+  <div>
+    <app-breadcrumps></app-breadcrumps>
+  </div>
   <div class="synthetic-basestocks-tabs">
     <div class="filters">
       <app-button
@@ -82,43 +85,6 @@
         (click)="selectedTab = 5"
       ></app-button>
     </div>
-    <!-- <div class="synthetic-basestocks-body-filters tabs">
-      <div
-        class="tab"
-        (click)="selectedTab = 1"
-        [ngClass]="{ active: selectedTab === 1 }"
-      >
-        <h3>Demand</h3>
-      </div>
-      <div
-        class="tab"
-        (click)="selectedTab = 2"
-        [ngClass]="{ active: selectedTab === 2 }"
-      >
-        <h3>Consumption by synthetic Ester Type</h3>
-      </div>
-      <div
-        class="tab"
-        (click)="selectedTab = 3"
-        [ngClass]="{ active: selectedTab === 3 }"
-      >
-        <h3>Consumption by PAG Type</h3>
-      </div>
-      <div
-        class="tab"
-        (click)="selectedTab = 4"
-        [ngClass]="{ active: selectedTab === 4 }"
-      >
-        <h3>Synthetic Basestock Demand Split by Application</h3>
-      </div>
-      <div
-        class="tab"
-        (click)="selectedTab = 5"
-        [ngClass]="{ active: selectedTab === 5 }"
-      >
-        <h3>Growth Rates for Synthetic Basestocks</h3>
-      </div>
-    </div> -->
     <div *ngIf="selectedTab === 1" class="synthetic-basestocks-body-pivot">
       <dx-pivot-grid
         (onCellClick)="onCellClick($event)"
@@ -265,11 +231,6 @@
             <dxi-column dataField="Basestock Group"> </dxi-column>
             <dxi-column dataField="Basestock"> </dxi-column>
             <dxi-column dataField="Composition" [width]="170"> </dxi-column>
-            <!-- <dxi-column dataField="Prefix" [width]="70" caption="Title">
-            </dxi-column>
-            <dxi-column dataField="StateID" caption="State" [width]="125">
-            </dxi-column>
-            <dxi-column dataField="BirthDate" dataType="date"> </dxi-column> -->
           </dx-data-grid>
         </div>
       </div>

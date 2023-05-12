@@ -12,11 +12,11 @@
         <!-- <img src="../../assets/images/bg-image.png" alt="bg" /> -->
         <dx-gallery
           [dataSource]="slides"
-          [slideshowDelay]="slideshowDelay"
+          [slideshowDelay]="0"
           [loop]="true"
           [width]="600"
           [height]="500"
-          [showNavButtons]="false"
+          [showNavButtons]="true"
           [showIndicator]="false"
         >
           <div class="slider" *dxTemplate="let item of 'item'">

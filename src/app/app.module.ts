@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { LendingPageComponent } from './lending-page/lending-page.component';
 import { HeaderComponent } from './components/header/header.component';
-import { DxGalleryModule, DxPivotGridModule } from 'devextreme-angular';
+import { DxGalleryModule, DxPivotGridModule, DxRadioGroupModule } from 'devextreme-angular';
 import { DxToolbarModule } from 'devextreme-angular/ui/toolbar';
 import { NewsSidebarComponent } from './components/news-sidebar/news-sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -77,6 +77,7 @@ import { PieChartEsterByEsterComponent } from './components/charts/pie-chart-est
 import { PieChartShareOfPagComponent } from './components/charts/pie-chart-share-of-pag/pie-chart-share-of-pag.component';
 import { PieChartPagBySegmentAndProductComponent } from './components/charts/pie-chart-pag-by-segment-and-product/pie-chart-pag-by-segment-and-product.component';
 import { PieChartPagByProductComponent } from './components/charts/pie-chart-pag-by-product/pie-chart-pag-by-product.component';
+import { BreadcrumpsComponent } from './components/breadcrumps/breadcrumps.component';
 
 @NgModule({
   declarations: [
@@ -142,6 +143,7 @@ import { PieChartPagByProductComponent } from './components/charts/pie-chart-pag
     PieChartShareOfPagComponent,
     PieChartPagBySegmentAndProductComponent,
     PieChartPagByProductComponent,
+    BreadcrumpsComponent,
   ],
   imports: [
     BrowserModule,
@@ -157,7 +159,8 @@ import { PieChartPagByProductComponent } from './components/charts/pie-chart-pag
     DxChartModule,
     DxMapModule,
     DxBarGaugeModule,
-    DxVectorMapModule
+    DxVectorMapModule,
+    DxRadioGroupModule
   ],
   providers: [],
   bootstrap: [AppComponent],

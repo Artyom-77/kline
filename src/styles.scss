@@ -44,7 +44,14 @@ body {
     }
   }
 }
-
+.pie-chart-total {
+  margin-top: 10px;
+  background-color: #008083;
+  padding: 4px;
+  text-align: center;
+  border-radius: 4px;
+  color: #ffffff;
+}
 .custom-dropdown {
   position: relative;
   display: inline-block;

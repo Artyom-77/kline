@@ -18,10 +18,14 @@ export class PaoChartBySegmentComponent implements OnInit {
   public yearList: any[] = [];
 
   ngOnInit(): void {
+    // this.segmentChartData = this.chartData.filter(
+    //   (item: any) =>
+    //     item.Segment == this.selectedSegment
+    // );
     this.mergedObj = this.chartData.reduce((accumulator: any, current: any) => {
       const existingObject = accumulator.find(
         (item: any) =>
-          item.Segment === current.Segment && item.Year === current.Year
+          item.Year === current.Year && item.Segment === current.Segment
       );
       if (existingObject) {
         Object.assign(existingObject, current);
@@ -30,52 +34,58 @@ export class PaoChartBySegmentComponent implements OnInit {
       }
       return accumulator;
     }, []);
+    console.log('this.mergedObj',this.mergedObj)
   }
 
-  toggleSegmentDropdown() {
-    this.isSegmentDropdownOpen = !this.isSegmentDropdownOpen;
+
+  customizeLabel(arg: any) {
+    return `${arg.argumentText}: ${arg.percentText}`;
   }
 
-  toggleSegmentOption(option: string): void {
-    this.selectedSegment = option;
-    this.segmentChartData = this.chartData.filter(
-      (item: any) =>
-        item.Segment == this.selectedSegment && item.Year === this.selectedYear
-    );
-    this.mergedObj = this.segmentChartData.reduce((accumulator, current) => {
-      const existingObject = accumulator.find(
-        (item: any) => item.BSType === current.BSType
-      );
+  // toggleSegmentDropdown() {
+  //   this.isSegmentDropdownOpen = !this.isSegmentDropdownOpen;
+  // }
 
-      if (existingObject) {
-        Object.assign(existingObject, current);
-      } else {
-        accumulator.push(current);
-      }
-      return accumulator;
-    }, []);
-  }
+  // toggleSegmentOption(option: string): void {
+  //   this.selectedSegment = option;
+  //   this.segmentChartData = this.chartData.filter(
+  //     (item: any) =>
+  //       item.Segment == this.selectedSegment
+  //   );
+  //   this.mergedObj = this.segmentChartData.reduce((accumulator, current) => {
+  //     const existingObject = accumulator.find(
+  //       (item: any) => item.BSType === current.BSType
+  //     );
 
-  toggleYearDropdown() {
-    this.isYearDropdownOpen = !this.isYearDropdownOpen;
-  }
+  //     if (existingObject) {
+  //       Object.assign(existingObject, current);
+  //     } else {
+  //       accumulator.push(current);
+  //     }
+  //     return accumulator;
+  //   }, []);
+  // }
 
-  toggleYearOption(option: number): void {
-    this.selectedYear = option;
-    this.segmentChartData = this.chartData.filter(
-      (item: any) => item.Year == Number(this.selectedYear)
-    );
-    this.mergedObj = this.segmentChartData.reduce((accumulator, current) => {
-      const existingObject = accumulator.find(
-        (item: any) => item.BSType === current.BSType
-      );
+  // toggleYearDropdown() {
+  //   this.isYearDropdownOpen = !this.isYearDropdownOpen;
+  // }
 
-      if (existingObject) {
-        Object.assign(existingObject, current);
-      } else {
-        accumulator.push(current);
-      }
-      return accumulator;
-    }, []);
-  }
+  // toggleYearOption(option: number): void {
+  //   this.selectedYear = option;
+  //   this.segmentChartData = this.chartData.filter(
+  //     (item: any) => item.Year == Number(this.selectedYear)
+  //   );
+  //   this.mergedObj = this.segmentChartData.reduce((accumulator, current) => {
+  //     const existingObject = accumulator.find(
+  //       (item: any) => item.BSType === current.BSType
+  //     );
+
+  //     if (existingObject) {
+  //       Object.assign(existingObject, current);
+  //     } else {
+  //       accumulator.push(current);
+  //     }
+  //     return accumulator;
+  //   }, []);
+  // }
 }
