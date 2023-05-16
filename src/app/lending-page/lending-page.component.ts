@@ -7,6 +7,8 @@ import { LandingServiceService } from '../services/landing-service.service';
   styleUrls: ['./lending-page.component.scss'],
 })
 export class LendingPageComponent implements OnInit {
+  public selectedTab: string = 'first';
+
   public slides = [
     {
       imageUrl: '../../assets/images/slider-img2.jpg',
@@ -57,6 +59,10 @@ export class LendingPageComponent implements OnInit {
   ngOnInit(): void {}
 
   scrollPosition = 0;
+
+  onCLick(section: string) {
+    this.selectedTab = section;
+  }
 
   @HostListener('window:scroll', [])
   onScroll(): void {

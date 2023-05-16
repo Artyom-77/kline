@@ -6,20 +6,21 @@
   .lending-page {
     margin-bottom: 200px;
     overflow-x: hidden;
-    margin-top: 70px;
+    margin-top: 150px;
     .hero-section {
       width: 100%;
       position: relative;
-      display: grid;
-      grid-template-columns: 50% 50%;
-      height: 500px;
+      display: flex;
       margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
       &-content {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-self: center;
-        grid-gap: 24px;
+        // display: grid;
+        // grid-template-columns: auto;
+        // justify-content: center;
+        // align-self: center;
+        // grid-gap: 24px;
         max-width: 1190px;
 
         h1 {
@@ -27,9 +28,10 @@
           color: #3f3f3f;
           font-style: normal;
           font-weight: 700;
-          font-size: 68px;
-          line-height: 76px;
-          letter-spacing: 0.05em;
+          font-size: 48px;
+          line-height: 64px;
+          letter-spacing: 0.09em;
+          display: none;
         }
         > h3 {
           padding: 0 80px;
@@ -374,6 +376,173 @@
     }
     &::-webkit-scrollbar {
       display: none;
+    }
+
+    .bio-basestocks-body-tabs {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      border: 4px solid $orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      .grid-area {
+        display: flex;
+        justify-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        > div {
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > div {
+            width: 231px;
+            height: 200px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .shape-bg {
+              position: absolute;
+              bottom: -4px;
+              width: 100%;
+            }
+            .text-svg {
+              transform: rotate(180deg);
+              position: unset;
+              width: auto;
+              margin-bottom: -40px;
+            }
+            > h4 {
+              position: relative;
+              z-index: 2;
+              margin-top: 75px;
+              max-width: 150px;
+              text-align: center;
+              font-size: 12px;
+              pointer-events: none;
+            }
+
+            &:hover {
+              .shape-bg {
+                path {
+                  fill: $orange;
+                }
+              }
+              h4 {
+                color: $white;
+              }
+            }
+          }
+          .active {
+            .shape-bg {
+              path {
+                fill: $orange;
+              }
+            }
+            h4 {
+              color: $white;
+            }
+          }
+        }
+        .div_1 {
+          transform: rotate(180deg);
+          top: 0;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          h4 {
+            transform: rotate(180deg) !important;
+          }
+        }
+        .div_2 {
+          transform: rotate(90deg);
+          top: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto 0;
+          h4 {
+            transform: rotate(-90deg);
+            max-width: 3px !important;
+            word-break: break-all;
+          }
+        }
+        .div_3 {
+          transform: rotate(-90deg);
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto 0;
+          h4 {
+            transform: rotate(90deg);
+            max-width: 3px !important;
+            word-break: break-all;
+          }
+        }
+        .div_4 {
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          h4 {
+            transform: rotate(360deg);
+          }
+        }
+      }
+      .div_5 {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        z-index: 2;
+        position: absolute;
+        border: 15px solid white;
+        pointer-events: none;
+      }
+      .div_6 {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: white;
+        z-index: 1;
+        position: absolute;
+      }
+      .div_7 {
+        position: absolute;
+        transition: all 0.3s ease;
+        animation: example 4s infinite ease;
+        transform: rotate(180deg);
+        pointer-events: none;
+        .div_1 {
+          width: 225px;
+          height: 212px;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: -112px;
+          top: 24px;
+          > div {
+            width: 100%;
+            height: 100%;
+            > svg {
+              width: 100%;
+              height: 100%;
+              path {
+                fill: $orangeOp;
+                transition: all 0.3s ease;
+                animation: example2 4s infinite ease;
+              }
+            }
+          }
+        }
+      }
     }
   }
   .modal-content {

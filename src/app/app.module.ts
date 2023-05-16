@@ -78,6 +78,7 @@ import { PieChartShareOfPagComponent } from './components/charts/pie-chart-share
 import { PieChartPagBySegmentAndProductComponent } from './components/charts/pie-chart-pag-by-segment-and-product/pie-chart-pag-by-segment-and-product.component';
 import { PieChartPagByProductComponent } from './components/charts/pie-chart-pag-by-product/pie-chart-pag-by-product.component';
 import { BreadcrumpsComponent } from './components/breadcrumps/breadcrumps.component';
+import { WallTabsComponent } from './components/wall-tabs/wall-tabs.component';
 
 @NgModule({
   declarations: [
@@ -144,6 +145,7 @@ import { BreadcrumpsComponent } from './components/breadcrumps/breadcrumps.compo
     PieChartPagBySegmentAndProductComponent,
     PieChartPagByProductComponent,
     BreadcrumpsComponent,
+    WallTabsComponent,
   ],
   imports: [
     BrowserModule,

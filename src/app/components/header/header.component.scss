@@ -9,20 +9,24 @@
   > .content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 68px;
+    align-items: flex-end;
+    height: 110px;
     padding: 0 20px;
     .website-logo {
       display: flex;
       align-items: center;
+      margin-bottom: 18px;
       > img {
         width: 106px;
         height: 100%;
       }
       > span {
-        font-size: 12px;
-        margin-left: 8px;
-        margin-top: 8px;
+        font-size: 32px;
+        // margin-left: 8px;
+        // margin-top: 8px;
+        font-weight: 700;
+        max-width: 326px;
+        color: #3e3e3e;
       }
     }
     .user-icon {
@@ -102,7 +106,7 @@
           color: #3f3f3f;
           font-weight: 600;
           cursor: pointer;
-          height: 69px;
+          height: 32px;
           display: flex;
           align-items: center;
           &:hover {
