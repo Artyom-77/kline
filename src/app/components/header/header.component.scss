@@ -7,26 +7,38 @@
   background: white;
   border-bottom: 1px solid #3f3f3f27;
   > .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 110px;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: flex-end;
+    height: 132px;
     padding: 0 20px;
-    .website-logo {
+    .main {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      margin-bottom: 18px;
-      > img {
-        width: 106px;
-        height: 100%;
+      padding: 11px 0;
+      .website-logo {
+        display: flex;
+        align-items: center;
+        > img {
+          width: 106px;
+          height: 100%;
+        }
+        > span {
+          font-size: 32px;
+          // margin-left: 8px;
+          // margin-top: 8px;
+          font-weight: 700;
+          max-width: 326px;
+          color: #3e3e3e;
+        }
       }
-      > span {
-        font-size: 32px;
-        // margin-left: 8px;
-        // margin-top: 8px;
-        font-weight: 700;
-        max-width: 326px;
-        color: #3e3e3e;
+      .socials {
+        display: flex;
+        align-items: center;
+        > div {
+          margin-left: 16px;
+        }
       }
     }
     .user-icon {
@@ -101,6 +113,7 @@
         list-style: none;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         > li {
           padding: 0 20px;
           color: #3f3f3f;

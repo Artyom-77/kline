@@ -1,42 +1,26 @@
 <div class="wall-section">
   <div class="wall">
     <div class="wall-area" *ngFor="let item of coveragesList; let i = index" (click)="openDetails(item ,i)">
-      <h3> {{ item.title }} </h3>
+      <div class="wall-card">
+        <h3> {{ item.title }} </h3>
       <p *ngIf="item.subtitle"> {{ item.subtitle }} </p>
-      <div class="tab content1" *ngIf="selectedTab === 0">
-        <div class="list" *ngFor="let elem of selectedItem.list">
-         <div class="list-item">
-           <a [routerLink]="elem.path"> {{ elem.name }} </a>
-         </div>
-        </div>
-       </div>
-       <div class="tab content2" *ngIf="selectedTab === 1" >
-         <div class="list" *ngFor="let elem of selectedItem.list">
-           <div class="list-item">
-                  <a [routerLink]="elem.path"> {{ elem.name }} </a>
-
-           </div>
-         </div>
-       </div>
-       <div class="tab content3" *ngIf="selectedTab === 2">
-         <div class="list" *ngFor="let elem of selectedItem.list">
-           <div class="list-item">
-                  <a [routerLink]="elem.path"> {{ elem.name }} </a>
-
-           </div>
-         </div>
-       </div>
-       <div class="tab content4" *ngIf="selectedTab === 3">
-         <div class="list" *ngFor="let elem of selectedItem.list">
-           <div class="list-item">
-                  <a [routerLink]="elem.path"> {{ elem.name }} </a>
-
-           </div>
-         </div>
-       </div>
     </div>
-    <div class="circle" >
-      <h3>EXPLORE</h3>
+    <div class="tab content1" *ngIf="selectedTab === i" [ngClass]="{
+      'content1': selectedTab === 0,
+      'content2': selectedTab === 1,
+      'content3': selectedTab === 2,
+      'content4': selectedTab === 3,
+    }">
+      <div class="list" *ngFor="let elem of item.list">
+       <div class="list-item">
+         <a [routerLink]="elem.path"> {{ elem.name }} </a>
+       </div>
+      </div>
+     </div>
+
+    </div>
+    <div class="circle"  >
+      <h3  (click)="openDetails(coveragesList ,5)" >EXPLORE</h3>
     </div>
   </div>
 

@@ -34,6 +34,16 @@ export class HeaderComponent implements OnInit {
       text: 'Insights',
       id: 4,
     },
+    {
+      path: '/contant-us',
+      text: 'Contact Us',
+      id: 5,
+    },
+    {
+      path: '/faq',
+      text: 'FAQ',
+      id: 6,
+    },
   ];
 
   constructor(private router: Router, private service: LandingServiceService) {
