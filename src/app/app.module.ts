@@ -79,6 +79,7 @@ import { PieChartPagBySegmentAndProductComponent } from './components/charts/pie
 import { PieChartPagByProductComponent } from './components/charts/pie-chart-pag-by-product/pie-chart-pag-by-product.component';
 import { BreadcrumpsComponent } from './components/breadcrumps/breadcrumps.component';
 import { WallTabsComponent } from './components/wall-tabs/wall-tabs.component';
+import { InfoTabComponent } from './components/info-tab/info-tab.component';
 
 @NgModule({
   declarations: [
@@ -146,6 +147,7 @@ import { WallTabsComponent } from './components/wall-tabs/wall-tabs.component';
     PieChartPagByProductComponent,
     BreadcrumpsComponent,
     WallTabsComponent,
+    InfoTabComponent,
   ],
   imports: [
     BrowserModule,

@@ -35,12 +35,13 @@
           <img src="../../assets/images/hero-line-down.svg" alt="bg" />
         </div> -->
       <app-wall-tabs></app-wall-tabs>
-
       </div>
     </div>
-    <div>
+    <div class="info-section">
+      <app-info-tab [title]="'Browse Our Data Visualization'" [type]="'primary'" [infoData]="infoTabData"  ></app-info-tab>
+      <app-info-tab [title]="'See Also Our Insights'" [type]="'secondary'" [infoData]="infoSecondaryTabData" ></app-info-tab>
     </div>
-    <div class="our-coverage">
+    <!-- <div class="our-coverage">
       <div class="title-section">
         <hr />
         <h3 class="kline-insigts-title">Our Coverage</h3>
@@ -245,7 +246,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="webinars-subscribe">
       <app-modal

@@ -3,8 +3,30 @@
   z-index: 10;
   background: #3f3f3f;
   border-bottom: 1px solid #3f3f3f27;
+  > hr {
+    margin-left: -20px;
+    margin-right: -20px;
+    height: 24px;
+    background: white;
+  }
   .container {
     padding: 16px 0;
+    .contact-us {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 16px;
+      > h3 {
+        font-size: 36px;
+        font-weight: 600;
+        color: white;
+      }
+      > p {
+        color: white;
+      }
+    }
     .content {
       display: flex;
       justify-content: space-between;

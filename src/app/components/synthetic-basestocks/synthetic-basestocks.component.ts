@@ -1,6 +1,8 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { SyntheticBasestocksService } from 'src/app/services/synthetic-basestocks/synthetic-basestocks.service';
 import { HttpClient } from '@angular/common/http';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-synthetic-basestocks',
@@ -22,15 +24,26 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   @Input() selectedTab: any = 1;
   showColumnFields = true;
   showFilterFields = true;
-
+  myParam: string;
   constructor(
     private service: SyntheticBasestocksService,
-    private http: HttpClient
+    private http: HttpClient,
+    private router: Router,
+    private route: ActivatedRoute,
+    private location: Location
   ) {
     this.modalDummyData = service.modalData;
   }
 
   ngOnInit() {
+    console.log('this.route.queryParams')
+    this.route.queryParams.subscribe((params: any) =>{
+      if(params.selectedMainTab) {
+        this.selectedMainTab = Number(params.selectedMainTab)
+      }
+      });
+
+
     this.http
       .get('../../../assets/json/synteticTabularTabledata.json')
       .subscribe((data) => {

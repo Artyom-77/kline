@@ -29,11 +29,11 @@ export class HeaderComponent implements OnInit {
       text: 'Market Watch',
       id: 3,
     },
-    {
-      path: '/insights',
-      text: 'Insights',
-      id: 4,
-    },
+    // {
+    //   path: '/insights',
+    //   text: 'Insights',
+    //   id: 4,
+    // },
     {
       path: '/contant-us',
       text: 'Contact Us',

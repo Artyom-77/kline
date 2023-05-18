@@ -104,6 +104,39 @@ export class LandingServiceService {
     },
   ];
 
+  public infoTabData: any[] = [
+    {
+      id: 1,
+      name: 'Synthetic Basestock Data',
+    },
+    {
+      id: 2,
+      name: 'PAO Demand Data',
+    },
+    {
+      id: 3,
+      name: 'RRBO Material Balance',
+    },
+    {
+      id: 4,
+      name: 'Competitive Landscape',
+    },
+  ]
+  public infoSecondaryTabData: any[] = [
+    {
+      id: 1,
+      name: 'Reports & Presentations',
+    },
+    {
+      id: 2,
+      name: 'Quarterly Newsletters',
+    },
+    {
+      id: 3,
+      name: 'Webinars',
+    },
+  ]
+
   constructor() {}
 
   getTopPosition() {

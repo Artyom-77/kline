@@ -8,7 +8,8 @@ import { LandingServiceService } from '../services/landing-service.service';
 })
 export class LendingPageComponent implements OnInit {
   public selectedTab: string = 'first';
-
+public infoTabData: any[] = [];
+public infoSecondaryTabData: any[] = [];
   public slides = [
     {
       imageUrl: '../../assets/images/slider-img2.jpg',
@@ -56,7 +57,10 @@ export class LendingPageComponent implements OnInit {
     },
   ];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.infoTabData = this.service.infoTabData
+    this.infoSecondaryTabData = this.service.infoSecondaryTabData
+  }
 
   scrollPosition = 0;
 
