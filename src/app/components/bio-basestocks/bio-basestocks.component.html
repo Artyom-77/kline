@@ -86,13 +86,22 @@
         </button>
       </div> -->
     </div>
-    <app-button
-      [btnText]="'Compare across countries'"
-      [type]="'icon secondary'"
-      [icon]="false"
-      [iconName]="''"
-      (click)="route.navigate(['/bio-compare'])"
-    ></app-button>
+    <div class="filters-actions">
+      <app-button
+        [btnText]="'Compare across countries'"
+        [type]="'icon secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="route.navigate(['/bio-compare'])"
+      ></app-button>
+       <app-button
+          [btnText]="'Glossary'"
+          [type]="'icon secondary'"
+          [icon]="false"
+          [iconName]="''"
+          (click)="openModal()"
+        ></app-button>
+    </div>
   </div>
   <div class="bio-basestocks-body">
     <div class="bio-basestocks-body-tabs-content">
@@ -253,5 +262,24 @@
         <div class="circle-bottom"></div>
       </div>
     </div>
+  </div>
+    <div class="modal-area">
+    <app-modal
+      [title]="'GLOSSARY'"
+      *ngIf="isModalVisible"
+      (onClose)="onCloseModal()"
+    >
+      <div class="modal-content">
+        <dx-data-grid
+          id="gridContainer"
+          [dataSource]="glossaryData"
+          [showColumnLines]="false"
+          [showRowLines]="false"
+          [showBorders]="false"
+          [rowAlternationEnabled]="true"
+        >
+        </dx-data-grid>
+      </div>
+    </app-modal>
   </div>
 </div>

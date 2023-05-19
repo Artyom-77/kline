@@ -73,8 +73,6 @@ export class SyntheticChartViewComponent implements OnInit {
     this.selectedList = this.chartData.filter(
       (item: any) => item.Segment == this.firstSelect
     );
-    // console.log('chartData', this.chartData)
-    // this.PieByProduct = this.chartData.filter(item => )
   }
   public synteticEsterData: any[] = [];
   public pagEsterData: any[] = [];
@@ -102,8 +100,6 @@ export class SyntheticChartViewComponent implements OnInit {
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
     );
-
-    // console.log('this.selectedList',this.selectedList)
   }
 
   procesdedCLick(): void {
@@ -114,6 +110,5 @@ export class SyntheticChartViewComponent implements OnInit {
     } else {
       this.selectedTab = 3;
     }
-    console.log('this.selectedTab', this.selectedTab);
   }
 }

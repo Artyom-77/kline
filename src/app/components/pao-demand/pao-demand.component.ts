@@ -105,18 +105,10 @@ export class PaoDemandComponent implements OnInit {
   }
 
   onCellClick(e: any) {
-    // && e.cell.columnType !== 'T'
-    // if (e.area == 'data' && e.cell.rowType !== "GT"  && e.cell.columnType !== "GT"  ) {
-    //   this.openModal = true
-    //   document.querySelector('.kline-app')?.classList.add('fixed');
-    //   console.log('e',e)
-    //   this.gridItemData = e
-    // }
+
   }
 
-  // openModal() {
-  //   this.openModal = true;
-  // }
+
   onCloseModal() {
     this.openModal = false;
     document.querySelector('.kline-app')?.classList.remove('fixed');

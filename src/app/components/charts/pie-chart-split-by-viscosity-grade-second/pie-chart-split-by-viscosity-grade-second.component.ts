@@ -111,21 +111,7 @@ export class PieChartSplitByViscosityGradeSecondComponent {
     this.mergedObj.map(item => {
       this.totalSum +=  item.SumofValues
     })
-    // console.log('this.viscosityGradeChartData', this.viscosityGradeChartData);
   }
-
-  // toggleViscosityGradeOption(option: string): void {
-  //   this.selectedViscosityGrade = option;
-  //   this.viscosityGradeChartData = this.chartData.filter(
-  //     (item: any) =>
-  //       item.Sector == this.selectedBSType &&
-  //       item.ViscosityGrade == this.selectedViscosityGrade &&
-  //       item.Year === this.selectedYear &&
-  //       item.mainColumn ===
-  //         'Share of basestock in total synthetic basestock demand (%)'
-  //   );
-  //   console.log('this.viscosityGradeChartData', this.viscosityGradeChartData);
-  // }
 
   toggleYearDropdown() {
     this.isYearDropdownOpen = !this.isYearDropdownOpen;

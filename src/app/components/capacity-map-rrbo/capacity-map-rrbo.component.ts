@@ -61,7 +61,6 @@ export class CapacityMapRrboComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('this.capacityData', this.capacityData);
     this.selectedCountry = this.capacityData;
   }
 

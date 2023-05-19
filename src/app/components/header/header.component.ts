@@ -24,11 +24,11 @@ export class HeaderComponent implements OnInit {
       text: 'Our Coverage',
       id: 2,
     },
-    {
-      // path: '/market-watch',
-      text: 'Market Watch',
-      id: 3,
-    },
+    // {
+    //   // path: '/market-watch',
+    //   text: 'Market Watch',
+    //   id: 3,
+    // },
     // {
     //   path: '/insights',
     //   text: 'Insights',
@@ -47,10 +47,8 @@ export class HeaderComponent implements OnInit {
   ];
 
   constructor(private router: Router, private service: LandingServiceService) {
-    this.coveragesList = service.coveragesList.filter(
-      (item, index) => index !== 3
-    );
-    this.marketList = service.coveragesList.filter((item, index) => index == 3);
+    this.coveragesList = service.coveragesList
+    // this.marketList = service.coveragesList.filter((item, index) => index == 3);
   }
 
   ngOnInit(): void {}

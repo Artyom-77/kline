@@ -70,7 +70,6 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
     this.mergedObj.map(item => {
       this.totalSum +=  item.SumofValues
     })
-    console.log('this.totalSum',this.totalSum)
   }
 
   toggleBSTypeDropdown() {
@@ -110,7 +109,6 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
     this.mergedObj.map(item => {
       this.totalSum +=  item.SumofValues
     })
-    console.log('this.totalSum',this.totalSum)
 
   }
 
@@ -144,7 +142,6 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
     this.mergedObj.map(item => {
       this.totalSum +=  item.SumofValues
     })
-    console.log('this.totalSum',this.totalSum)
 
   }
 
@@ -181,7 +178,6 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
     this.mergedObj.map(item => {
       this.totalSum +=  item.SumofValues
     })
-    console.log('this.totalSum',this.totalSum)
 
   }
 

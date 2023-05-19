@@ -85,6 +85,10 @@
     .dx-row {
       td {
         border-bottom: none !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
       }
     }
     .dx-datagrid-rowsview {

@@ -93,7 +93,6 @@ export class SupplierProfilesComponent implements OnInit {
     this.selectedCompanyList = this.companiesList.filter((item) =>
       arg.includes(item.Company)
     );
-    console.log('this.selectedCompanyList', this.selectedCompanyList);
   }
   handleRegionChange(arg: string) {}
   handleMultipleRegionChange(arg: any) {}

@@ -9,7 +9,7 @@ import { LandingServiceService } from 'src/app/services/landing-service.service'
 export class BreadcrumpsComponent implements OnInit {
   constructor(private service:LandingServiceService){}
   ngOnInit(): void {
-      console.log(window.location.pathname)
-      console.log(this.service.coveragesList)
+      // console.log(window.location.pathname)
+      // console.log(this.service.coveragesList)
   }
 }

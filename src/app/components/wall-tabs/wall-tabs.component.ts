@@ -15,13 +15,9 @@ export class WallTabsComponent implements OnInit {
 
   ngOnInit(): void {
       this.coveragesList = this.service.coveragesList
-      // console.log('this.coveragesList', this.coveragesList)
   }
   openDetails(item , idx: number) {
-    // setTimeout(() => {
       this.selectedTab = idx
       this.selectedItem = item
-    // }, 300);
-    console.log('this.selectedItem',this.selectedItem)
   }
 }

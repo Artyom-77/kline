@@ -34,7 +34,6 @@ export class PaoChartBySegmentComponent implements OnInit {
       }
       return accumulator;
     }, []);
-    console.log('this.mergedObj',this.mergedObj)
   }
 
 

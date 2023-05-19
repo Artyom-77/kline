@@ -70,8 +70,6 @@ export class PieChartShareOfSynteticEsterComponent implements OnInit {
   }
 
   customizeLabel(arg: any) {
-    console.log('arg', arg);
-    console.log('arg.point.getColor()', arg.point.getColor());
     return `${arg.argumentText}: ${arg.percentText}`;
   }
 }

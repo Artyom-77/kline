@@ -60,8 +60,6 @@ export class PaoChartViewComponent implements OnInit {
     this.selectedList = this.chartData.filter(
       (item: any) => item.Segment == this.firstSelect
     );
-    // console.log('chartData', this.chartData)
-    // this.PieByProduct = this.chartData.filter(item => )
   }
 
   toggleCountryDropdown() {
@@ -80,7 +78,5 @@ export class PaoChartViewComponent implements OnInit {
         item.mainColumn ===
           'Share of basestock in total synthetic basestock demand (%)'
     );
-
-    // console.log('this.selectedList',this.selectedList)
   }
 }

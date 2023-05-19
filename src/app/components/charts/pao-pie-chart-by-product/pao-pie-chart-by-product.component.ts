@@ -14,7 +14,7 @@ export class PaoPieChartByProductComponent implements OnInit {
   public yearList: any[] = [];
   public tooltipColor: any;
   public totalSum: number = 0;
-
+  public customPalette = ['#000000', '#eeeeee', '#ffffff'];
   ngOnInit(): void {
     this.chartData.map((data: any) => {
       if (!this.yearList.includes(data.Year)) {
@@ -66,9 +66,7 @@ export class PaoPieChartByProductComponent implements OnInit {
     this.totalSum = 0
     this.mergedObj.map(item => {
       this.totalSum +=  item.SumofValues
-      console.log('item.SumofValues',item.SumofValues)
     })
-    console.log('this.totalSum',this.totalSum)
   }
   customizeLabel(arg: any) {
     this.tooltipColor = arg.point.getColor();

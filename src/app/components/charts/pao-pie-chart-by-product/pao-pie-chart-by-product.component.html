@@ -29,8 +29,7 @@
   <dx-pie-chart
     id="pie"
     title="PAO Demand Split by Product (%)"
-    palette="Dark Violet"
-    paletteExtensionMode="blend"
+    [palette]="customPalette"
     [dataSource]="mergedObj"
   >
     <dxi-series argumentField="Sector" valueField="SumofValues">

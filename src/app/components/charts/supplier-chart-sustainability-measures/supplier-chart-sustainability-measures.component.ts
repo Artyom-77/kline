@@ -13,7 +13,6 @@ export class SupplierChartSustainabilityMeasuresComponent implements OnInit {
     this.chartData.map((item:any) => {
       this.dataValues.push(item.value)
     })
-    console.log(this.dataValues)
   }
   customizeText(arg: any) {
     return `${arg.valueText} %`;

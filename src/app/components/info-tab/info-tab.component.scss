@@ -4,10 +4,49 @@
 .info-tab {
   max-width: 500px;
   padding: 20px;
+  margin-top: 24px;
   &-body {
     > h3 {
       font-size: 24px;
       color: #3e3e3e;
+    }
+    position: relative;
+    .search-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+      border-bottom: 1px solid #3e3e3e;
+      position: absolute;
+      top: -68px;
+      width: 100%;
+      > svg {
+        width: 33px;
+      }
+      padding-bottom: 0;
+      .search-bar {
+        display: flex;
+        align-items: center;
+        min-height: 32px;
+        padding-bottom: 8px;
+        width: 99%;
+        .serach-input {
+          width: 100%;
+          > input {
+            border: none;
+            min-height: 26px;
+            color: #3f3f3f;
+            width: 100%;
+            font-size: 18px;
+            &::placeholder {
+              color: #3f3f3f77;
+            }
+          }
+        }
+        .serach-btn {
+          width: 20px;
+          height: 20px;
+        }
+      }
     }
     &-content {
       padding: 20px 0;
@@ -20,33 +59,6 @@
         border-bottom: 1px solid #3e3e3e;
         > svg {
           width: 33px;
-        }
-        &.search-item {
-          padding-bottom: 0;
-          .search-bar {
-            display: flex;
-            align-items: center;
-            min-height: 32px;
-            padding-bottom: 8px;
-            width: 99%;
-            .serach-input {
-              width: 100%;
-              > input {
-                border: none;
-                min-height: 26px;
-                color: #3f3f3f;
-                width: 100%;
-                font-size: 18px;
-                &::placeholder {
-                  color: #3f3f3f77;
-                }
-              }
-            }
-            .serach-btn {
-              width: 20px;
-              height: 20px;
-            }
-          }
         }
       }
     }

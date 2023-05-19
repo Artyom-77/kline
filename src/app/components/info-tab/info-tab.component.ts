@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class InfoTabComponent implements OnInit {
   @Input() type: string | undefined;
   @Input() title: string | undefined;
+  @Input() enableSearch: boolean | undefined;
   @Input() infoData: any[] | undefined;
 
   constructor(private router: Router) {}

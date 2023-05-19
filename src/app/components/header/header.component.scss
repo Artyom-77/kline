@@ -10,7 +10,7 @@
     // display: flex;
     // justify-content: space-between;
     // align-items: flex-end;
-    height: 132px;
+    height: 98px;
     padding: 0 20px;
     .main {
       display: flex;
@@ -20,18 +20,19 @@
       .website-logo {
         display: flex;
         align-items: center;
+        width: 168px;
         > img {
           width: 106px;
           height: 100%;
         }
-        > span {
-          font-size: 32px;
-          // margin-left: 8px;
-          // margin-top: 8px;
-          font-weight: 700;
-          max-width: 326px;
-          color: #3e3e3e;
-        }
+      }
+      > span {
+        font-size: 26px;
+        // margin-left: 8px;
+        // margin-top: 8px;
+        font-weight: 700;
+        // max-width: 326px;
+        color: #3e3e3e;
       }
       .socials {
         display: flex;
@@ -47,73 +48,45 @@
         height: 100%;
       }
     }
-    .toolbar-section {
-      display: flex;
-      .search-bar {
-        display: flex;
-        align-items: center;
-        min-height: 32px;
-        padding-bottom: 8px;
-        border-bottom: 1px solid #008083;
-        .serach-input {
-          > input {
-            border: none;
-            height: 100%;
-            color: #3f3f3f;
-            &::placeholder {
-              color: #3f3f3f77;
-            }
-          }
-        }
-        .serach-btn {
-          width: 20px;
-          height: 20px;
-        }
-      }
-      .ask-analyst-btn {
-        display: flex;
-        align-items: center;
-        padding: 8px;
-        margin-left: 12px;
-        background: transparent;
-        border: 1px solid #008083;
-        cursor: pointer;
-        transition: 0.3s;
-        > svg {
-          width: 24px;
-          height: 24px;
-          margin-right: 4px;
-          path {
-            fill: #008083;
-          }
-        }
-        > span {
-          color: #008083;
-          font-size: 14px;
-          font-weight: 600;
-          display: none;
-        }
-        &:hover {
-          background-color: #008083;
-          > svg {
-            path {
-              fill: white !important;
-              // stroke: #fff;
-            }
-          }
-          > span {
-            color: white;
-            display: block;
-          }
-        }
-      }
-    }
     .navigation {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 16px;
+      .toolbar-section {
+        display: flex;
+        // justify-content: center;
+        justify-content: flex-end;
+
+        .search-bar {
+          display: flex;
+          align-items: center;
+          min-height: 32px;
+          padding-bottom: 8px;
+          border-bottom: 1px solid #008083;
+          width: 400px;
+          .serach-input {
+            width: 100%;
+            > input {
+              border: none;
+              height: 100%;
+              color: #3f3f3f;
+              &::placeholder {
+                color: #3f3f3f77;
+              }
+            }
+          }
+          .serach-btn {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
       > ul {
         list-style: none;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        // justify-content: flex-end;
+        justify-content: center;
         > li {
           padding: 0 20px;
           color: #3f3f3f;
@@ -137,7 +110,7 @@
     .coverage-dropdown,
     .market-dropdown {
       display: grid;
-      grid-template-columns: 300px repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       .coverage-info,
       .market-info {
         display: flex;

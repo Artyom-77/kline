@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { BioCompareService } from 'src/app/services/bio-compare/bio-compare.service';
 import { v4 as uuidv4 } from 'uuid';
 
 @Component({
@@ -1118,17 +1119,29 @@ export class BioBasestocksComponent implements OnInit {
   public selectedCountry: string = 'Brazil';
   public curent_data: any = {};
   public route: any;
-  constructor(private router: Router) {
+  public glossaryData: any[] = [];
+  public isModalVisible: boolean = false;
+
+  constructor(private router: Router, private service: BioCompareService) {
     this.route = this.router;
   }
   ngOnInit(): void {
-    console.log(this.route);
+    this.glossaryData = this.service.glossaryData
     this.curent_data = this.contriesList.find(
       (item: any) => item.name == this.selectedCountry
     );
   }
   onCLick(section: string) {
     this.selectedTab = section;
+  }
+
+  openModal() {
+    this.isModalVisible = true;
+    document.querySelector('.kline-app')?.classList.add('fixed');
+  }
+  onCloseModal() {
+    this.isModalVisible = false;
+    document.querySelector('.kline-app')?.classList.remove('fixed');
   }
 
   toggleDateDropdown() {

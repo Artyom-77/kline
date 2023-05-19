@@ -107,11 +107,11 @@ export class LandingServiceService {
   public infoTabData: any[] = [
     {
       id: 1,
-      name: 'Synthetic Basestock Data',
+      name: 'Synthetic Basestock Model',
     },
     {
       id: 2,
-      name: 'PAO Demand Data',
+      name: 'PAO Demand Model',
     },
     {
       id: 3,

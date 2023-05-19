@@ -77,7 +77,6 @@ public infoSecondaryTabData: any[] = [];
     this.slideshowDelay = e.value ? 2000 : 0;
   }
   downloadNewsletter(id: number) {
-    console.log(id);
     this.downladsList.find((item) => {
       if (item.id === id) {
         item.downladed = true;

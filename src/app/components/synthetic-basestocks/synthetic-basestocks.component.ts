@@ -161,7 +161,6 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
     // ) {
     //   this.openModal = true;
     //   document.querySelector('.kline-app')?.classList.add('fixed');
-    //   console.log('e', e);
     //   this.gridItemData = e;
     // }
   }

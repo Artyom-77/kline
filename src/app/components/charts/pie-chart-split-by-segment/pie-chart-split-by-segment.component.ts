@@ -64,7 +64,6 @@ export class PieChartSplitBySegmentComponent {
     this.totalSum = 0
     this.mergedObj.map((item: any) => {
       this.totalSum +=  item.SumofValues
-      console.log('item.SumofValues',item.SumofValues)
     })
   }
 
@@ -100,18 +99,7 @@ export class PieChartSplitBySegmentComponent {
     this.totalSum = 0
     this.mergedObj.map((item: any) => {
       this.totalSum +=  item.SumofValues
-      console.log('item.SumofValues',item.SumofValues)
     })
-    // this.mergedObj = this.viscosityGradeChartData.reduce((acc, curr) => {
-    //   if (acc[curr.Segment]) {
-    //     acc[curr.Segment].SumofValues += curr.SumofValues;
-    //   } else {
-    //     acc[curr.Segment] = { ...curr };
-    //   }
-    //   return acc;
-    // }, {});
-    console.log('this.viscosityGradeChartData', this.viscosityGradeChartData);
-    console.log('mergedObj', this.mergedObj);
   }
 
   toggleYearDropdown() {
@@ -145,7 +133,6 @@ export class PieChartSplitBySegmentComponent {
     this.totalSum = 0
     this.mergedObj.map((item: any) => {
       this.totalSum +=  item.SumofValues
-      console.log('item.SumofValues',item.SumofValues)
     })
   }
 

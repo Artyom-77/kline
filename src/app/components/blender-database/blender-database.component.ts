@@ -101,12 +101,12 @@ export class BlenderDatabaseComponent implements OnInit {
   }
   handleRegionChange(arg: string) {
     this.filtredData = arg ==="All" ? this.blanderData : this.blanderData.filter(item => arg === item['Location: Country'])
-    console.log('this.filtredData',this.filtredData);
+
 
   }
   handleNameChange(arg: string) {
     this.filtredData = arg ==="All" ? this.blanderData : this.blanderData.filter(item => arg === item.name)
-    console.log('this.filtredData',this.filtredData);
+
 
   }
 }
