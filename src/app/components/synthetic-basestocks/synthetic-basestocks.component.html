@@ -9,13 +9,11 @@
   supply and growth as well.
     "
   ></app-hero-section>
-  <div>
-    <app-breadcrumps></app-breadcrumps>
-  </div>
+  <div></div>
   <div class="synthetic-basestocks-tabs">
     <div class="filters">
       <app-button
-        *ngIf="selectedMainTab === 1"
+        *ngIf="getSelectedMainTab() === 1"
         [btnText]="'Build Your Own Recipe'"
         [type]="'secondary right'"
         [icon]="false"
@@ -23,7 +21,7 @@
         (click)="openRecipeModal()"
       ></app-button>
       <app-button
-        *ngIf="selectedMainTab === 1"
+        *ngIf="getSelectedMainTab() === 1"
         [btnText]="'Download Model'"
         [type]="'secondary right'"
         [icon]="false"
@@ -36,18 +34,18 @@
         [type]="'secondary'"
         [icon]="false"
         [iconName]="''"
-        (click)="selectedMainTab = 1"
+        (click)="setSelectedMainTab(1)"
       ></app-button>
       <app-button
         [btnText]="'Chart View'"
         [type]="'secondary'"
         [icon]="false"
         [iconName]="''"
-        (click)="selectedMainTab = 2"
+        (click)="setSelectedMainTab(2)"
       ></app-button>
     </div>
   </div>
-  <div *ngIf="selectedMainTab === 1" class="synthetic-basestocks-body">
+  <div *ngIf="getSelectedMainTab() === 1" class="synthetic-basestocks-body">
     <div class="synthetic-basestocks-body-filters">
       <app-button
         [btnText]="'Demand'"
@@ -192,7 +190,7 @@
       </dx-pivot-grid>
     </div>
   </div>
-  <div *ngIf="selectedMainTab === 2" class="synthetic-basestocks-body">
+  <div *ngIf="getSelectedMainTab() === 2" class="synthetic-basestocks-body">
     <app-synthetic-chart-view
       [chartData]="dataSource.store"
     ></app-synthetic-chart-view>

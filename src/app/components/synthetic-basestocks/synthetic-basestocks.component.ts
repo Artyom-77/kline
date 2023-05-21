@@ -19,7 +19,7 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   public openModal: boolean = false;
   public gridItemData: any | undefined;
   public modalDummyData: any[] = [];
-
+  public chartData: any;
   showRowFields = true;
   @Input() selectedTab: any = 1;
   showColumnFields = true;
@@ -36,17 +36,13 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    console.log('this.route.queryParams')
-    this.route.queryParams.subscribe((params: any) =>{
-      if(params.selectedMainTab) {
-        this.selectedMainTab = Number(params.selectedMainTab)
-      }
-      });
-
+    // console.log('history.state.data;', history.state.data);
+    // this.selectedMainTab = history.state.data;
 
     this.http
       .get('../../../assets/json/synteticTabularTabledata.json')
       .subscribe((data) => {
+        // this.chartData = data;
         this.dataSource = {
           fields: [
             {
@@ -80,12 +76,12 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
               area: 'filter',
               filterType: {
                 showAll: false,
-               type: 'radio'
-              }
+                type: 'radio',
+              },
               // filterType: 'radio',
               // onCustomize: this.customizeCountryField
-                // filterType: "exclude",
-                // filterValues: [['B/D'], ['KTPA']],
+              // filterType: "exclude",
+              // filterValues: [['B/D'], ['KTPA']],
               // filterValues: ['Region'],
             },
             {
@@ -127,29 +123,37 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   }
 
   customizeCountryField(field: any) {
-    console.log('field',field)
+    console.log('field', field);
     return {
       editorOptions: {
         items: [
           { value: 'include', text: 'Include' },
-          { value: 'exclude', text: 'Exclude' }
+          { value: 'exclude', text: 'Exclude' },
         ],
         displayExpr: 'text',
         valueExpr: 'value',
         onValueChanged: (event: any) => {
           this.onFieldRadioChange(event, field);
-        }
-      }
+        },
+      },
     };
   }
 
   onFieldRadioChange(event: any, field: any) {
-    console.log('field',field)
+    console.log('field', field);
     if (event.value === 'include') {
       field.filterType('include');
     } else {
       field.filterType('exclude');
     }
+  }
+
+  setSelectedMainTab(selectedTab: number): void {
+    this.service.setSelectedMainTab(selectedTab);
+  }
+
+  getSelectedMainTab(): any {
+    return this.service.getSelectedMainTab();
   }
 
   onCellClick(e: any) {

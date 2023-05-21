@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SyntheticBasestocksService } from 'src/app/services/synthetic-basestocks/synthetic-basestocks.service';
 
 @Component({
   selector: 'app-info-tab',
@@ -12,12 +13,19 @@ export class InfoTabComponent implements OnInit {
   @Input() enableSearch: boolean | undefined;
   @Input() infoData: any[] | undefined;
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private synteticService: SyntheticBasestocksService
+  ) {}
 
   ngOnInit(): void {
-
+    console.log('infoData', this.infoData);
   }
-  onClickA(tab: number) {
-    this.router.navigate(['synthetic-basestocks'], {queryParams:{ selectedMainTab: 2}});
+  onClickA(item: any) {
+    // this.router.navigate(['synthetic-basestocks'], {queryParams:{ selectedMainTab: 2}});
+    this.router.navigate([item.path]);
+    if (item.id === 1 || item.id === 2) {
+      this.synteticService.setSelectedMainTab(item.selectedTab);
+    }
   }
 }

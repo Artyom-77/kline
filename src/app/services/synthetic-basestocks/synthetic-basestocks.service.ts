@@ -1,10 +1,14 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import { v4 as uuidv4 } from 'uuid';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SyntheticBasestocksService {
+  // new BehaviorSubject<any>
+
+  public selectedMainTab: number = 1;
   public modalData: any[] = [
     {
       id: uuidv4(),
@@ -1547,4 +1551,13 @@ export class SyntheticBasestocksService {
     },
   ];
   constructor() {}
+
+  setSelectedMainTab(data: number): void {
+    this.selectedMainTab = data;
+    console.log('this.selectedMainTab', this.selectedMainTab);
+  }
+
+  getSelectedMainTab(): any {
+    return this.selectedMainTab;
+  }
 }

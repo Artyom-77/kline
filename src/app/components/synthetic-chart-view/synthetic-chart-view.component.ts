@@ -7,7 +7,7 @@ import { SyntheticBasestocksService } from 'src/app/services/synthetic-basestock
   styleUrls: ['./synthetic-chart-view.component.scss'],
 })
 export class SyntheticChartViewComponent implements OnInit {
-  @Input() chartData?: any;
+  @Input() chartData: any;
   public PieByProduct: any[] = [];
   public firstSelect?: string = 'CONSUMER AUTOMOTIVE';
   public selectedList: any[] = [];

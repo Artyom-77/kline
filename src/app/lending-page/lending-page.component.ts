@@ -8,34 +8,39 @@ import { LandingServiceService } from '../services/landing-service.service';
 })
 export class LendingPageComponent implements OnInit {
   public selectedTab: string = 'first';
-public infoTabData: any[] = [];
-public infoSecondaryTabData: any[] = [];
-  public slides = [
-    {
-      imageUrl: '../../assets/images/slider-img2.jpg',
-      caption: 'Latest Updates',
-      desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-    },
-    {
-      imageUrl: '../../assets/images/slider-img1.jpg',
-      caption: 'Latest Updates',
-      desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-    },
-    {
-      imageUrl: '../../assets/images/slider-img2.jpg',
-      caption: 'Latest Updates',
-      desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-    },
-    {
-      imageUrl: '../../assets/images/slider-img1.jpg',
-      caption: 'Latest Updates',
-      desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-    },
-  ];
-
+  public infoTabData: any[] = [];
+  public infoSecondaryTabData: any[] = [];
+  public subscribeModalStep: number = 1;
+  public isModalVisible: boolean = false;
+  public emailVal: string = '';
   public showDownladedIcon: boolean = false;
-  slideshowDelay = 2000;
   public coveragesList: any[] = [];
+  public scrollPosition: number = 0;
+  // public slides = [
+  //   {
+  //     imageUrl: '../../assets/images/slider-img2.jpg',
+  //     caption: 'Latest Updates',
+  //     desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+  //   },
+  //   {
+  //     imageUrl: '../../assets/images/slider-img1.jpg',
+  //     caption: 'Latest Updates',
+  //     desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+  //   },
+  //   {
+  //     imageUrl: '../../assets/images/slider-img2.jpg',
+  //     caption: 'Latest Updates',
+  //     desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+  //   },
+  //   {
+  //     imageUrl: '../../assets/images/slider-img1.jpg',
+  //     caption: 'Latest Updates',
+  //     desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+  //   },
+  // ];
+
+  // slideshowDelay = 2000;
+
   constructor(public service: LandingServiceService) {
     this.coveragesList = service.coveragesList;
   }
@@ -58,11 +63,9 @@ public infoSecondaryTabData: any[] = [];
   ];
 
   ngOnInit(): void {
-    this.infoTabData = this.service.infoTabData
-    this.infoSecondaryTabData = this.service.infoSecondaryTabData
+    this.infoTabData = this.service.infoTabData;
+    this.infoSecondaryTabData = this.service.infoSecondaryTabData;
   }
-
-  scrollPosition = 0;
 
   onCLick(section: string) {
     this.selectedTab = section;
@@ -73,9 +76,9 @@ public infoSecondaryTabData: any[] = [];
     this.scrollPosition = window.scrollY;
   }
 
-  valueChanged(e: any) {
-    this.slideshowDelay = e.value ? 2000 : 0;
-  }
+  // valueChanged(e: any) {
+  //   this.slideshowDelay = e.value ? 2000 : 0;
+  // }
   downloadNewsletter(id: number) {
     this.downladsList.find((item) => {
       if (item.id === id) {
@@ -83,9 +86,7 @@ public infoSecondaryTabData: any[] = [];
       }
     });
   }
-  public subscribeModalStep: number = 1;
-  public isModalVisible: boolean = false;
-  public emailVal: string = '';
+
   openModal() {
     this.isModalVisible = true;
     document.querySelector('.kline-app')?.classList.add('fixed');

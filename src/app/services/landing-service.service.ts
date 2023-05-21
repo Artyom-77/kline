@@ -84,7 +84,6 @@ export class LandingServiceService {
       title: 'Basestock Market Watch',
       subtitle: '',
       list: [
-
         {
           itemId: uuidv4(),
           path: '/blender-database',
@@ -108,20 +107,28 @@ export class LandingServiceService {
     {
       id: 1,
       name: 'Synthetic Basestock Model',
+      path: 'synthetic-basestocks',
+      selectedTab: 2,
     },
     {
       id: 2,
       name: 'PAO Demand Model',
+      path: 'pao-demand',
+      selectedTab: 2,
     },
     {
       id: 3,
       name: 'RRBO Material Balance',
+      path: 'rrbo',
+      selectedTab: 2,
     },
     {
       id: 4,
       name: 'Competitive Landscape',
+      path: 'synthetic-basestocks',
+      selectedTab: 2,
     },
-  ]
+  ];
   public infoSecondaryTabData: any[] = [
     {
       id: 1,
@@ -135,7 +142,7 @@ export class LandingServiceService {
       id: 3,
       name: 'Webinars',
     },
-  ]
+  ];
 
   constructor() {}
 

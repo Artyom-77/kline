@@ -99,15 +99,20 @@ export class PaoDemandComponent implements OnInit {
       });
   }
 
+  setSelectedMainTab(selectedTab: number): void {
+    this.service.setSelectedMainTab(selectedTab);
+  }
+
+  getSelectedMainTab(): any {
+    return this.service.getSelectedMainTab();
+  }
+
   openRecipeModal() {
     this.openModal = true;
     document.querySelector('.kline-app')?.classList.add('fixed');
   }
 
-  onCellClick(e: any) {
-
-  }
-
+  onCellClick(e: any) {}
 
   onCloseModal() {
     this.openModal = false;
