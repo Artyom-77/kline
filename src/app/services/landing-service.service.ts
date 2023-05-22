@@ -120,27 +120,57 @@ export class LandingServiceService {
       id: 3,
       name: 'RRBO Material Balance',
       path: 'rrbo',
-      selectedTab: 2,
+      selectedTab: 3,
     },
     {
       id: 4,
       name: 'Competitive Landscape',
-      path: 'synthetic-basestocks',
+      path: 'supplier-profiles',
       selectedTab: 2,
     },
   ];
+  public infoTabMapsData: any[] = [
+    {
+      id: 1,
+      name: 'Finished Lubricant Blender Database',
+      path: 'blender-database',
+      // selectedTab: 2,
+    },
+    {
+      id: 2,
+      name: 'RRBO Capacity Map',
+      path: 'rrbo',
+      selectedTab: 2,
+    },
+    {
+      id: 3,
+      name: 'Synthetic Basestock Database',
+      path: 'synthetic-basestocks',
+      // selectedTab: 2,
+    },
+    {
+      id: 4,
+      name: 'PAO Demand Database',
+      path: 'pao-demand',
+      // selectedTab: 2,
+    },
+  ];
+
   public infoSecondaryTabData: any[] = [
     {
       id: 1,
       name: 'Reports & Presentations',
+      path:'insights'
     },
     {
       id: 2,
       name: 'Quarterly Newsletters',
+      path: 'insights'
     },
     {
       id: 3,
       name: 'Webinars',
+      path:'insights'
     },
   ];
 

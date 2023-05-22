@@ -9,6 +9,7 @@ export class SyntheticBasestocksService {
   // new BehaviorSubject<any>
 
   public selectedMainTab: number = 1;
+  public selectedPaoMainTab: number = 1;
   public modalData: any[] = [
     {
       id: uuidv4(),
@@ -1559,5 +1560,13 @@ export class SyntheticBasestocksService {
 
   getSelectedMainTab(): any {
     return this.selectedMainTab;
+  }
+  setSelectedPaoMainTab(data: number): void {
+    this.selectedPaoMainTab = data;
+    console.log('this.selectedPaoMainTab', this.selectedPaoMainTab);
+  }
+
+  getSelectedPaoMainTab(): any {
+    return this.selectedPaoMainTab;
   }
 }

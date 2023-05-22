@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { RrboService } from 'src/app/services/rrbo/rrbo.service';
 import { SyntheticBasestocksService } from 'src/app/services/synthetic-basestocks/synthetic-basestocks.service';
 
 @Component({
@@ -15,17 +16,22 @@ export class InfoTabComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private synteticService: SyntheticBasestocksService
+    private synteticService: SyntheticBasestocksService,
+    private rrboService: RrboService
   ) {}
 
-  ngOnInit(): void {
-    console.log('infoData', this.infoData);
-  }
+  ngOnInit(): void {}
+
   onClickA(item: any) {
-    // this.router.navigate(['synthetic-basestocks'], {queryParams:{ selectedMainTab: 2}});
     this.router.navigate([item.path]);
-    if (item.id === 1 || item.id === 2) {
+    if (item.name === 'Synthetic Basestock Model' ) {
       this.synteticService.setSelectedMainTab(item.selectedTab);
+    } else if (item.name === 'PAO Demand Model') {
+      this.synteticService.setSelectedPaoMainTab(item.selectedTab);
+    } else if (item.name === 'RRBO Material Balance') {
+      this.rrboService.setSelectedRrboTab(item.selectedTab);
+    } else if (item.name === 'RRBO Capacity Map') {
+      this.rrboService.setSelectedRrboTab(item.selectedTab);
     }
   }
 }

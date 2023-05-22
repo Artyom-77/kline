@@ -9,6 +9,7 @@ import { LandingServiceService } from '../services/landing-service.service';
 export class LendingPageComponent implements OnInit {
   public selectedTab: string = 'first';
   public infoTabData: any[] = [];
+  public infoTabMapsData: any[] = [];
   public infoSecondaryTabData: any[] = [];
   public subscribeModalStep: number = 1;
   public isModalVisible: boolean = false;
@@ -65,6 +66,7 @@ export class LendingPageComponent implements OnInit {
   ngOnInit(): void {
     this.infoTabData = this.service.infoTabData;
     this.infoSecondaryTabData = this.service.infoSecondaryTabData;
+    this.infoTabMapsData  = this.service.infoTabMapsData
   }
 
   onCLick(section: string) {

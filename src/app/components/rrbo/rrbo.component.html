@@ -12,34 +12,34 @@
     <div class="rrbo-body-tabs">
       <div
         class="tab"
-        (click)="selectedTab = 1"
-        [ngClass]="{ active: selectedTab === 1 }"
+        (click)="setSelectedRrboTab(1)"
+        [ngClass]="{ active: getSelectedRrboTab() === 1 }"
       >
         <h3>Regulations</h3>
       </div>
       <div
         class="tab"
-        (click)="selectedTab = 2"
-        [ngClass]="{ active: selectedTab === 2 }"
+        (click)="setSelectedRrboTab(2)"
+        [ngClass]="{ active: getSelectedRrboTab() === 2 }"
       >
         <h3>Capacity Map</h3>
       </div>
       <div
         class="tab"
-        (click)="selectedTab = 3"
-        [ngClass]="{ active: selectedTab === 3 }"
+        (click)="setSelectedRrboTab(3)"
+        [ngClass]="{ active: getSelectedRrboTab() === 3 }"
       >
         <h3>Material Balance</h3>
       </div>
     </div>
     <div class="tabs-content">
-      <div *ngIf="selectedTab === 1">
+      <div *ngIf="getSelectedRrboTab() === 1">
         <app-regulation-rrbo></app-regulation-rrbo>
       </div>
-      <div *ngIf="selectedTab === 2">
+      <div *ngIf="getSelectedRrboTab() === 2">
         <app-capacity-map-rrbo></app-capacity-map-rrbo>
       </div>
-      <div *ngIf="selectedTab === 3">
+      <div *ngIf="getSelectedRrboTab() === 3">
         <app-material-balance-rrbo></app-material-balance-rrbo>
       </div>
     </div>

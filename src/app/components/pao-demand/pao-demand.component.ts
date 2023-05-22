@@ -9,7 +9,10 @@ import { SyntheticBasestocksService } from 'src/app/services/synthetic-basestock
 })
 export class PaoDemandComponent implements OnInit {
   public sales: any[] = [];
-  public dataSource: any;
+  public dataSource: any = {
+    fields: [],
+    store: [],
+  };
   public data: any;
   public allowSearch: boolean | null | undefined = true;
   public selectedMainTab: number = 1;
@@ -32,6 +35,7 @@ export class PaoDemandComponent implements OnInit {
     this.http
       .get('../../../assets/json/paoTabularData.json')
       .subscribe((data) => {
+        this.dataSource={}
         this.dataSource = {
           fields: [
             {
@@ -99,12 +103,12 @@ export class PaoDemandComponent implements OnInit {
       });
   }
 
-  setSelectedMainTab(selectedTab: number): void {
-    this.service.setSelectedMainTab(selectedTab);
+  setSelectedPaoMainTab(selectedTab: number): void {
+    this.service.setSelectedPaoMainTab(selectedTab);
   }
 
-  getSelectedMainTab(): any {
-    return this.service.getSelectedMainTab();
+  getSelectedPaoMainTab(): any {
+    return this.service.getSelectedPaoMainTab();
   }
 
   openRecipeModal() {

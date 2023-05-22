@@ -11,7 +11,10 @@ import { Location } from '@angular/common';
 })
 export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   public sales: any[] = [];
-  public dataSource: any;
+  public dataSource: any = {
+    fields: [],
+    store: [],
+  };
   public data: any;
   public allowSearch: boolean | null | undefined = true;
   public selectedMainTab: number = 1;
@@ -33,88 +36,91 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
     private location: Location
   ) {
     this.modalDummyData = service.modalData;
+
   }
 
   ngOnInit() {
-    // console.log('history.state.data;', history.state.data);
-    // this.selectedMainTab = history.state.data;
-
+    console.log('001');
     this.http
-      .get('../../../assets/json/synteticTabularTabledata.json')
-      .subscribe((data) => {
-        // this.chartData = data;
-        this.dataSource = {
-          fields: [
-            {
-              caption: 'Segment',
-              width: 50,
-              dataField: 'Segment',
-              area: 'row',
+    .get('../../../assets/json/synteticTabularTabledata.json')
+    .subscribe((data) => {
+      // this.chartData = data;
+      console.log('002');
+      this.dataSource={}
+      this.dataSource = {
+        fields: [
+          {
+            caption: 'Segment',
+            width: 50,
+            dataField: 'Segment',
+            area: 'row',
+          },
+          {
+            caption: 'Lubricant Product',
+            dataField: 'Sector',
+            area: 'row',
+          },
+          {
+            caption: 'Viscosity Grade/Product',
+            dataField: 'ViscosityGrade',
+            area: 'row',
+          },
+          {
+            dataField: 'Region',
+            area: 'filter',
+            // filterValues: ['Region'],
+          },
+          {
+            dataField: 'Year',
+            area: 'filter',
+            // filterValues: ['Region'],
+          },
+          {
+            dataField: 'Unit',
+            area: 'filter',
+            filterType: {
+              showAll: false,
+              type: 'radio',
             },
-            {
-              caption: 'Lubricant Product',
-              dataField: 'Sector',
-              area: 'row',
+            // filterType: 'radio',
+            // onCustomize: this.customizeCountryField
+            // filterType: "exclude",
+            // filterValues: [['B/D'], ['KTPA']],
+            // filterValues: ['Region'],
+          },
+          {
+            dataField: 'mainColumn',
+            dataType: 'mainColumn',
+            area: 'column',
+            expanded: true,
+            showTotals: false,
+          },
+          {
+            dataField: 'BSType',
+            dataType: 'BSType',
+            area: 'column',
+            expanded: true,
+            runningTotal: 'column',
+            allowCrossGroupCalculation: true,
+            showTotals: false,
+          },
+          {
+            caption: 'Sales',
+            dataField: 'SumofValues',
+            dataType: 'number',
+            summaryType: 'sum',
+            format: {
+              type: 'fixedPoint',
+              precision: 1,
             },
-            {
-              caption: 'Viscosity Grade/Product',
-              dataField: 'ViscosityGrade',
-              area: 'row',
-            },
-            {
-              dataField: 'Region',
-              area: 'filter',
-              // filterValues: ['Region'],
-            },
-            {
-              dataField: 'Year',
-              area: 'filter',
-              // filterValues: ['Region'],
-            },
-            {
-              dataField: 'Unit',
-              area: 'filter',
-              filterType: {
-                showAll: false,
-                type: 'radio',
-              },
-              // filterType: 'radio',
-              // onCustomize: this.customizeCountryField
-              // filterType: "exclude",
-              // filterValues: [['B/D'], ['KTPA']],
-              // filterValues: ['Region'],
-            },
-            {
-              dataField: 'mainColumn',
-              dataType: 'mainColumn',
-              area: 'column',
-              expanded: true,
-              showTotals: false,
-            },
-            {
-              dataField: 'BSType',
-              dataType: 'BSType',
-              area: 'column',
-              expanded: true,
-              runningTotal: 'column',
-              allowCrossGroupCalculation: true,
-              showTotals: false,
-            },
-            {
-              caption: 'Sales',
-              dataField: 'SumofValues',
-              dataType: 'number',
-              summaryType: 'sum',
-              format: {
-                type: 'fixedPoint',
-                precision: 1,
-              },
-              area: 'data',
-            },
-          ],
-          store: data,
-        };
-      });
+            area: 'data',
+          },
+        ],
+        store: data,
+      };
+      console.log('003', this.dataSource);
+    });
+    // this.selectedMainTab = history.state.data;
   }
 
   openRecipeModal() {

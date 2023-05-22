@@ -91,6 +91,7 @@ export class RrboService {
   public northAmericaCountries: any[] = ['USA', 'Mexico', 'Canada'];
   public southAmericaCountries: any[] = ['Brazil'];
   public africaCountries: any[] = ['India'];
+  public rrboSelectedTab: number = 1
   public asiaCountries: any[] = [
     'China',
     'Indonesia',
@@ -4103,6 +4104,15 @@ export class RrboService {
       },
     },
   ];
+
+  setSelectedRrboTab(data: number): void {
+    this.rrboSelectedTab = data;
+    console.log('this.selectedRrboTab', this.rrboSelectedTab);
+  }
+
+  getSelectedRrboTab(): any {
+    return this.rrboSelectedTab;
+  }
 
   getMapTypes(): MapSetting[] {
     return mapTypes;

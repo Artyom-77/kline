@@ -190,7 +190,7 @@
       </dx-pivot-grid>
     </div>
   </div>
-  <div *ngIf="getSelectedMainTab() === 2" class="synthetic-basestocks-body">
+  <div *ngIf="getSelectedMainTab() === 2 && dataSource.store.length" class="synthetic-basestocks-body">
     <app-synthetic-chart-view
       [chartData]="dataSource.store"
     ></app-synthetic-chart-view>
