@@ -1,11 +1,19 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-supplier-chart-current-capacity-small',
   templateUrl: './supplier-chart-current-capacity-small.component.html',
-  styleUrls: ['./supplier-chart-current-capacity-small.component.scss']
+  styleUrls: ['./supplier-chart-current-capacity-small.component.scss'],
 })
-export class SupplierChartCurrentCapacitySmallComponent {
+export class SupplierChartCurrentCapacitySmallComponent implements OnInit {
   @Input() chartData?: any;
   @Input() text?: string;
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
+
+  ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
+  }
 }

@@ -22,7 +22,7 @@
         <dx-pie-chart
           id="pie"
           title="USED OIL GENERATION"
-          palette="Dark Violet"
+          [palette]="customPalette"
           paletteExtensionMode="blend"
           [dataSource]="generationChartData"
         >
@@ -52,7 +52,7 @@
         <dx-pie-chart
           id="pie2"
           title="USED OIL COLLECTION"
-          palette="Dark Violet"
+          [palette]="customPalette"
           paletteExtensionMode="blend"
           [dataSource]="collectionChartData"
         >
@@ -82,7 +82,7 @@
         <dx-pie-chart
           id="pie3"
           title="USED OIL DISPOSAL"
-          palette="Dark Violet"
+          [palette]="customPalette"
           paletteExtensionMode="blend"
           [dataSource]="disposalChartData"
         >
@@ -112,7 +112,7 @@
         <dx-pie-chart
           id="pie4"
           title="USED OIL RE-REFINING"
-          palette="Dark Violet"
+          [palette]="customPalette"
           paletteExtensionMode="blend"
           [dataSource]="refiningChartData"
         >

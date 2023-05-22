@@ -24,10 +24,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="custom-dropdown date-dropdown"
-      (click)="toggleYearDropdown()"
-    >
+    <div class="custom-dropdown date-dropdown" (click)="toggleYearDropdown()">
       <div class="dropdown-header">
         <span>{{ selectedYear }}</span>
         <img
@@ -54,21 +51,15 @@
     title="Share of Synthetic Basestock by Segment (KT)"
     [dataSource]="mergedObj"
     [rotated]="false"
-    palette="Dark Violet"
-    paletteExtensionMode="blend"
+    [palette]="customPalette"
   >
-    <dxi-series
-      type="bar"
-      argumentField="BSType"
-      valueField="SumofValues"
-      color="teal"
-    >
+    <dxi-series type="bar" argumentField="BSType" valueField="SumofValues">
     </dxi-series>
     <dxo-legend
-    verticalAlignment="bottom"
-    horizontalAlignment="center"
-    itemTextPosition="right"
-  >
-  </dxo-legend>
+      verticalAlignment="bottom"
+      horizontalAlignment="center"
+      itemTextPosition="right"
+    >
+    </dxo-legend>
   </dx-chart>
 </div>

@@ -51,14 +51,19 @@
     &-content {
       padding: 20px 0;
       display: grid;
-      grid-gap: 4px;
       .item {
         display: flex;
         justify-content: space-between;
-        padding: 16px 0;
+        padding: 16px 8px;
         border-bottom: 1px solid #3e3e3e;
+        border-left: 4px solid transparent;
+        cursor: pointer;
         > svg {
           width: 33px;
+        }
+        &:hover {
+          border-left: 4px solid $orange;
+          background: rgba(63, 63, 63, 0.1529411765);
         }
       }
     }
@@ -89,7 +94,7 @@
       }
     }
     .item {
-      border-color: white;
+      border-bottom-color: white;
     }
   }
 }

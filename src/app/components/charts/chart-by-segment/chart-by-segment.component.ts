@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-chart-by-segment',
@@ -12,12 +13,15 @@ export class ChartBySegmentComponent implements OnInit {
   public isSegmentDropdownOpen: boolean = false;
   public selectedSegment?: string = 'CONSUMER AUTOMOTIVE';
   public segmentList: any[] = [];
-
   public isYearDropdownOpen: boolean = false;
   public selectedYear?: number = 2021;
   public yearList: any[] = [];
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
 
   ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
     this.chartData.map((data: any) => {
       if (!this.segmentList.includes(data.Segment)) {
         this.segmentList.push(data.Segment);

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-supplier-pie-chart-sales-structure',
@@ -16,12 +17,16 @@ export class SupplierPieChartSalesStructureComponent implements OnInit {
     },
   ];
   public totalSum: number = 0;
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
 
   ngOnInit(): void {
-    this.totalSum = 0
-    this.chartData.map(item => {
-      this.totalSum +=  item.value
-    })
+    this.customPalette = this.mainService.customPalette;
+    this.totalSum = 0;
+    this.chartData.map((item) => {
+      this.totalSum += item.value;
+    });
   }
   handleChange(arg: string) {}
   customizeLabel(arg: any) {

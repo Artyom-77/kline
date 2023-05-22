@@ -1,6 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { SyntheticBasestocksService } from 'src/app/services/synthetic-basestocks/synthetic-basestocks.service';
+import { PaoData } from 'src/app/types/types';
+import { ModalData } from 'src/app/types/ModalDataTypes';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-pao-demand',
@@ -8,22 +11,20 @@ import { SyntheticBasestocksService } from 'src/app/services/synthetic-basestock
   styleUrls: ['./pao-demand.component.scss'],
 })
 export class PaoDemandComponent implements OnInit {
-  public sales: any[] = [];
   public dataSource: any = {
     fields: [],
-    store: [],
+    store: <PaoData>[],
   };
   public data: any;
   public allowSearch: boolean | null | undefined = true;
   public selectedMainTab: number = 1;
   public showRelevantValues: boolean | null | undefined = true;
   public openModal: boolean = false;
-  public gridItemData: any | undefined;
   showRowFields = true;
   @Input() selectedTab: any = 1;
   showColumnFields = true;
   showFilterFields = true;
-  public modalDummyData: any[] = [];
+  public modalDummyData: Observable<ModalData>[];
   constructor(
     private service: SyntheticBasestocksService,
     private http: HttpClient
@@ -35,7 +36,7 @@ export class PaoDemandComponent implements OnInit {
     this.http
       .get('../../../assets/json/paoTabularData.json')
       .subscribe((data) => {
-        this.dataSource={}
+        this.dataSource = {};
         this.dataSource = {
           fields: [
             {

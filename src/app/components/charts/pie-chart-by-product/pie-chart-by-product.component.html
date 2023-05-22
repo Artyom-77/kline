@@ -25,8 +25,7 @@
   <dx-pie-chart
     id="pie"
     title="Share of Synthetic Basestock by Product (KT)"
-    palette="Dark Violet"
-    paletteExtensionMode="blend"
+    [palette]="customPalette"
     [dataSource]="mergedObj"
   >
     <dxi-series argumentField="BSType" valueField="SumofValues">

@@ -11,7 +11,7 @@
   <div class="chart-pie">
     <dx-pie-chart
       id="pie"
-      palette="Dark Violet"
+      [palette]="customPalette"
       title="Base Oil Sales Structure"
       paletteExtensionMode="blend"
       [dataSource]="chartData"
@@ -24,9 +24,9 @@
         ></dxo-label> -->
       </dxi-series>
       <dxo-tooltip
-      [enabled]="true"
-      [contentTemplate]="customizeLabel"
-    ></dxo-tooltip>
+        [enabled]="true"
+        [contentTemplate]="customizeLabel"
+      ></dxo-tooltip>
       <!-- <dxo-size [width]="300" ></dxo-size> -->
       <dxo-legend
         verticalAlignment="bottom"
@@ -35,7 +35,8 @@
       >
       </dxo-legend>
     </dx-pie-chart>
-  <div class="pie-chart-total">Total: {{ totalSum.toFixed(1) }} Kilotonnes​ </div>
-
+    <div class="pie-chart-total">
+      Total: {{ totalSum.toFixed(1) }} Kilotonnes​
+    </div>
   </div>
 </div>

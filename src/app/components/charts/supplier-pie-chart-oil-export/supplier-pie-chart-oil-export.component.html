@@ -3,7 +3,7 @@
     <!-- <h3 class="title">Base Oil Exports</h3> -->
   </div>
   <app-select-dropdown
-  *ngIf="!hideDropdown"
+    *ngIf="!hideDropdown"
     [dropdownTitle]="'Year'"
     [dropdownData]="yearData"
     (itemEvent)="handleChange($event)"
@@ -12,11 +12,10 @@
     <dx-pie-chart
       id="pie"
       title="Base Oil Exports"
-      palette="Dark Violet"
+      [palette]="customPalette"
       paletteExtensionMode="blend"
       [dataSource]="chartData"
-      [size]="{width: 300 }"
-
+      [size]="{ width: 300 }"
     >
       <dxi-series argumentField="label" valueField="value">
         <!-- <dxo-label
@@ -25,9 +24,9 @@
         ></dxo-label> -->
       </dxi-series>
       <dxo-tooltip
-      [enabled]="true"
-      [contentTemplate]="customizeLabel"
-    ></dxo-tooltip>
+        [enabled]="true"
+        [contentTemplate]="customizeLabel"
+      ></dxo-tooltip>
       <!-- <dxo-size [width]="300" ></dxo-size> -->
       <dxo-legend
         verticalAlignment="bottom"
@@ -36,7 +35,8 @@
       >
       </dxo-legend>
     </dx-pie-chart>
-  <div class="pie-chart-total">Total: {{ totalSum.toFixed(1) }} Kilotonnes​ </div>
-
+    <div class="pie-chart-total">
+      Total: {{ totalSum.toFixed(1) }} Kilotonnes​
+    </div>
   </div>
 </div>

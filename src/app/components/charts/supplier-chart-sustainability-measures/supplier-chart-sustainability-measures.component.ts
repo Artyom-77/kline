@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-supplier-chart-sustainability-measures',
@@ -9,10 +10,15 @@ export class SupplierChartSustainabilityMeasuresComponent implements OnInit {
   @Input() chartData?: any;
   @Input() text?: string;
   public dataValues: any[] = [];
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
+
   ngOnInit(): void {
-    this.chartData.map((item:any) => {
-      this.dataValues.push(item.value)
-    })
+    this.customPalette = this.mainService.customPalette;
+    this.chartData.map((item: any) => {
+      this.dataValues.push(item.value);
+    });
   }
   customizeText(arg: any) {
     return `${arg.valueText} %`;

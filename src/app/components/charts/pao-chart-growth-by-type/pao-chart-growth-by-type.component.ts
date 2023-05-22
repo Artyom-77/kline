@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-pao-chart-growth-by-type',
@@ -16,8 +17,12 @@ export class PaoChartGrowthByTypeComponent implements OnInit {
   public isYearDropdownOpen: boolean = false;
   public selectedYear?: number = 2021;
   public yearList: any[] = [];
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
 
   ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
     this.mergedObj = this.chartData.reduce((accumulator: any, current: any) => {
       const existingObject = accumulator.find(
         (item: any) =>

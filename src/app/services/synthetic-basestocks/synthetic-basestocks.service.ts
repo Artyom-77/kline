@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { ModalData } from 'src/app/types/ModalDataTypes';
 import { v4 as uuidv4 } from 'uuid';
 
 @Injectable({
@@ -1555,7 +1556,6 @@ export class SyntheticBasestocksService {
 
   setSelectedMainTab(data: number): void {
     this.selectedMainTab = data;
-    console.log('this.selectedMainTab', this.selectedMainTab);
   }
 
   getSelectedMainTab(): any {
@@ -1563,7 +1563,6 @@ export class SyntheticBasestocksService {
   }
   setSelectedPaoMainTab(data: number): void {
     this.selectedPaoMainTab = data;
-    console.log('this.selectedPaoMainTab', this.selectedPaoMainTab);
   }
 
   getSelectedPaoMainTab(): any {

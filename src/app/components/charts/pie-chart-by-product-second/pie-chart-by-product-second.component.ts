@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-pie-chart-by-product-second',
@@ -21,7 +22,12 @@ export class PieChartByProductSecondComponent {
   public yearList: any[] = [];
   public tooltipColor: any;
   public totalSum: number = 0;
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
+
   ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
     this.chartData.map((data: any) => {
       if (
         !this.BSTypeList.includes(data.BSType) &&
@@ -67,10 +73,10 @@ export class PieChartByProductSecondComponent {
       },
       []
     );
-    this.totalSum = 0
-    this.mergedObj.map(item => {
-      this.totalSum +=  item.SumofValues
-    })
+    this.totalSum = 0;
+    this.mergedObj.map((item) => {
+      this.totalSum += item.SumofValues;
+    });
   }
 
   toggleBSTypeDropdown() {
@@ -106,10 +112,10 @@ export class PieChartByProductSecondComponent {
       },
       []
     );
-    this.totalSum = 0
-    this.mergedObj.map(item => {
-      this.totalSum +=  item.SumofValues
-    })
+    this.totalSum = 0;
+    this.mergedObj.map((item) => {
+      this.totalSum += item.SumofValues;
+    });
   }
 
   toggleYearDropdown() {
@@ -142,10 +148,10 @@ export class PieChartByProductSecondComponent {
       },
       []
     );
-    this.totalSum = 0
-    this.mergedObj.map(item => {
-      this.totalSum +=  item.SumofValues
-    })
+    this.totalSum = 0;
+    this.mergedObj.map((item) => {
+      this.totalSum += item.SumofValues;
+    });
   }
 
   customizeLabel(arg: any) {

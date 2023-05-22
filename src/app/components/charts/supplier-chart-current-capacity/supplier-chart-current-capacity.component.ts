@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-supplier-chart-current-capacity',
@@ -8,5 +9,11 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SupplierChartCurrentCapacityComponent implements OnInit {
   @Input() chartData?: any;
   @Input() text?: string;
-  ngOnInit(): void {}
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
+
+  ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
+  }
 }

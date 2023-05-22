@@ -3,7 +3,6 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleSegmentDropdown()"
-
     >
       <div class="dropdown-header">
         <span>{{ selectedSegment }}</span>
@@ -31,7 +30,7 @@
     id="chart12"
     title="PAO Demand Split by Segment (Kilotonnes)"
     [dataSource]="mergedObj"
-    palette="Dark Violet"
+    [palette]="customPalette"
     paletteExtensionMode="blend"
   >
     <dxi-series valueField="SumofValues" argumentField="Year"></dxi-series>
@@ -50,6 +49,5 @@
       itemTextPosition="right"
     >
     </dxo-legend>
-
   </dx-chart>
 </div>

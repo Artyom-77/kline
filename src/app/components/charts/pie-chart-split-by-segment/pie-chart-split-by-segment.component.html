@@ -1,10 +1,6 @@
 <div class="first-pie">
   <div class="filters">
-    <div
-      class="custom-dropdown date-dropdown"
-      (click)="toggleBSTypeDropdown()"
-
-    >
+    <div class="custom-dropdown date-dropdown" (click)="toggleBSTypeDropdown()">
       <div class="dropdown-header">
         <span>{{ selectedBSType }}</span>
         <img
@@ -26,11 +22,7 @@
       </div>
     </div>
 
-    <div
-      class="custom-dropdown date-dropdown"
-      (click)="toggleYearDropdown()"
-
-    >
+    <div class="custom-dropdown date-dropdown" (click)="toggleYearDropdown()">
       <div class="dropdown-header">
         <span>{{ selectedYear }}</span>
         <img
@@ -55,22 +47,22 @@
   <dx-pie-chart
     id="pie"
     title="Synthetic Basestock Demand Split by Segment (KT)"
-    palette="Dark Violet"
+    [palette]="customPalette"
     paletteExtensionMode="blend"
     [dataSource]="mergedObj"
   >
     <dxi-series argumentField="Segment" valueField="SumofValues">
       <dxo-small-values-grouping
-      mode="smallValueThreshold"
-      [threshold]="4.5"
-    ></dxo-small-values-grouping>
+        mode="smallValueThreshold"
+        [threshold]="4.5"
+      ></dxo-small-values-grouping>
       <!-- <dxo-label [visible]="true" [customizeText]="customizeLabel"></dxo-label> -->
     </dxi-series>
-      <dxo-tooltip
-  [enabled]="true"
-  [contentTemplate]="customizeLabel"
-  [color]="tooltipColor"
-></dxo-tooltip>
+    <dxo-tooltip
+      [enabled]="true"
+      [contentTemplate]="customizeLabel"
+      [color]="tooltipColor"
+    ></dxo-tooltip>
     <!-- <dxo-size [width]="300" ></dxo-size> -->
     <dxo-legend
       verticalAlignment="bottom"
@@ -79,6 +71,7 @@
     >
     </dxo-legend>
   </dx-pie-chart>
-  <div class="pie-chart-total">Total: {{ totalSum.toFixed(1) }} Kilotonnes​ </div>
-
+  <div class="pie-chart-total">
+    Total: {{ totalSum.toFixed(1) }} Kilotonnes​
+  </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-pie-chart-pag-by-segment-and-product',
@@ -16,8 +17,12 @@ export class PieChartPagBySegmentAndProductComponent implements OnInit {
   public segmentList: any[] = [];
   public productList: any[] = [];
   public totalSum: number = 0;
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
 
   ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
     this.chartData.map((data: any) => {
       if (!this.segmentList.includes(data.segment)) {
         this.segmentList.push(data.segment);

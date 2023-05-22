@@ -3,7 +3,6 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleSegmentDropdown()"
-
     >
       <div class="dropdown-header">
         <span>{{ selectedSegment }}</span>
@@ -26,11 +25,7 @@
       </div>
     </div>
 
-    <div
-      class="custom-dropdown date-dropdown"
-      (click)="toggleSectorDropdown()"
-
-    >
+    <div class="custom-dropdown date-dropdown" (click)="toggleSectorDropdown()">
       <div class="dropdown-header">
         <span>{{ selectedSector }}</span>
         <img
@@ -52,11 +47,7 @@
       </div>
     </div>
 
-    <div
-      class="custom-dropdown date-dropdown"
-      (click)="toggleYearDropdown()"
-
-    >
+    <div class="custom-dropdown date-dropdown" (click)="toggleYearDropdown()">
       <div class="dropdown-header">
         <span>{{ selectedYear }}</span>
         <img
@@ -79,22 +70,17 @@
     title="Growth Rates (%CAGR)"
     [dataSource]="segmentChartData"
     [rotated]="false"
-    palette="Dark Violet"
+    [palette]="customPalette"
     paletteExtensionMode="blend"
   >
-    <dxi-series
-
-      type="bar"
-      argumentField="BSType"
-      valueField="SumofValues"
-    >
+    <dxi-series type="bar" argumentField="BSType" valueField="SumofValues">
       <!-- <dxo-label [visible]="true" format="percent"></dxo-label> -->
     </dxi-series>
     <dxo-legend
-    verticalAlignment="bottom"
-    horizontalAlignment="center"
-    itemTextPosition="right"
-  >
-  </dxo-legend>
+      verticalAlignment="bottom"
+      horizontalAlignment="center"
+      itemTextPosition="right"
+    >
+    </dxo-legend>
   </dx-chart>
 </div>

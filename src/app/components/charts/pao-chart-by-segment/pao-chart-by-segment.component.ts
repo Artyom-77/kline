@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-pao-chart-by-segment',
@@ -16,8 +17,12 @@ export class PaoChartBySegmentComponent implements OnInit {
   public isYearDropdownOpen: boolean = false;
   public selectedYear?: number = 2021;
   public yearList: any[] = [];
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
 
   ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
     // this.segmentChartData = this.chartData.filter(
     //   (item: any) =>
     //     item.Segment == this.selectedSegment
@@ -35,7 +40,6 @@ export class PaoChartBySegmentComponent implements OnInit {
       return accumulator;
     }, []);
   }
-
 
   customizeLabel(arg: any) {
     return `${arg.argumentText}: ${arg.percentText}`;

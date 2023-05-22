@@ -3,6 +3,7 @@ import { SyntheticBasestocksService } from 'src/app/services/synthetic-basestock
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
+import { PaoData } from 'src/app/types/types';
 
 @Component({
   selector: 'app-synthetic-basestocks',
@@ -10,17 +11,15 @@ import { Location } from '@angular/common';
   styleUrls: ['./synthetic-basestocks.component.scss'],
 })
 export class SyntheticBasestocksComponent implements OnInit, OnChanges {
-  public sales: any[] = [];
   public dataSource: any = {
     fields: [],
-    store: [],
+    store: <PaoData>[],
   };
   public data: any;
   public allowSearch: boolean | null | undefined = true;
   public selectedMainTab: number = 1;
   public showRelevantValues: boolean | null | undefined = true;
   public openModal: boolean = false;
-  public gridItemData: any | undefined;
   public modalDummyData: any[] = [];
   public chartData: any;
   showRowFields = true;
@@ -36,90 +35,89 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
     private location: Location
   ) {
     this.modalDummyData = service.modalData;
-
   }
 
   ngOnInit() {
     console.log('001');
     this.http
-    .get('../../../assets/json/synteticTabularTabledata.json')
-    .subscribe((data) => {
-      // this.chartData = data;
-      console.log('002');
-      this.dataSource={}
-      this.dataSource = {
-        fields: [
-          {
-            caption: 'Segment',
-            width: 50,
-            dataField: 'Segment',
-            area: 'row',
-          },
-          {
-            caption: 'Lubricant Product',
-            dataField: 'Sector',
-            area: 'row',
-          },
-          {
-            caption: 'Viscosity Grade/Product',
-            dataField: 'ViscosityGrade',
-            area: 'row',
-          },
-          {
-            dataField: 'Region',
-            area: 'filter',
-            // filterValues: ['Region'],
-          },
-          {
-            dataField: 'Year',
-            area: 'filter',
-            // filterValues: ['Region'],
-          },
-          {
-            dataField: 'Unit',
-            area: 'filter',
-            filterType: {
-              showAll: false,
-              type: 'radio',
+      .get('../../../assets/json/synteticTabularTabledata.json')
+      .subscribe((data) => {
+        // this.chartData = data;
+        console.log('002');
+        this.dataSource = {};
+        this.dataSource = {
+          fields: [
+            {
+              caption: 'Segment',
+              width: 50,
+              dataField: 'Segment',
+              area: 'row',
             },
-            // filterType: 'radio',
-            // onCustomize: this.customizeCountryField
-            // filterType: "exclude",
-            // filterValues: [['B/D'], ['KTPA']],
-            // filterValues: ['Region'],
-          },
-          {
-            dataField: 'mainColumn',
-            dataType: 'mainColumn',
-            area: 'column',
-            expanded: true,
-            showTotals: false,
-          },
-          {
-            dataField: 'BSType',
-            dataType: 'BSType',
-            area: 'column',
-            expanded: true,
-            runningTotal: 'column',
-            allowCrossGroupCalculation: true,
-            showTotals: false,
-          },
-          {
-            caption: 'Sales',
-            dataField: 'SumofValues',
-            dataType: 'number',
-            summaryType: 'sum',
-            format: {
-              type: 'fixedPoint',
-              precision: 1,
+            {
+              caption: 'Lubricant Product',
+              dataField: 'Sector',
+              area: 'row',
             },
-            area: 'data',
-          },
-        ],
-        store: data,
-      };
-      console.log('003', this.dataSource);
-    });
+            {
+              caption: 'Viscosity Grade/Product',
+              dataField: 'ViscosityGrade',
+              area: 'row',
+            },
+            {
+              dataField: 'Region',
+              area: 'filter',
+              // filterValues: ['Region'],
+            },
+            {
+              dataField: 'Year',
+              area: 'filter',
+              // filterValues: ['Region'],
+            },
+            {
+              dataField: 'Unit',
+              area: 'filter',
+              filterType: {
+                showAll: false,
+                type: 'radio',
+              },
+              // filterType: 'radio',
+              // onCustomize: this.customizeCountryField
+              // filterType: "exclude",
+              // filterValues: [['B/D'], ['KTPA']],
+              // filterValues: ['Region'],
+            },
+            {
+              dataField: 'mainColumn',
+              dataType: 'mainColumn',
+              area: 'column',
+              expanded: true,
+              showTotals: false,
+            },
+            {
+              dataField: 'BSType',
+              dataType: 'BSType',
+              area: 'column',
+              expanded: true,
+              runningTotal: 'column',
+              allowCrossGroupCalculation: true,
+              showTotals: false,
+            },
+            {
+              caption: 'Sales',
+              dataField: 'SumofValues',
+              dataType: 'number',
+              summaryType: 'sum',
+              format: {
+                type: 'fixedPoint',
+                precision: 1,
+              },
+              area: 'data',
+            },
+          ],
+          store: data,
+        };
+        console.log('003', this.dataSource);
+      });
     // this.selectedMainTab = history.state.data;
   }
 
@@ -171,7 +169,6 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
     // ) {
     //   this.openModal = true;
     //   document.querySelector('.kline-app')?.classList.add('fixed');
-    //   this.gridItemData = e;
     // }
   }
   onCloseModal() {

@@ -1,10 +1,6 @@
 <div class="first-pie">
   <div class="filters">
-    <div
-      class="custom-dropdown date-dropdown"
-      (click)="toggleBSTypeDropdown()"
-
-    >
+    <div class="custom-dropdown date-dropdown" (click)="toggleBSTypeDropdown()">
       <div class="dropdown-header">
         <span>{{ selectedBSType }}</span>
         <img
@@ -28,7 +24,6 @@
     <div
       class="custom-dropdown date-dropdown"
       (click)="toggleViscosityGradeDropdown()"
-
     >
       <div class="dropdown-header">
         <span>{{ selectedViscosityGrade }}</span>
@@ -50,11 +45,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="custom-dropdown date-dropdown"
-      (click)="toggleYearDropdown()"
-
-    >
+    <div class="custom-dropdown date-dropdown" (click)="toggleYearDropdown()">
       <div class="dropdown-header">
         <span>{{ selectedYear }}</span>
         <img
@@ -79,21 +70,21 @@
   <dx-pie-chart
     id="pie"
     title="Share of Synthetic Basestock by Viscosity Grade (KT)"
-    palette="Dark Violet"
+    [palette]="customPalette"
     paletteExtensionMode="blend"
     [dataSource]="mergedObj"
   >
     <dxi-series argumentField="BSType" valueField="SumofValues">
       <dxo-small-values-grouping
-      mode="smallValueThreshold"
-      [threshold]="4.5"
-    ></dxo-small-values-grouping>
+        mode="smallValueThreshold"
+        [threshold]="4.5"
+      ></dxo-small-values-grouping>
     </dxi-series>
     <dxo-tooltip
-    [enabled]="true"
-    [contentTemplate]="customizeLabel"
-    [color]="tooltipColor"
-  ></dxo-tooltip>
+      [enabled]="true"
+      [contentTemplate]="customizeLabel"
+      [color]="tooltipColor"
+    ></dxo-tooltip>
     <!-- <dxo-size [width]="300"></dxo-size> -->
     <dxo-legend
       verticalAlignment="bottom"
@@ -102,6 +93,7 @@
     >
     </dxo-legend>
   </dx-pie-chart>
-  <div class="pie-chart-total">Total: {{ totalSum.toFixed(1) }} Kilotonnes​ </div>
-
+  <div class="pie-chart-total">
+    Total: {{ totalSum.toFixed(1) }} Kilotonnes​
+  </div>
 </div>

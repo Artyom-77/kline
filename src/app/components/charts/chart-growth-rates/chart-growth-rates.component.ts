@@ -1,9 +1,10 @@
-import { Component, Input, OnInit  } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-chart-growth-rates',
   templateUrl: './chart-growth-rates.component.html',
-  styleUrls: ['./chart-growth-rates.component.scss']
+  styleUrls: ['./chart-growth-rates.component.scss'],
 })
 export class ChartGrowthRatesComponent implements OnInit {
   @Input() chartData?: any;
@@ -14,15 +15,19 @@ export class ChartGrowthRatesComponent implements OnInit {
   public segmentList: any[] = [];
 
   public isSectorDropdownOpen: boolean = false;
-  public selectedSector?: string = "PCMO";
+  public selectedSector?: string = 'PCMO';
   public sectorList: any[] = [];
 
   public isYearDropdownOpen: boolean = false;
   public selectedYear?: string = '';
   public yearList: any[] = [];
   public combinedYearList: any[] = [];
+  public customPalette: string[] = [];
 
+  constructor(private mainService: LandingServiceService) {}
   ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
+
     this.chartData.map((data: any) => {
       if (!this.segmentList.includes(data.Segment)) {
         this.segmentList.push(data.Segment);
@@ -38,8 +43,10 @@ export class ChartGrowthRatesComponent implements OnInit {
         this.yearList.push(data.Year);
       }
     });
-    this.selectedYear = `${Math.min(...this.yearList)}-${Math.max(...this.yearList)}`
-    this.combinedYearList.push(this.selectedYear)
+    this.selectedYear = `${Math.min(...this.yearList)}-${Math.max(
+      ...this.yearList
+    )}`;
+    this.combinedYearList.push(this.selectedYear);
     this.segmentChartData = this.chartData.filter(
       (item: any) =>
         item.Segment == this.selectedSegment &&
@@ -55,13 +62,16 @@ export class ChartGrowthRatesComponent implements OnInit {
 
   toggleSegmentOption(option: string): void {
     this.selectedSegment = option;
-    this.segmentChartData = this.selectedSegment === "All Segments" ? this.chartData : this.chartData.filter(
-      (item: any) =>
-        item.Segment == this.selectedSegment &&
-        item.Sector === this.selectedSector &&
-        item.mainColumn ===
-          'Share of basestock in total synthetic basestock demand (%)'
-    );
+    this.segmentChartData =
+      this.selectedSegment === 'All Segments'
+        ? this.chartData
+        : this.chartData.filter(
+            (item: any) =>
+              item.Segment == this.selectedSegment &&
+              item.Sector === this.selectedSector &&
+              item.mainColumn ===
+                'Share of basestock in total synthetic basestock demand (%)'
+          );
   }
 
   toggleSectorDropdown() {

@@ -1,10 +1,6 @@
 <div class="first-pie">
   <div class="filters">
-    <div
-      class="custom-dropdown date-dropdown"
-      (click)="toggleYearDropdown()"
-
-    >
+    <div class="custom-dropdown date-dropdown" (click)="toggleYearDropdown()">
       <div class="dropdown-header">
         <span>{{ selectedYear }}</span>
         <img
@@ -36,15 +32,15 @@
       <!-- <dxo-label [visible]="true" format="percent"></dxo-label> -->
       <dxo-label [visible]="false" [customizeText]="customizeLabel"></dxo-label>
       <dxo-small-values-grouping
-      mode="smallValueThreshold"
-      [threshold]="4.5"
-    ></dxo-small-values-grouping>
-  </dxi-series>
-  <dxo-tooltip
-  [enabled]="true"
-  [contentTemplate]="customizeLabel"
-  [color]="tooltipColor"
-></dxo-tooltip>
+        mode="smallValueThreshold"
+        [threshold]="4.5"
+      ></dxo-small-values-grouping>
+    </dxi-series>
+    <dxo-tooltip
+      [enabled]="true"
+      [contentTemplate]="customizeLabel"
+      [color]="tooltipColor"
+    ></dxo-tooltip>
     <!-- <dxo-size [width]="300"></dxo-size> -->
     <dxo-legend
       verticalAlignment="bottom"
@@ -52,5 +48,7 @@
       itemTextPosition="right"
     ></dxo-legend>
   </dx-pie-chart>
-  <div class="pie-chart-total">Total: {{ totalSum.toFixed(1) }} Kilotonnes​ </div>
+  <div class="pie-chart-total">
+    Total: {{ totalSum.toFixed(1) }} Kilotonnes​
+  </div>
 </div>

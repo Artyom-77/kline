@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-pie-chart-split-by-viscosity-grade',
@@ -21,8 +22,12 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
   public yearList: any[] = [];
   public tooltipColor: any;
   public totalSum: number = 0;
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
 
   ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
     this.chartData.map((data: any) => {
       if (!this.BSTypeList.includes(data.Sector)) {
         if (data.Sector === 'PCMO' || data.Sector === 'HDMO') {
@@ -65,11 +70,11 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
       },
       []
     );
-    this.totalSum = 0
+    this.totalSum = 0;
 
-    this.mergedObj.map(item => {
-      this.totalSum +=  item.SumofValues
-    })
+    this.mergedObj.map((item) => {
+      this.totalSum += item.SumofValues;
+    });
   }
 
   toggleBSTypeDropdown() {
@@ -83,11 +88,11 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
     this.selectedBSType = option;
     this.viscosityGradeChartData = this.chartData.filter(
       (item: any) =>
-      item.Sector == this.selectedBSType &&
-      item.ViscosityGrade == this.selectedViscosityGrade &&
-      item.Year === this.selectedYear &&
-      item.mainColumn ===
-        'Share of basestock in total synthetic basestock demand (%)'
+        item.Sector == this.selectedBSType &&
+        item.ViscosityGrade == this.selectedViscosityGrade &&
+        item.Year === this.selectedYear &&
+        item.mainColumn ===
+          'Share of basestock in total synthetic basestock demand (%)'
     );
     this.mergedObj = this.viscosityGradeChartData.reduce(
       (accumulator, current) => {
@@ -104,12 +109,11 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
       },
       []
     );
-    this.totalSum = 0
+    this.totalSum = 0;
 
-    this.mergedObj.map(item => {
-      this.totalSum +=  item.SumofValues
-    })
-
+    this.mergedObj.map((item) => {
+      this.totalSum += item.SumofValues;
+    });
   }
 
   toggleViscosityGradeOption(option: string): void {
@@ -137,12 +141,11 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
       },
       []
     );
-    this.totalSum = 0
+    this.totalSum = 0;
 
-    this.mergedObj.map(item => {
-      this.totalSum +=  item.SumofValues
-    })
-
+    this.mergedObj.map((item) => {
+      this.totalSum += item.SumofValues;
+    });
   }
 
   toggleYearDropdown() {
@@ -174,11 +177,10 @@ export class PieChartSplitByViscosityGradeComponent implements OnInit {
       },
       []
     );
-    this.totalSum = 0
-    this.mergedObj.map(item => {
-      this.totalSum +=  item.SumofValues
-    })
-
+    this.totalSum = 0;
+    this.mergedObj.map((item) => {
+      this.totalSum += item.SumofValues;
+    });
   }
 
   customizeLabel(arg: any) {

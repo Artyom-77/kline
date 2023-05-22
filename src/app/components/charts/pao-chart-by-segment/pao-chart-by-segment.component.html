@@ -3,17 +3,26 @@
     id="chart12"
     title="PAO Demand Split by Segment (Kilotonnes)"
     [dataSource]="mergedObj"
-    palette="Dark Violet"
+    [palette]="customPalette"
     paletteExtensionMode="blend"
   >
-    <dxi-series valueField="SumofValues" argumentField="Year" name="Segment"></dxi-series>
-    <dxi-series valueField="SumofValues" argumentField="Year" name="Segment" ></dxi-series>
-    <dxi-series valueField="SumofValues" argumentField="Year" name="Segment"></dxi-series>
+    <dxi-series
+      valueField="SumofValues"
+      argumentField="Year"
+      name="Segment"
+    ></dxi-series>
+    <dxi-series
+      valueField="SumofValues"
+      argumentField="Year"
+      name="Segment"
+    ></dxi-series>
+    <dxi-series
+      valueField="SumofValues"
+      argumentField="Year"
+      name="Segment"
+    ></dxi-series>
 
-    <dxo-common-series-settings
-      argumentField="Segment"
-      type="stackedBar"
-    >
+    <dxo-common-series-settings argumentField="Segment" type="stackedBar">
     </dxo-common-series-settings>
     <dxo-legend
       verticalAlignment="bottom"
@@ -22,9 +31,9 @@
     >
     </dxo-legend>
     <dxo-tooltip
-    [enabled]="true"
-    [contentTemplate]="customizeLabel"
-  ></dxo-tooltip>
+      [enabled]="true"
+      [contentTemplate]="customizeLabel"
+    ></dxo-tooltip>
     <!-- <dxo-export [enabled]="true"></dxo-export> -->
     <!-- <dxo-tooltip
           [enabled]="true"

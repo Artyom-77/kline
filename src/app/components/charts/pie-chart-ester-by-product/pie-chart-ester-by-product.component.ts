@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-pie-chart-ester-by-product',
@@ -13,8 +14,12 @@ export class PieChartEsterByProductComponent implements OnInit {
   public selectedSinteticEster?: string = 'Polyol';
   public sinteticEsterList: any[] = [];
   public totalSum: number = 0;
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
 
   ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
     this.chartData.map((data: any) => {
       if (!this.sinteticEsterList.includes(data.sinteticEster)) {
         this.sinteticEsterList.push(data.sinteticEster);

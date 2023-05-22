@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-pie-chart-by-product',
@@ -15,7 +16,13 @@ export class PieChartByProductComponent implements OnInit {
   public tooltipColor: any;
   public totalSum: number = 0;
 
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
+
   ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
+
     this.chartData.map((data: any) => {
       if (!this.yearList.includes(data.Year)) {
         this.yearList.push(data.Year);
@@ -39,11 +46,11 @@ export class PieChartByProductComponent implements OnInit {
       }
       return accumulator;
     }, []);
-    this.totalSum = 0
+    this.totalSum = 0;
 
-    this.mergedObj.map(item => {
-      this.totalSum +=  item.SumofValues
-    })
+    this.mergedObj.map((item) => {
+      this.totalSum += item.SumofValues;
+    });
   }
 
   toggleYearDropdown() {
@@ -70,14 +77,13 @@ export class PieChartByProductComponent implements OnInit {
       }
       return accumulator;
     }, []);
-    this.totalSum = 0
-    this.mergedObj.map(item => {
-      this.totalSum +=  item.SumofValues
-    })
+    this.totalSum = 0;
+    this.mergedObj.map((item) => {
+      this.totalSum += item.SumofValues;
+    });
   }
 
   customizeLabel(arg: any) {
-
     this.tooltipColor = arg.point.getColor();
     return `${arg.argumentText}: ${arg.percentText}`;
   }

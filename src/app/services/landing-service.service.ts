@@ -102,7 +102,7 @@ export class LandingServiceService {
       ],
     },
   ];
-
+  public customPalette: string[] = ['#3f3f3f', '#df7b2e', '#00235d', '#008083'];
   public infoTabData: any[] = [
     {
       id: 1,
@@ -160,17 +160,17 @@ export class LandingServiceService {
     {
       id: 1,
       name: 'Reports & Presentations',
-      path:'insights'
+      path: 'insights',
     },
     {
       id: 2,
       name: 'Quarterly Newsletters',
-      path: 'insights'
+      path: 'insights',
     },
     {
       id: 3,
       name: 'Webinars',
-      path:'insights'
+      path: 'insights',
     },
   ];
 

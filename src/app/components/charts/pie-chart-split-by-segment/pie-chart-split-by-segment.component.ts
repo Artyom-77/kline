@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
   selector: 'app-pie-chart-split-by-segment',
@@ -22,8 +23,12 @@ export class PieChartSplitBySegmentComponent {
   public yearList: any[] = [];
   public tooltipColor: any;
   public totalSum: number = 0;
+  public customPalette: string[] = [];
+
+  constructor(private mainService: LandingServiceService) {}
 
   ngOnInit(): void {
+    this.customPalette = this.mainService.customPalette;
     this.chartData.map((data: any) => {
       if (
         !this.BSTypeList.includes(data.BSType) &&
@@ -61,10 +66,10 @@ export class PieChartSplitBySegmentComponent {
       },
       []
     );
-    this.totalSum = 0
+    this.totalSum = 0;
     this.mergedObj.map((item: any) => {
-      this.totalSum +=  item.SumofValues
-    })
+      this.totalSum += item.SumofValues;
+    });
   }
 
   toggleBSTypeDropdown() {
@@ -96,10 +101,10 @@ export class PieChartSplitBySegmentComponent {
       },
       []
     );
-    this.totalSum = 0
+    this.totalSum = 0;
     this.mergedObj.map((item: any) => {
-      this.totalSum +=  item.SumofValues
-    })
+      this.totalSum += item.SumofValues;
+    });
   }
 
   toggleYearDropdown() {
@@ -130,10 +135,10 @@ export class PieChartSplitBySegmentComponent {
       },
       []
     );
-    this.totalSum = 0
+    this.totalSum = 0;
     this.mergedObj.map((item: any) => {
-      this.totalSum +=  item.SumofValues
-    })
+      this.totalSum += item.SumofValues;
+    });
   }
 
   customizeLabel(arg: any) {
