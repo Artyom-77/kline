@@ -47,4 +47,10 @@
       font-weight: 500;
     }
   }
+  &.active {
+    .btn {
+      background: $orange;
+      color: #f7f7f7;
+    }
+  }
 }

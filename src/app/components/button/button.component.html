@@ -1,5 +1,7 @@
-<div class="btn-wrapper">
-  <button class="btn" [class]="type">
+<div class="btn-wrapper" [ngClass]="{
+  'active' : isActive
+}">
+  <button class="btn" [class]="type" >
     <img *ngIf="icon" [src]="iconName" alt="icon" />
     {{ btnText }}
   </button>

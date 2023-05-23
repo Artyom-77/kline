@@ -28,7 +28,30 @@ export class MaterialBalanceRrboComponent implements OnInit {
   public disposalChartTotal: number = 0;
   public refiningChartTotal: number = 0;
   public customPalette: string[] = [];
-
+  public unitList: any[] = [
+    {
+      id: 1,
+      label: 'KTPA',
+    },
+    {
+      id: 2,
+      label: 'B/D',
+    },
+  ];
+  public yearList: any[] = [
+    {
+      id: 1,
+      label: 2021,
+    },
+    {
+      id: 2,
+      label: 2022,
+    },
+    {
+      id: 3,
+      label: 2023,
+    },
+  ];
   constructor(
     private service: RrboService,
     private mainService: LandingServiceService
@@ -90,6 +113,8 @@ export class MaterialBalanceRrboComponent implements OnInit {
       }
     });
   }
+  handleUnitChange(arg: any) {}
+  handleYearChange(arg: any) {}
 
   customizeLabel(arg: any) {
     return `${arg.argumentText}: ${arg.percentText}`;

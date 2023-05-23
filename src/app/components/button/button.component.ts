@@ -9,5 +9,6 @@ export class ButtonComponent {
   @Input() btnText?: string;
   @Input() type?: string;
   @Input() icon?: boolean;
+  @Input() isActive?: boolean;
   @Input() iconName?: string;
 }

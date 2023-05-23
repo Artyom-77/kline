@@ -30,6 +30,7 @@
         [type]="'secondary'"
         [icon]="false"
         [iconName]="''"
+        [isActive]="getSelectedPaoMainTab() === 1 ? true : false"
         (click)="setSelectedPaoMainTab(1)"
       ></app-button>
       <app-button
@@ -37,6 +38,7 @@
         [type]="'secondary'"
         [icon]="false"
         [iconName]="''"
+        [isActive]="getSelectedPaoMainTab() === 2 ? true : false"
         (click)="setSelectedPaoMainTab(2)"
       ></app-button>
     </div>
@@ -48,6 +50,7 @@
         [type]="'secondary small'"
         [icon]="false"
         [iconName]="'../../../assets/images/demand.png'"
+        [isActive]="selectedTab === 1 ? true : false"
         (click)="selectedTab = 1"
       ></app-button>
       <app-button
@@ -55,6 +58,7 @@
         [type]="'secondary small'"
         [icon]="false"
         [iconName]="''"
+        [isActive]="selectedTab === 2 ? true : false"
         (click)="selectedTab = 2"
       ></app-button>
       <app-button
@@ -62,6 +66,7 @@
         [type]="'secondary small'"
         [icon]="false"
         [iconName]="''"
+        [isActive]="selectedTab === 3 ? true : false"
         (click)="selectedTab = 3"
       ></app-button>
     </div>

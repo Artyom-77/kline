@@ -1,17 +1,38 @@
 <div class="chart">
-  <!-- <h3 class="title">Sustainability Measures</h3> -->
+  <h3 class="title">Sustainability Measures</h3>
   <div class="list">
     <dx-bar-gauge
       id="gauge1"
-      title="Sustainability Measures"
+
       [startValue]="0"
       [endValue]="100"
-      [values]="dataValues"
-      [palette]="customPalette"
+      [values]="dataValues[0]"
+      [palette]="customPalette1"
       paletteExtensionMode="blend"
-      [size]="{ width: 500 }"
+      [size]="{ width: 400 }"
     >
-      <dxo-label [indent]="10" [customizeText]="customizeText"
+      <dxo-label [visible]="false" [indent]="10" [customizeText]="dataValues[0].value"
+        >
+      </dxo-label>
+      <dxo-legend
+        [visible]="true"
+        verticalAlignment="bottom"
+        horizontalAlignment="center"
+        itemTextPosition="right"
+        [customizeText]="customizeText1"
+      ></dxo-legend>
+    </dx-bar-gauge>
+    <dx-bar-gauge
+      id="gauge1"
+
+      [startValue]="0"
+      [endValue]="100"
+      [values]="dataValues[1]"
+      [palette]="customPalette2"
+      paletteExtensionMode="blend"
+      [size]="{ width: 400 }"
+    >
+      <dxo-label [indent]="10" [visible]="false" [customizeText]="customizeText"
         ><dxo-format type="fixedPoint" [precision]="1"></dxo-format>
       </dxo-label>
       <dxo-legend
@@ -22,6 +43,28 @@
         [customizeText]="customizeText1"
       ></dxo-legend>
     </dx-bar-gauge>
+    <dx-bar-gauge
+      id="gauge1"
+
+      [startValue]="0"
+      [endValue]="100"
+      [values]="dataValues[2]"
+      [palette]="customPalette3"
+      paletteExtensionMode="blend"
+      [size]="{ width: 400 }"
+    >
+      <dxo-label [indent]="10" [visible]="false" [customizeText]="customizeText"
+        ><dxo-format type="fixedPoint" [precision]="1"></dxo-format>
+      </dxo-label>
+      <dxo-legend
+        [visible]="true"
+        verticalAlignment="bottom"
+        horizontalAlignment="center"
+        itemTextPosition="right"
+        [customizeText]="customizeText1"
+      ></dxo-legend>
+    </dx-bar-gauge>
+
   </div>
   <p>{{ text }}</p>
 </div>

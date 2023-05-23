@@ -1,9 +1,14 @@
 .material-balance-tab {
   padding: 20px;
-  .dropdowns {
+  &-filters {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    .dropdowns {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
   }
   .material-balance-tab-body {
     .pie-charts {

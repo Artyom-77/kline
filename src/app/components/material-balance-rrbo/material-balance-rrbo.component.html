@@ -14,6 +14,27 @@
         (itemEvent)="handleCountryChange($event)"
         [firstItemSelected]="true"
       ></app-select-dropdown>
+      <app-select-dropdown
+      [dropdownTitle]="'Year'"
+      [dropdownData]="yearList"
+      (itemEvent)="handleYearChange($event)"
+      [firstItemSelected]="false"
+    ></app-select-dropdown>
+      <app-select-dropdown
+        [dropdownTitle]="'Unit'"
+        [dropdownData]="unitList"
+        (itemEvent)="handleUnitChange($event)"
+        [firstItemSelected]="false"
+      ></app-select-dropdown>
+
+    </div>
+    <div class="action">
+      <app-button
+        [btnText]="'Download'"
+        [type]="'icon secondary'"
+        [icon]="false"
+        [iconName]="''"
+      ></app-button>
     </div>
   </div>
   <div class="material-balance-tab-body" *ngIf="selectedCountry">

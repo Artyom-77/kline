@@ -44,6 +44,7 @@ export class PaoDemandComponent implements OnInit {
               width: 50,
               dataField: 'Segment',
               area: 'row',
+              allowSorting: false,
             },
             {
               caption: 'Lubricant Product',
@@ -54,14 +55,17 @@ export class PaoDemandComponent implements OnInit {
               caption: 'Viscosity Grade/Product',
               dataField: 'Products',
               area: 'row',
+              allowSorting: false,
             },
             {
               dataField: 'Region',
               area: 'filter',
+              allowSorting: false,
             },
             {
               dataField: 'Unit',
               area: 'filter',
+              allowSorting: false,
             },
             {
               dataField: 'mainColumn',
@@ -69,6 +73,7 @@ export class PaoDemandComponent implements OnInit {
               area: 'column',
               expanded: true,
               showTotals: false,
+
             },
             {
               dataField: 'Year',
@@ -123,7 +128,9 @@ export class PaoDemandComponent implements OnInit {
     this.openModal = false;
     document.querySelector('.kline-app')?.classList.remove('fixed');
   }
+
   onFocusedCellChanging(e: any) {
     e.isHighlighted = true;
   }
+
 }

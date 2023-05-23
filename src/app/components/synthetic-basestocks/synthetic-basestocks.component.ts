@@ -1,8 +1,6 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { SyntheticBasestocksService } from 'src/app/services/synthetic-basestocks/synthetic-basestocks.service';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Location } from '@angular/common';
 import { PaoData } from 'src/app/types/types';
 
 @Component({
@@ -11,6 +9,7 @@ import { PaoData } from 'src/app/types/types';
   styleUrls: ['./synthetic-basestocks.component.scss'],
 })
 export class SyntheticBasestocksComponent implements OnInit, OnChanges {
+  @Input() selectedTab: any = 1;
   public dataSource: any = {
     fields: [],
     store: <PaoData>[],
@@ -23,27 +22,20 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   public modalDummyData: any[] = [];
   public chartData: any;
   showRowFields = true;
-  @Input() selectedTab: any = 1;
   showColumnFields = true;
   showFilterFields = true;
   myParam: string;
   constructor(
     private service: SyntheticBasestocksService,
     private http: HttpClient,
-    private router: Router,
-    private route: ActivatedRoute,
-    private location: Location
   ) {
     this.modalDummyData = service.modalData;
   }
 
   ngOnInit() {
-    console.log('001');
     this.http
       .get('../../../assets/json/synteticTabularTabledata.json')
       .subscribe((data) => {
-        // this.chartData = data;
-        console.log('002');
         this.dataSource = {};
         this.dataSource = {
           fields: [
@@ -52,6 +44,7 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
               width: 50,
               dataField: 'Segment',
               area: 'row',
+              allowSorting: false,
             },
             {
               caption: 'Lubricant Product',
@@ -62,29 +55,25 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
               caption: 'Viscosity Grade/Product',
               dataField: 'ViscosityGrade',
               area: 'row',
+              allowSorting: false,
             },
             {
               dataField: 'Region',
               area: 'filter',
-              // filterValues: ['Region'],
+              allowSorting: false,
             },
             {
               dataField: 'Year',
               area: 'filter',
-              // filterValues: ['Region'],
             },
             {
               dataField: 'Unit',
               area: 'filter',
+              allowSorting: false,
               filterType: {
                 showAll: false,
                 type: 'radio',
               },
-              // filterType: 'radio',
-              // onCustomize: this.customizeCountryField
-              // filterType: "exclude",
-              // filterValues: [['B/D'], ['KTPA']],
-              // filterValues: ['Region'],
             },
             {
               dataField: 'mainColumn',
@@ -116,9 +105,7 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
           ],
           store: data,
         };
-        console.log('003', this.dataSource);
       });
-    // this.selectedMainTab = history.state.data;
   }
 
   openRecipeModal() {
