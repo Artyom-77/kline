@@ -105,7 +105,7 @@
   </div>
   <div class="bio-basestocks-body">
     <div class="bio-basestocks-body-tabs-content">
-      <div class="bio-basestocks-body-tabs">
+      <!-- <div class="bio-basestocks-body-tabs">
         <div class="grid-area">
           <div class="div_1">
             <div
@@ -127,15 +127,6 @@
                   fill="#D9D9D9"
                 />
               </svg>
-              <!-- <svg class="text-svg" style="float:left; max-width:800px; max-height:600px;" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path id="SunCatcherStudio" fill="none" stroke="#000000" d="m 31.233725,97.494818 c 0,0 61.574343,-56.261093 168.766275,-56.261093 121.84084,0 168.76627,56.261093 168.76627,56.261093" style="
-                    stroke: none;
-                    width: 0px;
-                    display: block;
-                "></path>
-
-  <text _ngcontent-qdo-c1="" font-size="22" fill="#000000" letter-spacing="2" font-family="montserrat" font-weight="bold" ><textPath _ngcontent-qdo-c1="" xlink:href="#SunCatcherStudio" side="left" startOffset="100">CERTIFICATION PROGRAM</textPath></text>
-                </svg> -->
             </div>
           </div>
           <div class="div_2">
@@ -219,9 +210,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="bio-basestocks-body-details">
+      <!-- <div class="bio-basestocks-body-details">
         <div class="bio-basestocks-body-country-name">
           <h1>{{ curent_data.name }}</h1>
         </div>
@@ -229,7 +220,8 @@
           [selectedTabName]="selectedTab"
           [bioData]="curent_data"
         ></app-bio-tabs>
-      </div>
+      </div> -->
+      <app-wall-tabs [wallType]="'countries'" [wallData]='curent_data'></app-wall-tabs>
     </div>
     <h3 class="timeline-title">
       TIMELINE- Bio-lubricants Policy Changes in {{ curent_data.name }}

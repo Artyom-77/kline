@@ -54,6 +54,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {}
 
   onOutclick() {
+    console.log('this.dropdownOpen',this.dropdownOpen)
     if (this.dropdownOpen === true) {
       this.dropdownOpen = false;
     }
@@ -62,7 +63,7 @@ export class HeaderComponent implements OnInit {
   onItemClick(event: any, id: any) {
     if (id === 2 || id === 3) {
       this.navId = id;
-      this.dropdownOpen = true;
+      this.dropdownOpen = !this.dropdownOpen;
     }
     // const path = event.itemData.path;
     if (event) {
