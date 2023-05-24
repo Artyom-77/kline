@@ -8,6 +8,12 @@
       </div>
 
       <div class="socials">
+        <div class="">
+          <a>Contact Us</a>
+        </div>
+        <div class="">
+          <a>FAQ</a>
+        </div>
         <div>
           <img src="../../../assets/images/twitter.svg" alt="icon" />
         </div>
@@ -21,11 +27,11 @@
     </div>
 
     <div class="navigation" outclick (outclick)="onOutclick()" >
-      <div>
+      <div class="subtitle">
         <span>Basestock Intelligence Center</span>
       </div>
 
-      <ul>
+      <ul *ngIf="location.path() !== ''">
         <li
           *ngFor="let item of navigationItems"
           (click)="onItemClick(item.path, item.id)"

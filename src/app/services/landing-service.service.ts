@@ -10,8 +10,8 @@ export class LandingServiceService {
   public coveragesList: any[] = [
     {
       id: uuidv4(),
-      title: 'Market Fundamentals',
-      subtitle: 'Group I, II, III, Naphthenic',
+      title: 'Conventional Market Fundamentals',
+      // subtitle: 'Group I, II, III, Naphthenic',
       list: [
         {
           itemId: uuidv4(),
@@ -42,8 +42,8 @@ export class LandingServiceService {
     },
     {
       id: uuidv4(),
-      title: 'Market Fundamentals',
-      subtitle: 'Group III/III+, IV, and V',
+      title: 'Synthetic Market Fundamentals',
+      // subtitle: 'Group III/III+, IV, and V',
       list: [
         {
           itemId: uuidv4(),
@@ -124,10 +124,16 @@ export class LandingServiceService {
     },
     {
       id: 4,
-      name: 'Competitive Landscape',
-      path: 'supplier-profiles',
+      name: 'RRBO Capacity Map',
+      path: 'rrbo',
       selectedTab: 2,
     },
+    // {
+    //   id: 4,
+    //   name: 'Competitive Landscape',
+    //   path: 'supplier-profiles',
+    //   selectedTab: 2,
+    // },
   ];
   public infoTabMapsData: any[] = [
     {

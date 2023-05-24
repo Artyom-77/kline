@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
 import { LandingServiceService } from 'src/app/services/landing-service.service';
 
@@ -7,7 +8,7 @@ import { LandingServiceService } from 'src/app/services/landing-service.service'
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnChanges {
   // @Input() myProp: string | undefined;
   public dropdownOpen: boolean = false;
   public navId: any;
@@ -34,24 +35,32 @@ export class HeaderComponent implements OnInit {
     //   text: 'Insights',
     //   id: 4,
     // },
-    {
-      path: '/contant-us',
-      text: 'Contact Us',
-      id: 5,
-    },
-    {
-      path: '/faq',
-      text: 'FAQ',
-      id: 6,
-    },
+    // {
+    //   path: '/contant-us',
+    //   text: 'Contact Us',
+    //   id: 5,
+    // },
+    // {
+    //   path: '/faq',
+    //   text: 'FAQ',
+    //   id: 6,
+    // },
   ];
-
-  constructor(private router: Router, private service: LandingServiceService) {
+public pathname : any
+  constructor(private router: Router, private service: LandingServiceService, public location : Location) {
     this.coveragesList = service.coveragesList
     // this.marketList = service.coveragesList.filter((item, index) => index == 3);
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.pathname = this.location.path();
+    console.log('this.location',this.location.path());
+
+  }
+  ngOnChanges(): void {
+    this.pathname = this.location.path();
+    console.log('this.location',this.location.path());
+  }
 
   onOutclick() {
     console.log('this.dropdownOpen',this.dropdownOpen)

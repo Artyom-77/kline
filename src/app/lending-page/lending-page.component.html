@@ -11,36 +11,12 @@
           </h3>
         </div>
         <div class="hero-section-background">
-          <!-- <img src="../../assets/images/bg-image.png" alt="bg" /> -->
-          <!-- <dx-gallery
-            [dataSource]="slides"
-            [slideshowDelay]="0"
-            [loop]="true"
-            [width]="600"
-            [height]="500"
-            [showNavButtons]="true"
-            [showIndicator]="false"
-          >
-            <div class="slider" *dxTemplate="let item of 'item'">
-              <img [src]="item.imageUrl" [alt]="item.caption" />
-              <div class="slider-name">
-                <h3>{{ item.caption }}</h3>
-                <span class="asd">{{ item.desc }}</span>
-              </div>
-            </div>
-          </dx-gallery> -->
-          <!-- <div class="line-up">
-            <img src="../../assets/images/hero-line-up.svg" alt="bg" />
-          </div>
-          <div class="line-down">
-            <img src="../../assets/images/hero-line-down.svg" alt="bg" />
-          </div> -->
           <app-wall-tabs [wallType]="'coverage'" [wallData]='coveragesList'></app-wall-tabs>
         </div>
       </div>
     </div>
     <div class="info-section">
-      <div class="item search-item" >
+      <!-- <div class="item search-item" >
         <div class="search-bar">
           <div class="serach-input">
             <input type="text" placeholder="Search in Data Visualization, Maps and Databases" />
@@ -60,22 +36,15 @@
             </svg>
           </div>
         </div>
-      </div>
-      <div class="main-infos">
-        <app-info-tab
-          [enableSearch]="true"
-          [title]="'Browse by Data Visualization'"
-          [type]="'primary'"
-          [infoData]="infoTabData"
-        ></app-info-tab>
-        <app-info-tab
-          [enableSearch]="false"
-          [title]="'Find in Our Maps and Databases'"
-          [type]="'primary'"
-          [infoData]="infoTabMapsData"
-        ></app-info-tab>
-      </div>
+      </div> -->
+
       <div class="kline-content-info">
+        <app-info-tab
+        [enableSearch]="false"
+        [title]="'Other Kline Content'"
+        [type]="'secondary'"
+        [infoData]="infoSecondaryTabData"
+      ></app-info-tab>
         <div class="our-coverage">
           <div class="title-section">
             <h3 class="kline-insigts-title">Featured</h3>
@@ -271,12 +240,21 @@
             </div>
           </div>
         </div>
+
+      </div>
+      <div class="main-infos">
         <app-info-tab
-          [enableSearch]="false"
-          [title]="'See Also Our Kline Content'"
-          [type]="'secondary'"
-          [infoData]="infoSecondaryTabData"
+          [enableSearch]="true"
+          [title]="'Quick Links'"
+          [type]="'primary'"
+          [infoData]="infoTabData"
         ></app-info-tab>
+        <!-- <app-info-tab
+          [enableSearch]="false"
+          [title]="'Find in Our Maps and Databases'"
+          [type]="'primary'"
+          [infoData]="infoTabMapsData"
+        ></app-info-tab> -->
       </div>
     </div>
     <!-- <div class="our-coverage">

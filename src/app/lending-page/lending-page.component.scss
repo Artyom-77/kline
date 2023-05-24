@@ -4,7 +4,7 @@
 
 .lending-page-content {
   .lending-page {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     overflow-x: hidden;
     margin-top: 150px;
 
@@ -67,7 +67,8 @@
 
         &-background {
           position: relative;
-
+          width: 100%;
+          max-width: 1440px;
           ::ng-deep {
             .dx-gallery-nav-button-prev {
               &::before {
@@ -213,9 +214,9 @@
         }
       }
       .main-infos {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(200px, 500px));
-        grid-gap: 24px;
+        // display: grid;
+        // grid-template-columns: repeat(2, minmax(200px, 500px));
+        // grid-gap: 24px;
 
         @include md {
           grid-template-columns: 1fr;
@@ -224,15 +225,25 @@
 
       .kline-content-info {
         display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
+        grid-template-columns: 500px 1fr;
+        grid-gap: 20px;
+        // justify-items: center;
         background: #3e3e3e;
         padding: 0;
         margin-top: 24px;
         align-items: center;
         margin-left: -20px;
         margin-right: -20px;
-        padding: 48px 20px;
+        padding: 48px 0;
+
+        // display: grid;
+        // grid-template-columns: 500px 1fr;
+        // background: #3e3e3e;
+        // padding: 0 0 48px;
+        // margin-top: 24px;
+        // align-items: center;
+        // margin-left: -20px;
+        // margin-right: -20px;
 
         .our-coverage {
           .title-section {
@@ -241,7 +252,7 @@
             justify-content: center;
 
             .kline-insigts-title {
-              margin: 0px 16px 16px;
+              margin: 16px;
               font-style: normal;
               font-weight: 700;
               font-size: 24px;

@@ -11,22 +11,22 @@ export class FooterComponent {
 
 
   public navigationItems = [
-    {
-      path: '/',
-      text: 'Home'
-    },
+    // {
+    //   path: '/',
+    //   text: 'Home'
+    // },
     {
       path: '/our-coverage',
       text: 'Our Coverage'
     },
-    {
-      path: '/market-watch',
-      text: 'Market Watch'
-    },
-    {
-      path: '/insights',
-      text: 'Insights'
-    }
+    // {
+    //   path: '/market-watch',
+    //   text: 'Market Watch'
+    // },
+    // {
+    //   path: '/insights',
+    //   text: 'Insights'
+    // }
   ]
 
   onItemClick(event: any) {

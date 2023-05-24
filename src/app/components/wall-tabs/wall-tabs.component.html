@@ -1,9 +1,78 @@
 <div class="wall-section" [ngClass]="{
-  'coverage': wallType === 'coverage'
+  'coverage': wallType === 'coverage',
+  'coverage-closed': wallType === 'coverage' && selectedTab !== 5,
+  'coverage-opened': wallType === 'coverage' && (selectedTab === 5 || selectedTab === 1 || selectedTab === 3),
+  'coverage-left': wallType === 'coverage' && ( selectedTab === 2 || selectedTab === 0)
 }">
-  <div class="wall-desc" *ngIf="wallType === 'coverage'" [ngClass]="{
-    'hide': selectedTab === 0 || selectedTab === 2 || selectedTab === 5,
-  }">
+  <div class="wall-area">
+    <div class="wall">
+      <div
+        class="wall-area"
+        *ngFor="let item of coveragesList; let i = index"
+        (click)="openDetails(item, i)"
+      >
+        <div class="wall-card">
+          <h3>{{ item.title || item.name }}</h3>
+          <p *ngIf="item.subtitle">{{ item.subtitle }}</p>
+        </div>
+        <div
+          class="tab content1"
+          *ngIf="
+            selectedTab === i || (selectedTab === 5 && wallType === 'countries')
+          "
+          [ngClass]="{
+          'content1': selectedTab === 0 || (selectedTab === 5 && i === 0),
+          'content2': selectedTab === 1 || (selectedTab === 5 && i === 1),
+          'content3': selectedTab === 2 || (selectedTab === 5 && i === 2),
+          'content4': selectedTab === 3 || (selectedTab === 5 && i === 3),
+        }"
+        >
+          <div class="list" *ngIf="wallType === 'countries'">
+            <div class="list-item text">
+              <p>{{ item.text }}</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab content1"
+          *ngIf="
+            selectedTab === i || (selectedTab === 5 && wallType === 'coverage')
+          "
+          [ngClass]="{
+          'content1': selectedTab === 0 || (selectedTab === 5 && i === 0),
+          'content2': selectedTab === 1 || (selectedTab === 5 && i === 1),
+          'content3': selectedTab === 2 || (selectedTab === 5 && i === 2),
+          'content4': selectedTab === 3 || (selectedTab === 5 && i === 3),
+        }"
+        >
+          <div class="list" *ngFor="let elem of item.list">
+            <div class="list-item">
+              <a [routerLink]="elem.path"> {{ elem.name }} </a>
+            </div>
+          </div>
+        </div>
+        <!--
+      <div class="tab" *ngIf="selectedTab === 5" >
+        <div class="list" *ngFor="let elem of item.list">
+         <div class="list-item">
+           <a [routerLink]="elem.path"> {{ elem.name }} </a>
+         </div>
+        </div>
+       </div> -->
+      </div>
+
+      <div class="circle">
+        <h3 (click)="openDetails(coveragesList, 5)">
+          {{ wallType === "countries" ? wallData.name : "EXPLORE" }}
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="wall-desc" *ngIf="wallType === 'coverage'"
+  >
+  <!-- [ngClass]="{
+    'hide': selectedTab === 1 || selectedTab === 3 || selectedTab === 5,
+  }" -->
     <p class="desc">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime obcaecati
       dignissimos odio. Modi ipsa fuga exercitationem ipsam, amet nostrum?
@@ -13,67 +82,4 @@
       accusantium eligendi!
     </p>
   </div>
-  <div class="wall">
-    <div
-      class="wall-area"
-      *ngFor="let item of coveragesList; let i = index"
-      (click)="openDetails(item, i)"
-    >
-      <div class="wall-card">
-        <h3>{{ item.title || item.name }}</h3>
-        <p *ngIf="item.subtitle">{{ item.subtitle }}</p>
-      </div>
-      <div
-        class="tab content1"
-        *ngIf="
-          selectedTab === i || (selectedTab === 5 && wallType === 'countries')
-        "
-        [ngClass]="{
-        'content1': selectedTab === 0 || (selectedTab === 5 && i === 0),
-        'content2': selectedTab === 1 || (selectedTab === 5 && i === 1),
-        'content3': selectedTab === 2 || (selectedTab === 5 && i === 2),
-        'content4': selectedTab === 3 || (selectedTab === 5 && i === 3),
-      }"
-      >
-        <div class="list" *ngIf="wallType === 'countries'">
-          <div class="list-item text">
-            <p>{{ item.text }}</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="tab content1"
-        *ngIf="
-          selectedTab === i || (selectedTab === 5 && wallType === 'coverage')
-        "
-        [ngClass]="{
-        'content1': selectedTab === 0 || (selectedTab === 5 && i === 0),
-        'content2': selectedTab === 1 || (selectedTab === 5 && i === 1),
-        'content3': selectedTab === 2 || (selectedTab === 5 && i === 2),
-        'content4': selectedTab === 3 || (selectedTab === 5 && i === 3),
-      }"
-      >
-        <div class="list" *ngFor="let elem of item.list">
-          <div class="list-item">
-            <a [routerLink]="elem.path"> {{ elem.name }} </a>
-          </div>
-        </div>
-      </div>
-      <!--
-    <div class="tab" *ngIf="selectedTab === 5" >
-      <div class="list" *ngFor="let elem of item.list">
-       <div class="list-item">
-         <a [routerLink]="elem.path"> {{ elem.name }} </a>
-       </div>
-      </div>
-     </div> -->
-    </div>
-
-    <div class="circle">
-      <h3 (click)="openDetails(coveragesList, 5)">
-        {{ wallType === "countries" ? wallData.name : "EXPLORE" }}
-      </h3>
-    </div>
-  </div>
-
 </div>

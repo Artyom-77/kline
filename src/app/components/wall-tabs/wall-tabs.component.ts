@@ -19,6 +19,7 @@ export class WallTabsComponent implements OnInit {
         this.coveragesList = this.wallData.criterias.filter((item:any,index:any)=>index !== 4)
       } else {
         this.coveragesList = this.wallData
+        this.selectedTab  = 5
       }
   }
   openDetails(item , idx: number) {
