@@ -47,6 +47,15 @@ export class PieChartPagByProductComponent implements OnInit {
     });
   }
 
+  chartTitle: string = "Chart Title";
+
+  disableTitleTooltip() {
+    const chartElement = document.getElementsByClassName("dxp-chart")[0];
+    if (chartElement) {
+      chartElement.setAttribute("title", "");
+    }
+  }
+
   toggleYearDropdown() {
     this.isYearDropdownOpen = !this.isYearDropdownOpen;
   }

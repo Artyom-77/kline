@@ -28,6 +28,7 @@
     [palette]="customPalette"
     paletteExtensionMode="blend"
     [dataSource]="mergedObj"
+    (onTooltipHidden)="disableTitleTooltip()"
   >
     <dxi-series argumentField="product" valueField="value">
       <dxo-small-values-grouping
@@ -39,6 +40,7 @@
       [enabled]="true"
       [contentTemplate]="customizeLabel"
     ></dxo-tooltip>
+    <dxo-title [text]="chartTitle"></dxo-title>
     <dxo-legend
       verticalAlignment="bottom"
       horizontalAlignment="center"

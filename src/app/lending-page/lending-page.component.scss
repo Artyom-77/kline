@@ -148,6 +148,42 @@
     }
     .info-section {
       padding: 20px;
+      .search-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0;
+        border-bottom: 1px solid #3e3e3e;
+        width: 100%;
+        max-width: 1024px;
+        > svg {
+          width: 33px;
+        }
+        padding-bottom: 0;
+        .search-bar {
+          display: flex;
+          align-items: center;
+          min-height: 32px;
+          padding-bottom: 8px;
+          width: 99%;
+          .serach-input {
+            width: 100%;
+            > input {
+              border: none;
+              min-height: 26px;
+              color: #3f3f3f;
+              width: 100%;
+              font-size: 18px;
+              &::placeholder {
+                color: #3f3f3f77;
+              }
+            }
+          }
+          .serach-btn {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
       .main-infos {
         display: grid;
         grid-template-columns: repeat(2, minmax(200px, 500px));

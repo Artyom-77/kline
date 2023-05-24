@@ -1,6 +1,6 @@
 <div class="info-tab" [class]="type">
   <div class="info-tab-body">
-    <div class="item search-item" *ngIf="enableSearch">
+    <!-- <div class="item search-item" *ngIf="enableSearch">
       <div class="search-bar">
         <div class="serach-input">
           <input type="text" placeholder="Search..." />
@@ -20,7 +20,7 @@
           </svg>
         </div>
       </div>
-    </div>
+    </div> -->
     <h3>{{ title }}</h3>
     <div class="info-tab-body-content">
       <div class="item" (click)="onClickA(item)" *ngFor="let item of infoData">
