@@ -8,6 +8,7 @@
   grid-template-columns: 1fr 400px;
   box-shadow: inset 0px 10px 9px rgba(63, 63, 63, 0.06);
   border-bottom: 1px solid rgba(63, 63, 63, 0.1529411765);
+
   // min-height: 168px;
   &-title {
     background: #f7f7f7;
@@ -22,7 +23,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include lg {
+      display: none;
+    }
   }
+
   &-desc {
     max-width: 800px;
     margin: 0 auto;
@@ -33,9 +39,14 @@
     color: #3f3f3f;
     text-align: left;
     padding: 32px 20px;
+
     .subtitle {
       font-size: 20px;
       margin-bottom: 10px;
     }
+  }
+
+  @include lg {
+    grid-template-columns: 1fr;
   }
 }

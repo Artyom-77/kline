@@ -3,14 +3,21 @@
 
 .info-tab {
   max-width: 500px;
-  padding: 20px;
+  // padding: 20px;
   margin-top: 24px;
+
   &-body {
-    > h3 {
+    >h3 {
       font-size: 24px;
       color: #3e3e3e;
+
+      @include lg {
+        font-size: 18px;
+      }
     }
+
     position: relative;
+
     .search-item {
       display: flex;
       justify-content: space-between;
@@ -19,38 +26,47 @@
       position: absolute;
       top: -68px;
       width: 100%;
-      > svg {
+
+      >svg {
         width: 33px;
       }
+
       padding-bottom: 0;
+
       .search-bar {
         display: flex;
         align-items: center;
         min-height: 32px;
         padding-bottom: 8px;
         width: 99%;
+
         .serach-input {
           width: 100%;
-          > input {
+
+          >input {
             border: none;
             min-height: 26px;
             color: #3f3f3f;
             width: 100%;
             font-size: 18px;
+
             &::placeholder {
               color: #3f3f3f77;
             }
           }
         }
+
         .serach-btn {
           width: 20px;
           height: 20px;
         }
       }
     }
+
     &-content {
       padding: 20px 0;
       display: grid;
+
       .item {
         display: flex;
         justify-content: space-between;
@@ -58,9 +74,17 @@
         border-bottom: 1px solid #3e3e3e;
         border-left: 4px solid transparent;
         cursor: pointer;
-        > svg {
+
+        h4 {
+          @include lg {
+            font-size: 14px;
+          }
+        }
+
+        >svg {
           width: 33px;
         }
+
         &:hover {
           border-left: 4px solid $orange;
           background: rgba(63, 63, 63, 0.1529411765);
@@ -68,33 +92,45 @@
       }
     }
   }
+
   &.secondary {
     padding: 0 !important;
+
     .info-tab-body-content {
       background: #3e3e3e;
       color: white !important;
-      padding: 20px;
+      // padding: 20px;
     }
+
     h3 {
-      padding: 20px 20px 4px;
+      margin-top: 40px;
       color: white !important;
     }
+
     svg {
       path {
         fill: white !important;
       }
     }
+
     .serach-input {
-      > input {
+      >input {
         background: #3e3e3e !important;
         color: white !important;
+
         &::placeholder {
           color: white !important;
         }
       }
     }
+
     .item {
       border-bottom-color: white;
     }
+  }
+
+  @include lg {
+    max-width: none;
+    // padding: 0px 20px;
   }
 }
