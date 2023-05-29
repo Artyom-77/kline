@@ -7,7 +7,7 @@
   margin-top: 24px;
 
   &-body {
-    > h3 {
+    >h3 {
       font-size: 24px;
       color: #3e3e3e;
 
@@ -27,7 +27,7 @@
       top: -68px;
       width: 100%;
 
-      > svg {
+      >svg {
         width: 33px;
       }
 
@@ -43,7 +43,7 @@
         .serach-input {
           width: 100%;
 
-          > input {
+          >input {
             border: none;
             min-height: 26px;
             color: #3f3f3f;
@@ -81,7 +81,7 @@
           }
         }
 
-        > svg {
+        >svg {
           width: 33px;
         }
 
@@ -94,8 +94,9 @@
   }
 
   &.secondary {
-    padding: 0 !important;
-    padding-left: 20px !important;
+    padding: 0;
+    padding-left: 20px;
+
     .info-tab-body-content {
       background: #3e3e3e;
       color: white !important;
@@ -114,7 +115,7 @@
     }
 
     .serach-input {
-      > input {
+      >input {
         background: #3e3e3e !important;
         color: white !important;
 
@@ -126,6 +127,10 @@
 
     .item {
       border-bottom-color: white;
+    }
+
+    @include lg {
+      padding: 0 20px;
     }
   }
 

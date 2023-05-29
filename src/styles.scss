@@ -6,6 +6,7 @@
 @import "./assets/scss/variables.scss";
 @import "./assets/scss/_mixins.scss";
 @import "../node_modules/devextreme/dist/css/dx.material.teal.light.compact.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@
   outline: none;
   font-family: $main-font;
 }
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -20,30 +22,37 @@
 
 body {
   overflow-x: hidden;
+
   &::-webkit-scrollbar {
     display: none;
   }
 }
+
 .fixed {
   overflow: hidden;
 }
+
 .circle-svg {
   path {
     &.bg-sec {
       fill: $gray-light !important;
       transition: all 0.3s;
+
       &:hover {
         fill: $orange !important;
-        & + .letter {
+
+        &+.letter {
           fill: white !important;
         }
       }
     }
+
     &.letter {
       fill: white !important;
     }
   }
 }
+
 .pie-chart-total {
   margin-top: 10px;
   background-color: #008083;
@@ -52,6 +61,7 @@ body {
   border-radius: 4px;
   color: #ffffff;
 }
+
 .custom-dropdown {
   position: relative;
   display: inline-block;
@@ -79,6 +89,7 @@ body {
   position: absolute;
   right: 8px;
   top: 15px;
+
   &.rotate {
     transform: rotate(180deg);
   }
@@ -107,6 +118,7 @@ body {
   white-space: unset;
   color: $gray;
   cursor: pointer;
+
   &:hover {
     background-color: $gray-light;
   }
@@ -126,6 +138,7 @@ body {
     transition: all 0.3s ease-in;
     background: #f7f7f7;
     color: $orange;
+
     &:hover {
       background: $orange;
       color: #f7f7f7;

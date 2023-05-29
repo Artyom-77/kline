@@ -1,9 +1,10 @@
 .filters {
   display: flex;
   align-items: flex-end;
-
+  flex-wrap: wrap;
   grid-gap: 10px;
 }
+
 .pie-chart-total {
   margin-top: 10px;
   background-color: #008083;

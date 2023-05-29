@@ -5,6 +5,7 @@
   position: relative;
   display: inline-block;
   margin-right: 16px;
+
   &.date-dropdown {
     // width: 200px;
   }
@@ -37,12 +38,14 @@
   align-items: center;
   z-index: 3;
 
-  > img {
+  >img {
     width: 12px;
+
     &.rotate {
       transform: rotate(180deg);
     }
   }
+
   // margin-left: 5px;
 }
 
@@ -69,6 +72,7 @@
   white-space: unset;
   color: $gray;
   cursor: pointer;
+
   &:hover {
     background-color: $gray-light;
   }

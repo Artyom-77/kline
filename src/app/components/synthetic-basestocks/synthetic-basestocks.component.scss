@@ -36,6 +36,7 @@
       align-items: center;
       max-width: 1440px;
       margin: 0 auto;
+      gap: 20px;
 
       &.tabs {
         .tab {
@@ -120,5 +121,13 @@
         text-align: right;
       }
     }
+  }
+
+  @include md {
+    padding-top: 148px;
+  }
+
+  @include sm {
+    padding-top: 184px;
   }
 }

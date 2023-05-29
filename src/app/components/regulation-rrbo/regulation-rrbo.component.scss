@@ -7,36 +7,53 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .regulations-tabs {
       display: flex;
       align-items: center;
+
       .tab {
         padding: 8px 16px;
         background: $gray-light;
         border-radius: 4px;
         cursor: pointer;
-        > h3 {
+
+        >h3 {
           color: $white;
           font-size: 14px;
           font-weight: 500;
         }
+
         &:last-child {
           margin-left: 8px;
         }
+
         &:hover {
           background: #fdbb89;
         }
+
         &.active {
           background: $orange;
         }
       }
+
+      @include lg {
+        margin-top: 20px;
+      }
+    }
+
+    @include lg {
+      flex-wrap: wrap;
     }
   }
-  regulations-body {
+
+  .regulations-body {
     // .regulations-table {
     padding: 20px;
+
     ::ng-deep {
       .dx-header-row {
+
         // background-color: red !important;
         td {
           display: block !important;
@@ -51,22 +68,27 @@
           &:nth-of-type(odd) {
             background: $gray;
           }
+
           &:nth-of-type(even) {
             background: #fdbb89;
           }
+
           &:nth-of-type(1) {
             background: #5e9d9f;
           }
         }
       }
+
       .dx-datagrid-headers {
         border-bottom: none !important;
       }
+
       .dx-data-row {
         td {
           display: block !important;
           margin: 10px !important;
           border-radius: 4px !important;
+
           &:nth-of-type(1) {
             text-align: center !important;
             font-size: 13px;
@@ -76,39 +98,47 @@
             color: $white;
             background: #5e9d9fbe !important;
           }
+
           &:nth-of-type(2) {
             &:hover {
               background: $gray-light !important;
             }
           }
+
           &:nth-of-type(3) {
             &:hover {
               background: #cf9bd16e;
             }
           }
+
           &:nth-of-type(4) {
             &:hover {
               background: #a0c28a6e;
             }
           }
+
           &:nth-of-type(5) {
             &:hover {
               background: #f5c5a16e;
             }
           }
+
           // }
         }
       }
+
       .dx-row {
         td {
           border-bottom: none !important;
         }
       }
+
       .dx-datagrid-rowsview {
         .dx-row {
           border: none !important;
         }
       }
+
       tr {
         white-space: normal !important;
         display: grid;
@@ -116,6 +146,7 @@
         width: 100%;
       }
     }
+
     // }
   }
 }
