@@ -1,9 +1,15 @@
 @import "../../../../assets/scss/variables.scss";
 @import "../../../../assets/scss/_mixins.scss";
+
 .chart-capacity {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+
+  >div {
+    overflow-x: auto;
+  }
+
   .title {
     margin-bottom: 32px;
     font-size: 18px;
@@ -11,18 +17,22 @@
     // text-align: center;
     margin-top: 15px;
   }
+
   p {
     margin-top: 36px;
     font-size: 16px;
     font-weight: 500;
     color: $gray;
   }
+
   ::ng-deep {
     .dx-freespace-row {
       display: none !important;
       height: 0 !important;
     }
+
     .dx-header-row {
+
       // background-color: red !important;
       td {
         display: block !important;
@@ -45,14 +55,17 @@
         }
       }
     }
+
     .dx-datagrid-headers {
       border-bottom: none !important;
     }
+
     .dx-data-row {
       td {
         display: block !important;
         margin: 10px !important;
         border-radius: 4px !important;
+
         &:nth-of-type(1) {
           text-align: center !important;
           font-size: 13px;
@@ -62,6 +75,7 @@
           color: $white;
           background: rgba(223, 123, 46, 0.5) !important;
         }
+
         // &:nth-of-type(odd) {
         //   &:hover {
         //     background: #f5c5a16e;
@@ -72,11 +86,13 @@
         &:hover {
           background: $gray-light !important;
         }
+
         &:nth-of-type(1) {
           &:hover {
             background: $orange !important;
           }
         }
+
         // &:nth-of-type(2) {
         //   &:hover {
         //     background: $gray-light !important;
@@ -100,6 +116,7 @@
         // }
       }
     }
+
     .dx-row {
       td {
         border-bottom: none !important;
@@ -109,11 +126,13 @@
         align-items: center;
       }
     }
+
     .dx-datagrid-rowsview {
       .dx-row {
         border: none !important;
       }
     }
+
     tr {
       white-space: normal !important;
       display: grid;

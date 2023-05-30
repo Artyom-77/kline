@@ -4,6 +4,7 @@
 .supplier-profiles {
   min-height: calc(100vh - 135px);
   padding-top: 98px;
+
   &-filters {
     padding: 20px;
     max-width: 1440px;
@@ -11,44 +12,68 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .selects {
       display: flex;
       align-items: center;
+
+      @include lg {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 10px;
+
+        >* {
+          margin-bottom: 10px;
+        }
+      }
     }
+
     .actions {
       display: flex;
       align-items: center;
       gap: 16px;
     }
+
+    @include lg {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
+
   &-body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 20px;
+
     .company-card {
       .card-header {
         display: flex;
         align-items: center;
         justify-content: flex-start;
         padding: 20px 0;
+
         // border-bottom: 1px solid $orange;
         &-logo {
           width: 120px;
           height: 120px;
-          > img {
+
+          >img {
             width: 100%;
             height: 100%;
             object-fit: contain;
           }
         }
+
         &-info {
           margin-left: 20px;
+
           .title {
             font-size: 24px;
             font-weight: 600;
             color: $gray;
             margin-bottom: 10px;
           }
+
           .location {
             font-size: 20px;
             font-weight: 500;
@@ -56,11 +81,20 @@
           }
         }
       }
+
       .card-body {
         display: grid;
         grid-gap: 20px;
         // grid-template-columns: 1fr 1fr;
       }
     }
+  }
+
+  @include md {
+    padding-top: 148px;
+  }
+
+  @include sm {
+    padding-top: 184px;
   }
 }
