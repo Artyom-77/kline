@@ -4,6 +4,7 @@
 .blender-database {
   min-height: calc(100vh - 135px);
   padding-top: 98px;
+
   &-filters {
     max-width: 1440px;
     margin: 0 auto;
@@ -11,18 +12,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .filters {
+      @include sm {
+        display: grid;
+        grid-gap: 10px;
+      }
+    }
   }
+
   &-body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 20px;
+
     .map-section {
       max-width: 1230px;
       margin: 0 auto;
       margin-bottom: 24px;
     }
+
     ::ng-deep {
       .dx-header-row {
+
         // display: grid;
         // grid-template-columns: repeat(16, 1fr);
         // // width: 94vw;
@@ -43,20 +55,24 @@
           // }
           // &:nth-of-type(even) {
           background: rgba(63, 63, 63, 0.5);
+
           // }
           &:nth-of-type(1) {
             background: #5e9d9f;
           }
         }
       }
+
       .dx-datagrid-headers {
         border-bottom: none !important;
       }
+
       .dx-data-row {
         td {
           display: block !important;
           margin: 10px 0 !important;
           border-radius: 4px !important;
+
           &:nth-of-type(1) {
             text-align: center !important;
             font-size: 13px;
@@ -66,6 +82,7 @@
             color: $white;
             background: #5e9d9fbe !important;
           }
+
           // &:nth-of-type(odd) {
           //   &:hover {
           //     background: #f5c5a16e;
@@ -76,11 +93,13 @@
           &:hover {
             background: $gray-light !important;
           }
+
           &:nth-of-type(1) {
             &:hover {
               background: $teal !important;
             }
           }
+
           // &:nth-of-type(2) {
           //   &:hover {
           //     background: $gray-light !important;
@@ -104,16 +123,19 @@
           // }
         }
       }
+
       .dx-row {
         td {
           border-bottom: none !important;
         }
       }
+
       .dx-datagrid-rowsview {
         .dx-row {
           border: none !important;
         }
       }
+
       tr {
         white-space: normal !important;
         display: grid;
@@ -122,5 +144,13 @@
         grid-gap: 20px;
       }
     }
+  }
+
+  @include md {
+    padding-top: 148px;
+  }
+
+  @include sm {
+    padding-top: 184px;
   }
 }

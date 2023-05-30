@@ -4,17 +4,33 @@
 .product-properties {
   min-height: calc(100vh - 135px);
   padding-top: 98px;
+
   &-filters {
     max-width: 1440px;
     margin: 0 auto;
     padding: 32px 20px;
+
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
   }
+
   &-body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 20px;
+    overflow-x: auto;
+
+    >* {
+      min-width: 800px;
+    }
+
     ::ng-deep {
       .dx-header-row {
+
         // display: grid;
         // grid-template-columns: repeat(5, 1fr);
         // width: 94vw;
@@ -32,18 +48,22 @@
           width: 100%;
           background: rgba(63, 63, 63, 0.5);
           margin: 10px !important;
+
           &:nth-of-type(1) {
             background: #5e9d9f;
           }
         }
       }
+
       .dx-datagrid-headers {
         border-bottom: none !important;
       }
+
       .dx-data-row {
         td {
           margin: 10px 0 !important;
           border-radius: 4px !important;
+
           &:nth-of-type(1) {
             text-align: center !important;
             font-size: 13px;
@@ -58,11 +78,13 @@
           &:hover {
             background: $gray-light !important;
           }
+
           &:last-of-type {
             &:hover {
               background: transparent !important;
             }
           }
+
           &:nth-of-type(1) {
             &:hover {
               background: $teal !important;
@@ -70,20 +92,31 @@
           }
         }
       }
+
       .dx-row {
         td {
           border-bottom: none !important;
           border-left: 10px solid white;
         }
       }
+
       .dx-datagrid-rowsview {
         .dx-row {
           border: none !important;
         }
       }
+
       tr {
         white-space: normal !important;
       }
     }
+  }
+
+  @include md {
+    padding-top: 148px;
+  }
+
+  @include sm {
+    padding-top: 184px;
   }
 }
