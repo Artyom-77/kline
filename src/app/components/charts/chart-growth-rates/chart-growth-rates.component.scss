@@ -1,6 +1,9 @@
+@import "../../../../assets/scss/variables.scss";
+@import "../../../../assets/scss/mixins.scss";
+
 .filters {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
-
   grid-gap: 10px;
 }

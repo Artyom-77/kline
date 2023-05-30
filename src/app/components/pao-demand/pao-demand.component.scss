@@ -4,6 +4,7 @@
 .pao-demand {
   min-height: calc(100vh - 135px);
   padding-top: 98px;
+
   &-tabs {
     display: flex;
     justify-content: space-between;
@@ -11,11 +12,22 @@
     max-width: 1440px;
     padding: 0 20px;
     margin: 16px auto;
-    > div {
+
+    >div {
       display: flex;
       align-items: center;
+
+      @include lg {
+        margin-bottom: 10px;
+      }
+    }
+
+    @include lg {
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
+
   &-body {
     &-filters {
       padding: 16px 20px 20px;
@@ -24,32 +36,46 @@
       align-items: center;
       max-width: 1440px;
       margin: 0 auto;
+
+      @include sm {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+      }
     }
+
     max-width: 1440px;
     padding: 0px 20px;
     margin: 0 auto;
+
     &-pivot {
       margin: 8px 0;
     }
   }
+
   ::ng-deep {
     .dx-pivotgrid-toolbar {
       display: none !important;
     }
+
     .dx-expand {
       color: $orange !important;
     }
+
     .dx-area-box {
       background-color: $teal;
       color: $white;
       font-weight: 500;
+
       .dx-sort {
         color: $white !important;
       }
+
       .dx-header-filter-empty {
         color: $white !important;
       }
     }
+
     .dx-scrollable-content {
       td {
         &:hover {
@@ -58,13 +84,23 @@
       }
     }
   }
+
   .modal-area {
     .modal-content {
       max-width: 600px;
+
       .action {
         padding: 8px 0;
         text-align: right;
       }
     }
+  }
+
+  @include md {
+    padding-top: 148px;
+  }
+
+  @include sm {
+    padding-top: 184px;
   }
 }

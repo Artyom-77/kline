@@ -1,21 +1,39 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/_mixins.scss";
+
 .material-balance-tab {
   padding: 20px;
+
   &-filters {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
+
     .dropdowns {
       display: flex;
       align-items: center;
       gap: 20px;
+
+      @include md {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    }
+
+    @include lg {
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
+
   .material-balance-tab-body {
     .pie-charts {
       display: grid;
       align-items: center;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 50px;
+
       .pie-chart-total {
         margin-top: 10px;
         background-color: #008083;
@@ -24,8 +42,22 @@
         border-radius: 4px;
         color: #ffffff;
       }
+
+      >* {
+        min-width: 0;
+      }
+
+      @include lg {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include sm {
+        grid-template-columns: 1fr;
+      }
     }
+
     margin: 50px 0px;
+
     .info {
       display: flex;
       flex-direction: column;
@@ -33,6 +65,7 @@
       align-items: center;
       margin: 20px 0px 60px;
     }
+
     ul {
       padding-left: 40px;
       margin: 20px 0px;

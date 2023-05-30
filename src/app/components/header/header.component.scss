@@ -1,3 +1,6 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/_mixins.scss";
+
 .header {
   position: fixed;
   top: 0;
@@ -6,27 +9,32 @@
   z-index: 10;
   background: white;
   border-bottom: 1px solid #3f3f3f27;
-  > .content {
+
+  >.content {
     // display: flex;
     // justify-content: space-between;
     // align-items: flex-end;
-    height: 98px;
+    // height: 98px;
     padding: 0 20px;
+
     .main {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 11px 0;
+
       .website-logo {
         display: flex;
         align-items: center;
-        width: 168px;
+        // width: 168px;
+
         img {
           width: 106px;
           height: 100%;
         }
       }
-      > span {
+
+      >span {
         font-size: 26px;
         // margin-left: 8px;
         // margin-top: 8px;
@@ -34,11 +42,13 @@
         // max-width: 326px;
         color: #3e3e3e;
       }
+
       .socials {
         display: flex;
         align-items: center;
-        > div {
-          > a {
+
+        >div {
+          >a {
             padding: 0 8px;
             color: #3f3f3f;
             font-weight: 600;
@@ -48,27 +58,41 @@
             align-items: center;
             text-decoration: none;
           }
+
           margin-left: 16px;
+
+          &:nth-of-type(3),
+          &:nth-of-type(4),
+          &:nth-of-type(5) {
+            @include sm {
+              display: none;
+            }
+          }
         }
       }
     }
+
     .user-icon {
-      > img {
+      >img {
         width: 100%;
         height: 100%;
       }
     }
+
     .navigation {
       display: flex;
       // grid-template-columns: 1fr 1fr 1fr;
       justify-content: space-between;
       gap: 16px;
       position: relative;
+
       .subtitle {
         span {
           font-size: 20px;
         }
+
       }
+
       .toolbar-section {
         display: flex;
         // justify-content: center;
@@ -81,30 +105,45 @@
           padding-bottom: 8px;
           border-bottom: 1px solid #008083;
           width: 238px;
+
           .serach-input {
             width: 100%;
-            > input {
+
+            >input {
               border: none;
               height: 100%;
               color: #3f3f3f;
+
               &::placeholder {
                 color: #3f3f3f77;
               }
             }
           }
+
           .serach-btn {
             width: 20px;
             height: 20px;
           }
+
+          @include sm {
+            width: 100%;
+          }
+        }
+
+        @include sm {
+          width: 100%;
+          justify-content: center;
         }
       }
-      > ul {
+
+      >ul {
         list-style: none;
         display: flex;
         align-items: center;
         // justify-content: flex-end;
         justify-content: center;
-        > li {
+
+        >li {
           padding: 0 20px;
           color: #3f3f3f;
           font-weight: 600;
@@ -112,14 +151,24 @@
           height: 32px;
           display: flex;
           align-items: center;
+
           &:hover {
             padding-top: 4px;
             border-bottom: 4px solid #df7b2e;
           }
         }
       }
+
+      @include md {
+        flex-wrap: wrap;
+      }
+
+      @include sm {
+        justify-content: center;
+      }
     }
   }
+
   .header-dropdown {
     border-top: 1px solid #3f3f3f27;
     min-height: 68px;
@@ -130,16 +179,19 @@
     top: 100%;
     left: -20px;
     border-bottom: 1px solid #3f3f3f27;
+
     .coverage-dropdown,
     .market-dropdown {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
       .coverage-info,
       .market-info {
         display: flex;
         align-items: center;
         flex-direction: column;
         border-right: 0.5px solid #3f3f3f27;
+
         .title {
           font-style: normal;
           font-weight: 700;
@@ -151,6 +203,7 @@
           width: 100%;
           padding: 0 20px;
         }
+
         .desc {
           font-style: normal;
           font-weight: 500;
@@ -163,12 +216,14 @@
           margin-top: 8px;
         }
       }
+
       .coverages-item {
         position: relative;
         overflow: hidden;
         display: flex;
         align-items: center;
         flex-direction: column;
+
         &-title {
           font-style: normal;
           font-weight: 700;
@@ -179,18 +234,21 @@
           color: #3f3f3f;
           width: 100%;
           padding: 0 20px;
-          > span {
+
+          >span {
             display: block;
             font-weight: 600;
             font-size: 16px;
           }
         }
+
         &-list {
           position: relative;
           margin-top: 8px;
           width: 100%;
           padding: 0 20px;
           cursor: pointer;
+
           ul {
             li {
               margin-bottom: 8px;
@@ -201,6 +259,7 @@
               justify-content: space-between;
               padding: 8px;
               transition: 0.3s;
+
               a {
                 font-style: normal;
                 font-weight: 500;
@@ -211,32 +270,51 @@
                 color: #3f3f3f;
                 text-decoration: none;
               }
-              > img {
+
+              >img {
                 margin-left: 12px;
                 width: 20px;
               }
+
               &:hover {
                 background: #3f3f3f27;
                 border-left: 4px solid #df7b2e;
               }
             }
           }
+
+          @include sm {
+            padding: 0px;
+          }
         }
+
         &:not(:last-of-type) {
           border-right: 0.5px solid #3f3f3f27;
+
+          @include sm {
+            border-right: none;
+            border-bottom: 0.5px solid #3f3f3f27;
+          }
         }
+
         &:last-of-type {
           .coverages-item-title {
             padding: 0 64px;
           }
         }
       }
+
+      @include lg {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
     }
+
     .market-dropdown {
       .featured {
         display: grid;
         grid-gap: 8px;
         padding: 0 20px;
+
         &-title {
           font-style: normal;
           font-weight: 700;
@@ -246,14 +324,17 @@
           letter-spacing: 0.055em;
           color: #3f3f3f;
         }
-        > div {
+
+        >div {
           display: flex;
           align-items: center;
-          > img {
+
+          >img {
             width: 200px;
             height: 100px;
             object-fit: cover;
           }
+
           .desc {
             font-style: normal;
             font-weight: 500;
@@ -267,6 +348,20 @@
         }
       }
     }
+
+    @include lg {
+      overflow: auto;
+      max-height: calc(100vh - 110px);
+    }
+
+    @include sm {
+      overflow: auto;
+      max-height: calc(100vh - 180px);
+    }
+  }
+
+  @include sm {
+    border-bottom: none;
   }
 }
 

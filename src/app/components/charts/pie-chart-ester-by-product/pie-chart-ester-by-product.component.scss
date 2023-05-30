@@ -2,7 +2,9 @@
   display: flex;
   align-items: flex-end;
   grid-gap: 10px;
+  flex-wrap: wrap;
 }
+
 .pie-chart-total {
   margin-top: 10px;
   background-color: #008083;
