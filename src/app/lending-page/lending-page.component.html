@@ -38,6 +38,21 @@
         </div>
       </div> -->
 
+      <div class="main-infos">
+        <app-info-tab
+          [enableSearch]="true"
+          [title]="'Quick Links to Graphs and Maps'"
+          [type]="'primary'"
+          [infoData]="infoTabData"
+        ></app-info-tab>
+        <!-- <app-info-tab
+          [enableSearch]="false"
+          [title]="'Find in Our Maps and Databases'"
+          [type]="'primary'"
+          [infoData]="infoTabMapsData"
+        ></app-info-tab> -->
+      </div>
+
       <div class="kline-content-info">
         <app-info-tab
         [enableSearch]="false"
@@ -242,20 +257,7 @@
         </div>
 
       </div>
-      <div class="main-infos">
-        <app-info-tab
-          [enableSearch]="true"
-          [title]="'Quick Links'"
-          [type]="'primary'"
-          [infoData]="infoTabData"
-        ></app-info-tab>
-        <!-- <app-info-tab
-          [enableSearch]="false"
-          [title]="'Find in Our Maps and Databases'"
-          [type]="'primary'"
-          [infoData]="infoTabMapsData"
-        ></app-info-tab> -->
-      </div>
+
     </div>
     <!-- <div class="our-coverage">
       <div class="title-section">

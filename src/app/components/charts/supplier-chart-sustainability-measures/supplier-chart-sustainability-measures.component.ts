@@ -13,7 +13,7 @@ export class SupplierChartSustainabilityMeasuresComponent implements OnInit {
   public customPalette: string[] = [];
   public customPalette1: string[] = ['#df7b2e'];
   public customPalette2: string[] = ['#008083'];
-  public customPalette3: string[] = ['#00235d'];
+  public customPalette3: string[] = ['#113B5A'];
 
   constructor(private mainService: LandingServiceService) {}
 

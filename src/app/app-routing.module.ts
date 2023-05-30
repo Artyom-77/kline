@@ -12,6 +12,7 @@ import { SupplierProfilesComponent } from './components/supplier-profiles/suppli
 import { ProductPropertiesComponent } from './components/product-properties/product-properties.component';
 import { BlenderDatabaseComponent } from './components/blender-database/blender-database.component';
 import { FaqComponent } from './components/faq/faq.component';
+import { ConventionalBasestocksSupplyAndDemandModelComponent } from './components/conventional-basestocks-supply-and-demand-model/conventional-basestocks-supply-and-demand-model.component';
 
 const routes: Routes = [
   { path: '', component: LendingPageComponent },
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'supplier-profiles', component: SupplierProfilesComponent },
   { path: 'product-properties', component: ProductPropertiesComponent },
   { path: 'blender-database', component: BlenderDatabaseComponent },
+  { path: 'conventional-basestocks', component: ConventionalBasestocksSupplyAndDemandModelComponent },
   { path: 'faq', component: FaqComponent },
 
 ];

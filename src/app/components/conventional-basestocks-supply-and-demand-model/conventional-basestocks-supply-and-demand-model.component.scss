@@ -1,0 +1,112 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/_mixins.scss";
+
+.conventional-basestocks {
+  min-height: calc(100vh - 110px);
+  padding-top: 98px;
+
+  &-body {
+    margin-bottom: 40px;
+    &-filters {
+      padding: 16px 0 20px;
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
+      max-width: 1440px;
+      margin: 0 auto;
+      gap: 20px;
+
+      &.tabs {
+        .tab {
+          padding: 8px 16px;
+          background: $gray-light;
+          border-radius: 4px;
+          cursor: pointer;
+
+          > h3 {
+            color: $white;
+            font-size: 14px;
+            font-weight: 500;
+          }
+
+          &:last-child {
+            margin-left: 8px;
+          }
+
+          &:hover {
+            background: #fdbb89;
+          }
+
+          &.active {
+            background: $orange;
+          }
+        }
+      }
+
+      @include md {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    }
+
+    // max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    &-pivot {
+      margin: 8px 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  ::ng-deep {
+    .dx-pivotgrid-toolbar {
+      display: none !important;
+    }
+
+    .dx-expand {
+      color: $orange !important;
+    }
+
+    .dx-area-box {
+      background-color: $teal;
+      color: $white;
+      font-weight: 500;
+
+      .dx-sort {
+        color: $white !important;
+      }
+
+      .dx-header-filter-empty {
+        color: $white !important;
+      }
+    }
+
+    .dx-scrollable-content {
+      td {
+        &:hover {
+          background-color: #00808378;
+        }
+      }
+    }
+  }
+
+  .modal-area {
+    .modal-content {
+      max-width: 600px;
+
+      .action {
+        padding: 8px 0;
+        text-align: right;
+      }
+    }
+  }
+
+  @include md {
+    padding-top: 148px;
+  }
+
+  @include sm {
+    padding-top: 184px;
+  }
+}

@@ -10,7 +10,7 @@
   background: white;
   border-bottom: 1px solid #3f3f3f27;
 
-  >.content {
+  > .content {
     // display: flex;
     // justify-content: space-between;
     // align-items: flex-end;
@@ -32,9 +32,17 @@
           width: 106px;
           height: 100%;
         }
+        > span {
+          font-size: 20px;
+          margin-left: 8px;
+          // margin-top: 8px;
+          font-weight: 600;
+          // max-width: 326px;
+          color: #3e3e3e;
+        }
       }
 
-      >span {
+      > span {
         font-size: 26px;
         // margin-left: 8px;
         // margin-top: 8px;
@@ -47,8 +55,8 @@
         display: flex;
         align-items: center;
 
-        >div {
-          >a {
+        > div {
+          > a {
             padding: 0 8px;
             color: #3f3f3f;
             font-weight: 600;
@@ -73,7 +81,7 @@
     }
 
     .user-icon {
-      >img {
+      > img {
         width: 100%;
         height: 100%;
       }
@@ -87,10 +95,14 @@
       position: relative;
 
       .subtitle {
-        span {
-          font-size: 20px;
-        }
+        // width: 238px;
 
+        span {
+          font-size: 22px;
+          font-weight: 600;
+          color: #3e3e3e;
+          // font-size: 20px;
+        }
       }
 
       .toolbar-section {
@@ -109,7 +121,7 @@
           .serach-input {
             width: 100%;
 
-            >input {
+            > input {
               border: none;
               height: 100%;
               color: #3f3f3f;
@@ -136,14 +148,14 @@
         }
       }
 
-      >ul {
+      > ul {
         list-style: none;
         display: flex;
         align-items: center;
         // justify-content: flex-end;
         justify-content: center;
 
-        >li {
+        > li {
           padding: 0 20px;
           color: #3f3f3f;
           font-weight: 600;
@@ -183,7 +195,8 @@
     .coverage-dropdown,
     .market-dropdown {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 600px));
+      justify-content: center;
 
       .coverage-info,
       .market-info {
@@ -235,7 +248,7 @@
           width: 100%;
           padding: 0 20px;
 
-          >span {
+          > span {
             display: block;
             font-weight: 600;
             font-size: 16px;
@@ -271,7 +284,7 @@
                 text-decoration: none;
               }
 
-              >img {
+              > img {
                 margin-left: 12px;
                 width: 20px;
               }
@@ -325,11 +338,11 @@
           color: #3f3f3f;
         }
 
-        >div {
+        > div {
           display: flex;
           align-items: center;
 
-          >img {
+          > img {
             width: 200px;
             height: 100px;
             object-fit: cover;

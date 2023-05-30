@@ -1,5 +1,6 @@
 <div class="wall-section" [ngClass]="{
   'coverage': wallType === 'coverage',
+  'countries': wallType === 'countries',
   'coverage-closed': wallType === 'coverage' && selectedTab !== 5,
   'coverage-opened': wallType === 'coverage' && (selectedTab === 5 || selectedTab === 1 || selectedTab === 3),
   'coverage-left': wallType === 'coverage' && ( selectedTab === 2 || selectedTab === 0)
@@ -11,22 +12,22 @@
         *ngFor="let item of coveragesList; let i = index"
         (click)="openDetails(item, i)"
       >
-        <div class="wall-card">
+        <div class="wall-card" [ngClass]="{ 'active': selectedTab === i }">
           <h3>{{ item.title || item.name }}</h3>
           <p *ngIf="item.subtitle">{{ item.subtitle }}</p>
         </div>
         <div
-          class="tab content1"
+          class="tab content2"
           *ngIf="
             selectedTab === i || (selectedTab === 5 && wallType === 'countries')
           "
-          [ngClass]="{
-          'content1': selectedTab === 0 || (selectedTab === 5 && i === 0),
+          >
+          <!-- [ngClass]="{
+          'content2': selectedTab === 0 || (selectedTab === 5 && i === 0),
           'content2': selectedTab === 1 || (selectedTab === 5 && i === 1),
-          'content3': selectedTab === 2 || (selectedTab === 5 && i === 2),
-          'content4': selectedTab === 3 || (selectedTab === 5 && i === 3),
-        }"
-        >
+          'content2': selectedTab === 2 || (selectedTab === 5 && i === 2),
+          'content2': selectedTab === 3 || (selectedTab === 5 && i === 3),
+        }" -->
           <div class="list" *ngIf="wallType === 'countries'">
             <div class="list-item text">
               <p>{{ item.text }}</p>
@@ -59,6 +60,15 @@
          </div>
         </div>
        </div> -->
+       <div class="wall-desc" *ngIf="wallType === 'countries'"
+  >
+
+  <!-- <div class="list" *ngIf="wallType === 'countries'">
+    <div class="list-item text">
+      <p>{{ item.text }}</p>
+    </div>
+  </div> -->
+  </div>
       </div>
 
       <div class="circle">
@@ -68,18 +78,5 @@
       </div>
     </div>
   </div>
-  <div class="wall-desc" *ngIf="wallType === 'coverage'"
-  >
-  <!-- [ngClass]="{
-    'hide': selectedTab === 1 || selectedTab === 3 || selectedTab === 5,
-  }" -->
-    <p class="desc">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime obcaecati
-      dignissimos odio. Modi ipsa fuga exercitationem ipsam, amet nostrum?
-      Dolore cupiditate aut animi veniam illum nesciunt impedit neque sit,
-      repudiandae corrupti veritatis! Commodi ullam accusamus nisi fugiat nobis.
-      Molestiae quae molestias culpa ab est eum perspiciatis at necessitatibus
-      accusantium eligendi!
-    </p>
-  </div>
+
 </div>

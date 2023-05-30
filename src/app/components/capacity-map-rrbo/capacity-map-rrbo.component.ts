@@ -48,6 +48,8 @@ export class CapacityMapRrboComponent implements OnInit {
   public capacityData: any[] = [];
   markers: Marker[];
   keys: any = {};
+  public worldMap: any = mapsData.world;
+
   constructor(service: RrboService) {
     this.mapTypes = service.getMapTypes();
     this.capacityData = service.capacityData;
@@ -62,6 +64,7 @@ export class CapacityMapRrboComponent implements OnInit {
 
   ngOnInit(): void {
     this.selectedCountry = this.capacityData;
+    console.log('worldMap',this.worldMap)
   }
 
   handleChange(arg: any): void {
@@ -71,7 +74,7 @@ export class CapacityMapRrboComponent implements OnInit {
         : this.capacityData.filter((item) => item.country === arg);
   }
 
-  worldMap: any = mapsData.world;
+
 
 //   customizeMarkerLayer(elements) {
 //     elements.forEach((element) => {

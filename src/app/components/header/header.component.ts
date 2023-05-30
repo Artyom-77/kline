@@ -14,45 +14,40 @@ export class HeaderComponent implements OnInit, OnChanges {
   public navId: any;
   public coveragesList: any[] = [];
   public marketList: any[] = [];
+  public sustainabilityList: any[] = [];
   public navigationItems = [
     {
-      path: '/',
-      text: 'Home',
+      path: "/",
+      text: "Home",
       id: 1,
     },
     {
       // path: '/our-coverage',
-      text: 'Our Coverage',
+      text: "Market Fundamentals",
       id: 2,
     },
-    // {
-    //   // path: '/market-watch',
-    //   text: 'Market Watch',
-    //   id: 3,
-    // },
-    // {
-    //   path: '/insights',
-    //   text: 'Insights',
-    //   id: 4,
-    // },
-    // {
-    //   path: '/contant-us',
-    //   text: 'Contact Us',
-    //   id: 5,
-    // },
-    // {
-    //   path: '/faq',
-    //   text: 'FAQ',
-    //   id: 6,
-    // },
+    {
+      // path: '/our-coverage',
+      text: "Sustainability",
+      id: 3,
+    },
+    {
+      // path: '/our-coverage',
+      text: "Market Watch",
+      id: 4,
+    },
   ];
 public pathname : any
   constructor(private router: Router, private service: LandingServiceService, public location : Location) {
     this.coveragesList = service.coveragesList
+
     // this.marketList = service.coveragesList.filter((item, index) => index == 3);
   }
 
   ngOnInit(): void {
+    this.coveragesList = this.service.getCoveragesList().filter((item,index)=> index === 0 || index === 2);
+    this.sustainabilityList = this.service.getCoveragesList().filter((item,index)=> index === 1 );
+    this.marketList = this.service.getCoveragesList().filter((item,index)=> index === 3);
     this.pathname = this.location.path();
     console.log('this.location',this.location.path());
 
@@ -70,13 +65,13 @@ public pathname : any
   }
 
   onItemClick(event: any, id: any) {
-    if (id === 2 || id === 3) {
+    if (id === 2 || id === 3 || id === 4) {
       this.navId = id;
       this.dropdownOpen = !this.dropdownOpen;
     }
     // const path = event.itemData.path;
     if (event) {
-      if (event !== 2 || id !== 3) {
+      if (event !== 2 || id !== 3 || id !== 4) {
         this.router.navigate([event]);
         this.dropdownOpen = false;
       }

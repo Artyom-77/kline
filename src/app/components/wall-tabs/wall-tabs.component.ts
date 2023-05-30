@@ -16,6 +16,7 @@ export class WallTabsComponent implements OnInit {
 
   ngOnInit(): void {
       if(this.wallType === 'countries') {
+        this.selectedTab = 0
         this.coveragesList = this.wallData.criterias.filter((item:any,index:any)=>index !== 4)
       } else {
         this.coveragesList = this.wallData

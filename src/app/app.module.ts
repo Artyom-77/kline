@@ -81,6 +81,7 @@ import { BreadcrumpsComponent } from './components/breadcrumps/breadcrumps.compo
 import { WallTabsComponent } from './components/wall-tabs/wall-tabs.component';
 import { InfoTabComponent } from './components/info-tab/info-tab.component';
 import { FaqComponent } from './components/faq/faq.component';
+import { ConventionalBasestocksSupplyAndDemandModelComponent } from './components/conventional-basestocks-supply-and-demand-model/conventional-basestocks-supply-and-demand-model.component';
 
 @NgModule({
   declarations: [
@@ -150,6 +151,7 @@ import { FaqComponent } from './components/faq/faq.component';
     WallTabsComponent,
     InfoTabComponent,
     FaqComponent,
+    ConventionalBasestocksSupplyAndDemandModelComponent,
   ],
   imports: [
     BrowserModule,

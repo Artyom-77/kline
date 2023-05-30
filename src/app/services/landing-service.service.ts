@@ -42,23 +42,6 @@ export class LandingServiceService {
     },
     {
       id: uuidv4(),
-      title: 'Synthetic Market Fundamentals',
-      // subtitle: 'Group III/III+, IV, and V',
-      list: [
-        {
-          itemId: uuidv4(),
-          path: '/synthetic-basestocks',
-          name: 'Synthetic Basestocks Deblend Model',
-        },
-        {
-          itemId: uuidv4(),
-          path: '/pao-demand',
-          name: 'PAO Demand Deblend Model',
-        },
-      ],
-    },
-    {
-      id: uuidv4(),
       title: 'Sustainability focused Basestocks',
       subtitle: '',
       list: [
@@ -79,6 +62,24 @@ export class LandingServiceService {
         },
       ],
     },
+    {
+      id: uuidv4(),
+      title: 'Synthetic Market Fundamentals',
+      // subtitle: 'Group III/III+, IV, and V',
+      list: [
+        {
+          itemId: uuidv4(),
+          path: '/synthetic-basestocks',
+          name: 'Synthetic Basestocks Deblend Model',
+        },
+        {
+          itemId: uuidv4(),
+          path: '/pao-demand',
+          name: 'PAO Demand Deblend Model',
+        },
+      ],
+    },
+
     {
       id: uuidv4(),
       title: 'Basestock Market Watch',
@@ -102,7 +103,7 @@ export class LandingServiceService {
       ],
     },
   ];
-  public customPalette: string[] = ['#3f3f3f', '#df7b2e', '#00235d', '#008083'];
+  public customPalette: string[] = ['#3f3f3f', '#df7b2e', '#113B5A', '#008083'];
   public infoTabData: any[] = [
     {
       id: 1,
@@ -182,6 +183,9 @@ export class LandingServiceService {
 
   constructor() {}
 
+  getCoveragesList(): any[] {
+    return this.coveragesList;
+}
   getTopPosition() {
     return this.scrollToValue;
   }

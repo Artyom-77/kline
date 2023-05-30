@@ -1,0 +1,84 @@
+<div class="conventional-basestocks">
+  <app-hero-section
+    title="Conventional Basestocks Supply and Demand Model"
+    desc=""
+  ></app-hero-section>
+  <div class="conventional-basestocks-body">
+    <div class="conventional-basestocks-body-filters">
+      <app-button
+        [btnText]="'Build Your Own Recipe'"
+        [type]="'secondary right'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="openRecipeModal()"
+      ></app-button>
+      <app-button
+
+        [btnText]="'Download Model'"
+        [type]="'secondary right'"
+        [icon]="false"
+        [iconName]="''"
+      ></app-button>
+    </div>
+    <div  class="conventional-basestocks-body-pivot">
+      <dx-pivot-grid
+        [allowSortingBySummary]="true"
+        [allowSorting]="true"
+        [allowFiltering]="true"
+        [allowExpandAll]="true"
+        [showColumnGrandTotals]="true"
+        [showBorders]="true"
+        [dataSource]="dataSource"
+      >
+        <dxo-field-panel
+          [showDataFields]="false"
+          [showRowFields]="true"
+          [showColumnFields]="false"
+          [showFilterFields]="true"
+          [allowFieldDragging]="false"
+          [visible]="true"
+        >
+        </dxo-field-panel>
+      </dx-pivot-grid>
+    </div>
+    <div class="modal-area">
+      <app-modal
+        [title]="'Build Your Own Recipe'"
+        *ngIf="openModal"
+        (onClose)="onCloseModal()"
+      >
+        <div class="modal-content">
+          <div class="action">
+            <app-button
+              [btnText]="'Save'"
+              [type]="'secondary'"
+              [icon]="false"
+              [iconName]="''"
+            ></app-button>
+          </div>
+          <div>
+            <dx-data-grid
+              id="gridContainer"
+              [dataSource]="modalDummyData"
+              keyExpr="id"
+              (onFocusedCellChanging)="onFocusedCellChanging($event)"
+              [showBorders]="true"
+              [columnAutoWidth]="true"
+            >
+              <dxo-paging [enabled]="true"> </dxo-paging>
+              <dxo-editing
+                mode="batch"
+                [allowUpdating]="true"
+                startEditAction="dblClick"
+              >
+              </dxo-editing>
+              <dxi-column dataField="Basestock Group"> </dxi-column>
+              <dxi-column dataField="Basestock"> </dxi-column>
+              <dxi-column dataField="Composition" [width]="170"> </dxi-column>
+            </dx-data-grid>
+          </div>
+        </div>
+      </app-modal>
+    </div>
+  </div>
+</div>

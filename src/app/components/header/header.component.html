@@ -5,6 +5,7 @@
         <a routerLink="/">
           <img src="../../../assets/images/website-logo.svg" alt="website-logo" />
         </a>
+        <!-- <span>Basestock Intelligence Center</span> -->
       </div>
 
       <div class="socials">
@@ -67,6 +68,41 @@
             </div>
           </div>
         </div>
+        <div *ngIf="this.navId === 3" class="coverage-dropdown">
+          <div class="coverages-item" *ngFor="let item of sustainabilityList">
+            <h3 class="coverages-item-title">
+              {{ item.title }} <span>{{ item.subtitle }}</span>
+            </h3>
+            <div class="coverages-item-list">
+              <ul>
+                <li *ngFor="let listItem of item.list">
+                  <a [routerLink]="listItem.path" (click)="dropdownOpen = false">{{
+                    listItem.name
+                  }}</a>
+                  <img src="../../../assets/images/arrow-right.svg" alt="arrow" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="this.navId === 4" class="coverage-dropdown">
+          <div class="coverages-item" *ngFor="let item of marketList">
+            <h3 class="coverages-item-title">
+              {{ item.title }} <span>{{ item.subtitle }}</span>
+            </h3>
+            <div class="coverages-item-list">
+              <ul>
+                <li *ngFor="let listItem of item.list">
+                  <a [routerLink]="listItem.path" (click)="dropdownOpen = false">{{
+                    listItem.name
+                  }}</a>
+                  <img src="../../../assets/images/arrow-right.svg" alt="arrow" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
