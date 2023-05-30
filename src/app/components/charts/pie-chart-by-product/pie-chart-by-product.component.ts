@@ -15,6 +15,9 @@ export class PieChartByProductComponent implements OnInit {
   public yearList: any[] = [];
   public tooltipColor: any;
   public totalSum: number = 0;
+  public selectedSector?: string = 'PCMO';
+  public isSectorDropdownOpen: boolean = false;
+  public sectorList: any[] = [];
 
   public customPalette: string[] = [];
 
@@ -22,7 +25,11 @@ export class PieChartByProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.customPalette = this.mainService.customPalette;
-
+    this.chartData.map((data: any) => {
+      if (!this.sectorList.includes(data.Sector)) {
+        this.sectorList.push(data.Sector);
+      }
+    });
     this.chartData.map((data: any) => {
       if (!this.yearList.includes(data.Year)) {
         this.yearList.push(data.Year);
@@ -57,6 +64,10 @@ export class PieChartByProductComponent implements OnInit {
     this.isYearDropdownOpen = !this.isYearDropdownOpen;
   }
 
+  toggleSectorDropdown() {
+    this.isSectorDropdownOpen = !this.isSectorDropdownOpen;
+  }
+
   toggleYearOption(option: number): void {
     this.selectedYear = option;
     this.productChartData = this.chartData.filter(
@@ -81,6 +92,16 @@ export class PieChartByProductComponent implements OnInit {
     this.mergedObj.map((item) => {
       this.totalSum += item.SumofValues;
     });
+  }
+
+  toggleSectorOption(option: string): void {
+    this.selectedSector = option;
+    this.mergedObj = this.chartData.filter(
+      (item: any) =>
+        item.Sector === this.selectedSector &&
+        item.mainColumn ===
+          'Share of basestock in total synthetic basestock demand (%)'
+    );
   }
 
   customizeLabel(arg: any) {

@@ -17,30 +17,6 @@ export class LendingPageComponent implements OnInit {
   public showDownladedIcon: boolean = false;
   public coveragesList: any[] = [];
   public scrollPosition: number = 0;
-  // public slides = [
-  //   {
-  //     imageUrl: '../../assets/images/slider-img2.jpg',
-  //     caption: 'Latest Updates',
-  //     desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-  //   },
-  //   {
-  //     imageUrl: '../../assets/images/slider-img1.jpg',
-  //     caption: 'Latest Updates',
-  //     desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-  //   },
-  //   {
-  //     imageUrl: '../../assets/images/slider-img2.jpg',
-  //     caption: 'Latest Updates',
-  //     desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-  //   },
-  //   {
-  //     imageUrl: '../../assets/images/slider-img1.jpg',
-  //     caption: 'Latest Updates',
-  //     desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-  //   },
-  // ];
-
-  // slideshowDelay = 2000;
 
   constructor(public service: LandingServiceService) {
     this.coveragesList = service.coveragesList;

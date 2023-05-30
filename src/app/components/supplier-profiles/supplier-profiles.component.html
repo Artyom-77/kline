@@ -26,7 +26,16 @@
       ></app-multiple-select-dropdown>
       <app-multiple-select-dropdown
         *ngIf="selectedMainTab === 2"
-        [dropdownTitle]="'a maximum of 3 Regions'"
+        [dropdownTitle]="'a maximum of 3 Plant Locations'"
+        [dropdownData]="regionsList"
+        (itemEvent)="handleMultipleRegionChange($event)"
+        [firstItemSelected]="true"
+        [maxLimit]="3"
+        [minLimit]="3"
+      ></app-multiple-select-dropdown>
+      <app-multiple-select-dropdown
+        *ngIf="selectedMainTab === 2"
+        [dropdownTitle]="'a maximum of 3 Countries'"
         [dropdownData]="regionsList"
         (itemEvent)="handleMultipleRegionChange($event)"
         [firstItemSelected]="true"
@@ -35,7 +44,14 @@
       ></app-multiple-select-dropdown>
       <app-select-dropdown
         *ngIf="selectedMainTab === 1"
-        [dropdownTitle]="'Region'"
+        [dropdownTitle]="'Plant Location'"
+        [dropdownData]="regionsList"
+        (itemEvent)="handleRegionChange($event)"
+        [firstItemSelected]="false"
+      ></app-select-dropdown>
+      <app-select-dropdown
+        *ngIf="selectedMainTab === 1"
+        [dropdownTitle]="'Country'"
         [dropdownData]="regionsList"
         (itemEvent)="handleRegionChange($event)"
         [firstItemSelected]="false"

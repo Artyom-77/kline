@@ -35,6 +35,16 @@ export class SyntheticChartViewComponent implements OnInit {
       label: 'South America',
     },
   ];
+  public unitList: any[] = [
+    {
+      id: 1,
+      label: 'KTPA',
+    },
+    {
+      id: 2,
+      label: 'B/D',
+    },
+  ];
   public analyzed: string = 'Synthetic Basestocks Demand';
   public analyzedList: any[] = [
     {
@@ -101,6 +111,7 @@ export class SyntheticChartViewComponent implements OnInit {
           'Share of basestock in total synthetic basestock demand (%)'
     );
   }
+  handleUnitChange(arg: string) {}
 
   procesdedCLick(): void {
     if (this.analyzed === 'Synthetic Basestocks Demand') {

@@ -12,7 +12,7 @@
           <a>Contact Us</a>
         </div>
         <div class="">
-          <a>FAQ</a>
+          <a routerLink="/faq" >FAQ</a>
         </div>
         <div>
           <img src="../../../assets/images/twitter.svg" alt="icon" />
@@ -51,13 +51,6 @@
       </div>
       <div *ngIf="this.dropdownOpen" class="header-dropdown" >
         <div *ngIf="this.navId === 2" class="coverage-dropdown">
-          <!-- <div class="coverage-info">
-            <h3 class="title">Our Coverage</h3>
-            <p class="desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
-            </p>
-          </div> -->
           <div class="coverages-item" *ngFor="let item of coveragesList">
             <h3 class="coverages-item-title">
               {{ item.title }} <span>{{ item.subtitle }}</span>
@@ -74,47 +67,6 @@
             </div>
           </div>
         </div>
-        <!-- <div *ngIf="this.navId === 3" class="market-dropdown">
-          <div class="market-info">
-            <h3 class="title">Market Watch</h3>
-            <p class="desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
-            </p>
-          </div>
-          <div class="coverages-item" *ngFor="let item of marketList">
-            <h3 class="coverages-item-title">
-              {{ item.title }} <span>{{ item.subtitle }}</span>
-            </h3>
-            <div class="coverages-item-list">
-              <ul>
-                <li *ngFor="let listItem of item.list">
-                  <a [routerLink]="listItem.path" (click)="dropdownOpen = false">{{
-                    listItem.name
-                  }}</a>
-                  <img src="../../../assets/images/arrow-right.svg" alt="arrow" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="featured">
-            <h3 class="featured-title">Featured</h3>
-            <div>
-              <img src="../../../assets/images/sidebar-img-1.jpg" alt="sidebar" />
-              <p class="desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore
-              </p>
-            </div>
-            <div>
-              <img src="../../../assets/images/sidebar-img-2.jpg" alt="sidebar" />
-              <p class="desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore
-              </p>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>

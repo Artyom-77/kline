@@ -19,7 +19,7 @@
         justify-content: center;
         align-items: center;
 
-        >p {
+        > p {
           font-size: 18px;
           text-align: center;
           font-weight: 500;
@@ -36,8 +36,11 @@
         gap: 20px;
 
         &-content {
-          max-width: 1190px;
-
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 300px;
+          justify-items: center;
+          max-width: 1440px;
           h1 {
             padding: 0 80px;
             color: #3f3f3f;
@@ -49,8 +52,8 @@
             display: none;
           }
 
-          >h3 {
-            padding: 0 80px;
+          > h3 {
+            // padding: 0 80px;
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
@@ -102,7 +105,7 @@
               .slider {
                 position: relative;
 
-                >img {
+                > img {
                   height: 100%;
                   object-fit: cover;
                 }
@@ -133,11 +136,11 @@
             }
           }
 
-          >img {
+          > img {
             height: 100%;
           }
 
-          >div {
+          > div {
             position: absolute;
             z-index: 2;
             pointer-events: none;
@@ -148,7 +151,7 @@
               width: 100%;
               height: 203px;
 
-              >img {
+              > img {
                 object-fit: cover;
                 width: 100px;
                 height: 100%;
@@ -163,7 +166,7 @@
               right: 0;
               height: 155px;
 
-              >img {
+              > img {
                 object-fit: cover;
                 width: 100px;
                 height: 100%;
@@ -187,7 +190,7 @@
         width: 100%;
         max-width: 1024px;
 
-        >svg {
+        > svg {
           width: 33px;
         }
 
@@ -203,7 +206,7 @@
           .serach-input {
             width: 100%;
 
-            >input {
+            > input {
               border: none;
               min-height: 26px;
               color: #3f3f3f;
@@ -311,7 +314,7 @@
                 // min-height: 78px;
                 padding: 8px;
 
-                >span {
+                > span {
                   font-weight: 600;
                   font-size: 18px;
                   display: block;
@@ -348,7 +351,7 @@
                       align-items: center;
                       overflow: hidden;
 
-                      >img {
+                      > img {
                         width: 32px;
                         height: 32px;
                         object-fit: contain;
@@ -359,7 +362,7 @@
                         font-family: $overpass !important;
                         color: white;
 
-                        >a {
+                        > a {
                           color: white;
                           text-decoration: none;
                         }
@@ -514,7 +517,7 @@
           .insight-img {
             overflow: hidden;
 
-            >img {
+            > img {
               clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
               width: 0px;
               height: 100%;
@@ -522,13 +525,13 @@
             }
 
             &.show {
-              >img {
+              > img {
                 animation: imgWidth 1.5s ease-in-out forwards;
               }
             }
 
             &.hide {
-              >img {
+              > img {
                 animation: imgWidthHide 1.5s ease-in forwards;
               }
             }
@@ -540,7 +543,7 @@
             align-items: center;
 
             .visible-area {
-              >div {
+              > div {
                 position: relative;
                 right: -200%;
                 opacity: 0;
@@ -603,7 +606,7 @@
                     align-items: center;
                     overflow: hidden;
 
-                    >img {
+                    > img {
                       width: 32px;
                       height: 32px;
                       object-fit: contain;
@@ -612,7 +615,7 @@
                     .btn-text {
                       font-size: 0px;
 
-                      >a {
+                      > a {
                         color: $white;
                         text-decoration: none;
                       }
@@ -632,13 +635,13 @@
               }
 
               &.show {
-                >div {
+                > div {
                   animation: text-to-left 1.5s ease-in-out forwards;
                 }
               }
 
               &.hide {
-                >div {
+                > div {
                   animation: text-to-right 1.5s ease-in forwards;
                 }
               }
@@ -670,7 +673,7 @@
         width: 100%;
         height: 100%;
 
-        >div {
+        > div {
           width: 200px;
           height: 200px;
           position: absolute;
@@ -678,7 +681,7 @@
           justify-content: center;
           align-items: center;
 
-          >div {
+          > div {
             width: 231px;
             height: 200px;
             position: absolute;
@@ -699,7 +702,7 @@
               margin-bottom: -40px;
             }
 
-            >h4 {
+            > h4 {
               position: relative;
               z-index: 2;
               margin-top: 75px;
@@ -823,11 +826,11 @@
           left: -112px;
           top: 24px;
 
-          >div {
+          > div {
             width: 100%;
             height: 100%;
 
-            >svg {
+            > svg {
               width: 100%;
               height: 100%;
 
@@ -846,7 +849,7 @@
   .modal-content {
     padding: 20px 0 0;
 
-    >div {
+    > div {
       display: grid;
       justify-content: center;
       grid-gap: 32px;
@@ -859,7 +862,7 @@
         color: $gray;
       }
 
-      >input {
+      > input {
         padding: 8px;
         width: 100%;
         max-width: 300px;

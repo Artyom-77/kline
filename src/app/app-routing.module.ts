@@ -11,6 +11,7 @@ import { PaoDemandComponent } from './components/pao-demand/pao-demand.component
 import { SupplierProfilesComponent } from './components/supplier-profiles/supplier-profiles.component';
 import { ProductPropertiesComponent } from './components/product-properties/product-properties.component';
 import { BlenderDatabaseComponent } from './components/blender-database/blender-database.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 const routes: Routes = [
   { path: '', component: LendingPageComponent },
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'supplier-profiles', component: SupplierProfilesComponent },
   { path: 'product-properties', component: ProductPropertiesComponent },
   { path: 'blender-database', component: BlenderDatabaseComponent },
+  { path: 'faq', component: FaqComponent },
 
 ];
 
