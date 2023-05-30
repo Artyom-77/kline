@@ -429,13 +429,13 @@
     &.coverage-opened {
       grid-template-columns: 1fr 300px;
     }
-    &.coverage-left {
-      grid-template-columns: 1fr 300px;
-      .wall-area {
-        display: flex;
-        justify-content: flex-end;
-      }
-    }
+    // &.coverage-left {
+    //   grid-template-columns: 1fr 300px;
+    //   .wall-area {
+    //     display: flex;
+    //     justify-content: flex-end;
+    //   }
+    // }
   }
 }
 

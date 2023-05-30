@@ -1,0 +1,7 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/_mixins.scss";
+
+.faq {
+  min-height: calc(100vh - 98px);
+  padding-top: 98px;
+}

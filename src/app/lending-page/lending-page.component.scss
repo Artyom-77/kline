@@ -36,8 +36,11 @@
         gap: 20px;
 
         &-content {
-          max-width: 1190px;
-
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 300px;
+          justify-items: center;
+          max-width: 1440px;
           h1 {
             padding: 0 80px;
             color: #3f3f3f;
@@ -50,7 +53,7 @@
           }
 
           > h3 {
-            padding: 0 80px;
+            // padding: 0 80px;
             font-style: normal;
             font-weight: 600;
             font-size: 20px;

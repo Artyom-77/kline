@@ -14,6 +14,12 @@
         [firstItemSelected]="true"
       ></app-select-dropdown>
       <app-select-dropdown
+      [dropdownTitle]="'Unit'"
+      [dropdownData]="unitList"
+      (itemEvent)="handleUnitChange($event)"
+      [firstItemSelected]="true"
+    ></app-select-dropdown>
+      <app-select-dropdown
         *ngIf="selectedTab === 3"
         [dropdownTitle]="'Year'"
         [dropdownData]="yearList"

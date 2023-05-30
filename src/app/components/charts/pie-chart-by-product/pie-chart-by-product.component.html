@@ -1,5 +1,26 @@
 <div class="first-pie">
   <div class="filters">
+    <div class="custom-dropdown date-dropdown" (click)="toggleSectorDropdown()">
+      <div class="dropdown-header">
+        <span>{{ selectedSector }}</span>
+        <img
+          class="dropdown-icon"
+          [class.rotate]="isSectorDropdownOpen"
+          [class.defalut]="!isSectorDropdownOpen"
+          src="../../../assets/images/small-arrow.svg"
+          alt="arrow"
+        />
+      </div>
+      <div class="dropdown-list" *ngIf="isSectorDropdownOpen">
+        <div
+          class="dropdown-item"
+          *ngFor="let option of sectorList"
+          (click)="toggleSectorOption(option)"
+        >
+          {{ option }}
+        </div>
+      </div>
+    </div>
     <div class="custom-dropdown date-dropdown" (click)="toggleYearDropdown()">
       <div class="dropdown-header">
         <span>{{ selectedYear }}</span>

@@ -80,6 +80,7 @@ import { PieChartPagByProductComponent } from './components/charts/pie-chart-pag
 import { BreadcrumpsComponent } from './components/breadcrumps/breadcrumps.component';
 import { WallTabsComponent } from './components/wall-tabs/wall-tabs.component';
 import { InfoTabComponent } from './components/info-tab/info-tab.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -148,6 +149,7 @@ import { InfoTabComponent } from './components/info-tab/info-tab.component';
     BreadcrumpsComponent,
     WallTabsComponent,
     InfoTabComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
