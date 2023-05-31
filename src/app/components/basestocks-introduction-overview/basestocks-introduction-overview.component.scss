@@ -1,4 +1,164 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
+
 .basestocks-introduction {
-  min-height: calc(100vh - 135px);
+  min-height: calc(100vh - 110px);
   padding-top: 98px;
+
+  &-body {
+    &-content {
+      .overview-section {
+        margin: 40px 20px;
+        > h3 {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .accardion {
+          &::ng-deep {
+            .dx-accordion-item {
+              margin: 10px 0;
+              min-height: 50px;
+              .dx-accordion-item-title {
+                min-height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row-reverse;
+                border-left: 5px solid $orange;
+                background: $gray;
+                &::before {
+                  position: unset !important;
+                  color: $white;
+                  width: unset;
+                  height: unset;
+                  font-size: 20px;
+                }
+                .dx-accordion-item-title-caption {
+                  color: $white;
+                  position: unset !important;
+                  font-size: 20px;
+                  font-weight: 500;
+                }
+              }
+              .dx-accordion-item-body {
+                .accardion-body-content {
+                  padding: 10px;
+                  .descriptions,
+                  .definations {
+                    display: grid;
+                    grid-gap: 16px;
+                    p {
+                      font-size: 16px;
+                    }
+                  }
+                  ul,
+                  .desc-list {
+                    margin: 16px 0;
+                    li,
+                    h3 {
+                      font-size: 16px;
+                      padding: 4px 0;
+                    }
+                  }
+                  ul {
+                    margin-left: 40px;
+                  }
+                  h2 {
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                  }
+                  p {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+            .dx-datagrid-content .dx-datagrid-table.dx-datagrid-table-fixed {
+              max-width: 800px;
+            }
+            .overview-table {
+              .table-title {
+                max-width: 780px;
+                text-align: center;
+                padding: 12px 8px;
+                font-size: 15px;
+                background: #5e9d9f;
+                color: white;
+                border-radius: 5px;
+                margin: 9px 10px;
+              }
+            }
+            .dx-header-row {
+              td {
+                display: block !important;
+                margin: 0 10px !important;
+                border-radius: 4px !important;
+                text-align: center !important;
+                color: $white;
+                text-transform: uppercase;
+                font-size: 14px !important;
+                font-weight: 600;
+                background: rgba(63, 63, 63, 0.5);
+
+                &:nth-of-type(1) {
+                  background: #5e9d9f;
+                }
+              }
+            }
+            .dx-datagrid-headers {
+              border-bottom: none !important;
+            }
+            .over-table {
+              margin: 40px 0;
+            }
+            .dx-data-row {
+              td {
+                display: block !important;
+                margin: 0 10px !important;
+                border-radius: 4px !important;
+                font-size: 13px;
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                text-align: center !important;
+                &:nth-of-type(1) {
+                  &:hover {
+                    background: #5e9d9fbe !important;
+                  }
+                }
+                &:nth-of-type(2) {
+                  white-space: pre-line;
+                  &:hover {
+                    background: $gray-light !important;
+                  }
+                }
+                &:nth-of-type(3) {
+                  white-space: pre-line;
+                  &:hover {
+                    background: $orangeOp;
+                  }
+                }
+              }
+            }
+            .dx-row {
+              td {
+                border-bottom: none !important;
+              }
+            }
+            .dx-datagrid-rowsview {
+              .dx-row {
+                border: none !important;
+              }
+            }
+            tr {
+              white-space: normal !important;
+              display: grid;
+              grid-template-columns: repeat(7, 100%);
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }

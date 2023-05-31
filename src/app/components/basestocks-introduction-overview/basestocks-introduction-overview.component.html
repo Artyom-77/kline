@@ -7,4 +7,117 @@
   find the topic in which you are interested.
 "
   ></app-hero-section>
+  <div class="basestocks-introduction-body">
+    <div class="basestocks-introduction-body-header">
+      <h3>Basestocks Deblend Model Background</h3>
+    </div>
+    <div class="basestocks-introduction-body-content">
+      <div class="overview-section" *ngFor="let bod of basestockOverviewData">
+        <h3>{{ bod.title }}</h3>
+        <div class="accardion">
+          <dx-accordion
+            #accordion
+            [dataSource]="bod?.accardionItem"
+            [collapsible]="true"
+            [multiple]="false"
+            [animationDuration]="300"
+            [selectedItems]="[bod.accardionItem[0]]"
+            id="accordion-container"
+          >
+            <div *dxTemplate="let item of bod.accardionItem">
+              <h3>
+                {{ item.title }}
+              </h3>
+            </div>
+            <div *dxTemplate="let data of 'item'">
+              <div class="accardion-body-content">
+                <div>
+                  <h2>
+                    {{data.subtitle}}
+                  </h2>
+                </div>
+                <div class="descriptions" *ngIf="data.descriptions">
+                  <p *ngFor="let desc of data.descriptions">
+                    {{desc}}
+                  </p>
+                </div>
+                <div class="desc-list" *ngIf="data.lists">
+                  <div *ngFor="let list of data.lists">
+                    <h2 *ngIf="list.listName"> {{list.listName}}</h2>
+                    <p *ngIf="list.listDesc"> {{list.listDesc}}</p>
+                    <h3> {{list.ulTitle}} </h3>
+                    <ul>
+                      <li *ngFor="let liItem of list.ulData">
+                        {{ liItem }}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="descriptions">
+                  <p *ngIf="data.desc">
+                    {{ data.desc }}
+                  </p>
+                  <p *ngIf="data.desc1">
+                    {{ data.desc1 }}
+                  </p>
+                  <p *ngIf="data.desc2">
+                    {{ data.desc2 }}
+                  </p>
+                </div>
+                <div *ngIf="data.tableData" class="overview-table">
+                  <h3 *ngIf="data.tableTitle" class="table-title">
+                    {{ data.tableTitle }}
+                  </h3>
+                  <dx-data-grid
+                    id="gridContainer"
+                    [title]="data.tableTitle"
+                    [dataSource]="data.tableData"
+                    [showColumnLines]="false"
+                    [showRowLines]="false"
+                    [showBorders]="false"
+                    [rowAlternationEnabled]="true"
+                  >
+                  </dx-data-grid>
+                </div>
+                <div *ngIf="data.tables" class="overview-table">
+                  <div class="over-table" *ngFor="let table of data.tables">
+                    <h3 *ngIf="table.tableTitle" class="table-title">
+                      {{ table.tableTitle }}
+                    </h3>
+                    <dx-data-grid
+                      id="gridContainer"
+                      [dataSource]="table.tableData"
+                      [showColumnLines]="false"
+                      [showRowLines]="false"
+                      [showBorders]="false"
+                      [rowAlternationEnabled]="true"
+                    >
+                    </dx-data-grid>
+                    <div class="desc-list" *ngIf="table.descList">
+                      <h3 *ngFor="let it of table.descList">{{ it }}</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-list" *ngIf="data.descList">
+                  <h3 *ngFor="let it of data.descList">{{ it }}</h3>
+                </div>
+                <div class="definations" *ngIf="data.definations">
+                  <div *ngFor="let it of data.definations">
+                    <p>
+                      <b>{{ it.subtitle }} :</b> {{ it.desc }}
+                    </p>
+                    <ul>
+                      <li *ngFor="let liItem of it.defUl">
+                        {{ liItem }}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dx-accordion>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

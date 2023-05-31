@@ -20,6 +20,33 @@
         [iconName]="''"
       ></app-button>
     </div>
+    <div class="conventional-basestocks-body-selects">
+      <app-select-dropdown
+      [dropdownTitle]="' Region'"
+      [dropdownData]="regionsList"
+      (itemEvent)="groupList($event)"
+    ></app-select-dropdown>
+      <app-select-dropdown
+      [dropdownTitle]="' Supply Year'"
+      [dropdownData]="yearList"
+      (itemEvent)="groupList($event)"
+    ></app-select-dropdown>
+      <app-select-dropdown
+      [dropdownTitle]="' Demand Year'"
+      [dropdownData]="yearList"
+      (itemEvent)="groupList($event)"
+    ></app-select-dropdown>
+      <app-select-dropdown
+      [dropdownTitle]="' Recipe Year'"
+      [dropdownData]="yearList"
+      (itemEvent)="groupList($event)"
+    ></app-select-dropdown>
+      <app-select-dropdown
+      [dropdownTitle]="' Unit'"
+      [dropdownData]="unitList"
+      (itemEvent)="groupList($event)"
+    ></app-select-dropdown>
+    </div>
     <div  class="conventional-basestocks-body-pivot">
       <dx-pivot-grid
         [allowSortingBySummary]="true"

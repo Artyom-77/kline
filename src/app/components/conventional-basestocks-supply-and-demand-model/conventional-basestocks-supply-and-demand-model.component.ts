@@ -22,6 +22,62 @@ export class ConventionalBasestocksSupplyAndDemandModelComponent implements OnIn
     this.modalDummyData = service.modalData;
   }
 
+  public regionsList: any[] = [
+    {
+      id: 1,
+      label: 'All',
+    },
+    {
+      id: 2,
+      label: 'Argentina',
+    },
+    {
+      id: 3,
+      label: 'Chile',
+    },
+    {
+      id: 4,
+      label: 'Columbia',
+    },
+    {
+      id: 5,
+      label: 'Panama',
+    },
+    {
+      id: 6,
+      label: 'Uruguay',
+    },
+    {
+      id: 7,
+      label: 'Brazil',
+    },
+  ];
+
+  public unitList: any[] = [
+    {
+      id: 1,
+      label: 'KTPA',
+    },
+    {
+      id: 2,
+      label: 'B/D',
+    },
+  ];
+  public yearList: any[] = [
+    {
+      id: 1,
+      label: 2021,
+    },
+    {
+      id: 2,
+      label: 2022,
+    },
+    {
+      id: 3,
+      label: 2023,
+    },
+  ];
+
   ngOnInit() {
     this.http
       .get('../../../assets/json/synteticTabularTabledata.json')
@@ -109,5 +165,9 @@ export class ConventionalBasestocksSupplyAndDemandModelComponent implements OnIn
   }
   onFocusedCellChanging(e: any) {
     e.isHighlighted = true;
+  }
+
+  groupList(arg: string) {
+
   }
 }

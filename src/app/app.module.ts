@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { LendingPageComponent } from './lending-page/lending-page.component';
 import { HeaderComponent } from './components/header/header.component';
-import { DxGalleryModule, DxPivotGridModule, DxRadioGroupModule } from 'devextreme-angular';
+import { DxAccordionModule, DxGalleryModule, DxPivotGridModule, DxRadioGroupModule } from 'devextreme-angular';
 import { DxToolbarModule } from 'devextreme-angular/ui/toolbar';
 import { NewsSidebarComponent } from './components/news-sidebar/news-sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -168,7 +168,8 @@ import { ConventionalBasestocksSupplyAndDemandModelComponent } from './component
     DxMapModule,
     DxBarGaugeModule,
     DxVectorMapModule,
-    DxRadioGroupModule
+    DxRadioGroupModule,
+    DxAccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent],
