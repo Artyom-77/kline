@@ -13,7 +13,7 @@
     padding: 0 20px;
     margin: 16px auto;
 
-    >div {
+    > div {
       display: flex;
       align-items: center;
 
@@ -29,6 +29,9 @@
   }
 
   &-body {
+    max-width: 1740px;
+    padding: 0 20px;
+    margin: 0 auto;
     &-filters {
       padding: 16px 0 20px;
       display: flex;
@@ -45,7 +48,7 @@
           border-radius: 4px;
           cursor: pointer;
 
-          >h3 {
+          > h3 {
             color: $white;
             font-size: 14px;
             font-weight: 500;
@@ -71,10 +74,6 @@
       }
     }
 
-    max-width: 1440px;
-    padding: 0 20px;
-    margin: 0 auto;
-
     &-pivot {
       margin: 8px 0;
     }
@@ -87,6 +86,15 @@
 
     .dx-expand {
       color: $orange !important;
+    }
+    .dx-pivotgrid {
+      .dx-pivotgrid-area-data {
+        tbody {
+          td {
+            text-align: center;
+          }
+        }
+      }
     }
 
     .dx-area-box {

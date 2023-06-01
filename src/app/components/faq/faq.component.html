@@ -1,21 +1,94 @@
 <div class="faq">
-  <app-hero-section
-  subtitle=""
-  title="FAQ"
-  desc=""
-></app-hero-section>
-<div class="faq-body">
-  <div class="faq-body-card" *ngFor="let item of faqData">
-    <div class="header">
-      <h3> {{ item.header }} </h3>
-    </div>
-    <div class="card-body">
-      <h3 class="card-title">
-        {{ item.title }}
-      </h3>
-      <div class="card-desc" [innerHTML]="item.description">
+  <app-hero-section subtitle="" title="FAQ" desc=""></app-hero-section>
+  <div class="faq-body">
+    <!-- <div class="faq-body-card" *ngFor="let item of faqData">
+      <div class="header">
+        <h3>{{ item.header }}</h3>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">
+          {{ item.title }}
+        </h3>
+        <div class="card-desc" [innerHTML]="item.description"></div>
+      </div>
+    </div> -->
+
+    <div class="faq-body-content">
+      <div class="overview-section">
+        <h3>{{ navigationFaq[0].header }}</h3>
+        <div class="accardion">
+          <dx-accordion
+            #accordion
+            [dataSource]="navigationFaq"
+            [collapsible]="true"
+            [multiple]="false"
+            [animationDuration]="300"
+            [selectedItems]="[navigationFaq[0]]"
+            id="accordion-container"
+          >
+            <div *dxTemplate="let item of navigationFaq">
+              <h3>
+                {{ item.title }}
+              </h3>
+            </div>
+            <div *dxTemplate="let data of 'item'">
+              <div class="accardion-body-content">
+                <p>{{ data.description }}</p>
+              </div>
+            </div>
+          </dx-accordion>
+        </div>
+      </div>
+      <div class="overview-section">
+        <h3>{{ scopeFaq[0].header }}</h3>
+        <div class="accardion">
+          <dx-accordion
+            #accordion
+            [dataSource]="scopeFaq"
+            [collapsible]="true"
+            [multiple]="false"
+            [animationDuration]="300"
+            [selectedItems]="[scopeFaq[0]]"
+            id="accordion-container"
+          >
+            <div *dxTemplate="let item of scopeFaq">
+              <h3>
+                {{ item.title }}
+              </h3>
+            </div>
+            <div *dxTemplate="let data of 'item'">
+              <div class="accardion-body-content">
+                <p>{{ data.description }}</p>
+              </div>
+            </div>
+          </dx-accordion>
+        </div>
+      </div>
+      <div class="overview-section">
+        <h3>{{ aboutFaq[0].header }}</h3>
+        <div class="accardion">
+          <dx-accordion
+            #accordion
+            [dataSource]="aboutFaq"
+            [collapsible]="true"
+            [multiple]="false"
+            [animationDuration]="300"
+            [selectedItems]="[aboutFaq[0]]"
+            id="accordion-container"
+          >
+            <div *dxTemplate="let item of aboutFaq">
+              <h3>
+                {{ item.title }}
+              </h3>
+            </div>
+            <div *dxTemplate="let data of 'item'">
+              <div class="accardion-body-content">
+                <p>{{ data.description }}</p>
+              </div>
+            </div>
+          </dx-accordion>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>

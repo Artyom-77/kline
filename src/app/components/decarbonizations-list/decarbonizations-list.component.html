@@ -15,23 +15,141 @@
         (click)="openModal()"
       ></app-button>
     </div>
-    <div class="arrow-prev" (click)="scrollRightPublished()">
-      <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
-    </div>
-    <div class="arrow-next" (click)="scrollLeftPublished()">
-      <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
-    </div>
-    <div class="published-articles-cards" #content>
-      <div class="card" *ngFor="let item of cards_data">
-        <div class="card-img" (click)="navigateToDetails(item)">
-          <img [src]="item.img" alt="card-img" />
+    <div class="published-articles-content">
+      <div class="bookmark-slider">
+        <div class="arrow-prev" (click)="scrollRightPublished()">
+          <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
         </div>
-        <div class="card-body">
-          <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
-          <h3 class="card-body-title" (click)="navigateToDetails(item)">{{ item.title }}</h3>
-          <p class="card-body-industry"><b>Industry:</b> {{ item.industry }}</p>
-          <p class="card-body-desc">{{ item.desc }}</p>
-          <div class="card-body-action">
+        <div class="arrow-next" (click)="scrollLeftPublished()">
+          <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
+        </div>
+        <div class="published-articles-cards" #content>
+          <div class="card" *ngFor="let item of cards_data">
+            <div class="card-img" (click)="navigateToDetails(item)">
+              <img [src]="item.img" alt="card-img" />
+            </div>
+            <div class="card-body">
+              <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
+              <h3 class="card-body-title" (click)="navigateToDetails(item)">
+                {{ item.title }}
+              </h3>
+              <p class="card-body-industry">
+                <b>Industry:</b> {{ item.industry }}
+              </p>
+              <p class="card-body-desc">{{ item.desc }}</p>
+              <div class="card-body-action">
+                <div>
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26.6667 5H13.3333C12.4493 5 11.6014 5.35119 10.9763 5.97631C10.3512 6.60143 10 7.44928 10 8.33333V35L20 30L30 35V8.33333C30 7.44928 29.6488 6.60143 29.0237 5.97631C28.3986 5.35119 27.5507 5 26.6667 5Z"
+                      stroke="#DF7B2E"
+                      stroke-width="3.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="commentaries">
+        <h3 class="commentaries-title">ANALYST COMMENTARY</h3>
+        <div class="commentary">
+          <div class="white-space">
+            <div class="circle-left"></div>
+            <div class="circle-right"></div>
+          </div>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore.
+          </p>
+          <p class="date"><b>Date:</b> January 28,2022</p>
+        </div>
+        <div class="commentary">
+          <div class="white-space">
+            <div class="circle-left"></div>
+            <div class="circle-right"></div>
+          </div>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliquat in
+            voluptate velit esse cillum dolore.
+          </p>
+          <p class="date"><b>Date:</b> January 28,2022</p>
+        </div>
+        <div class="commentary">
+          <div class="white-space">
+            <div class="circle-left"></div>
+            <div class="circle-right"></div>
+          </div>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          </p>
+          <p class="date"><b>Date:</b> January 28,2022</p>
+        </div>
+        <div class="commentary">
+          <div class="white-space">
+            <div class="circle-left"></div>
+            <div class="circle-right"></div>
+          </div>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore.
+          </p>
+          <p class="date"><b>Date:</b> January 28,2022</p>
+        </div>
+        <div class="commentary">
+          <div class="white-space">
+            <div class="circle-left"></div>
+            <div class="circle-right"></div>
+          </div>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod
+          </p>
+          <p class="date"><b>Date:</b> January 28,2022</p>
+        </div>
+        <div class="commentary">
+          <div class="white-space">
+            <div class="circle-left"></div>
+            <div class="circle-right"></div>
+          </div>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore.
+          </p>
+          <p class="date"><b>Date:</b> January 28,2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-area">
+    <app-modal
+      [title]="'Saved Bookmarks'"
+      *ngIf="isModalVisible"
+      (onClose)="onCloseModal()"
+    >
+      <div class="modal-content">
+        <div class="bookmarks-list">
+          <div class="bookmark" *ngFor="let item of cards_data">
+            <h3 (click)="navigateToDetails(item)">{{ item.title }}</h3>
             <div>
               <svg
                 width="40"
@@ -48,38 +166,6 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal-area">
-    <app-modal
-      [title]="'Saved Bookmarks'"
-      *ngIf="isModalVisible"
-      (onClose)="onCloseModal()"
-    >
-      <div class="modal-content">
-        <div class="bookmarks-list">
-          <div class="bookmark" *ngFor="let item of cards_data" >
-            <h3 (click)="navigateToDetails(item)"> {{ item.title }}</h3>
-            <div>
-              <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M26.6667 5H13.3333C12.4493 5 11.6014 5.35119 10.9763 5.97631C10.3512 6.60143 10 7.44928 10 8.33333V35L20 30L30 35V8.33333C30 7.44928 29.6488 6.60143 29.0237 5.97631C28.3986 5.35119 27.5507 5 26.6667 5Z"
-                stroke="#DF7B2E"
-                stroke-width="3.33333"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
             </div>
           </div>
         </div>

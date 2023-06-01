@@ -4,4 +4,54 @@
 .faq {
   min-height: calc(100vh - 98px);
   padding-top: 98px;
+  &-body {
+    &-content {
+      margin: 40px 20px;
+      .overview-section {
+        margin-top: 20px;
+        > h3 {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .accardion {
+          &::ng-deep {
+            .dx-accordion-item {
+              margin: 10px 0;
+              min-height: 50px;
+              .dx-accordion-item-title {
+                min-height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row-reverse;
+                border-left: 5px solid $orange;
+                background: $gray;
+                &::before {
+                  position: unset !important;
+                  color: $white;
+                  width: unset;
+                  height: unset;
+                  font-size: 20px;
+                }
+                .dx-accordion-item-title-caption {
+                  color: $white;
+                  position: unset !important;
+                  font-size: 20px;
+                  font-weight: 500;
+                }
+              }
+              .dx-accordion-item-body {
+                .accardion-body-content {
+                  padding: 10px;
+                  p {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

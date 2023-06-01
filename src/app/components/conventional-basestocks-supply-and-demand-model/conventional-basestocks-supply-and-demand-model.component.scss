@@ -7,6 +7,9 @@
 
   &-body {
     margin-bottom: 40px;
+    max-width: 1740px;
+    padding: 0 20px;
+    margin: 0 auto;
     &-filters {
       padding: 16px 0 20px;
       display: flex;
@@ -49,10 +52,6 @@
       }
     }
 
-    // max-width: 1440px;
-    padding: 0 20px;
-    margin: 0 auto;
-
     &-pivot {
       margin: 8px 0;
       margin-bottom: 40px;
@@ -79,6 +78,15 @@
 
       .dx-header-filter-empty {
         color: $white !important;
+      }
+    }
+    .dx-pivotgrid {
+      .dx-pivotgrid-area-data {
+        tbody {
+          td {
+            text-align: center;
+          }
+        }
       }
     }
 

@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": 1,
     "section": "one",
     "header": "Navigation and access",
@@ -9,15 +10,15 @@
     "id": 2,
     "section": "one",
     "header": "Navigation and access",
-    "title": "Raising an Analyst query - Ask an Analyst",
-    "description": "To raise an analyst query, you can click on the \"Ask an Analyst\" button (in green color) on the top-right corner of your page. The Ask an Analyst button is present across all sections. Upon clicking, you will be prompted to enter your query in a box. Once completed, your request will be shared with the designated team, which will begin work on your request."
+    "title": "Raising an Analyst query - Contact Us",
+    "description": "To raise an analyst query, you can click on the \"Contact Us\" button (in green color) on the top-right corner of your page. The Contact Us button is present across all sections. Upon clicking, you will be prompted to enter your query in a box. Once completed, your request will be shared with the designated team, which will begin work on your request."
   },
   {
     "id": 3,
     "section": "one",
     "header": "Navigation and access",
     "title": "Setting up Alerts",
-    "description": "To set an alert, please click on the bell icon on the top-right corner of your page (the bell icon is placed to the left of the \"Ask an Analyst\" button). An alert notification box will then pop up on your screen. You can select the frequency as Daily, Weekly, or Fortnightly by clicking on the radio buttons. Scrolling down further allows you to set up alerts based on the different sections of the Intelligence Center. To set up alerts for all Product Trends, you can click on the \"blue\" button so that it turns to the \"On\" position. In addition, you can also set up alerts for specific keywords within each section. For this, click on the \"+\" button next to the section to open up a keyword box. Type in the desired keyword, and click on \"Add keyword.\" Once done with the setup process, you may close the alert box by clicking on the \"X\" button on the top-right corner."
+    "description": "To set an alert, please click on the bell icon on the top-right corner of your page (the bell icon is placed to the left of the \"Contact Us\" button). An alert notification box will then pop up on your screen. You can select the frequency as Daily, Weekly, or Fortnightly by clicking on the radio buttons. Scrolling down further allows you to set up alerts based on the different sections of the Intelligence Center. To set up alerts for all Product Trends, you can click on the \"blue\" button so that it turns to the \"On\" position. In addition, you can also set up alerts for specific keywords within each section. For this, click on the \"+\" button next to the section to open up a keyword box. Type in the desired keyword, and click on \"Add keyword.\" Once done with the setup process, you may close the alert box by clicking on the \"X\" button on the top-right corner."
   },
   {
     "id": 4,
@@ -75,5 +76,4 @@
     "title": "About",
     "description": ""
   }
-
 ]
