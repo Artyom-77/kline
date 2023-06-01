@@ -1,15 +1,11 @@
 <div class="basestocks-introduction">
   <app-hero-section
     title="Basestocks Introduction Overview"
-    desc="
-  Our webinars are an excellent source of information that help you gain key
-  market insights quickly and efficiently. Select the industry below and
-  find the topic in which you are interested.
-"
+    desc=""
   ></app-hero-section>
   <div class="basestocks-introduction-body">
     <div class="basestocks-introduction-body-header">
-      <h3>Basestocks Deblend Model Background</h3>
+      <!-- <h3>Basestocks Deblend Model Background</h3> -->
     </div>
     <div class="basestocks-introduction-body-content">
       <div class="overview-section" *ngFor="let bod of basestockOverviewData">
@@ -112,6 +108,18 @@
                       </li>
                     </ul>
                   </div>
+                </div>
+                <div class="overview-image" *ngIf="data.graphImg1">
+                  <img [src]="data.graphImg1" alt="graph" >
+                </div>
+                <div class="overview-image" *ngIf="data.graphImg2">
+                  <img [src]="data.graphImg2" alt="graph" >
+                </div>
+                <div class="overview-image" *ngIf="data.graphImg4">
+                  <img [src]="data.graphImg4" alt="graph" >
+                </div>
+                <div class="overview-image" *ngIf="data.graphImg3">
+                  <img [src]="data.graphImg3" alt="graph" >
                 </div>
               </div>
             </div>

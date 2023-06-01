@@ -9,7 +9,7 @@
       </div>
 
       <div class="socials">
-        <div class="">
+        <div class="" (click)="openModal()">
           <a>Contact Us</a>
         </div>
         <div class="">
@@ -107,5 +107,27 @@
     </div>
   </div>
   <div>
+  </div>
+  <div class="modal-area">
+    <app-modal
+      [title]="'Contact Us'"
+      *ngIf="isModalVisible"
+      (onClose)="onCloseModal()"
+    >
+      <div class="modal-content">
+        <div class="contact-us-form">
+          <p class="desc">
+            Tell us what you want and the best way to get in touch.
+          </p>
+          <textarea placeholder=""  ></textarea>
+          <app-button
+          [btnText]="'Submit query'"
+          [type]="'secondary right'"
+          [icon]="false"
+          [iconName]="''"
+        ></app-button>
+        </div>
+      </div>
+    </app-modal>
   </div>
 </div>

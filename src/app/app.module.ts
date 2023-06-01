@@ -82,6 +82,9 @@ import { WallTabsComponent } from './components/wall-tabs/wall-tabs.component';
 import { InfoTabComponent } from './components/info-tab/info-tab.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { ConventionalBasestocksSupplyAndDemandModelComponent } from './components/conventional-basestocks-supply-and-demand-model/conventional-basestocks-supply-and-demand-model.component';
+import { RoutesToDecarbonizationComponent } from './components/routes-to-decarbonization/routes-to-decarbonization.component';
+import { DecarbonizationsListComponent } from './components/decarbonizations-list/decarbonizations-list.component';
+import { CardDetailsComponent } from './components/card-details/card-details.component';
 
 @NgModule({
   declarations: [
@@ -152,6 +155,9 @@ import { ConventionalBasestocksSupplyAndDemandModelComponent } from './component
     InfoTabComponent,
     FaqComponent,
     ConventionalBasestocksSupplyAndDemandModelComponent,
+    RoutesToDecarbonizationComponent,
+    DecarbonizationsListComponent,
+    CardDetailsComponent,
   ],
   imports: [
     BrowserModule,

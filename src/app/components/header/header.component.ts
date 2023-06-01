@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit, OnChanges {
   public coveragesList: any[] = [];
   public marketList: any[] = [];
   public sustainabilityList: any[] = [];
+  public isModalVisible: boolean = false;
   public navigationItems = [
     {
       path: "/",
@@ -76,5 +77,13 @@ public pathname : any
         this.dropdownOpen = false;
       }
     }
+  }
+  openModal() {
+    this.isModalVisible = true;
+    document.querySelector('.kline-app')?.classList.add('fixed');
+  }
+  onCloseModal() {
+    this.isModalVisible = false;
+    document.querySelector('.kline-app')?.classList.remove('fixed');
   }
 }

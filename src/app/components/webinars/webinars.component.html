@@ -121,12 +121,12 @@
               | selectDate : selectedDate
           "
         >
-          <div class="card-img">
+          <div class="card-img"   (click)="navigateToDetails(item)">
             <img [src]="item.img" alt="card-img" />
           </div>
           <div class="card-body">
             <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
-            <h3 class="card-body-title">{{ item.title }}</h3>
+            <h3 class="card-body-title"   (click)="navigateToDetails(item)">{{ item.title }}</h3>
             <p class="card-body-industry">
               <b>Industry:</b> {{ item.industry }}
             </p>
@@ -137,6 +137,7 @@
                 [type]="'secondary'"
                 [icon]="false"
                 [iconName]="''"
+                (click)="navigateToDetails(item)"
               ></app-button>
             </div>
           </div>
@@ -163,12 +164,12 @@
               | selectDate : selectedDate
           "
         >
-          <div class="card-img">
+          <div class="card-img"   (click)="navigateToDetails(item)">
             <img [src]="item.img" alt="card-img" />
           </div>
           <div class="card-body">
             <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
-            <h3 class="card-body-title">{{ item.title }}</h3>
+            <h3 class="card-body-title"   (click)="navigateToDetails(item)">{{ item.title }}</h3>
             <p class="card-body-industry">
               <b>Industry:</b> {{ item.industry }}
             </p>
@@ -179,6 +180,7 @@
                 [type]="'secondary'"
                 [icon]="false"
                 [iconName]="''"
+                (click)="navigateToDetails(item)"
               ></app-button>
             </div>
           </div>
@@ -205,12 +207,12 @@
               | selectDate : selectedDate
           "
         >
-          <div class="card-img">
+          <div class="card-img"   (click)="navigateToDetails(item)">
             <img [src]="item.img" alt="card-img" />
           </div>
           <div class="card-body">
             <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
-            <h3 class="card-body-title">{{ item.title }}</h3>
+            <h3 class="card-body-title"   (click)="navigateToDetails(item)">{{ item.title }}</h3>
             <p class="card-body-industry">
               <b>Industry:</b> {{ item.industry }}
             </p>
@@ -221,6 +223,7 @@
                 [type]="'secondary'"
                 [icon]="false"
                 [iconName]="''"
+                (click)="navigateToDetails(item)"
               ></app-button>
             </div>
           </div>

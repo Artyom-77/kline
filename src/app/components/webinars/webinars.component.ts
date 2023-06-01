@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 import { WebinarsService } from 'src/app/services/webinars/webinars.service';
 import { v4 as uuidv4 } from 'uuid';
 @Component({
@@ -35,7 +36,8 @@ export class WebinarsComponent implements OnInit {
 
   constructor(
     private webinaryService: WebinarsService,
-    private routers: Router
+    private routers: Router,
+    private service:LandingServiceService
   ) {
     this.webinarsList = webinaryService.webinarsListDummyData;
     this.router = routers;
@@ -143,6 +145,12 @@ export class WebinarsComponent implements OnInit {
       left: -586,
       behavior: 'smooth'
     });
+  }
+
+  navigateToDetails(item: any) {
+
+    this.service.setCardData(item)
+    this.router.navigate(['card-details', item.id]);
   }
 
 }

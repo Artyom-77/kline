@@ -51,6 +51,12 @@
                       font-size: 16px;
                     }
                   }
+                  .overview-image {
+                    max-width: 720px;
+                    > img {
+                      width: 100%;
+                    }
+                  }
                   ul,
                   .desc-list {
                     margin: 16px 0;

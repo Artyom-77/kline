@@ -13,6 +13,9 @@ import { ProductPropertiesComponent } from './components/product-properties/prod
 import { BlenderDatabaseComponent } from './components/blender-database/blender-database.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { ConventionalBasestocksSupplyAndDemandModelComponent } from './components/conventional-basestocks-supply-and-demand-model/conventional-basestocks-supply-and-demand-model.component';
+import { RoutesToDecarbonizationComponent } from './components/routes-to-decarbonization/routes-to-decarbonization.component';
+import { DecarbonizationsListComponent } from './components/decarbonizations-list/decarbonizations-list.component';
+import { CardDetailsComponent } from './components/card-details/card-details.component';
 
 const routes: Routes = [
   { path: '', component: LendingPageComponent },
@@ -29,6 +32,9 @@ const routes: Routes = [
   { path: 'supplier-profiles', component: SupplierProfilesComponent },
   { path: 'product-properties', component: ProductPropertiesComponent },
   { path: 'blender-database', component: BlenderDatabaseComponent },
+  { path: 'routes-to-decarbonization', component: RoutesToDecarbonizationComponent },
+  { path: 'decarbonizations-list', component: DecarbonizationsListComponent },
+  { path: 'card-details/:id', component: CardDetailsComponent },
   { path: 'conventional-basestocks', component: ConventionalBasestocksSupplyAndDemandModelComponent },
   { path: 'faq', component: FaqComponent },
 

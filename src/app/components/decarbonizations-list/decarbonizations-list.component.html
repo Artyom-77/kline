@@ -1,0 +1,168 @@
+<div class="decarbonizations-list">
+  <app-hero-section
+    title="Routes to Decarbonization"
+    desc=""
+  ></app-hero-section>
+  <div class="published-articles">
+    <div class="published-articles-title">
+      <div></div>
+      <h3>{{ title }}</h3>
+      <app-button
+        [btnText]="'Saved Bookmarks'"
+        [type]="'secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="openModal()"
+      ></app-button>
+    </div>
+    <div class="arrow-prev" (click)="scrollRightPublished()">
+      <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
+    </div>
+    <div class="arrow-next" (click)="scrollLeftPublished()">
+      <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
+    </div>
+    <div class="published-articles-cards" #content>
+      <div class="card" *ngFor="let item of cards_data">
+        <div class="card-img" (click)="navigateToDetails(item)">
+          <img [src]="item.img" alt="card-img" />
+        </div>
+        <div class="card-body">
+          <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
+          <h3 class="card-body-title" (click)="navigateToDetails(item)">{{ item.title }}</h3>
+          <p class="card-body-industry"><b>Industry:</b> {{ item.industry }}</p>
+          <p class="card-body-desc">{{ item.desc }}</p>
+          <div class="card-body-action">
+            <div>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M26.6667 5H13.3333C12.4493 5 11.6014 5.35119 10.9763 5.97631C10.3512 6.60143 10 7.44928 10 8.33333V35L20 30L30 35V8.33333C30 7.44928 29.6488 6.60143 29.0237 5.97631C28.3986 5.35119 27.5507 5 26.6667 5Z"
+                  stroke="#DF7B2E"
+                  stroke-width="3.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-area">
+    <app-modal
+      [title]="'Saved Bookmarks'"
+      *ngIf="isModalVisible"
+      (onClose)="onCloseModal()"
+    >
+      <div class="modal-content">
+        <div class="bookmarks-list">
+          <div class="bookmark" *ngFor="let item of cards_data" >
+            <h3 (click)="navigateToDetails(item)"> {{ item.title }}</h3>
+            <div>
+              <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.6667 5H13.3333C12.4493 5 11.6014 5.35119 10.9763 5.97631C10.3512 6.60143 10 7.44928 10 8.33333V35L20 30L30 35V8.33333C30 7.44928 29.6488 6.60143 29.0237 5.97631C28.3986 5.35119 27.5507 5 26.6667 5Z"
+                stroke="#DF7B2E"
+                stroke-width="3.33333"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </app-modal>
+  </div>
+  <!-- <div class="published-articles">
+      <div class="published-articles-title">
+        <h3>Analysis-Kline Base Oil Reports</h3>
+      </div>
+      <div class="arrow-prev" (click)="scrollRightAnalysis()">
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
+      </div>
+      <div class="arrow-next" (click)="scrollLeftAnalysis()">
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
+      </div>
+      <div class="published-articles-cards" #content1>
+        <div
+          class="card"
+          *ngFor="
+            let item of filteredWebinarsList
+
+          "
+        >
+          <div class="card-img">
+            <img [src]="item.img" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
+            <h3 class="card-body-title">{{ item.title }}</h3>
+            <p class="card-body-industry">
+              <b>Industry:</b> {{ item.industry }}
+            </p>
+            <p class="card-body-desc">{{ item.desc }}</p>
+            <div class="card-body-action">
+              <app-button
+                [btnText]="'Read More'"
+                [type]="'secondary'"
+                [icon]="false"
+                [iconName]="''"
+              ></app-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="published-articles">
+      <div class="published-articles-title">
+        <h3>KIine Other Offerings</h3>
+      </div>
+      <div class="arrow-prev" (click)="scrollRightOfferings()">
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
+      </div>
+      <div class="arrow-next" (click)="scrollLeftOfferings()">
+        <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
+      </div>
+      <div class="published-articles-cards" #content2>
+        <div
+          class="card"
+          *ngFor="
+            let item of filteredWebinarsList
+          "
+        >
+          <div class="card-img">
+            <img [src]="item.img" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-body-date"><b>Date:</b> {{ item.date }}</p>
+            <h3 class="card-body-title">{{ item.title }}</h3>
+            <p class="card-body-industry">
+              <b>Industry:</b> {{ item.industry }}
+            </p>
+            <p class="card-body-desc">{{ item.desc }}</p>
+            <div class="card-body-action">
+              <app-button
+                [btnText]="'Read More'"
+                [type]="'secondary'"
+                [icon]="false"
+                [iconName]="''"
+              ></app-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+</div>

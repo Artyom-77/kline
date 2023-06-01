@@ -1,12 +1,27 @@
-import { Injectable } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { LandingServiceService } from 'src/app/services/landing-service.service';
 import { v4 as uuidv4 } from 'uuid';
 
-@Injectable({
-  providedIn: 'root',
+@Component({
+  selector: 'app-decarbonizations-list',
+  templateUrl: './decarbonizations-list.component.html',
+  styleUrls: ['./decarbonizations-list.component.scss']
 })
-export class WebinarsService {
-  public uniqueId: any = uuidv4();
+export class DecarbonizationsListComponent implements OnInit {
 
+  public cards_data: any[] = []
+  public title: string = ''
+  public isModalVisible: boolean = false;
+
+  constructor(private service:LandingServiceService, private router: Router ){
+    this.service.getDecarbonData().subscribe(data =>{
+      this.cards_data = data.cardsList
+      this.title = data.title
+    })
+  console.log('this.card_data',this.cards_data);
+
+  }
   public webinarsListDummyData: any[] = [
     {
       id: uuidv4(),
@@ -242,5 +257,41 @@ export class WebinarsService {
     },
   ];
 
-  constructor() {}
+  ngOnInit(): void {
+
+  }
+
+  @ViewChild('content', { static: true }) contentRef?: ElementRef ;
+
+  scrollRightPublished() {
+
+    this.contentRef?.nativeElement.scrollBy({
+      left: -586,
+      behavior: 'smooth'
+    });
+  }
+
+  scrollLeftPublished() {
+
+    this.contentRef?.nativeElement.scrollBy({
+      left: 586,
+      behavior: 'smooth'
+    });
+  }
+
+  openModal() {
+    this.isModalVisible = true;
+    document.querySelector('.kline-app')?.classList.add('fixed');
+  }
+  onCloseModal() {
+    this.isModalVisible = false;
+    document.querySelector('.kline-app')?.classList.remove('fixed');
+  }
+
+  navigateToDetails(item: any) {
+
+    this.service.setCardData(item)
+    this.router.navigate(['card-details', item.id]);
+    document.querySelector('.kline-app')?.classList.remove('fixed');
+  }
 }

@@ -1,0 +1,28 @@
+<div class="routes-to-decarbonization">
+  <app-hero-section
+    title="Routes to Decarbonization"
+    desc=""
+  ></app-hero-section>
+  <div class="routes-to-decarbonization-body" >
+    <div
+      class="routes-to-decarbonization-body-card"
+      *ngFor="let item of decarbonizationList"
+    >
+      <div class="routes-to-decarbonization-body-card-header">
+        <h3>{{ item.title }}</h3>
+      </div>
+      <div class="routes-to-decarbonization-body-card-content">
+        <p>
+          {{ item.desc }}
+        </p>
+      </div>
+      <app-button
+        [btnText]="'Read More'"
+        [type]="'icon secondary'"
+        [icon]="false"
+        [iconName]="''"
+        (click)="onClickA(item)"
+      ></app-button>
+    </div>
+  </div>
+</div>

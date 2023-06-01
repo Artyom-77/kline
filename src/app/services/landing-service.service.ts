@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { v4 as uuidv4 } from 'uuid';
 
 @Injectable({
@@ -7,6 +7,13 @@ import { v4 as uuidv4 } from 'uuid';
 })
 export class LandingServiceService {
   private scrollToValue = new BehaviorSubject<any>(window.scrollY);
+  private decarbonData = new BehaviorSubject<any>({});
+  private cardData = new BehaviorSubject<any>({});
+
+
+  public testdata: Observable<any> = this.decarbonData.asObservable();
+  public cardDataOb: Observable<any> = this.cardData.asObservable();
+
   public coveragesList: any[] = [
     {
       id: uuidv4(),
@@ -894,11 +901,23 @@ export class LandingServiceService {
       ]
     },
     {
+      title: 'Manufacturing Schematics : Group-Wise',
+      accardionItem:[
+        {
+          title: 'Manufacturing Schematics : Group-Wise',
+          graphImg1: '../../assets/images/graph-1.png',
+          graphImg2: '../../assets/images/graph-2.png',
+          graphImg3: '../../assets/images/graph-4.png',
+        }
+      ]
+    },
+    {
       title: 'Re-refined basestocks',
       accardionItem: [
         {
           title: 'Re-refined basestocks',
           subtitle: 'Re-refining models',
+          graphImg1: '../../assets/images/graph-3.png',
           descriptions: [
             '- Re-refining and basestock sales: It is fairly simple to penetrate the market with this particular model. With factors such as acceptable product quality, price competitiveness, and necessary certifications in place, a re-refiner can sell large volumes quickly. Most re-refiners work with this model.',
             ' - In-house blending and private-label sales: With sales of the re-refined baseoil in place, the re-refiner can envision improving margins by setting up a blending facility to produce finished lubricants. These finished lubricants can then be sold off to an already existing major brand of re-refined finished lubricant.',
@@ -954,5 +973,21 @@ export class LandingServiceService {
   }
   getTopPosition() {
     return this.scrollToValue;
+  }
+
+  getDecarbonData():any{
+    return this.testdata
+  }
+
+  setDecarbonData(data:any){
+    this.decarbonData.next(data)
+  }
+  getCardData():any{
+    return this.cardDataOb
+  }
+
+  setCardData(data:any){
+    console.log('datadatadatadata',data)
+    this.cardData.next(data)
   }
 }
