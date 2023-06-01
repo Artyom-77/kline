@@ -16,6 +16,7 @@ import { ConventionalBasestocksSupplyAndDemandModelComponent } from './component
 import { RoutesToDecarbonizationComponent } from './components/routes-to-decarbonization/routes-to-decarbonization.component';
 import { DecarbonizationsListComponent } from './components/decarbonizations-list/decarbonizations-list.component';
 import { CardDetailsComponent } from './components/card-details/card-details.component';
+import { SearchResultsComponent } from './components/search-results/search-results.component';
 
 const routes: Routes = [
   { path: '', component: LendingPageComponent },
@@ -32,12 +33,18 @@ const routes: Routes = [
   { path: 'supplier-profiles', component: SupplierProfilesComponent },
   { path: 'product-properties', component: ProductPropertiesComponent },
   { path: 'blender-database', component: BlenderDatabaseComponent },
-  { path: 'routes-to-decarbonization', component: RoutesToDecarbonizationComponent },
+  {
+    path: 'routes-to-decarbonization',
+    component: RoutesToDecarbonizationComponent,
+  },
   { path: 'decarbonizations-list', component: DecarbonizationsListComponent },
   { path: 'card-details/:id', component: CardDetailsComponent },
-  { path: 'conventional-basestocks', component: ConventionalBasestocksSupplyAndDemandModelComponent },
+  {
+    path: 'conventional-basestocks',
+    component: ConventionalBasestocksSupplyAndDemandModelComponent,
+  },
   { path: 'faq', component: FaqComponent },
-
+  { path: 'search-results', component: SearchResultsComponent },
 ];
 
 @NgModule({

@@ -1,9 +1,12 @@
-<div class="header" >
+<div class="header">
   <div class="content">
     <div class="main">
       <div class="website-logo">
         <a routerLink="/">
-          <img src="../../../assets/images/website-logo.svg" alt="website-logo" />
+          <img
+            src="../../../assets/images/website-logo.svg"
+            alt="website-logo"
+          />
         </a>
         <!-- <span>Basestock Intelligence Center</span> -->
       </div>
@@ -13,7 +16,7 @@
           <a>Contact Us</a>
         </div>
         <div class="">
-          <a routerLink="/faq" >FAQ</a>
+          <a routerLink="/faq">FAQ</a>
         </div>
         <div>
           <img src="../../../assets/images/twitter.svg" alt="icon" />
@@ -27,7 +30,7 @@
       </div>
     </div>
 
-    <div class="navigation" outclick (outclick)="onOutclick()" >
+    <div class="navigation" outclick (outclick)="onOutclick()">
       <div class="subtitle">
         <span>Basestock Intelligence Center</span>
       </div>
@@ -46,11 +49,13 @@
             <input type="text" placeholder="Search..." />
           </div>
           <div class="serach-btn">
-            <img src="../../../assets/images/search-icon.svg" alt="search" />
+            <a routerLink="/search-results">
+              <img src="../../../assets/images/search-icon.svg" alt="search" />
+            </a>
           </div>
         </div>
       </div>
-      <div *ngIf="this.dropdownOpen" class="header-dropdown" >
+      <div *ngIf="this.dropdownOpen" class="header-dropdown">
         <div *ngIf="this.navId === 2" class="coverage-dropdown">
           <div class="coverages-item" *ngFor="let item of coveragesList">
             <h3 class="coverages-item-title">
@@ -59,10 +64,15 @@
             <div class="coverages-item-list">
               <ul>
                 <li *ngFor="let listItem of item.list">
-                  <a [routerLink]="listItem.path" (click)="dropdownOpen = false">{{
-                    listItem.name
-                  }}</a>
-                  <img src="../../../assets/images/arrow-right.svg" alt="arrow" />
+                  <a
+                    [routerLink]="listItem.path"
+                    (click)="dropdownOpen = false"
+                    >{{ listItem.name }}</a
+                  >
+                  <img
+                    src="../../../assets/images/arrow-right.svg"
+                    alt="arrow"
+                  />
                 </li>
               </ul>
             </div>
@@ -76,10 +86,15 @@
             <div class="coverages-item-list">
               <ul>
                 <li *ngFor="let listItem of item.list">
-                  <a [routerLink]="listItem.path" (click)="dropdownOpen = false">{{
-                    listItem.name
-                  }}</a>
-                  <img src="../../../assets/images/arrow-right.svg" alt="arrow" />
+                  <a
+                    [routerLink]="listItem.path"
+                    (click)="dropdownOpen = false"
+                    >{{ listItem.name }}</a
+                  >
+                  <img
+                    src="../../../assets/images/arrow-right.svg"
+                    alt="arrow"
+                  />
                 </li>
               </ul>
             </div>
@@ -93,21 +108,24 @@
             <div class="coverages-item-list">
               <ul>
                 <li *ngFor="let listItem of item.list">
-                  <a [routerLink]="listItem.path" (click)="dropdownOpen = false">{{
-                    listItem.name
-                  }}</a>
-                  <img src="../../../assets/images/arrow-right.svg" alt="arrow" />
+                  <a
+                    [routerLink]="listItem.path"
+                    (click)="dropdownOpen = false"
+                    >{{ listItem.name }}</a
+                  >
+                  <img
+                    src="../../../assets/images/arrow-right.svg"
+                    alt="arrow"
+                  />
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
-  <div>
-  </div>
+  <div></div>
   <div class="modal-area">
     <app-modal
       [title]="'Contact Us'"
@@ -119,13 +137,13 @@
           <p class="desc">
             Tell us what you want and the best way to get in touch.
           </p>
-          <textarea placeholder=""  ></textarea>
+          <textarea placeholder=""></textarea>
           <app-button
-          [btnText]="'Submit query'"
-          [type]="'secondary right'"
-          [icon]="false"
-          [iconName]="''"
-        ></app-button>
+            [btnText]="'Submit query'"
+            [type]="'secondary right'"
+            [icon]="false"
+            [iconName]="''"
+          ></app-button>
         </div>
       </div>
     </app-modal>

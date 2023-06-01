@@ -1,0 +1,181 @@
+@import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/_mixins.scss";
+
+.search-results {
+  min-height: calc(100vh - 110px);
+  padding-top: 98px;
+  &-body {
+    padding: 20px;
+    &-header {
+      display: grid;
+      max-width: 1440px;
+      margin: 0 auto;
+      grid-gap: 20px;
+      grid-template-columns: 300px 1fr auto;
+      justify-content: center;
+      //   justify-items: center;
+      align-items: center;
+      position: sticky;
+      top: 98px;
+      background: $white;
+      padding: 8px;
+      .results-count {
+        padding: 0 16px;
+        > p {
+          font-size: 20px;
+          font-weight: 500;
+          color: $gray;
+        }
+      }
+      .main-search {
+        width: 100%;
+        .main-search-filed {
+          display: flex;
+          border-bottom: 1px solid $teal;
+          align-items: center;
+          width: 100%;
+
+          > input {
+            border: none;
+            font-size: 18px;
+            color: $gray;
+            padding: 8px;
+            width: 100%;
+          }
+        }
+        .advanced-search {
+          margin-top: 4px;
+          cursor: pointer;
+          transition: all 0.5s ease-in;
+
+          > p {
+            font-size: 14px;
+            color: $gray;
+            font-weight: 400;
+          }
+          &:hover {
+            p {
+              color: $orange;
+            }
+          }
+        }
+      }
+      &-main-sorting {
+        display: flex;
+        max-width: 1440px;
+        margin: 16px 0;
+        padding: 8px 16px;
+        border-radius: 4px;
+        border: 1px solid $gray-light;
+        align-items: center;
+        .main-sort {
+          padding: 0 16px;
+          cursor: pointer;
+          > p {
+            font-size: 16px;
+            font-weight: 400px;
+            color: $gray;
+          }
+          &.active {
+            > p {
+              color: $orange;
+              font-weight: 600;
+            }
+          }
+          &:not(:last-of-type) {
+            border-right: 1px solid $gray-light;
+          }
+        }
+        //   grid-template-columns: repeat(3, auto);
+      }
+    }
+    &-content {
+      display: grid;
+      grid-template-columns: 300px 1fr auto;
+      grid-gap: 20px;
+      max-width: 1440px;
+      margin: 32px auto;
+      &-filtering {
+        // display: grid;
+        // grid-gap: 24px;
+        padding: 0px 16px;
+        width: 100%;
+        border-right: 1px solid $gray-light;
+        &-filter {
+          width: 100%;
+          display: grid;
+          grid-gap: 16px;
+          margin-bottom: 24px;
+          &-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: $gray;
+          }
+          &-items {
+            width: 100%;
+            display: grid;
+            grid-gap: 8px;
+            > div {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              transition: all 0.5s ease-in;
+              cursor: pointer;
+              p {
+                font-size: 16px;
+                font-weight: 500;
+                color: $gray;
+                &:nth-of-type(1) {
+                  font-weight: 500;
+                }
+              }
+              &:hover {
+                p {
+                  color: $orange;
+                }
+              }
+            }
+          }
+        }
+      }
+      &-results {
+        display: grid;
+        // grid-gap: 20px;
+        &-card {
+          max-width: 800px;
+          border-bottom: 1px solid $gray-light;
+          padding: 20px;
+          border-left: 4px solid transparent;
+          transition: all 0.5s ease-in;
+          cursor: pointer;
+          &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            .title {
+              font-size: 22px;
+              font-weight: 700;
+              color: $orange;
+            }
+            .desc {
+              font-size: 14px;
+              font: 400;
+            }
+          }
+          &-body {
+            .desc {
+              font-weight: 18px;
+              font-weight: 500;
+              color: $gray;
+            }
+          }
+          &:hover {
+            border-left: 4px solid $orange;
+          }
+        }
+      }
+    }
+  }
+}

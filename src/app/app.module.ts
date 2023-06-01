@@ -85,6 +85,7 @@ import { ConventionalBasestocksSupplyAndDemandModelComponent } from './component
 import { RoutesToDecarbonizationComponent } from './components/routes-to-decarbonization/routes-to-decarbonization.component';
 import { DecarbonizationsListComponent } from './components/decarbonizations-list/decarbonizations-list.component';
 import { CardDetailsComponent } from './components/card-details/card-details.component';
+import { SearchResultsComponent } from './components/search-results/search-results.component';
 
 @NgModule({
   declarations: [
@@ -158,6 +159,7 @@ import { CardDetailsComponent } from './components/card-details/card-details.com
     RoutesToDecarbonizationComponent,
     DecarbonizationsListComponent,
     CardDetailsComponent,
+    SearchResultsComponent,
   ],
   imports: [
     BrowserModule,
