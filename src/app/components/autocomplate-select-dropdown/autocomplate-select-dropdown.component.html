@@ -1,0 +1,34 @@
+<div
+  class="multiple-custom-dropdown date-dropdown"
+  outclick
+  (outclick)="isDropdownOpen = false"
+  (click)="toggleDropdown()"
+>
+  <div class="dropdown-icon">
+    <img
+      [class.rotate]="isDropdownOpen"
+      [class.defalut]="!isDropdownOpen"
+      src="../../../assets/images/small-arrow.svg"
+      alt="arrow"
+    />
+  </div>
+  <div class="dropdown-header">
+    <span>{{
+      selectedItems.length
+        ? selectedItems.join(", ")
+        : "Choose " + dropdownTitle
+    }}</span>
+  </div>
+  <div class="dropdown-list" *ngIf="isDropdownOpen">
+    <input type="text" [placeholder]="dropdownTitle" [(ngModel)]="inputValue" (input)="onInputChange()" (focus)="isDropdownOpen=true">
+    <div
+      class="dropdown-item"
+      *ngFor="let item of dData"
+      (click)="toggleOption(item.label)"
+    >
+      <input type="checkbox" [checked]="selectedItems.includes(item.label)" />
+      {{ item.label }}
+    </div>
+  </div>
+</div>
+

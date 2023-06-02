@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { LendingPageComponent } from './lending-page/lending-page.component';
 import { HeaderComponent } from './components/header/header.component';
-import { DxAccordionModule, DxGalleryModule, DxPivotGridModule, DxRadioGroupModule } from 'devextreme-angular';
+import { DxAccordionModule, DxGalleryModule, DxPivotGridModule, DxRadioGroupModule, DxSwitchModule } from 'devextreme-angular';
 import { DxToolbarModule } from 'devextreme-angular/ui/toolbar';
 import { NewsSidebarComponent } from './components/news-sidebar/news-sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -86,6 +86,7 @@ import { RoutesToDecarbonizationComponent } from './components/routes-to-decarbo
 import { DecarbonizationsListComponent } from './components/decarbonizations-list/decarbonizations-list.component';
 import { CardDetailsComponent } from './components/card-details/card-details.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
+import { AutocomplateSelectDropdownComponent } from './components/autocomplate-select-dropdown/autocomplate-select-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -160,6 +161,7 @@ import { SearchResultsComponent } from './components/search-results/search-resul
     DecarbonizationsListComponent,
     CardDetailsComponent,
     SearchResultsComponent,
+    AutocomplateSelectDropdownComponent,
   ],
   imports: [
     BrowserModule,
@@ -177,7 +179,8 @@ import { SearchResultsComponent } from './components/search-results/search-resul
     DxBarGaugeModule,
     DxVectorMapModule,
     DxRadioGroupModule,
-    DxAccordionModule
+    DxAccordionModule,
+    DxSwitchModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -11,18 +11,87 @@
           <img src="../../../assets/images/search-icon.svg" alt="search" />
         </div>
         <div class="advanced-search">
-          <p>Advanced Search</p>
+          <p (click)="advancedOpen = !advancedOpen">Advanced Search</p>
         </div>
       </div>
       <!-- <div></div> -->
-      <div class="search-results-body-header-main-sorting">
-        <div class="main-sort active"><p>Relevance</p></div>
-        <div class="main-sort"><p>Newest first</p></div>
-        <div class="main-sort"><p>Oldest first</p></div>
+    </div>
+
+    <div *ngIf="advancedOpen" class="search-results-body-advanced-filters">
+      <div class="search-results-body-advanced-filters-title">
+        <h3>Advanced Search by Keyword</h3>
+        <div>
+          <div class="alert-switch">
+            <p>Receive Alert</p>
+            <dx-switch [value]="true"></dx-switch>
+          </div>
+          <div>
+            <p>Reset Filters</p>
+          </div>
+          <app-button
+            [btnText]="'Export'"
+            [type]="'icon secondary'"
+            [icon]="false"
+            [iconName]="''"
+          ></app-button>
+        </div>
+      </div>
+      <div class="search-results-body-advanced-filters-content">
+        <div class="suggested-keywords">
+          <div class="keywords">
+            <h3 class="subtitle">Suggested keywords:</h3>
+            <div class="keyword">
+              <p>Conventional PAO</p>
+            </div>
+            <div class="keyword">
+              <p>HDMO</p>
+            </div>
+            <div class="keyword">
+              <p>Gear Oil</p>
+            </div>
+            <div class="keyword">
+              <p>Grease</p>
+            </div>
+            <div class="keyword">
+              <p>PCMO</p>
+            </div>
+          </div>
+        </div>
+        <div class="esim-inch">
+          <div class="keywords-dropdown">
+            <h3 class="subtitle">Or:</h3>
+            <div class="dropdown">
+              <app-autocomplate-select-dropdown
+              [dropdownTitle]="'Keywords'"
+                [dropdownData]="keywordsList"
+                (itemEvent)="handleMultipleKeywardsChange($event)"
+                [firstItemSelected]="false"
+                [maxLimit]="33333"
+                [minLimit]="1"
+              ></app-autocomplate-select-dropdown>
+            </div>
+          </div>
+          <div>
+
+
+            <app-button
+              [btnText]="'Search'"
+              [type]="'icon secondary'"
+              [icon]="false"
+              [iconName]="''"
+            ></app-button>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="search-results-body-content">
       <div class="search-results-body-content-filtering">
+        <div class="search-results-body-content-filtering-main-sorting">
+          <div class="main-sort active"><p>Relevance</p></div>
+          <div class="main-sort"><p>Newest first</p></div>
+          <div class="main-sort"><p>Oldest first</p></div>
+        </div>
         <div class="search-results-body-content-filtering-filter">
           <h3 class="search-results-body-content-filtering-filter-title">
             Theme:
@@ -176,7 +245,147 @@
           </div>
         </div>
       </div>
-      <div class="search-results-body-content-empty"></div>
+      <div class="search-results-body-content-actions">
+        <div>
+          <app-button
+            [btnText]="'Save This Search'"
+            [type]="'icon secondary'"
+            [icon]="false"
+            [iconName]="''"
+          ></app-button>
+        </div>
+        <div>
+          <app-button
+            [btnText]="'View Search History'"
+            [type]="'icon secondary'"
+            [icon]="false"
+            [iconName]="''"
+            (click)="openModal()"
+          ></app-button>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="modal-area">
+    <app-modal
+      [title]="'Search History'"
+      *ngIf="isModalVisible"
+      (onClose)="onCloseModal()"
+    >
+      <div class="modal-content">
+        <div class="bookmarks-list">
+          <div class="search-results-body-content-results">
+            <div class="search-results-body-content-results-card">
+              <div class="search-results-body-content-results-card-header">
+                <h3 class="title">Search Result Title</h3>
+                <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+              </div>
+              <div class="search-results-body-content-results-card-body">
+                <div class="desc">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                    repellendus assumenda porro possimus deserunt? Accusantium
+                    laudantium autem est perferendis dicta labore ipsum, ratione
+                    temporibus nam deserunt aut quos. Assumenda, veniam?
+                    Consequatur hic doloribus officia repudiandae ipsum eum
+                    velit quibusdam eligendi?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="search-results-body-content-results-card">
+              <div class="search-results-body-content-results-card-header">
+                <h3 class="title">Search Result Title</h3>
+                <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+              </div>
+              <div class="search-results-body-content-results-card-body">
+                <div class="desc">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                    repellendus assumenda porro possimus deserunt? Accusantium
+                    laudantium autem est perferendis dicta labore ipsum, ratione
+                    temporibus nam deserunt aut quos. Assumenda, veniam?
+                    Consequatur hic doloribus officia repudiandae ipsum eum
+                    velit quibusdam eligendi?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="search-results-body-content-results-card">
+              <div class="search-results-body-content-results-card-header">
+                <h3 class="title">Search Result Title</h3>
+                <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+              </div>
+              <div class="search-results-body-content-results-card-body">
+                <div class="desc">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                    repellendus assumenda porro possimus deserunt? Accusantium
+                    laudantium autem est perferendis dicta labore ipsum, ratione
+                    temporibus nam deserunt aut quos. Assumenda, veniam?
+                    Consequatur hic doloribus officia repudiandae ipsum eum
+                    velit quibusdam eligendi?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="search-results-body-content-results-card">
+              <div class="search-results-body-content-results-card-header">
+                <h3 class="title">Search Result Title</h3>
+                <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+              </div>
+              <div class="search-results-body-content-results-card-body">
+                <div class="desc">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                    repellendus assumenda porro possimus deserunt? Accusantium
+                    laudantium autem est perferendis dicta labore ipsum, ratione
+                    temporibus nam deserunt aut quos. Assumenda, veniam?
+                    Consequatur hic doloribus officia repudiandae ipsum eum
+                    velit quibusdam eligendi?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="search-results-body-content-results-card">
+              <div class="search-results-body-content-results-card-header">
+                <h3 class="title">Search Result Title</h3>
+                <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+              </div>
+              <div class="search-results-body-content-results-card-body">
+                <div class="desc">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                    repellendus assumenda porro possimus deserunt? Accusantium
+                    laudantium autem est perferendis dicta labore ipsum, ratione
+                    temporibus nam deserunt aut quos. Assumenda, veniam?
+                    Consequatur hic doloribus officia repudiandae ipsum eum
+                    velit quibusdam eligendi?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="search-results-body-content-results-card">
+              <div class="search-results-body-content-results-card-header">
+                <h3 class="title">Search Result Title</h3>
+                <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+              </div>
+              <div class="search-results-body-content-results-card-body">
+                <div class="desc">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                    repellendus assumenda porro possimus deserunt? Accusantium
+                    laudantium autem est perferendis dicta labore ipsum, ratione
+                    temporibus nam deserunt aut quos. Assumenda, veniam?
+                    Consequatur hic doloribus officia repudiandae ipsum eum
+                    velit quibusdam eligendi?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </app-modal>
   </div>
 </div>

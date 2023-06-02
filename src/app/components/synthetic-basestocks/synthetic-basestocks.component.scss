@@ -31,7 +31,7 @@
   &-body {
     max-width: 1740px;
     padding: 0 20px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     &-filters {
       padding: 16px 0 20px;
       display: flex;
@@ -86,6 +86,46 @@
 
     .dx-expand {
       color: $orange !important;
+    }
+    .dx-row-total {
+      border-top: 1px solid black !important;
+      border-bottom: 1px solid black !important;
+    }
+    // .dx-scrollable-content {
+    //   table {
+    //     colgroup {
+    //       col {
+    //         &:nth-of-type(2) {
+    //           background: $orangeOp;
+    //         }
+    //         // &:nth-of-type(odd) {
+    //         //   background: $gray-light;
+    //         // }
+    //       }
+    //     }
+    //   }
+    // }
+    .dx-pivotgrid-horizontal-headers {
+      // position: sticky;
+      // top: 98px;
+      > tr {
+        &:nth-of-type(1) {
+          > td {
+            &:nth-of-type(1) {
+              background: $gray-light !important;
+            }
+            &:nth-of-type(2) {
+              background: $gray-light !important;
+            }
+            &:nth-of-type(3) {
+              background: $orangeOp !important;
+            }
+            &:nth-of-type(4) {
+              background: $orangeOp !important;
+            }
+          }
+        }
+      }
     }
     .dx-pivotgrid {
       .dx-pivotgrid-area-data {

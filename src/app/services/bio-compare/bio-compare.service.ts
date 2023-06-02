@@ -989,7 +989,7 @@ export class BioCompareService {
   public glossaryData: any[] = [
     {
       Term: 'Bio-Lubricant',
-      Defination: `Kline defines a bio-lubricant as a lubricant that meets at least two of the following criteria:​
+      Definition: `Kline defines a bio-lubricant as a lubricant that meets at least two of the following criteria:​
 
       Biodegradability: lubricants that biodegrade to their natural state from 60% onwards in 28 days – “readily biodegradable.”​
 
