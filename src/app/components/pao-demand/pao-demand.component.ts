@@ -20,6 +20,11 @@ export class PaoDemandComponent implements OnInit {
   public selectedMainTab: number = 1;
   public showRelevantValues: boolean | null | undefined = true;
   public openModal: boolean = false;
+  public breadcrumpData: any[] = [{
+    home: 'Synthetic Market Fundamentals',
+    main: 'PAO Demand Deblend Model',
+    tab: 'Tabular View'
+  }]
   showRowFields = true;
   @Input() selectedTab: any = 1;
   showColumnFields = true;
@@ -111,6 +116,11 @@ export class PaoDemandComponent implements OnInit {
 
   setSelectedPaoMainTab(selectedTab: number): void {
     this.service.setSelectedPaoMainTab(selectedTab);
+    if(selectedTab === 2) {
+      this.breadcrumpData[0].tab = 'Chart View'
+    } else {
+      this.breadcrumpData[0].tab = 'Tabular View'
+    }
   }
 
   getSelectedPaoMainTab(): any {

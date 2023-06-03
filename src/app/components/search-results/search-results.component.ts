@@ -9,6 +9,9 @@ export class SearchResultsComponent implements OnInit {
   public advancedOpen: boolean = false
   public isModalVisible: boolean = false;
   public selectedKeywordsList  : any[] = []
+  public breadcrumpData: any[] = [{
+    home: 'Search Results',
+  }]
  public keywordsList: any[] = [
   {
     id: 1,

@@ -75,6 +75,11 @@ export class SupplierProfilesComponent implements OnInit {
   ];
   public selectedCompanyName: string = 'Bahrain Petroleum Company (BLBOC)';
   public selectedCompany?: any;
+  public breadcrumpData: any[] = [{
+    home: 'Basestock Market Watch',
+    main: 'Supplier Profiles and Competitive Landscape',
+    // tab: 'Tabular View'
+  }]
   constructor(private service: SupplierProfilesService) {
     this.companiesList = service.suppliersList;
   }

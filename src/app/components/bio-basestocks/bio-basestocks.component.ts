@@ -2218,7 +2218,11 @@ export class BioBasestocksComponent implements OnInit {
   public route: any;
   public glossaryData: any[] = [];
   public isModalVisible: boolean = false;
-
+  public breadcrumpData: any[] = [{
+    home: 'Sustainability focused Basestocks',
+    main: 'Bio-Basestocks—Regulatory Environment and Changes',
+    // tab: 'Tabular View'
+  }]
   constructor(private router: Router, private service: BioCompareService) {
     this.route = this.router;
   }

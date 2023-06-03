@@ -9,4 +9,5 @@ export class HeroSectionComponent {
   @Input() title: string | undefined;
   @Input() desc: string | undefined;
   @Input() subtitle: string | undefined;
+  @Input() breadcrumpData: any[] | undefined;
 }

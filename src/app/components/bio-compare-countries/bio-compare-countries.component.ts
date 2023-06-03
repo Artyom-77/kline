@@ -20,7 +20,11 @@ export class BioCompareCountriesComponent implements OnInit {
   public timePeriods: any[] = [];
   public route: any;
   public glossaryData: any[] = [];
-
+  public breadcrumpData: any[] = [{
+    home: 'Sustainability focused Basestocks',
+    main: 'Bio-Basestocks—Regulatory Environment and Changes',
+    tab: 'Regulations Compare'
+  }]
   constructor(private service: BioCompareService, private router: Router) {
     this.list = service.contriesList;
     this.criterias = service.criterias;

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { LandingServiceService } from 'src/app/services/landing-service.service';
 
 @Component({
@@ -7,9 +7,12 @@ import { LandingServiceService } from 'src/app/services/landing-service.service'
   styleUrls: ['./breadcrumps.component.scss']
 })
 export class BreadcrumpsComponent implements OnInit {
+  @Input() breadcrumpData: any[] | undefined;
+
+
   constructor(private service:LandingServiceService){}
   ngOnInit(): void {
-      // console.log(window.location.pathname)
+      console.log('breadcrumpData',this.breadcrumpData)
       // console.log(this.service.coveragesList)
   }
 }

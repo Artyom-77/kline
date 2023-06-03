@@ -729,7 +729,11 @@ export class RoutesToDecarbonizationComponent implements OnInit {
       ],
     },
   ]
-
+  public breadcrumpData: any[] = [{
+    home: 'Sustainability focused Basestocks',
+    main: 'Routes to Decarbonization',
+    // tab: 'Tabular View'
+  }]
   constructor(private router: Router,private service:LandingServiceService) {}
 
   ngOnInit(): void {

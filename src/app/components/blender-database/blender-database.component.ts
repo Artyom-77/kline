@@ -20,7 +20,11 @@ export class BlenderDatabaseComponent implements OnInit {
   customMarkerUrl: string;
   mapMarkerUrl: string;
   originalMarkers: Marker[];
-
+  public breadcrumpData: any[] = [{
+    home: 'Basestock Market Watch',
+    main: 'Finished Lubricant Blender Database',
+    // tab: 'Tabular View'
+  }]
   constructor(private service: BlenderDatabaseService,private rrboService: RrboService ) {
     this.groupList = service.groupList;
     this.regionsList = service.regionsList;

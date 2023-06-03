@@ -20,6 +20,11 @@ export class WebinarsComponent implements OnInit {
     'Healthcare',
     'Industrial & Institutional Cleaning',
   ];
+  public breadcrumpData: any[] = [{
+    home: 'Insights',
+    // main: 'PAO Demand Deblend Model',
+    // tab: 'Tabular View'
+  }]
   public selectedIndustry: string = '';
   public webinarsList: any[] = [];
   public filteredWebinarsList: any[] = [];

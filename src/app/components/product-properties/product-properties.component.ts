@@ -17,6 +17,11 @@ export class ProductPropertiesComponent implements OnInit {
 
   public columns: any[] = []
 
+  public breadcrumpData: any[] = [{
+    home: 'Basestock Market Watch',
+    main: 'Product Properties and Specification Sheets',
+  }]
+
   constructor(private service : ProductPropertiesService) {
     this.productPropertiesData = service.productPropertiesData
     this.dropdownCompanyItems = service.dropdownCompanyItems

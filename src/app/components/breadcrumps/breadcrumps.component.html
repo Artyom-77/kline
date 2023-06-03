@@ -1,17 +1,25 @@
 <div class="breadcrumps-section container">
   <div class="home">
     <img class="home-img" src="../../../assets/images/home.svg" alt="home" />
-    <img class="arrow" src="../../../assets/images/small-arrow.svg" alt="arrow" />
+    <div>
+      <img class="arrow" src="../../../assets/images/small-arrow.svg" alt="arrow" />
+    </div>
   </div>
-  <div>
-    <p>Our Coverage</p>
-    <img class="arrow" src="../../../assets/images/small-arrow.svg" alt="arrow" />
-  </div>
-  <div>
-    <p>Synthetic Basestocks Deblend Model</p>
-    <img class="arrow" src="../../../assets/images/small-arrow.svg" alt="arrow" />
-  </div>
-  <div>
-    <p>Tabular View</p>
+  <div class="breadcrumps-list" *ngFor="let item of breadcrumpData">
+    <div *ngIf="item.home" >
+      <p >{{item.home}}</p>
+      <div *ngIf="item.main">
+        <img class="arrow" src="../../../assets/images/small-arrow.svg" alt="arrow" />
+      </div>
+    </div>
+    <div *ngIf="item.main">
+      <p>{{item.main}}</p>
+      <div *ngIf="item.tab">
+        <img class="arrow" src="../../../assets/images/small-arrow.svg" alt="arrow" />
+      </div>
+    </div>
+    <div *ngIf="item.tab">
+      <p>{{item.tab}}</p>
+    </div>
   </div>
 </div>

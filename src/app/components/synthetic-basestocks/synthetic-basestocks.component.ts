@@ -25,6 +25,11 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   showColumnFields = true;
   showFilterFields = true;
   myParam: string;
+  public breadcrumpData: any[] = [{
+    home: 'Synthetic Market Fundamentals',
+    main: 'Synthetic Basestocks Deblend Model',
+    tab: 'Tabular View'
+  }]
   constructor(
     private service: SyntheticBasestocksService,
     private http: HttpClient,
@@ -141,6 +146,12 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
 
   setSelectedMainTab(selectedTab: number): void {
     this.service.setSelectedMainTab(selectedTab);
+    console.log('selectedTab',selectedTab)
+    if(selectedTab === 2) {
+      this.breadcrumpData[0].tab = 'Chart View'
+    } else {
+      this.breadcrumpData[0].tab = 'Tabular View'
+    }
   }
 
   getSelectedMainTab(): any {
@@ -148,6 +159,7 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
   }
 
   onCellClick(e: any) {
+    console.log('e',e)
     // && e.cell.columnType !== 'T'
     // if (
     //   e.area == 'data' &&
@@ -166,5 +178,7 @@ export class SyntheticBasestocksComponent implements OnInit, OnChanges {
     e.isHighlighted = true;
   }
 
-  ngOnChanges(): void {}
+  ngOnChanges(): void {
+    console.log('this.service.getSelectedMainTab()',this.service.getSelectedMainTab())
+  }
 }

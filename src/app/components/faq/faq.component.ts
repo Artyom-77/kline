@@ -11,6 +11,11 @@ export class FaqComponent implements OnInit {
   public navigationFaq: any[] = [];
   public scopeFaq: any[] = [];
   public aboutFaq: any[] = [];
+  public breadcrumpData: any[] = [{
+    home: 'FAQ',
+    // main: 'PAO Demand Deblend Model',
+    // tab: 'Tabular View'
+  }]
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {

@@ -77,7 +77,10 @@ export class ConventionalBasestocksSupplyAndDemandModelComponent implements OnIn
       label: 2023,
     },
   ];
-
+  public breadcrumpData: any[] = [{
+    home: 'Conventional Market Fundamentals',
+    main: 'Conventional Basestocks Supply and Demand Model',
+  }]
   ngOnInit() {
     this.http
       .get('../../../assets/json/synteticTabularTabledata.json')

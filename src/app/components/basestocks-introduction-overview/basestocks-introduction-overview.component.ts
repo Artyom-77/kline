@@ -8,7 +8,11 @@ import { LandingServiceService } from 'src/app/services/landing-service.service'
 })
 export class BasestocksIntroductionOverviewComponent implements OnInit {
   public basestockOverviewData: any[] = [];
-
+  public breadcrumpData: any[] = [{
+    home: 'Conventional Market Fundamentals',
+    main: 'Basestocks Introduction Overview',
+    // tab: 'Tabular View'
+  }]
   constructor(private service: LandingServiceService) {}
 
   ngOnInit(): void {

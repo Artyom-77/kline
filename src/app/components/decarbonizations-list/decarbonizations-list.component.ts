@@ -13,13 +13,17 @@ export class DecarbonizationsListComponent implements OnInit {
   public cards_data: any[] = []
   public title: string = ''
   public isModalVisible: boolean = false;
-
+  public breadcrumpData: any[] = [{
+    home: 'Sustainability focused Basestocks',
+    main: 'Routes to Decarbonization',
+    tab: ''
+  }]
   constructor(private service:LandingServiceService, private router: Router ){
     this.service.getDecarbonData().subscribe(data =>{
       this.cards_data = data.cardsList
       this.title = data.title
+      this.breadcrumpData[0].tab = data.title
     })
-  console.log('this.card_data',this.cards_data);
 
   }
   public webinarsListDummyData: any[] = [
