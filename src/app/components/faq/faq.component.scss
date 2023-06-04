@@ -54,4 +54,7 @@
       }
     }
   }
+  @include lg {
+    padding-top: 150px;
+  }
 }

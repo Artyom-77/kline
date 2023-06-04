@@ -34,7 +34,6 @@
 
     ::ng-deep {
       .dx-header-row {
-
         // display: grid;
         // grid-template-columns: repeat(16, 1fr);
         // // width: 94vw;
@@ -144,6 +143,10 @@
         grid-gap: 20px;
       }
     }
+  }
+
+  @include lg {
+    padding-top: 150px;
   }
 
   @include md {

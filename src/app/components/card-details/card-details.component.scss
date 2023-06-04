@@ -13,6 +13,9 @@
       font-size: 32px;
       font-weight: 600;
       color: $gray;
+      @include lg {
+        font-size: 24px;
+      }
     }
     &-info {
       display: flex;
@@ -23,12 +26,18 @@
         font-size: 16px;
         color: $gray;
         font-weight: 400;
+        @include lg {
+          font-size: 14px;
+        }
       }
       &-date {
         margin-left: 40px;
         font-size: 16px;
         color: $gray;
         font-weight: 400;
+        @include lg {
+          font-size: 14px;
+        }
       }
     }
     &-desc {
@@ -37,12 +46,16 @@
       font-size: 20px;
       font-weight: 500;
       color: $gray;
+      @include lg {
+        font-size: 16px;
+      }
     }
   }
   &-body {
     width: inherit;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 8px 20px;
     &-media {
       width: inherit;
       max-width: 1200px;
@@ -58,13 +71,22 @@
         font-weight: 600;
         color: $gray;
         margin: 16px 0;
+        @include lg {
+          font-size: 20px;
+        }
       }
       &-desc {
         font-size: 20px;
         font-weight: 500;
         color: $gray;
         margin: 16px 0;
+        @include lg {
+          font-size: 16px;
+        }
       }
     }
+  }
+  @include lg {
+    padding-top: 150px;
   }
 }

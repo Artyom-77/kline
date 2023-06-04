@@ -170,6 +170,9 @@
       }
     }
   }
+  @include lg {
+    padding-top: 150px;
+  }
 
   @include md {
     padding-top: 148px;

@@ -286,6 +286,10 @@
       color: $gray;
       margin: 80px 0;
       text-align: center;
+      @include lg {
+        font-size: 20px;
+        margin: 40px 0;
+      }
     }
     &-timeline {
       margin: 40px 0;
@@ -484,6 +488,10 @@
             top: -10px;
             bottom: unset;
           }
+          @include lm {
+            justify-content: flex-start;
+            margin-left: 0;
+          }
         }
       }
       .middle-line {
@@ -492,6 +500,13 @@
         background: #575656;
         width: 100%;
         top: calc(50% - 4px);
+        @include lm {
+          display: none;
+        }
+      }
+      @include lm {
+        grid-template-columns: 1fr;
+        grid-gap: 70px;
       }
     }
   }
@@ -587,6 +602,9 @@
         width: 100%;
       }
     }
+  }
+  @include lg {
+    padding-top: 150px;
   }
 }
 

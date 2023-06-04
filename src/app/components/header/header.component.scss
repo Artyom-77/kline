@@ -102,6 +102,12 @@
           font-weight: 600;
           color: #3e3e3e;
           // font-size: 20px;
+          @include lg {
+            font-size: 20px;
+          }
+          @include md {
+            font-size: 18px;
+          }
         }
       }
 
@@ -120,7 +126,7 @@
 
           .serach-input {
             width: 100%;
-
+            text-align: left;
             > input {
               border: none;
               height: 100%;
@@ -167,6 +173,9 @@
           &:hover {
             padding-top: 4px;
             border-bottom: 4px solid #df7b2e;
+          }
+          @include md {
+            font-size: 14px;
           }
         }
       }

@@ -24,13 +24,12 @@
     padding: 20px;
     overflow-x: auto;
 
-    >* {
+    > * {
       min-width: 800px;
     }
 
     ::ng-deep {
       .dx-header-row {
-
         // display: grid;
         // grid-template-columns: repeat(5, 1fr);
         // width: 94vw;
@@ -110,6 +109,9 @@
         white-space: normal !important;
       }
     }
+  }
+  @include lg {
+    padding-top: 150px;
   }
 
   @include md {
