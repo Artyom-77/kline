@@ -1,0 +1,129 @@
+<div class="bioplasticsMarketMonitor">
+  <div class="bioplasticsMarketMonitor-content">
+    <button (click)="foo()">dsfsd</button>
+   <div class="bioplasticsMarketMonitor-content-chart">
+     <dx-chart [dataSource]="top10Companies" [palette]="['#00338d']"  [commonSeriesSettings]="commonSeriesSettings">
+      <dxi-series [type]="'bubble'" [argumentField]="'Company'" [valueField]="'Count'" >
+        <dxo-point [size]="80"></dxo-point>
+        <!-- <dxo-label [visible]="true" [position]="'inner'" ></dxo-label> -->
+      </dxi-series>
+      <dxo-tooltip
+      [enabled]="true"
+      location="edge"
+      [customizeTooltip]="customizeLabelText"
+    >
+    </dxo-tooltip>
+    <dxo-title text="Top 10 Company News"></dxo-title>
+      <dxo-legend [visible]="false"></dxo-legend>
+    </dx-chart>
+
+   </div>
+
+
+
+
+   <!-- Cards  -->
+    <div class="bioplasticsMarketMonitor-content-cards">
+      <div
+        class="bioplasticsMarketMonitor-content-cards-item"
+        *ngFor="let item of data"
+      >
+        <div class="bioplasticsMarketMonitor-content-cards-item-body">
+          <p class="item-news" *ngIf="item.News.length > 90">
+            {{ item.News.substring(0, 90) }}...
+          </p>
+          <p class="item-news" *ngIf="item.News.length <= 90">
+            {{ item.News }}
+          </p>
+          <div class="news-details">
+            <p class="item-company">{{ item.Company }}</p>
+            <p class="item-theme">{{ item.Theme }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--  <button (click)="foo()">dsfsd</button>
+    <div class="devex-bubble-chart" style="margin: 40px 0;">
+      <dx-chart
+        id="chart"
+        [dataSource]="newData"
+        [title]="'aaaa'"
+        (onSeriesClick)="onSeriesClick($event)"
+      >
+        <dxo-common-series-settings type="bubble"></dxo-common-series-settings>
+        <dxo-export [enabled]="true"></dxo-export>
+        <dxo-legend position="outside" horizontalAlignment="left">
+          <dxo-border [visible]="true"></dxo-border>
+        </dxo-legend>
+        <dxo-argument-axis title="Total Population">
+        <dxo-label [customizeText]="argumentCustomizeText"></dxo-label>
+
+        </dxo-argument-axis>
+        <dxi-value-axis title="Population with Age over 60">
+          <dxo-label [customizeText]="valueCustomizeText"></dxo-label>
+        </dxi-value-axis>
+        <dxo-tooltip
+          [enabled]="true"
+          location="edge"
+          [customizeTooltip]="customizeTooltip"
+        >
+        </dxo-tooltip>
+        <dxi-series
+          *ngFor="let energy of this.seriesNewArrayOfObjects"
+          [name]="energy.name"
+          [argumentField]="energy.argumentField"
+          [valueField]="energy.valueField"
+          [sizeField]="energy.sizeField"
+          [tagField]="energy.tagField"
+          
+        >
+
+        </dxi-series>
+        <!-- <dxi-series
+    *ngFor="let correlation of correlationSource"
+    [name]="correlation.name"
+    [argumentField]="correlation.argumentField"
+    [valueField]="correlation.valueField"
+    [sizeField]="correlation.sizeField"
+    [tagField]="correlation.tagField"
+  >
+  </dxi-series> -->
+<!-- </dx-chart>
+</div> -->
+
+
+
+ <!-- [
+   {Company: 'BASF SE', Count: 45},
+   {Company: 'Clariant', Count: 41},
+   {Company: 'Arkema', Count: 36},
+   {Company: 'Mitsubishi Chemical Corp.', Count: 30},
+   {Company: 'DuPont', Count: 27},
+   {Company: 'Asahi Kasei', Count: 25},
+   {Company: 'Dow', Count: 19},
+   {Company: 'Roquette S.A.', Count: 14},
+   {Company: 'SECI S.p.A.', Count: 12},
+   {Company: 'Danimer Scientific LLC', Count: 11},
+ ] -->
+
+
+
+ <!-- <div class="bioplasticsMarketMonitor-content-chart_main">
+  <div class="main_content"  >
+    <div class="company_circle" *ngFor="let energy of top10Companies" [style.width]="energy.Count * 2 + 'px'" [style.height]="energy.Count * 2 + 'px'" >
+      {{energy.Count}}
+   
+    </div>
+
+
+  </div>
+</div>
+<div class="bioplasticsMarketMonitor-content-chart_footer" >
+  <div *ngFor="let energy of top10Companies">
+    <p class="company_name">{{energy.Company}}</p>
+  </div>
+</div> -->

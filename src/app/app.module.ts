@@ -87,9 +87,11 @@ import { DecarbonizationsListComponent } from './components/decarbonizations-lis
 import { CardDetailsComponent } from './components/card-details/card-details.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { AutocomplateSelectDropdownComponent } from './components/autocomplate-select-dropdown/autocomplate-select-dropdown.component';
+import { BioplasticsMarketMonitorComponent } from './components/bioplasticsMarketMonitor/bioplasticsMarketMonitor.component';
 
 @NgModule({
   declarations: [
+    BioplasticsMarketMonitorComponent,
     AppComponent,
     LendingPageComponent,
     HeaderComponent,

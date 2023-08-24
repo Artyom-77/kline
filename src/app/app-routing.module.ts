@@ -17,9 +17,11 @@ import { RoutesToDecarbonizationComponent } from './components/routes-to-decarbo
 import { DecarbonizationsListComponent } from './components/decarbonizations-list/decarbonizations-list.component';
 import { CardDetailsComponent } from './components/card-details/card-details.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
+import { BioplasticsMarketMonitorComponent } from './components/bioplasticsMarketMonitor/bioplasticsMarketMonitor.component';
 
 const routes: Routes = [
-  { path: '', component: LendingPageComponent },
+  // { path: '', component: LendingPageComponent },
+  { path: '', component: BioplasticsMarketMonitorComponent },
   { path: 'bio-basestocks', component: BioBasestocksComponent },
   { path: 'bio-compare', component: BioCompareCountriesComponent },
   {
@@ -45,6 +47,7 @@ const routes: Routes = [
   },
   { path: 'faq', component: FaqComponent },
   { path: 'search-results', component: SearchResultsComponent },
+  { path: 'BioplasticsMarketMonitor', component: BioplasticsMarketMonitorComponent },
 ];
 
 @NgModule({
