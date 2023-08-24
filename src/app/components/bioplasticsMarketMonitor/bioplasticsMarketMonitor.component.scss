@@ -2,99 +2,110 @@
 @import "../../../assets/scss/_mixins.scss";
 
 .bioplasticsMarketMonitor {
-    min-height: calc(100vh - 98px);
-    padding-top: 98px;
-    &-content {
-        margin: 40px 20px;
+  min-height: calc(100vh - 98px);
+  padding-top: 98px;
+  &-content {
+    margin: 40px 20px;
 
-        &-chart {
-            max-width: 1440px;
-            margin: 80px auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 32px;
-            // &_main {
-            //     width: 100%;
-            //     .main_content {
-            //         display: flex;
-            //         justify-content: space-between;
-            //         align-items: flex-end;
-            //         flex-wrap: nowrap;
-            //         // display: grid;
-            //         // justify-items: center;
-            //     }
-            //     .company_circle {
-            //         // width: 40px;
-            //         // height: 40px;
-            //         background-color: $pmic-blue;
-            //         border-radius: 50%;
-            //         display: flex;
-            //         justify-content: center;
-            //         align-items: center;
-            //         margin-bottom: 8px;
-            //         position: relative;
-            //         .tooltip {
-            //             position: absolute;
-            //             top: -20px;
-            //             background-color: $white;
-            //             padding: 4px;
-            //             border: 1px solid $pmic-blue;
-            //             display: none;
-            //             border-radius: 4px;
-            //         }
-            //         &:hover {
-            //             .tooltip {
-            //                 display: block;
-            //             }
-            //         }
-            //     }
-            // }
-            // &_footer {
-            //     display: flex;
-            //     justify-content: space-between;
-            //     align-items: flex-end;
-            //     flex-wrap: nowrap;
-            //     .company_name {
-            //         padding: 8px;
-            //         margin-top: 16px;
-            //     }
-            // }
-        }
-
-        &-cards {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(200px, 340px));
-            justify-content: center;
-            grid-gap: 32px;
-            &-item {
-                background: $pmic-blue;
-                padding: 16px;
-                min-height: 400px;
-                display: flex;
-                align-items: flex-end;
-                &-body {
-                    background-color: $white;
-                    padding: 8px 16px;
-                    width: 100%;
-                    min-height: 100px;
-                    .item-news {
-                        font-size: 14px;
-                        text-overflow: ellipsis;
-                        line-height: 20px;
-                        max-height: 60px;
-                        font-weight: 600;
-                    }
-                    .news-details {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        margin-top: 16px;
-                        p {
-                            font-size: 14px;
-                        }
-                    }
-                }
+    &-chart {
+      max-width: 1140px;
+      margin: 80px auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 32px;
+      &::ng-deep {
+        .dxc-labels {
+          g {
+            g {
+              rect {
+                fill: transparent;
+              }
             }
+          }
         }
+      }
+      // &_main {
+      //     width: 100%;
+      //     .main_content {
+      //         display: flex;
+      //         justify-content: space-between;
+      //         align-items: flex-end;
+      //         flex-wrap: nowrap;
+      //         // display: grid;
+      //         // justify-items: center;
+      //     }
+      //     .company_circle {
+      //         // width: 40px;
+      //         // height: 40px;
+      //         background-color: $pmic-blue;
+      //         border-radius: 50%;
+      //         display: flex;
+      //         justify-content: center;
+      //         align-items: center;
+      //         margin-bottom: 8px;
+      //         position: relative;
+      //         .tooltip {
+      //             position: absolute;
+      //             top: -20px;
+      //             background-color: $white;
+      //             padding: 4px;
+      //             border: 1px solid $pmic-blue;
+      //             display: none;
+      //             border-radius: 4px;
+      //         }
+      //         &:hover {
+      //             .tooltip {
+      //                 display: block;
+      //             }
+      //         }
+      //     }
+      // }
+      // &_footer {
+      //     display: flex;
+      //     justify-content: space-between;
+      //     align-items: flex-end;
+      //     flex-wrap: nowrap;
+      //     .company_name {
+      //         padding: 8px;
+      //         margin-top: 16px;
+      //     }
+      // }
     }
+
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(200px, 340px));
+      justify-content: center;
+      grid-gap: 32px;
+      &-item {
+        background: $pmic-blue;
+        padding: 16px;
+        min-height: 400px;
+        display: flex;
+        align-items: flex-end;
+        &-body {
+          background-color: $white;
+          padding: 8px 16px;
+          width: 100%;
+          min-height: 100px;
+          .item-news {
+            font-size: 14px;
+            text-overflow: ellipsis;
+            line-height: 20px;
+            max-height: 60px;
+            font-weight: 600;
+          }
+          .news-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
