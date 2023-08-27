@@ -5,7 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { LendingPageComponent } from './lending-page/lending-page.component';
 import { HeaderComponent } from './components/header/header.component';
-import { DxAccordionModule, DxGalleryModule, DxPivotGridModule, DxRadioGroupModule, DxSwitchModule } from 'devextreme-angular';
+import {
+  DxAccordionModule,
+  DxGalleryModule,
+  DxListModule,
+  DxPivotGridModule,
+  DxRadioGroupModule,
+  DxSelectBoxModule,
+  DxSwitchModule,
+  DxTemplateModule,
+  DxTreeViewModule,
+} from 'devextreme-angular';
 import { DxToolbarModule } from 'devextreme-angular/ui/toolbar';
 import { NewsSidebarComponent } from './components/news-sidebar/news-sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -30,7 +40,7 @@ import {
   DxChartModule,
   DxMapModule,
   DxBarGaugeModule,
-  DxVectorMapModule
+  DxVectorMapModule,
 } from 'devextreme-angular';
 import { SyntheticBasestocksComponent } from './components/synthetic-basestocks/synthetic-basestocks.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -88,7 +98,7 @@ import { CardDetailsComponent } from './components/card-details/card-details.com
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { AutocomplateSelectDropdownComponent } from './components/autocomplate-select-dropdown/autocomplate-select-dropdown.component';
 import { BioplasticsMarketMonitorComponent } from './components/bioplasticsMarketMonitor/bioplasticsMarketMonitor.component';
-
+import { BiopasticsSearchResultsComponent } from './components/biopastics-search-results/biopastics-search-results.component';
 @NgModule({
   declarations: [
     BioplasticsMarketMonitorComponent,
@@ -164,6 +174,7 @@ import { BioplasticsMarketMonitorComponent } from './components/bioplasticsMarke
     CardDetailsComponent,
     SearchResultsComponent,
     AutocomplateSelectDropdownComponent,
+    BiopasticsSearchResultsComponent,
   ],
   imports: [
     BrowserModule,
@@ -182,7 +193,11 @@ import { BioplasticsMarketMonitorComponent } from './components/bioplasticsMarke
     DxVectorMapModule,
     DxRadioGroupModule,
     DxAccordionModule,
-    DxSwitchModule
+    DxSwitchModule,
+    DxTreeViewModule,
+    DxListModule,
+    DxTemplateModule,
+    DxSelectBoxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,22 +1,11 @@
 <div class="bioplasticsMarketMonitor">
-  <div class="bioplastics-filtration"  outclick (outclick)="onOutclick()">
-    <div class="filter_section" >
-      <div class="filter_item country" (click)="OpenDropdown(1)" [ngClass]="{ active: selectedDropdownIndex === 1 }">
-        Browse by Country
-        <svg
-          width="16"
-          height="9"
-          viewBox="0 0 16 9"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
-            fill="#fff"
-          />
-        </svg>
-      </div>
-      <div class="filter_item theme" (click)="OpenDropdown(2)" [ngClass]="{ active: selectedDropdownIndex === 2 }" >
+  <div class="bioplastics-filtration" outclick (outclick)="onOutclick()">
+    <div class="filter_section">
+      <div
+        class="filter_item theme"
+        (click)="OpenDropdown(2)"
+        [ngClass]="{ active: selectedDropdownIndex === 2 }"
+      >
         Browse by Theme
         <svg
           width="16"
@@ -31,7 +20,31 @@
           />
         </svg>
       </div>
-      <div class="filter_item region" (click)="OpenDropdown(3)" [ngClass]="{ active: selectedDropdownIndex === 3 }">
+      <div
+        class="filter_item country"
+        (click)="OpenDropdown(1)"
+        [ngClass]="{ active: selectedDropdownIndex === 1 }"
+      >
+        Browse by Country
+        <svg
+          width="16"
+          height="9"
+          viewBox="0 0 16 9"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+            fill="#fff"
+          />
+        </svg>
+      </div>
+
+      <div
+        class="filter_item region"
+        (click)="OpenDropdown(3)"
+        [ngClass]="{ active: selectedDropdownIndex === 3 }"
+      >
         Browse by Region
         <svg
           width="16"
@@ -46,56 +59,78 @@
           />
         </svg>
       </div>
-      <div class="search-bar">
-        <div class="serach-input">
-          <input type="text" placeholder="Search..." />
-        </div>
-        <div class="serach-btn">
-          <a routerLink="/search-results">
-            <svg
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M14.7188 15.29C14.7188 15.29 15.0349 14.9739 15.6671 14.3417C16.2993 13.7095 16.6154 12.504 16.6154 10.7251C16.6154 8.94629 15.9832 7.42465 14.7188 6.16023C13.4543 4.89581 11.9327 4.2636 10.1538 4.2636C8.375 4.2636 6.85337 4.89581 5.58894 6.16023C4.32452 7.42465 3.69231 8.94629 3.69231 10.7251C3.69231 12.504 4.32452 14.0256 5.58894 15.29C6.85337 16.5545 8.375 17.1867 10.1538 17.1867C11.9327 17.1867 13.4543 16.5545 14.7188 15.29ZM24 22.7251C24 23.2251 23.8173 23.6578 23.4519 24.0232C23.0865 24.3886 22.6538 24.5713 22.1538 24.5713C21.6346 24.5713 21.2019 24.3886 20.8558 24.0232L15.9087 19.0905C14.1875 20.2828 12.2692 20.879 10.1538 20.879C8.77885 20.879 7.46394 20.6122 6.20913 20.0785C4.95433 19.5448 3.8726 18.8237 2.96394 17.915C2.05529 17.0064 1.33413 15.9247 0.800481 14.6698C0.266827 13.415 0 12.1001 0 10.7251C0 9.35014 0.266827 8.03523 0.800481 6.78042C1.33413 5.52562 2.05529 4.44389 2.96394 3.53523C3.8726 2.62658 4.95433 1.90542 6.20913 1.37177C7.46394 0.838116 8.77885 0.571289 10.1538 0.571289C11.5288 0.571289 12.8438 0.838116 14.0986 1.37177C15.3534 1.90542 16.4351 2.62658 17.3438 3.53523C18.2524 4.44389 18.9736 5.52562 19.5072 6.78042C20.0409 8.03523 20.3077 9.35014 20.3077 10.7251C20.3077 12.8405 19.7115 14.7588 18.5192 16.4799L23.4663 21.4271C23.8221 21.7828 24 22.2155 24 22.7251Z"
-                fill="#fff"
-              />
-            </svg>
-          </a>
-        </div>
+    </div>
+    <div class="search-bar">
+      <div class="serach-input">
+        <input type="text" placeholder="Advanced Search..." />
+      </div>
+      <div class="serach-btn">
+        <a routerLink="/search-results">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.7188 15.29C14.7188 15.29 15.0349 14.9739 15.6671 14.3417C16.2993 13.7095 16.6154 12.504 16.6154 10.7251C16.6154 8.94629 15.9832 7.42465 14.7188 6.16023C13.4543 4.89581 11.9327 4.2636 10.1538 4.2636C8.375 4.2636 6.85337 4.89581 5.58894 6.16023C4.32452 7.42465 3.69231 8.94629 3.69231 10.7251C3.69231 12.504 4.32452 14.0256 5.58894 15.29C6.85337 16.5545 8.375 17.1867 10.1538 17.1867C11.9327 17.1867 13.4543 16.5545 14.7188 15.29ZM24 22.7251C24 23.2251 23.8173 23.6578 23.4519 24.0232C23.0865 24.3886 22.6538 24.5713 22.1538 24.5713C21.6346 24.5713 21.2019 24.3886 20.8558 24.0232L15.9087 19.0905C14.1875 20.2828 12.2692 20.879 10.1538 20.879C8.77885 20.879 7.46394 20.6122 6.20913 20.0785C4.95433 19.5448 3.8726 18.8237 2.96394 17.915C2.05529 17.0064 1.33413 15.9247 0.800481 14.6698C0.266827 13.415 0 12.1001 0 10.7251C0 9.35014 0.266827 8.03523 0.800481 6.78042C1.33413 5.52562 2.05529 4.44389 2.96394 3.53523C3.8726 2.62658 4.95433 1.90542 6.20913 1.37177C7.46394 0.838116 8.77885 0.571289 10.1538 0.571289C11.5288 0.571289 12.8438 0.838116 14.0986 1.37177C15.3534 1.90542 16.4351 2.62658 17.3438 3.53523C18.2524 4.44389 18.9736 5.52562 19.5072 6.78042C20.0409 8.03523 20.3077 9.35014 20.3077 10.7251C20.3077 12.8405 19.7115 14.7588 18.5192 16.4799L23.4663 21.4271C23.8221 21.7828 24 22.2155 24 22.7251Z"
+              fill="#df7b2e"
+            />
+          </svg>
+        </a>
       </div>
     </div>
     <div *ngIf="this.dropdownOpen" class="filtering_dropdown">
-      <div class="filtering_dropdown-content" *ngIf="selectedDropdownIndex === 1">
+      <div
+        class="filtering_dropdown-content"
+        *ngIf="selectedDropdownIndex === 1"
+      >
         <div class="country_group_tab">
-         <div *ngFor="let item of countriesGroupByAZ" (click)="changeGroup(item)" [ngClass]="{ active: activeGruopAZ === item }" >
-          <p> {{item}} </p>
-         </div>
+          <div
+            *ngFor="let item of countriesGroupByAZ"
+            (click)="changeGroup(item)"
+            [ngClass]="{ active: activeGruopAZ === item }"
+          >
+            <p>{{ item }}</p>
+          </div>
         </div>
-          <div class="filtering_dropdown-content_theme">
-            <div class="filtering_dropdown-content_theme_item" *ngFor="let item of filtredCountriesList">
-              <p>{{item.name}}</p>
-            </div>
+        <div class="filtering_dropdown-content_theme">
+          <div
+            class="filtering_dropdown-content_theme_item"
+            *ngFor="let item of filtredCountriesList"
+          >
+            <p (click)="setSelectedFilters(item.name)">{{ item.name }}</p>
           </div>
+        </div>
       </div>
       <!--  -->
-      <div class="filtering_dropdown-content" *ngIf="selectedDropdownIndex === 2">
-          <div class="filtering_dropdown-content_theme">
-            <div class="filtering_dropdown-content_theme_item" *ngFor="let item of themesData">
-              <p>{{item.Themes}}</p>
-            </div>
+      <div
+        class="filtering_dropdown-content"
+        *ngIf="selectedDropdownIndex === 2"
+      >
+        <div class="filtering_dropdown-content_theme">
+          <div
+            class="filtering_dropdown-content_theme_item"
+            *ngFor="let item of themesData"
+          >
+            <p (click)="setSelectedFilters(item.Themes)">{{ item.Themes }}</p>
           </div>
+        </div>
       </div>
       <!--  -->
-      <div class="filtering_dropdown-content" *ngIf="selectedDropdownIndex === 3">
-          <div class="filtering_dropdown-content_theme">
-            <div class="filtering_dropdown-content_theme_item" *ngFor="let item of regionData">
-              <p>{{item}}</p>
-            </div>
+      <div
+        class="filtering_dropdown-content"
+        *ngIf="selectedDropdownIndex === 3"
+      >
+        <div class="filtering_dropdown-content_theme">
+          <div
+            class="filtering_dropdown-content_theme_item"
+            *ngFor="let item of regionData"
+          >
+            <p (click)="setSelectedFilters(item)">{{ item }}</p>
           </div>
+        </div>
       </div>
       <!-- {{selectedDropdownIndex}} -->
     </div>
@@ -105,13 +140,62 @@
     <div class="bioplasticsMarketMonitor-content-chart">
       <div class="list">
         <div class="list_header">
-          <h3 class="title">Newsfeed</h3>
-          <span class="orange_area"></span>
+          <div class="title_section">
+            <h3 class="title">Newsfeed</h3>
+            <span class="orange_area"></span>
+          </div>
+          <div class="filteredList" *ngIf="selectedFilters">
+            <div
+              class="filteredList_item"
+              *ngFor="let item of selectedFilters; let i = index"
+            >
+              <p>{{ item }}</p>
+              <div class="icon" (click)="deleteSelectedFilter(item, i)">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.5022 0.943751C31.2776 0.718743 31.0109 0.54023 30.7173 0.418431C30.4236 0.296631 30.1089 0.233937 29.791 0.233937C29.4731 0.233937 29.1583 0.296631 28.8647 0.418431C28.5711 0.54023 28.3044 0.718743 28.0798 0.943751L16.2109 12.7884L4.34204 0.919478C4.11733 0.694766 3.85056 0.516514 3.55696 0.3949C3.26335 0.273286 2.94868 0.210693 2.63088 0.210693C2.31309 0.210693 1.99841 0.273286 1.70481 0.3949C1.41121 0.516514 1.14444 0.694766 0.919723 0.919478C0.69501 1.14419 0.516758 1.41096 0.395144 1.70457C0.273531 1.99817 0.210937 2.31285 0.210938 2.63064C0.210938 2.94843 0.273531 3.26311 0.395144 3.55671C0.516758 3.85031 0.69501 4.11709 0.919723 4.3418L12.7886 16.2107L0.919723 28.0796C0.69501 28.3043 0.516758 28.5711 0.395144 28.8647C0.273531 29.1583 0.210938 29.473 0.210938 29.7907C0.210937 30.1085 0.273531 30.4232 0.395144 30.7168C0.516758 31.0104 0.69501 31.2772 0.919723 31.5019C1.14444 31.7266 1.41121 31.9049 1.70481 32.0265C1.99841 32.1481 2.31309 32.2107 2.63088 32.2107C2.94868 32.2107 3.26335 32.1481 3.55696 32.0265C3.85056 31.9049 4.11733 31.7266 4.34204 31.5019L16.2109 19.633L28.0798 31.5019C28.3045 31.7266 28.5713 31.9049 28.8649 32.0265C29.1585 32.1481 29.4732 32.2107 29.791 32.2107C30.1088 32.2107 30.4235 32.1481 30.7171 32.0265C31.0107 31.9049 31.2774 31.7266 31.5022 31.5019C31.7269 31.2772 31.9051 31.0104 32.0267 30.7168C32.1483 30.4232 32.2109 30.1085 32.2109 29.7907C32.2109 29.473 32.1483 29.1583 32.0267 28.8647C31.9051 28.5711 31.7269 28.3043 31.5022 28.0796L19.6333 16.2107L31.5022 4.3418C32.4245 3.41947 32.4245 1.86608 31.5022 0.943751Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="list_content">
-          <div class="list_content_item" *ngFor="let item of data">
+          <div class="list_content_item" *ngFor="let item of newData">
             <h4>{{ item.News }}</h4>
             <div class="arrow">
+              <div class="dots_icon" (click)="openDotsDrop = true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  fill="#000000"
+                  height="16px"
+                  width="16px"
+                  version="1.1"
+                  id="Capa_1"
+                  viewBox="0 0 32.055 32.055"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      fill="#759cb8"
+                      d="M3.968,12.061C1.775,12.061,0,13.835,0,16.027c0,2.192,1.773,3.967,3.968,3.967c2.189,0,3.966-1.772,3.966-3.967   C7.934,13.835,6.157,12.061,3.968,12.061z M16.233,12.061c-2.188,0-3.968,1.773-3.968,3.965c0,2.192,1.778,3.967,3.968,3.967   s3.97-1.772,3.97-3.967C20.201,13.835,18.423,12.061,16.233,12.061z M28.09,12.061c-2.192,0-3.969,1.774-3.969,3.967   c0,2.19,1.774,3.965,3.969,3.965c2.188,0,3.965-1.772,3.965-3.965S30.278,12.061,28.09,12.061z"
+                    />
+                  </g>
+                </svg>
+                <div class="dots_dropdown" *ngIf="openDotsDrop">
+                  <div>Save</div>
+                  <div>Share</div>
+                  <div>Download</div>
+                </div>
+              </div>
               <img src="../../../assets/images/small-arrow.svg" alt="arrow" />
             </div>
           </div>
@@ -126,6 +210,7 @@
             [commonSeriesSettings]="commonSeriesSettings"
             [minBubbleSize]="20"
             [maxBubbleSize]="0.4"
+            (onPointClick)="onSeriesClick($event)"
           >
             <dxi-series
               [type]="'bubble'"
@@ -186,7 +271,7 @@
               <dxo-label [rotationAngle]="20" overlappingBehavior="rotate">
               </dxo-label>
             </dxo-argument-axis>
-            <dxo-title text="Top 10 Theme News"></dxo-title>
+            <dxo-title text="News Count by Themes"></dxo-title>
             <dxo-legend [visible]="false"></dxo-legend>
           </dx-chart>
         </div>

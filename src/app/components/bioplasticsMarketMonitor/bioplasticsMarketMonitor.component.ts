@@ -8,6 +8,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class BioplasticsMarketMonitorComponent implements OnInit {
   public data: any[] = [];
+  public newData: any[] = [];
   public themesData: any[] = [];
   public countriesData: any[] = [];
   public bioplasticsData: any[] = [];
@@ -40,10 +41,14 @@ export class BioplasticsMarketMonitorComponent implements OnInit {
     'South America',
     'Europe',
   ];
+
+  public selectedFilters: any[] = [];
+  public openDotsDrop: boolean = false;
+
   constructor(private http: HttpClient) {}
 
   @ViewChild('content', { static: true }) contentRef?: ElementRef;
-
+  @ViewChild('navdrop') navdrop: ElementRef;
   ngOnInit() {
     // bioplastics_data
     this.http
@@ -52,7 +57,7 @@ export class BioplasticsMarketMonitorComponent implements OnInit {
         this.bioplasticsData = data;
         // 10 random news
         this.data = data.filter((item, index) => index < 10);
-
+        this.newData = this.data;
         // top 10 countries
         let companyCount = {};
 
@@ -113,6 +118,20 @@ export class BioplasticsMarketMonitorComponent implements OnInit {
       });
   }
 
+  //  set selected filters
+
+  setSelectedFilters(arg) {
+    this.selectedFilters.push(arg);
+    this.newData = this.data.filter((item) => item.Theme.includes(arg));
+    console.log('this.newData', this.newData);
+  }
+
+  deleteSelectedFilter(arg, idx) {
+    this.selectedFilters.splice(idx, 1);
+    this.newData = this.data;
+    console.log('this.selectedFilters', this.selectedFilters);
+  }
+
   // random array elements places
   shuffle(array) {
     let currentIndex = array.length,
@@ -167,6 +186,10 @@ export class BioplasticsMarketMonitorComponent implements OnInit {
     });
   }
 
+  dropClick() {
+    this.navdrop.nativeElement.classList.toggle('visibility');
+  }
+
   // changeCountryGroup
 
   changeGroup(item) {
@@ -200,12 +223,18 @@ export class BioplasticsMarketMonitorComponent implements OnInit {
     console.log('selectedDropdownIndex', this.selectedDropdownIndex);
   }
 
-  // onSeriesClick(e: any) {
-  //   const series = e.target;
-  //   if (series.isVisible()) {
-  //     series.hide();
-  //   } else {
-  //     series.show();
-  //   }
-  // }
+  onSeriesClick(e: any) {
+    const series = e.target.argument;
+    // const x = series.getArgumentRangeInitialValue();
+    // console.log('series', series);
+    console.log('series', series);
+    this.newData = this.bioplasticsData.filter(
+      (item) => item.Company === series
+    );
+    // if (series.isVisible()) {
+    //   series.hide();
+    // } else {
+    //   series.show();
+    // }
+  }
 }
