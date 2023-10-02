@@ -34,73 +34,47 @@
             [iconName]="''"
           ></app-button>
         </div>
-      </div>
-      <!-- <div class="search-results-body-advanced-filters-content">
-        <div class="suggested-keywords">
-          <div class="keywords">
-            <h3 class="subtitle">Suggested keywords:</h3>
-            <div class="keyword">
-              <p>Conventional PAO</p>
-            </div>
-            <div class="keyword">
-              <p>HDMO</p>
-            </div>
-            <div class="keyword">
-              <p>Gear Oil</p>
-            </div>
-            <div class="keyword">
-              <p>Grease</p>
-            </div>
-            <div class="keyword">
-              <p>PCMO</p>
-            </div>
-          </div>
-        </div>
-        <div class="esim-inch">
-          <div class="keywords-dropdown">
-            <h3 class="subtitle">Or:</h3>
-            <div class="dropdown">
-              <app-autocomplate-select-dropdown
-                [dropdownTitle]="'Keywords'"
-                [dropdownData]="keywordsList"
-                (itemEvent)="handleMultipleKeywardsChange($event)"
-                [firstItemSelected]="false"
-                [maxLimit]="33333"
-                [minLimit]="1"
-              ></app-autocomplate-select-dropdown>
-            </div>
-          </div>
-          <div>
-            <app-button
-              [btnText]="'Search'"
-              [type]="'icon secondary'"
-              [icon]="false"
-              [iconName]="''"
-            ></app-button>
-          </div>
-        </div>
-      </div> -->
-    </div>
+      </div> </div>
 
     <div class="search-results-body-content">
       <div class="search-results-body-content-filtering">
-        <!-- <dx-date-range-box
-        [(value)]="currentValue"
-        (onValueChanged)="currentValueChanged($event)"
-      >
-      </dx-date-range-box> -->
-        <dx-tree-view
+        <dx-accordion
+          #accordion
+          [dataSource]="accitems"
+          [collapsible]="true"
+          [multiple]="true"
+          [animationDuration]="300"
+          [selectedItems]="[accitems[0]]"
+          id="accordion-container"
+        >
+          <div *dxTemplate="let company of 'title'">
+            <p>{{ company }}</p>
+          </div>
+          <div
+            class="taxonomy_filtration_section"
+            *dxTemplate="let company of 'item'"
+          >
+            <!-- <div class="taxonomy_filtration">
+              <div
+                class="filter_items"
+                *ngFor="let item of employees"
+                (click)="setSelectedFilter(item.fullName)"
+              >
+                <h3>{{ item.fullName }}</h3>
+              </div>
+            </div> -->
+
+            <dx-tree-view
           id="treeview"
-          [items]="employees"
-          [showCheckBoxesMode]="showCheckBoxesMode"
+          [items]="verjankanData"
           [selectionMode]="selectionMode"
-          [selectNodesRecursive]="selectNodesRecursive"
+          [selectNodesRecursive]="true"
           [selectByClick]="true"
           (onSelectionChanged)="treeViewSelectionChanged($event)"
           (onContentReady)="treeViewContentReady($event)"
         >
-          <div *dxTemplate="let item of 'item'">
-            {{ item.fullName + " (" + item.position + ")" }}
+          <div *dxTemplate="let item of 'item'" >
+            {{ item.fullName }}
           </div>
         </dx-tree-view>
         <div class="selected-container">
@@ -114,11 +88,53 @@
           >
             <dxi-item *ngFor="let item of selectedEmployees">
               {{
-                item.prefix + " " + item.fullName + " (" + item.position + ")"
+                item?.fullName ? item.fullName : '' 
               }}
             </dxi-item>
           </dx-list>
         </div>
+          </div>
+        </dx-accordion>
+
+        <!-- <div class="filter_items_list" *ngIf="taxonomySelectedData.length">
+          <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div
+            class="List_item"
+            *ngFor="let item of taxonomySelectedData"
+            (click)="toggleFilterationItem(item)"
+          >
+            {{ item }}
+          </div>
+          <div class="filtered_items_list" *ngIf="selectedEmployees.length">
+            <div class="filtered_items_list_header">
+              <h3>Selected Filters</h3>
+            </div>
+            <div>
+              <div class="List_item" *ngFor="let item of selectedEmployees">
+                <div class="filteredList_item">
+                  <p>{{ item }}</p>
+                  <div class="icon">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 33 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M31.5022 0.943751C31.2776 0.718743 31.0109 0.54023 30.7173 0.418431C30.4236 0.296631 30.1089 0.233937 29.791 0.233937C29.4731 0.233937 29.1583 0.296631 28.8647 0.418431C28.5711 0.54023 28.3044 0.718743 28.0798 0.943751L16.2109 12.7884L4.34204 0.919478C4.11733 0.694766 3.85056 0.516514 3.55696 0.3949C3.26335 0.273286 2.94868 0.210693 2.63088 0.210693C2.31309 0.210693 1.99841 0.273286 1.70481 0.3949C1.41121 0.516514 1.14444 0.694766 0.919723 0.919478C0.69501 1.14419 0.516758 1.41096 0.395144 1.70457C0.273531 1.99817 0.210937 2.31285 0.210938 2.63064C0.210938 2.94843 0.273531 3.26311 0.395144 3.55671C0.516758 3.85031 0.69501 4.11709 0.919723 4.3418L12.7886 16.2107L0.919723 28.0796C0.69501 28.3043 0.516758 28.5711 0.395144 28.8647C0.273531 29.1583 0.210938 29.473 0.210938 29.7907C0.210937 30.1085 0.273531 30.4232 0.395144 30.7168C0.516758 31.0104 0.69501 31.2772 0.919723 31.5019C1.14444 31.7266 1.41121 31.9049 1.70481 32.0265C1.99841 32.1481 2.31309 32.2107 2.63088 32.2107C2.94868 32.2107 3.26335 32.1481 3.55696 32.0265C3.85056 31.9049 4.11733 31.7266 4.34204 31.5019L16.2109 19.633L28.0798 31.5019C28.3045 31.7266 28.5713 31.9049 28.8649 32.0265C29.1585 32.1481 29.4732 32.2107 29.791 32.2107C30.1088 32.2107 30.4235 32.1481 30.7171 32.0265C31.0107 31.9049 31.2774 31.7266 31.5022 31.5019C31.7269 31.2772 31.9051 31.0104 32.0267 30.7168C32.1483 30.4232 32.2109 30.1085 32.2109 29.7907C32.2109 29.473 32.1483 29.1583 32.0267 28.8647C31.9051 28.5711 31.7269 28.3043 31.5022 28.0796L19.6333 16.2107L31.5022 4.3418C32.4245 3.41947 32.4245 1.86608 31.5022 0.943751Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
         <!-- <div class="search-results-body-content-filtering-main-sorting">
           <div class="main-sort active"><p>Relevance</p></div>
           <div class="main-sort"><p>Newest first</p></div>

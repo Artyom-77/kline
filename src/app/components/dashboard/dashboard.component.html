@@ -1,0 +1,89 @@
+<div class="widget-dashboard">
+  <div class="widget-dashboard-header">
+    <div>
+      <dx-toolbar [items]="toolbarContent"> </dx-toolbar>
+      <dx-drawer
+        [openedStateMode]="'overlap'"
+        [position]="'left'"
+        [revealMode]="'slide'"
+        template="template"
+        [(opened)]="isDrawerOpen"
+        [height]=""
+        [closeOnOutsideClick]="true"
+      >
+        <div *dxTemplate="let data of 'template'" class="sliding-area">
+          <div>
+            <div class="add-new-dashboard-btn">
+              <button
+                class="add-dashboard"
+                (click)="openCreateDashboard = true"
+              >
+                Create a New Dashboard
+              </button>
+            </div>
+            <div class="tabs">
+              <div class="tab" *ngFor="let item of dashboardsList">
+                <div> {{ item.name }} </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="content" class="dx-theme-background-color">
+         gsdgsdfgs
+        </div>
+      </dx-drawer>
+    </div>
+  </div>
+  <dx-popup
+    [width]="600"
+    [height]="'auto'"
+    [showTitle]="true"
+    title="Create new dashboard"
+    [dragEnabled]="false"
+    [hideOnOutsideClick]="true"
+    [showCloseButton]="true"
+    [(visible)]="openCreateDashboard"
+    class="share_modal"
+  >
+    <dxo-position at="center" my="center" collision="fill"></dxo-position>
+    <div class="share_popup_content">
+      <div class="share_popup_content-tabs_body">
+        <div>
+          <div>
+            <div
+              class="selectbox_container_area"
+            >
+            <label>Dashboard name</label>
+              <input
+                placeholder="Please enter a name for your dashboard"
+                type="text"
+                [(ngModel)]="dashboardTitle"
+              />
+            </div>
+            <div class="modal_actions">
+              <div>
+                <app-button
+                  [btnText]="'Cancel'"
+                  [type]="'secondary  right'"
+                  [icon]="false"
+                  [iconName]="''"
+                  (click)="openCreateDashboard = false"
+                ></app-button>
+              </div>
+              <div>
+                <app-button
+                  [btnText]="'Submit'"
+                  [type]="'primary  right'"
+                  [icon]="false"
+                  [iconName]="''"
+                  (click)="addNewDashboard()"
+                ></app-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </dx-scroll-view> -->
+  </dx-popup>
+</div>

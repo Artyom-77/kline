@@ -287,6 +287,13 @@
               margin-left: 20px;
               .dots_icon {
                 position: relative;
+                .dotsDropdown {
+                    &::ng-deep .dx-button-mode-outlined {
+                        border: none !important;
+                        padding: 4px;
+                    }
+                    
+                }
                 .dots_dropdown {
                   position: absolute;
                   right: 0;

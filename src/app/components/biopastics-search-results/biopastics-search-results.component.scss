@@ -13,12 +13,12 @@
       grid-gap: 20px;
       grid-template-columns: 300px 1fr auto;
       justify-content: center;
-      //   justify-items: center;
       align-items: center;
       position: sticky;
-      top: 98px;
-      background: $white;
+      top: 96px;
+      background: #ffffff;
       padding: 8px;
+      z-index: 10;
       .results-count {
         padding: 0 16px;
         > p {
@@ -172,9 +172,91 @@
       &-filtering {
         // display: grid;
         // grid-gap: 24px;
+        position: relative;
         padding: 0px 16px;
         width: 100%;
         border-right: 1px solid $gray-light;
+
+
+
+        .taxonomy_filtration_section {
+          min-height: 60vh;
+          position: relative;
+          .taxonomy_filtration {
+            .filter_items {
+              padding: 8px 16px;
+              > h3 {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        .filter_items_list {
+          position: absolute;
+          top: 0;
+          left: 100%;
+          background-color: $white;
+          width: 260px;
+          min-height: 60vh;
+          padding: 16px;
+          border: 1px solid $dark-blue;
+          .main-search-filed {
+            display: flex;
+            border-bottom: 1px solid $teal;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 16px;
+            > input {
+              border: none;
+              font-size: 18px;
+              color: $gray;
+              padding: 8px;
+              width: 100%;
+            }
+          }
+          .List_item {
+            padding: 8px;
+            cursor: pointer;
+            .filteredList_item {
+              display: flex;
+              align-items: center;
+              border: 1px solid $orange;
+              border-radius: 30px;
+              padding: 8px 16px;
+              margin-left: 8px;
+              justify-content: flex-start;
+              width: fit-content;
+              p {
+                color: $dark-blue;
+                font-size: 13px;
+                font-weight: 500;
+                margin-right: 4px;
+              }
+              .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                > svg {
+                  width: 10px;
+                  height: 10px;
+                }
+              }
+            }
+          }
+          .filtered_items_list {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: $white;
+            width: 260px;
+            min-height: 60vh;
+            padding: 16px;
+            border: 1px solid $dark-blue;
+          }
+        }
+
+
         &-main-sorting {
           display: flex;
           max-width: 1440px;
@@ -362,4 +444,12 @@
   @include lg {
     padding-top: 150px;
   }
+  &::ng-deep .dx-treeview-toggle-item-visibility-opened,
+  &::ng-deep .dx-treeview-toggle-item-visibility {
+    width: 100%;
+    &::before {
+    left: 5px !important;
+    }
+  }
+  
 }

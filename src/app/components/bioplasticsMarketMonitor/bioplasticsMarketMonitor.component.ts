@@ -132,6 +132,11 @@ export class BioplasticsMarketMonitorComponent implements OnInit {
     console.log('this.selectedFilters', this.selectedFilters);
   }
 
+  // dropdownOpen
+  onItemClick(e) {
+    console.log(e);
+  }
+
   // random array elements places
   shuffle(array) {
     let currentIndex = array.length,

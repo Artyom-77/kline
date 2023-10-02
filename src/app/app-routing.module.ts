@@ -19,6 +19,7 @@ import { CardDetailsComponent } from './components/card-details/card-details.com
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { BioplasticsMarketMonitorComponent } from './components/bioplasticsMarketMonitor/bioplasticsMarketMonitor.component';
 import { BiopasticsSearchResultsComponent } from './components/biopastics-search-results/biopastics-search-results.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
   // { path: '', component: LendingPageComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
     component: BasestocksIntroductionOverviewComponent,
   },
   { path: 'insights', component: WebinarsComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'rrbo', component: RrboComponent },
   { path: 'synthetic-basestocks', component: SyntheticBasestocksComponent },
   { path: 'pao-demand', component: PaoDemandComponent },

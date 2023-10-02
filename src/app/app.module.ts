@@ -7,9 +7,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import {
   DxAccordionModule,
+  DxDrawerComponent,
+  DxDrawerModule,
+  DxDropDownButtonModule,
   DxGalleryModule,
   DxListModule,
   DxPivotGridModule,
+  DxPopupModule,
   DxRadioGroupModule,
   DxSelectBoxModule,
   DxSwitchModule,
@@ -99,8 +103,11 @@ import { SearchResultsComponent } from './components/search-results/search-resul
 import { AutocomplateSelectDropdownComponent } from './components/autocomplate-select-dropdown/autocomplate-select-dropdown.component';
 import { BioplasticsMarketMonitorComponent } from './components/bioplasticsMarketMonitor/bioplasticsMarketMonitor.component';
 import { BiopasticsSearchResultsComponent } from './components/biopastics-search-results/biopastics-search-results.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 @NgModule({
   declarations: [
+     
+    DashboardComponent,
     BioplasticsMarketMonitorComponent,
     AppComponent,
     LendingPageComponent,
@@ -198,6 +205,9 @@ import { BiopasticsSearchResultsComponent } from './components/biopastics-search
     DxListModule,
     DxTemplateModule,
     DxSelectBoxModule,
+    DxDropDownButtonModule,
+    DxDrawerModule,
+    DxPopupModule
   ],
   providers: [],
   bootstrap: [AppComponent],
