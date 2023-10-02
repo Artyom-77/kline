@@ -15,6 +15,7 @@ import {
   DxPivotGridModule,
   DxPopupModule,
   DxRadioGroupModule,
+  DxResizableModule,
   DxSelectBoxModule,
   DxSwitchModule,
   DxTemplateModule,
@@ -106,7 +107,6 @@ import { BiopasticsSearchResultsComponent } from './components/biopastics-search
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 @NgModule({
   declarations: [
-     
     DashboardComponent,
     BioplasticsMarketMonitorComponent,
     AppComponent,
@@ -184,6 +184,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     BiopasticsSearchResultsComponent,
   ],
   imports: [
+    DxResizableModule,
     BrowserModule,
     AppRoutingModule,
     DxToolbarModule,
@@ -207,7 +208,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     DxSelectBoxModule,
     DxDropDownButtonModule,
     DxDrawerModule,
-    DxPopupModule
+    DxPopupModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

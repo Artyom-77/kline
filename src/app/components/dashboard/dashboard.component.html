@@ -5,14 +5,14 @@
       <dx-drawer
         [openedStateMode]="'overlap'"
         [position]="'left'"
-        [revealMode]="'slide'"
+        [revealMode]="'expand'"
         template="template"
         [(opened)]="isDrawerOpen"
         [height]=""
         [closeOnOutsideClick]="true"
       >
         <div *dxTemplate="let data of 'template'" class="sliding-area">
-          <div>
+          <div class="sliding-area-content">
             <div class="add-new-dashboard-btn">
               <button
                 class="add-dashboard"
@@ -21,15 +21,44 @@
                 Create a New Dashboard
               </button>
             </div>
-            <div class="tabs">
-              <div class="tab" *ngFor="let item of dashboardsList">
-                <div> {{ item.name }} </div>
+            <div class="dashboard-tabs">
+              <div
+                class="dashboard-tabs-item"
+                *ngFor="let item of dashboardsList"
+              >
+                <div (click)="showSelectedDashborad(item.id)">
+                  {{ item.name }}
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="content" class="dx-theme-background-color">
-         gsdgsdfgs
+        <div id="content" class="dx-theme-background-color widget-items">
+          {{ selectedDashboard.name }}
+          <div class="widgets-section">
+            <div class="empty-widget" *ngIf="!selectedDashboard.widgets.length">
+              <p>
+                Your workspace is empty. Click the 'Create widget' button on the
+                top right to create a new widget.
+              </p>
+            </div>
+            <div class="widget-cards" *ngIf="selectedDashboard.widgets.length">
+              <div
+                class="widget-cards-item"
+                *ngFor="let item of selectedDashboard.widgets"
+              >
+                <div>
+                  gellloasdfasdf asdf asdjfa aksdjfha gellloasdfasdf asdf asdjfa
+                  aksdjfhagellloasdfasdf asdf asdjfa aksdjfhagellloasdfasdf asdf
+                  asdjfa aksdjfhagellloasdfasdf asdf asdjfa
+                  aksdjfhagellloasdfasdf asdf asdjfa aksdjfhagellloasdfasdf asdf
+                  asdjfa aksdjfhagellloasdfasdf asdf asdjfa
+                  aksdjfhagellloasdfasdf asdf asdjfa aksdjfhagellloasdfasdf asdf
+                  asdjfa aksdjfha
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </dx-drawer>
     </div>
@@ -50,10 +79,8 @@
       <div class="share_popup_content-tabs_body">
         <div>
           <div>
-            <div
-              class="selectbox_container_area"
-            >
-            <label>Dashboard name</label>
+            <div class="selectbox_container_area">
+              <label>Dashboard name</label>
               <input
                 placeholder="Please enter a name for your dashboard"
                 type="text"
@@ -81,6 +108,41 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- </dx-scroll-view> -->
+  </dx-popup>
+
+  <!-- Create Widget -->
+  <dx-popup
+    [width]="600"
+    [height]="'auto'"
+    [showTitle]="true"
+    title="Create widget"
+    [dragEnabled]="false"
+    [hideOnOutsideClick]="true"
+    [showCloseButton]="true"
+    [(visible)]="createWidgetModalVisible"
+    class="share_modal"
+  >
+    <dxo-position at="center" my="center" collision="fill"></dxo-position>
+    <div class="create-widget-content">
+      <div class="widget-main-type">
+        <div
+          class="widget-main-type-item"
+          (click)="widgetTypeTab = 'templates'"
+        >
+          Templetes
+        </div>
+        <div class="widget-main-type-item" (click)="widgetTypeTab = 'library'">
+          Contify Library
+        </div>
+      </div>
+      <div>
+        <div class="widget-main-body">
+          <div *ngIf="widgetTypeTab === 'templates'">templates</div>
+          <div *ngIf="widgetTypeTab === 'library'">library</div>
         </div>
       </div>
     </div>
