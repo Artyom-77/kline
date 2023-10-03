@@ -34,9 +34,24 @@
           </div>
         </div>
         <div id="content" class="dx-theme-background-color widget-items">
-          {{ selectedDashboard.name }}
           <div class="widgets-section">
             <div class="empty-widget" *ngIf="!selectedDashboard.widgets.length">
+              <svg
+                class="empty_workspace_ico"
+                xmlns="http://www.w3.org/2000/svg"
+                width="108"
+                height="120"
+                fill="none"
+                fill-rule="evenodd"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  d="M24 28.71c-1.947 0-3.779.759-5.155 2.136S16.71 34.053 16.71 36s.759 3.779 2.136 5.156a7.24 7.24 0 0 0 5.156 2.136c1.947 0 3.779-.759 5.156-2.136A7.24 7.24 0 0 0 31.29 36c0-1.947-.759-3.779-2.136-5.155A7.24 7.24 0 0 0 24 28.71zm-4.392 2.899A6.17 6.17 0 0 1 24 29.79a6.16 6.16 0 0 1 4.008 1.467l-4.093 4.067-4.978-2.919a6.14 6.14 0 0 1 .672-.795zm0 8.781A6.17 6.17 0 0 1 17.79 36c0-.937.207-1.843.597-2.666l4.988 2.925-1.452 5.595c-.861-.305-1.65-.8-2.314-1.464zm8.782 0a6.25 6.25 0 0 1-5.422 1.734l1.518-5.845 4.284-4.256c.933 1.113 1.44 2.507 1.44 3.977 0 1.657-.646 3.219-1.82 4.391zM44.79 36c0-2.181-1.641-3.966-3.75-4.236V25.5a.54.54 0 0 0-.54-.54h-2.725c-2.15-2.873-5.235-5.067-8.642-6.174 2.783-1.757 4.521-4.832 4.521-8.166 0-5.326-4.335-9.66-9.66-9.66s-9.66 4.334-9.66 9.66a9.68 9.68 0 0 0 4.52 8.168c-3.398 1.104-6.478 3.3-8.625 6.172H7.5a.54.54 0 0 0-.54.54v6.264c-2.109.268-3.75 2.055-3.75 4.236s1.641 3.968 3.75 4.236V46.5a.54.54 0 0 0 .54.54h33a.54.54 0 0 0 .54-.54v-6.264c2.109-.27 3.75-2.055 3.75-4.236zM20.412 19.47a.54.54 0 0 0 .096-1.017c-3.094-1.386-5.095-4.461-5.095-7.831 0-4.731 3.849-8.58 8.58-8.58s8.58 3.849 8.58 8.58c0 3.371-1.999 6.446-5.095 7.832a.54.54 0 0 0 .096 1.017c3.41.807 6.572 2.784 8.825 5.49H11.601c2.253-2.707 5.409-4.684 8.811-5.49zM4.29 36c0-1.77 1.44-3.21 3.21-3.21s3.21 1.44 3.21 3.21-1.44 3.21-3.21 3.21S4.29 37.77 4.29 36zm3.75 9.96v-5.724c2.109-.268 3.75-2.055 3.75-4.236s-1.641-3.968-3.75-4.236V26.04h31.92v5.724c-2.109.268-3.75 2.055-3.75 4.236s1.641 3.966 3.75 4.236v5.724H8.04zm32.46-6.75c-1.77 0-3.21-1.44-3.21-3.21s1.44-3.21 3.21-3.21 3.21 1.44 3.21 3.21-1.44 3.21-3.21 3.21z"
+                  fill="#27638e"
+                  fill-rule="nonzero"
+                  id=".bx--col-sm-4"
+                ></path>
+              </svg>
               <p>
                 Your workspace is empty. Click the 'Create widget' button on the
                 top right to create a new widget.
@@ -116,8 +131,8 @@
 
   <!-- Create Widget -->
   <dx-popup
-    [width]="600"
-    [height]="'auto'"
+    [width]="800"
+    [height]="'90vh'"
     [showTitle]="true"
     title="Create widget"
     [dragEnabled]="false"
@@ -133,7 +148,7 @@
           class="widget-main-type-item"
           (click)="widgetTypeTab = 'templates'"
         >
-          Templetes
+          Templates
         </div>
         <div class="widget-main-type-item" (click)="widgetTypeTab = 'library'">
           Contify Library
@@ -141,11 +156,127 @@
       </div>
       <div>
         <div class="widget-main-body">
-          <div *ngIf="widgetTypeTab === 'templates'">templates</div>
-          <div *ngIf="widgetTypeTab === 'library'">library</div>
+          <div *ngIf="widgetTypeTab === 'templates'">
+            <div *ngIf="!selectedTemplate.length">
+              <div
+                class="templates-list"
+                *ngFor="let item of widgetsList[0].types"
+                (click)="setSelectedTemplate(item)"
+              >
+                <h3>{{ item.type }}</h3>
+                <p>{{ item.desc }}</p>
+              </div>
+            </div>
+            <div *ngIf="selectedTemplate.length">
+              <div class="selected-template-details">
+                <div
+                  class="remove-selected"
+                  style="margin-bottom: 10px"
+                  (click)="selectedTemplate = []"
+                >
+                  <svg
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#0072c3"
+                    style="margin-right: 8px; vertical-align: text-top"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 32 32"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M14 26L15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z"
+                    ></path>
+                  </svg>
+                  <span style="margin-left: 8px">Back to templates</span>
+                </div>
+                <h2
+                  class="selected-template-details-title"
+                  style="margin-bottom: 10px"
+                >
+                  {{ selectedTemplate[0].type }}
+                </h2>
+                <p
+                  class="selected-template-details-desc"
+                  style="margin-bottom: 10px"
+                >
+                  {{ selectedTemplate[0].desc }}
+                </p>
+              </div>
+              <dx-autocomplete
+                placeholder="Competitor Name"
+                [dataSource]="autocompleteDataSource"
+                (onValueChanged)="updateEmployeeInfo($event)"
+              >
+              </dx-autocomplete>
+              <dx-list
+                #list1
+                [dataSource]="widgetsList[1].types"
+                [selectionMode]="'page'"
+                [selectAllMode]="'all'"
+                [showSelectionControls]="true"
+                [selectedItems]="selectedWidgetTypes"
+                (onSelectionChanged)="handlePropertyChange($event)"
+                [selectByClick]="false"
+              >
+                <div *dxTemplate="let item of 'item'">
+                  <h3>{{ item.type }}</h3>
+                  <p>{{ item.desc }}</p>
+                </div>
+              </dx-list>
+            </div>
+          </div>
+          <div *ngIf="widgetTypeTab === 'library'">
+            <dx-list
+              #list
+              [dataSource]="widgetsList[1].types"
+              [selectionMode]="'page'"
+              [selectAllMode]="'all'"
+              [showSelectionControls]="true"
+              [selectedItems]="selectedWidgetTypes"
+              [searchEnabled]="true"
+              searchExpr="type"
+              searchMode="contains"
+              (onSelectionChanged)="handlePropertyChange($event)"
+              [selectByClick]="false"
+            >
+              <div *dxTemplate="let item of 'item'">
+                <h3>{{ item.type }}</h3>
+                <p>{{ item.desc }}</p>
+                <div *ngIf="item.selected">
+                  <dx-autocomplete
+                    placeholder="Competitor Name"
+                    [dataSource]="autocompleteDataSource"
+                    (onValueChanged)="updateEmployeeInfo($event)"
+                  >
+                  </dx-autocomplete>
+                </div>
+              </div>
+            </dx-list>
+          </div>
+        </div>
+      </div>
+      <div class="modal_actions">
+        <div>
+          <app-button
+            [btnText]="'Cancel'"
+            [type]="'secondary  right'"
+            [icon]="false"
+            [iconName]="''"
+            (click)="openCreateDashboard = false"
+          ></app-button>
+        </div>
+        <div>
+          <app-button
+            [btnText]="'Submit'"
+            [type]="'primary  right'"
+            [icon]="false"
+            [iconName]="''"
+            (click)="addNewDashboard()"
+          ></app-button>
         </div>
       </div>
     </div>
-    <!-- </dx-scroll-view> -->
   </dx-popup>
 </div>

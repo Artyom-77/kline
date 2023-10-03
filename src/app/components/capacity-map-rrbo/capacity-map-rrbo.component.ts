@@ -4,7 +4,7 @@ import {
   Marker,
   RrboService,
 } from 'src/app/services/rrbo/rrbo.service';
-import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
+// import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
 // import * as  mapsData  from 'vectormap-data/world.js';
 // @node_modulesdevextreme/dist/js/vectormap-data/world.js
 @Component({
@@ -48,7 +48,7 @@ export class CapacityMapRrboComponent implements OnInit {
   public capacityData: any[] = [];
   markers: Marker[];
   keys: any = {};
-  public worldMap: any = mapsData.world;
+  // public worldMap: any = mapsData.world;
 
   constructor(service: RrboService) {
     this.mapTypes = service.getMapTypes();
@@ -64,7 +64,7 @@ export class CapacityMapRrboComponent implements OnInit {
 
   ngOnInit(): void {
     this.selectedCountry = this.capacityData;
-    console.log('worldMap',this.worldMap)
+    // console.log('worldMap',this.worldMap)
   }
 
   handleChange(arg: any): void {

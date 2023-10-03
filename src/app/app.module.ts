@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import {
   DxAccordionModule,
+  DxAutocompleteModule,
   DxDrawerComponent,
   DxDrawerModule,
   DxDropDownButtonModule,
@@ -184,6 +185,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     BiopasticsSearchResultsComponent,
   ],
   imports: [
+    DxAutocompleteModule,
     DxResizableModule,
     BrowserModule,
     AppRoutingModule,

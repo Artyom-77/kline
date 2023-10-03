@@ -2,308 +2,353 @@
 @import "../../../assets/scss/_mixins.scss";
 
 .widget-dashboard {
-  min-height: calc(100vh - 110px);
-  padding-top: 98px;
+    min-height: calc(100vh - 110px);
+    padding-top: 98px;
 }
 
 ::ng-deep .dx-toolbar {
-  background-color: rgba(191, 191, 191, 0.15);
-  padding: 5px 10px;
+    background-color: rgba(191, 191, 191, 0.15);
+    padding: 5px 10px;
 }
 
 ::ng-deep .dx-list-item-icon-container,
 ::ng-deep .dx-toolbar-before {
-  width: 36px;
-  padding-right: 0 !important;
-  text-align: center;
+    width: 36px;
+    padding-right: 0 !important;
+    text-align: center;
 }
 
 ::ng-deep .dx-list-item-content {
-  padding-left: 10px !important;
+    padding-left: 10px !important;
 }
 
 ::ng-deep .dx-button {
-  background-color: rgba(191, 191, 191, -0.15);
-  border: none;
+    background-color: rgba(191, 191, 191, -0.15);
+    border: none;
 }
 
 ::ng-deep .dx-list.panel-list {
-  height: 400px;
+    height: 400px;
 }
 
 ::ng-deep .dx-drawer-expand.dx-drawer-right .panel-list {
-  float: right;
+    float: right;
 }
 
 ::ng-deep .panel-list .dx-list-item {
-  color: #fff;
-  border-top: 1px solid rgba(221, 221, 221, 0.2);
+    color: #fff;
+    border-top: 1px solid rgba(221, 221, 221, 0.2);
 }
 
 ::ng-deep .panel-list .dx-list-item .dx-icon {
-  color: #fff !important;
+    color: #fff !important;
 }
 
 ::ng-deep .options {
-  padding: 20px;
-  background-color: rgba(191, 191, 191, 0.15);
+    padding: 20px;
+    background-color: rgba(191, 191, 191, 0.15);
 }
 
 ::ng-deep .options-container {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 ::ng-deep .caption {
-  font-size: 18px;
-  font-weight: 500;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 ::ng-deep .option {
-  margin-top: 10px;
-  display: inline-block;
-  margin-right: 50px;
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 50px;
 }
 
 ::ng-deep label {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 ::ng-deep #content {
-  height: 100%;
-  padding: 10px 20px;
+    height: 100%;
+    padding: 10px 20px;
 }
 
 ::ng-deep #content h2 {
-  font-size: 26px;
+    font-size: 26px;
 }
 ::ng-deep .widget-resizible-item {
-  border: 1px solid $light-blue;
+    border: 1px solid $light-blue;
 }
 
 ::ng-deep dx-drawer {
-  .dx-drawer-content {
-    max-height: calc(100vh - 142px) !important;
-    overflow-y: auto !important;
-    #content {
-      min-height: 200vh;
+    .dx-drawer-content {
+        max-height: calc(100vh - 142px) !important;
+        overflow-y: auto !important;
+        #content {
+            min-height: 200vh;
+        }
     }
-  }
-  .dx-overlay-wrapper {
-    position: fixed !important;
-    min-height: calc(100vh - 142px) !important;
-  }
+    .dx-overlay-wrapper {
+        position: fixed !important;
+        min-height: calc(100vh - 142px) !important;
+    }
 }
 ::ng-deep .sliding-area {
-  height: 100vh !important;
-  width: 280px !important;
-  background-color: $light-blue !important;
-  &-content {
-    padding: 20px 0;
-    display: grid;
-    grid-gap: 16px;
-    .add-new-dashboard-btn {
-      .add-dashboard {
+    height: 100vh !important;
+    width: 280px !important;
+    background-color: $light-blue !important;
+    &-content {
+        padding: 20px 0;
+        display: grid;
+        grid-gap: 16px;
+        .add-new-dashboard-btn {
+            .add-dashboard {
+                width: 100%;
+                height: 48px;
+                border: none;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                background-color: #fff;
+                &:hover {
+                    background-color: #ffffffa6;
+                }
+            }
+        }
+        .dashboard-tabs {
+            &-item {
+                padding: 12px;
+                color: $white;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+                &:not(:first-of-type) {
+                    border-top: 1px dashed $white;
+                }
+            }
+        }
+    }
+    @include lg {
+        padding-top: 150px;
+    }
+    &::ng-deep .dx-treeview-toggle-item-visibility-opened,
+    &::ng-deep .dx-treeview-toggle-item-visibility {
         width: 100%;
-        height: 48px;
-        border: none;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        background-color: #fff;
-        &:hover {
-          background-color: #ffffffa6;
+        &::before {
+            left: 5px !important;
         }
-      }
     }
-    .dashboard-tabs {
-      &-item {
-        padding: 12px;
-        color: $white;
-        font-size: 18px;
-        font-weight: 600;
-        cursor: pointer;
-        &:not(:first-of-type) {
-          border-top: 1px dashed $white;
-        }
-      }
-    }
-  }
-  @include lg {
-    padding-top: 150px;
-  }
-  &::ng-deep .dx-treeview-toggle-item-visibility-opened,
-  &::ng-deep .dx-treeview-toggle-item-visibility {
-    width: 100%;
-    &::before {
-      left: 5px !important;
-    }
-  }
 }
 
 ::ng-deep .widget-items {
-  .widgets-section {
-    display: flex;
-    justify-content: flex-start;
-    .empty-widget {
-      width: 460px;
-      height: 340px;
-      border: 1px solid $light-blue;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      text-align: center;
+    .widgets-section {
+        display: flex;
+        justify-content: flex-start;
+        .empty-widget {
+            width: 460px;
+            height: 340px;
+            border: 2px solid $light-blue;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            flex-direction: column;
+            > p {
+                margin-top: 20px;
+                font-size: 16px;
+                font-weight: 500;
+                color: $light-blue;
+            }
+        }
+        .widget-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            &-item {
+                padding: 20px;
+                width: 560px;
+                height: 340px;
+                border: 2px solid $light-blue;
+                border-radius: 4px;
+            }
+        }
     }
-    .widget-cards {
-      display: flex;
-      &-item {
-        padding: 20px;
-        width: 460px;
-        height: 340px;
-        border: 1px solid $light-blue;
-      }
-    }
-  }
 }
 
 ::ng-deep .share_popup_content {
-  padding: 32px 16px;
-  flex-direction: column;
+    padding: 32px 16px;
+    flex-direction: column;
 }
 
 ::ng-deep .share_popup_content-tabs {
-  display: grid;
-  align-items: center;
-  margin-bottom: 24px;
-  grid-template-columns: repeat(3, 1fr);
-  &.addNewsletter {
-    grid-template-columns: repeat(2, 1fr);
-    .share_popup_content-tabs-tab {
-      display: flex;
-      align-items: center;
-      > svg {
-        margin-left: 8px;
-      }
-      > h3 {
-        font-size: 16px;
-      }
+    display: grid;
+    align-items: center;
+    margin-bottom: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    &.addNewsletter {
+        grid-template-columns: repeat(2, 1fr);
+        .share_popup_content-tabs-tab {
+            display: flex;
+            align-items: center;
+            > svg {
+                margin-left: 8px;
+            }
+            > h3 {
+                font-size: 16px;
+            }
+        }
     }
-  }
 }
 ::ng-deep .share_popup_content-tabs-tab {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 8px 16px;
-  border-bottom: 2px solid transparent;
-  cursor: pointer;
-  &.active {
-    border-bottom: 2px solid $light-blue;
-  }
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    &.active {
+        border-bottom: 2px solid $light-blue;
+    }
 }
 ::ng-deep .share_popup_content-tabs_body {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 16px;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 16px;
+    width: 100%;
 
-  .date_box {
-    margin-bottom: 16px;
-    .dx-datebox {
-      input {
-        border: none !important;
+    .date_box {
+        margin-bottom: 16px;
+        .dx-datebox {
+            input {
+                border: none !important;
+                border-radius: 0 !important;
+            }
+
+            border-radius: 0 !important;
+            border: none;
+            border-bottom: 1px solid $orange;
+        }
+    }
+    .readios_section {
+        margin-bottom: 16px;
+    }
+    .readios_section_info {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .selectbox_container_area {
+        margin-bottom: 16px;
+    }
+    .dx-selectbox {
+        .dx-texteditor-input {
+            border: none !important;
+            border-radius: 0 !important;
+        }
+
         border-radius: 0 !important;
-      }
-
-      border-radius: 0 !important;
-      border: none;
-      border-bottom: 1px solid $orange;
     }
-  }
-  .readios_section {
-    margin-bottom: 16px;
-  }
-  .readios_section_info {
-    display: block;
-    font-size: 12px;
-    margin-bottom: 8px;
-  }
-
-  .selectbox_container_area {
-    margin-bottom: 16px;
-  }
-  .dx-selectbox {
-    .dx-texteditor-input {
-      border: none !important;
-      border-radius: 0 !important;
+    > div {
+        width: 100%;
     }
-
-    border-radius: 0 !important;
-  }
-  > div {
-    width: 100%;
-  }
-  label {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 8px;
-    color: $light-blue;
-  }
-  input {
-    padding: 8px;
-    width: 100%;
-    // max-width: 300px;
-    border: none;
-    color: $gray;
-    border-bottom: 1px solid $orange;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  p {
-    font-size: 18px;
-    font-weight: 400;
-    color: #3f3f3f;
-  }
-  .comments_section {
-    margin-top: 16px;
-    textarea {
-      resize: none;
-      // width: 500px;
-      width: 100%;
-      height: 120px;
-      padding: 8px 16px;
-      border: 1px solid $orange;
-      font-size: 16px;
-      color: #3f3f3f;
+    label {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        color: $light-blue;
     }
-  }
-  .copy_source {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
-    padding-left: 8px;
-    align-items: center;
-    border-bottom: 1px solid $orange;
-    border-bottom-right-radius: 20px;
-  }
-  .modal_actions {
-    margin-top: 40px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+    input {
+        padding: 8px;
+        width: 100%;
+        // max-width: 300px;
+        border: none;
+        color: $gray;
+        border-bottom: 1px solid $orange;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #3f3f3f;
+    }
+    .comments_section {
+        margin-top: 16px;
+        textarea {
+            resize: none;
+            // width: 500px;
+            width: 100%;
+            height: 120px;
+            padding: 8px 16px;
+            border: 1px solid $orange;
+            font-size: 16px;
+            color: #3f3f3f;
+        }
+    }
+    .copy_source {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        padding-left: 8px;
+        align-items: center;
+        border-bottom: 1px solid $orange;
+        border-bottom-right-radius: 20px;
+    }
+    .modal_actions {
+        margin-top: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
 
 ::ng-deep .create-widget-content {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  .widget-main-type {
-    > div {
-      border-bottom: 1px solid $light-blue;
-      padding: 16px;
-      font-size: 12px 16px;
-      font-weight: 500;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+    .widget-main-type {
+        > div {
+            border-bottom: 1px solid $light-blue;
+            padding: 16px;
+            font-size: 12px 16px;
+            font-weight: 500;
+        }
     }
-  }
+    .widget-main-body {
+        max-height: 70vh !important;
+        height: 70vh !important;
+        overflow-y: auto !important;
+        > div {
+            display: grid;
+            grid-gap: 16px;
+            > div {
+                display: grid;
+                grid-gap: 16px;
+            }
+            .templates-list {
+                background-color: $gray-light;
+                padding: 20px;
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $light-blue;
+                }
+                p {
+                    margin-top: 16px;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .modal_actions {
+        margin-top: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
