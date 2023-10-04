@@ -63,13 +63,8 @@
                 *ngFor="let item of selectedDashboard.widgets"
               >
                 <div>
-                  gellloasdfasdf asdf asdjfa aksdjfha gellloasdfasdf asdf asdjfa
-                  aksdjfhagellloasdfasdf asdf asdjfa aksdjfhagellloasdfasdf asdf
-                  asdjfa aksdjfhagellloasdfasdf asdf asdjfa
-                  aksdjfhagellloasdfasdf asdf asdjfa aksdjfhagellloasdfasdf asdf
-                  asdjfa aksdjfhagellloasdfasdf asdf asdjfa
-                  aksdjfhagellloasdfasdf asdf asdjfa aksdjfhagellloasdfasdf asdf
-                  asdjfa aksdjfha
+                 <h3> {{ item.type }} </h3>
+                 <p> {{ item.desc }} </p>
                 </div>
               </div>
             </div>
@@ -244,14 +239,14 @@
               <div *dxTemplate="let item of 'item'">
                 <h3>{{ item.type }}</h3>
                 <p>{{ item.desc }}</p>
-                <div *ngIf="item.selected">
+                <!-- <div *ngIf="item.selected">
                   <dx-autocomplete
                     placeholder="Competitor Name"
                     [dataSource]="autocompleteDataSource"
                     (onValueChanged)="updateEmployeeInfo($event)"
                   >
                   </dx-autocomplete>
-                </div>
+                </div> -->
               </div>
             </dx-list>
           </div>
@@ -273,7 +268,7 @@
             [type]="'primary  right'"
             [icon]="false"
             [iconName]="''"
-            (click)="addNewDashboard()"
+            (click)="addWidgets()"
           ></app-button>
         </div>
       </div>

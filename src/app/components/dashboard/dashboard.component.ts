@@ -21,7 +21,7 @@ export class DashboardComponent implements OnInit, OnChanges {
     {
       id: String(Math.random() * 1000000000000000000000000000000000000),
       name: 'My Dashbard',
-      widgets: [1, 2],
+      widgets: [],
     },
   ];
   public selectedDashboard: SelectedDashboard = {
@@ -98,13 +98,13 @@ export class DashboardComponent implements OnInit, OnChanges {
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
-          type: '<Company Name> Strategic Benchmarking ',
+          type: '<Company Name> Strategic Benchmarking',
           desc: 'A benchmarking company by business, geography, and/or any other variable ',
           selected: false,
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
-          type: '<Company Name> Industries ',
+          type: '<Company Name> Industries',
           desc: "Map the company's industry coverage to understand the focus areas",
           selected: false,
         },
@@ -134,7 +134,7 @@ export class DashboardComponent implements OnInit, OnChanges {
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
-          type: '<Company Name> Business Revenue Mix ',
+          type: '<Company Name> Business Revenue Mix',
           desc: 'Explore revenue contribution of reported business segments of company',
           selected: false,
         },
@@ -143,7 +143,7 @@ export class DashboardComponent implements OnInit, OnChanges {
   ];
   public toolbarContent: any[] = [];
   public selectedWidgetTypes: any[] = [];
-  public selectedTemplate: any[] = []
+  public selectedTemplate: any[] = [];
   public autocompleteDataSource: any[] = [
     'CEO',
     'COO',
@@ -155,6 +155,8 @@ export class DashboardComponent implements OnInit, OnChanges {
     'Sales Manager',
     'Support Manager',
   ];
+  public selectedLibraries: any[] = [];
+  public showedWidgetsList: any[] = [];
   constructor() {}
 
   ngOnInit() {
@@ -238,16 +240,30 @@ export class DashboardComponent implements OnInit, OnChanges {
   handlePropertyChange(item) {
     if (item.addedItems.length) {
       item.addedItems[0].selected = true;
+      this.selectedLibraries.push(item.addedItems[0]);
     } else {
       item.removedItems[0].selected = false;
+      this.selectedLibraries = this.selectedLibraries.filter(
+        (elem) => item.removedItems[0].id !== elem.id
+      );
     }
-    console.log('item', item);
+    console.log('this.selectedLibraries', this.selectedLibraries);
+  }
+
+  addWidgets() {
+    if (this.selectedLibraries.length) {
+      this.selectedLibraries.forEach((elem) => {
+        this.selectedDashboard.widgets.push(elem);
+      });
+      console.log('this.showedWidgetsList', this.showedWidgetsList);
+
+      this.selectedLibraries = [];
+      this.createWidgetModalVisible = false;
+    }
   }
 
   setSelectedTemplate(item) {
-    this.selectedTemplate[0] = item
-    console.log('this.selectedTemplate',this.selectedTemplate);
-    
+    this.selectedTemplate[0] = item;
   }
 
   updateEmployeeInfo(e) {
