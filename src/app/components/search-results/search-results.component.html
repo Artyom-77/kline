@@ -1,5 +1,9 @@
 <div class="search-results">
-  <app-hero-section title="Search Results.." desc="" [breadcrumpData]="breadcrumpData"></app-hero-section>
+  <app-hero-section
+    title="Search Results.."
+    desc=""
+    [breadcrumpData]="breadcrumpData"
+  ></app-hero-section>
   <div class="search-results-body">
     <div class="search-results-body-header">
       <div class="results-count">
@@ -7,8 +11,11 @@
       </div>
       <div class="main-search">
         <div class="main-search-filed">
-          <input placeholder="Search..." />
+          <input placeholder="Search..." [(ngModel)]="searchText" />
           <img src="../../../assets/images/search-icon.svg" alt="search" />
+          <div class="result-list" *ngIf="searchText">
+            <div>af asldfkj alsdk f;as;d flk</div>
+          </div>
         </div>
         <div class="advanced-search">
           <p (click)="advancedOpen = !advancedOpen">Advanced Search</p>
@@ -22,7 +29,7 @@
         <h3>Advanced Search by Keyword</h3>
         <div>
           <div class="alert-switch">
-            <p>Receive Alert</p>
+            <p>Search Alerts</p>
             <dx-switch [value]="true"></dx-switch>
           </div>
           <div>
@@ -36,7 +43,60 @@
           ></app-button>
         </div>
       </div>
-      <div class="search-results-body-advanced-filters-content">
+      <!--  -->
+      <div class="boolean-operators">
+        <div>
+          <div>
+            <div class="main-search-filed">
+              <input placeholder="Search..." [(ngModel)]="searchText" />
+              <!-- <img src="../../../assets/images/search-icon.svg" alt="search" /> -->
+            </div>
+          </div>
+          <!-- bool operators area -->
+          <div style="display: flex; max-width: 500px; align-items: flex-end; margin-top: 16px;" *ngFor="let item of booleanOperatorsList">
+            <app-select-dropdown
+            [dropdownTitle]="' Group'"
+            [firstItemSelected]="true"
+            [dropdownData]="[
+              {
+                id: 1,
+                label: 'AND'
+              },
+              {
+                id: 2,
+                label: 'OR'
+              },
+              {
+                id: 3,
+                label: 'NOT'
+              },
+            ]"
+          ></app-select-dropdown>
+          <div class="main-search-filed">
+
+            <input placeholder="Search..." [(ngModel)]="searchText" />
+            <!-- <img src="../../../assets/images/search-icon.svg" alt="search" /> -->
+          </div>
+          </div>
+          <div style="margin-top: 16px;" (click)="booleanOperatorsList.push(booleanOperatorsList.length + 1 )">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <rect width="24" height="24" rx="4" fill="#DF7B2E" />
+              <path
+                d="M19 11H13V5C13 4.73478 12.8946 4.48043 12.7071 4.29289C12.5196 4.10536 12.2652 4 12 4C11.7348 4 11.4804 4.10536 11.2929 4.29289C11.1054 4.48043 11 4.73478 11 5V11H5C4.73478 11 4.48043 11.1054 4.29289 11.2929C4.10536 11.4804 4 11.7348 4 12C4 12.2652 4.10536 12.5196 4.29289 12.7071C4.48043 12.8946 4.73478 13 5 13H11V19C11 19.2652 11.1054 19.5196 11.2929 19.7071C11.4804 19.8946 11.7348 20 12 20C12.2652 20 12.5196 19.8946 12.7071 19.7071C12.8946 19.5196 13 19.2652 13 19V13H19C19.2652 13 19.5196 12.8946 19.7071 12.7071C19.8946 12.5196 20 12.2652 20 12C20 11.7348 19.8946 11.4804 19.7071 11.2929C19.5196 11.1054 19.2652 11 19 11Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <!-- <div class="search-results-body-advanced-filters-content">
         <div class="suggested-keywords">
           <div class="keywords">
             <h3 class="subtitle">Suggested keywords:</h3>
@@ -62,7 +122,7 @@
             <h3 class="subtitle">Or:</h3>
             <div class="dropdown">
               <app-autocomplate-select-dropdown
-              [dropdownTitle]="'Keywords'"
+                [dropdownTitle]="'Keywords'"
                 [dropdownData]="keywordsList"
                 (itemEvent)="handleMultipleKeywardsChange($event)"
                 [firstItemSelected]="false"
@@ -72,8 +132,6 @@
             </div>
           </div>
           <div>
-
-
             <app-button
               [btnText]="'Search'"
               [type]="'icon secondary'"
@@ -82,170 +140,53 @@
             ></app-button>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
-
-    <div class="search-results-body-content">
-      <div class="search-results-body-content-filtering">
-        <div class="search-results-body-content-filtering-main-sorting">
-          <div class="main-sort active"><p>Relevance</p></div>
-          <div class="main-sort"><p>Newest first</p></div>
-          <div class="main-sort"><p>Oldest first</p></div>
+    <div
+      class="container"
+      style="
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 24px;
+        max-width: 1440px;
+        margin: 16px auto;
+      "
+    >
+      <div class="layout-buttons">
+        <div (click)="layoutType = 2" [ngClass]="{ active: layoutType === 2 }">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M9 0.800049H2.6C2.17565 0.800049 1.76869 0.96862 1.46863 1.26868C1.16857 1.56874 1 1.9757 1 2.40005V8.80005C1 9.2244 1.16857 9.63136 1.46863 9.93142C1.76869 10.2315 2.17565 10.4 2.6 10.4H9C9.42435 10.4 9.83131 10.2315 10.1314 9.93142C10.4314 9.63136 10.6 9.2244 10.6 8.80005V2.40005C10.6 1.9757 10.4314 1.56874 10.1314 1.26868C9.83131 0.96862 9.42435 0.800049 9 0.800049ZM21.8 0.800049H15.4C14.9757 0.800049 14.5687 0.96862 14.2686 1.26868C13.9686 1.56874 13.8 1.9757 13.8 2.40005V8.80005C13.8 9.2244 13.9686 9.63136 14.2686 9.93142C14.5687 10.2315 14.9757 10.4 15.4 10.4H21.8C22.2243 10.4 22.6313 10.2315 22.9314 9.93142C23.2314 9.63136 23.4 9.2244 23.4 8.80005V2.40005C23.4 1.9757 23.2314 1.56874 22.9314 1.26868C22.6313 0.96862 22.2243 0.800049 21.8 0.800049ZM21.8 13.6H15.4C14.9757 13.6 14.5687 13.7686 14.2686 14.0687C13.9686 14.3687 13.8 14.7757 13.8 15.2V21.6C13.8 22.0244 13.9686 22.4314 14.2686 22.7314C14.5687 23.0315 14.9757 23.2 15.4 23.2H21.8C22.2243 23.2 22.6313 23.0315 22.9314 22.7314C23.2314 22.4314 23.4 22.0244 23.4 21.6V15.2C23.4 14.7757 23.2314 14.3687 22.9314 14.0687C22.6313 13.7686 22.2243 13.6 21.8 13.6ZM9 13.6H2.6C2.17565 13.6 1.76869 13.7686 1.46863 14.0687C1.16857 14.3687 1 14.7757 1 15.2V21.6C1 22.0244 1.16857 22.4314 1.46863 22.7314C1.76869 23.0315 2.17565 23.2 2.6 23.2H9C9.42435 23.2 9.83131 23.0315 10.1314 22.7314C10.4314 22.4314 10.6 22.0244 10.6 21.6V15.2C10.6 14.7757 10.4314 14.3687 10.1314 14.0687C9.83131 13.7686 9.42435 13.6 9 13.6Z"
+              fill="white"
+            />
+          </svg>
         </div>
-        <div class="search-results-body-content-filtering-filter">
-          <h3 class="search-results-body-content-filtering-filter-title">
-            Theme:
-          </h3>
-          <div class="search-results-body-content-filtering-filter-items">
-            <div>
-              <p>Theme Name 1</p>
-              <p>[20]</p>
-            </div>
-            <div>
-              <p>Theme Name 2</p>
-              <p>[20]</p>
-            </div>
-            <div>
-              <p>Theme Name 3</p>
-              <p>[20]</p>
-            </div>
-            <div>
-              <p>Theme Name 4</p>
-              <p>[20]</p>
-            </div>
-          </div>
-        </div>
-        <div class="search-results-body-content-filtering-filter">
-          <h3 class="search-results-body-content-filtering-filter-title">
-            Content Type:
-          </h3>
-          <div class="search-results-body-content-filtering-filter-items">
-            <div>
-              <p>Publications</p>
-              <p>[10]</p>
-            </div>
-            <div>
-              <p>Reports</p>
-              <p>[5]</p>
-            </div>
-            <div>
-              <p>Use Case</p>
-              <p>[20]</p>
-            </div>
-          </div>
+        <div (click)="layoutType = 1" [ngClass]="{ active: layoutType === 1 }">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="22"
+            viewBox="0 0 25 22"
+            fill="none"
+          >
+            <path
+              d="M11.4 4.5999H24.2ZM11.4 17.3999H24.2ZM2.6 1.3999H5.8C6.22435 1.3999 6.63131 1.56847 6.93137 1.86853C7.23143 2.16859 7.4 2.57556 7.4 2.9999V6.1999C7.4 6.62425 7.23143 7.03121 6.93137 7.33127C6.63131 7.63133 6.22435 7.7999 5.8 7.7999H2.6C2.17565 7.7999 1.76869 7.63133 1.46863 7.33127C1.16857 7.03121 1 6.62425 1 6.1999V2.9999C1 2.57556 1.16857 2.16859 1.46863 1.86853C1.76869 1.56847 2.17565 1.3999 2.6 1.3999ZM2.6 14.1999H5.8C6.22435 14.1999 6.63131 14.3685 6.93137 14.6685C7.23143 14.9686 7.4 15.3756 7.4 15.7999V18.9999C7.4 19.4242 7.23143 19.8312 6.93137 20.1313C6.63131 20.4313 6.22435 20.5999 5.8 20.5999H2.6C2.17565 20.5999 1.76869 20.4313 1.46863 20.1313C1.16857 19.8312 1 19.4242 1 18.9999V15.7999C1 15.3756 1.16857 14.9686 1.46863 14.6685C1.76869 14.3685 2.17565 14.1999 2.6 14.1999Z"
+              fill="#DF7B2E"
+            />
+            <path
+              d="M11.4 4.5999H24.2M11.4 17.3999H24.2M2.6 1.3999H5.8C6.22435 1.3999 6.63131 1.56847 6.93137 1.86853C7.23143 2.16859 7.4 2.57556 7.4 2.9999V6.1999C7.4 6.62425 7.23143 7.03121 6.93137 7.33127C6.63131 7.63133 6.22435 7.7999 5.8 7.7999H2.6C2.17565 7.7999 1.76869 7.63133 1.46863 7.33127C1.16857 7.03121 1 6.62425 1 6.1999V2.9999C1 2.57556 1.16857 2.16859 1.46863 1.86853C1.76869 1.56847 2.17565 1.3999 2.6 1.3999ZM2.6 14.1999H5.8C6.22435 14.1999 6.63131 14.3685 6.93137 14.6685C7.23143 14.9686 7.4 15.3756 7.4 15.7999V18.9999C7.4 19.4242 7.23143 19.8312 6.93137 20.1313C6.63131 20.4313 6.22435 20.5999 5.8 20.5999H2.6C2.17565 20.5999 1.76869 20.4313 1.46863 20.1313C1.16857 19.8312 1 19.4242 1 18.9999V15.7999C1 15.3756 1.16857 14.9686 1.46863 14.6685C1.76869 14.3685 2.17565 14.1999 2.6 14.1999Z"
+              stroke="#DF7B2E"
+            />
+          </svg>
         </div>
       </div>
-      <div class="search-results-body-content-results">
-        <div class="search-results-body-content-results-card">
-          <div class="search-results-body-content-results-card-header">
-            <h3 class="title">Search Result Title</h3>
-            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
-          </div>
-          <div class="search-results-body-content-results-card-body">
-            <div class="desc">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                repellendus assumenda porro possimus deserunt? Accusantium
-                laudantium autem est perferendis dicta labore ipsum, ratione
-                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
-                hic doloribus officia repudiandae ipsum eum velit quibusdam
-                eligendi?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="search-results-body-content-results-card">
-          <div class="search-results-body-content-results-card-header">
-            <h3 class="title">Search Result Title</h3>
-            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
-          </div>
-          <div class="search-results-body-content-results-card-body">
-            <div class="desc">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                repellendus assumenda porro possimus deserunt? Accusantium
-                laudantium autem est perferendis dicta labore ipsum, ratione
-                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
-                hic doloribus officia repudiandae ipsum eum velit quibusdam
-                eligendi?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="search-results-body-content-results-card">
-          <div class="search-results-body-content-results-card-header">
-            <h3 class="title">Search Result Title</h3>
-            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
-          </div>
-          <div class="search-results-body-content-results-card-body">
-            <div class="desc">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                repellendus assumenda porro possimus deserunt? Accusantium
-                laudantium autem est perferendis dicta labore ipsum, ratione
-                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
-                hic doloribus officia repudiandae ipsum eum velit quibusdam
-                eligendi?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="search-results-body-content-results-card">
-          <div class="search-results-body-content-results-card-header">
-            <h3 class="title">Search Result Title</h3>
-            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
-          </div>
-          <div class="search-results-body-content-results-card-body">
-            <div class="desc">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                repellendus assumenda porro possimus deserunt? Accusantium
-                laudantium autem est perferendis dicta labore ipsum, ratione
-                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
-                hic doloribus officia repudiandae ipsum eum velit quibusdam
-                eligendi?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="search-results-body-content-results-card">
-          <div class="search-results-body-content-results-card-header">
-            <h3 class="title">Search Result Title</h3>
-            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
-          </div>
-          <div class="search-results-body-content-results-card-body">
-            <div class="desc">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                repellendus assumenda porro possimus deserunt? Accusantium
-                laudantium autem est perferendis dicta labore ipsum, ratione
-                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
-                hic doloribus officia repudiandae ipsum eum velit quibusdam
-                eligendi?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="search-results-body-content-results-card">
-          <div class="search-results-body-content-results-card-header">
-            <h3 class="title">Search Result Title</h3>
-            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
-          </div>
-          <div class="search-results-body-content-results-card-body">
-            <div class="desc">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                repellendus assumenda porro possimus deserunt? Accusantium
-                laudantium autem est perferendis dicta labore ipsum, ratione
-                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
-                hic doloribus officia repudiandae ipsum eum velit quibusdam
-                eligendi?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="search-results-body-content-actions">
+      <div style="display: flex; margin-left: 16px">
         <div>
           <app-button
             [btnText]="'Save This Search'"
@@ -262,6 +203,667 @@
             [iconName]="''"
             (click)="openModal()"
           ></app-button>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-results-body-content">
+      <div class="search-results-body-content-filtering">
+        <div class="search-results-body-content-filtering-filter">
+          <h3 class="search-results-body-content-filtering-filter-title">
+            <span>
+              Published Date:
+              <!-- <i
+                style="
+                  font-size: 12px;
+                  display: block;
+                  font-size: 20px;
+                  font-weight: 600;
+                  color: #3f3f3f;
+                "
+                >(Filter by Last)</i
+              > -->
+            </span>
+            <svg
+              width="16"
+              height="9"
+              viewBox="0 0 16 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+                fill="#DF7B2E"
+              />
+            </svg>
+          </h3>
+
+          <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div class="search-results-body-content-filtering-filter-items">
+            <div>
+              <p>Year</p>
+              <p>[20]</p>
+            </div>
+            <div>
+              <p>Month</p>
+              <p>[20]</p>
+            </div>
+            <div>
+              <p>Quarter</p>
+              <p>[20]</p>
+            </div>
+            <div>
+              <p>Date</p>
+              <p>[20]</p>
+            </div>
+          </div>
+        </div>
+        <div class="search-results-body-content-filtering-filter">
+          <h3 class="search-results-body-content-filtering-filter-title">
+            <span> Theme:</span>
+            <svg
+              width="16"
+              height="9"
+              viewBox="0 0 16 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+                fill="#DF7B2E"
+              />
+            </svg>
+          </h3>
+          <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div class="search-results-body-content-filtering-filter-items">
+            <div>
+              <p>Market Trends</p>
+              <p>[20]</p>
+            </div>
+            <div>
+              <p>Proposals</p>
+              <p>[20]</p>
+            </div>
+            <div>
+              <p>Business Intelligence</p>
+              <p>[20]</p>
+            </div>
+            <div>
+              <p>Market Entry</p>
+              <p>[20]</p>
+            </div>
+            <div>
+              <p>M&A</p>
+              <p>[20]</p>
+            </div>
+            <div>
+              <p>News</p>
+              <p>[20]</p>
+            </div>
+          </div>
+        </div>
+        <div class="search-results-body-content-filtering-filter">
+          <h3 class="search-results-body-content-filtering-filter-title">
+            Content Type:
+            <svg
+              width="16"
+              height="9"
+              viewBox="0 0 16 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+                fill="#DF7B2E"
+              />
+            </svg>
+          </h3>
+          <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div class="search-results-body-content-filtering-filter-items">
+            <div>
+              <p>Publications</p>
+              <p>[10]</p>
+            </div>
+            <div>
+              <p>Reports</p>
+              <p>[5]</p>
+            </div>
+            <div>
+              <p>Use Case</p>
+              <p>[20]</p>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="search-results-body-content-filtering-filter">
+          <h3 class="search-results-body-content-filtering-filter-title">
+            Region:
+            <svg
+              width="16"
+              height="9"
+              viewBox="0 0 16 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+                fill="#DF7B2E"
+              />
+            </svg>
+          </h3>
+          <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div class="search-results-body-content-filtering-filter-items">
+            <div>
+              <p>Europe</p>
+              <p>[10]</p>
+            </div>
+            <div>
+              <p>Asia</p>
+              <p>[5]</p>
+            </div>
+            <div>
+              <p>South America</p>
+              <p>[20]</p>
+            </div>
+            <div>
+              <p>North America</p>
+              <p>[20]</p>
+            </div>
+            <div>
+              <p>Africa</p>
+              <p>[20]</p>
+            </div>
+            <div>
+              <p>Ociania</p>
+              <p>[20]</p>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="search-results-body-content-filtering-filter">
+          <h3 class="search-results-body-content-filtering-filter-title">
+            Industry:
+            <svg
+              width="16"
+              height="9"
+              viewBox="0 0 16 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+                fill="#DF7B2E"
+              />
+            </svg>
+          </h3>
+          <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div class="search-results-body-content-filtering-filter-items">
+            <div>
+              <p>Industry 1</p>
+              <p>[10]</p>
+            </div>
+            <div>
+              <p>Industry 2</p>
+              <p>[5]</p>
+            </div>
+            <div>
+              <p>Industry 3</p>
+              <p>[20]</p>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="search-results-body-content-filtering-filter">
+          <h3 class="search-results-body-content-filtering-filter-title">
+            Published by:
+            <svg
+              width="16"
+              height="9"
+              viewBox="0 0 16 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+                fill="#DF7B2E"
+              />
+            </svg>
+          </h3>
+          <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div class="search-results-body-content-filtering-filter-items">
+            <div>
+              <p>Kline Department</p>
+              <p>[10]</p>
+            </div>
+            <div>
+              <p>Publisher 1</p>
+              <p>[5]</p>
+            </div>
+            <div>
+              <p>Publisher 2</p>
+              <p>[20]</p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <!-- <div class="search-results-body-content-filtering-filter">
+          <h3 class="search-results-body-content-filtering-filter-title">
+            Language:
+            <svg
+              width="16"
+              height="9"
+              viewBox="0 0 16 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+                fill="#DF7B2E"
+              />
+            </svg>
+          </h3>
+          <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div class="search-results-body-content-filtering-filter-items">
+            <div>
+              <p>English</p>
+              <p>[10]</p>
+            </div>
+            <div>
+              <p>French</p>
+              <p>[5]</p>
+            </div>
+            <div>
+              <p>Spanish</p>
+              <p>[20]</p>
+            </div>
+          </div>
+        </div> -->
+        <!--  -->
+        <!--  -->
+        <!-- <div class="search-results-body-content-filtering-filter">
+          <h3 class="search-results-body-content-filtering-filter-title">
+            Tags:
+            <svg
+              width="16"
+              height="9"
+              viewBox="0 0 16 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+                fill="#DF7B2E"
+              />
+            </svg>
+          </h3>
+          <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div class="search-results-body-content-filtering-filter-items">
+            <div>
+              <p>Tags 1</p>
+              <p>[10]</p>
+            </div>
+            <div>
+              <p>Tags 2</p>
+              <p>[5]</p>
+            </div>
+            <div>
+              <p>Tags 3</p>
+              <p>[20]</p>
+            </div>
+          </div>
+        </div> -->
+        <!--  -->
+        <!--  -->
+        <div class="search-results-body-content-filtering-filter">
+          <h3 class="search-results-body-content-filtering-filter-title">
+            Groups:
+            <svg
+              width="16"
+              height="9"
+              viewBox="0 0 16 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+                fill="#DF7B2E"
+              />
+            </svg>
+          </h3>
+          <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div class="search-results-body-content-filtering-filter-items">
+            <div>
+              <p>Group 1</p>
+              <p>[10]</p>
+            </div>
+            <div>
+              <p>Group 2</p>
+              <p>[5]</p>
+            </div>
+            <div>
+              <p>Group 3</p>
+              <p>[20]</p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="search-results-body-content-filtering-filter">
+          <h3 class="search-results-body-content-filtering-filter-title">
+            Clients:
+            <svg
+              width="16"
+              height="9"
+              viewBox="0 0 16 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+                fill="#DF7B2E"
+              />
+            </svg>
+          </h3>
+          <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div class="search-results-body-content-filtering-filter-items">
+            <div>
+              <p>Client 1</p>
+              <p>[10]</p>
+            </div>
+            <div>
+              <p>Client 2</p>
+              <p>[5]</p>
+            </div>
+            <div>
+              <p>Client 3</p>
+              <p>[20]</p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <!-- <div class="search-results-body-content-filtering-filter">
+          <h3 class="search-results-body-content-filtering-filter-title">
+            Accuracy:
+            <svg
+            width="16"
+            height="9"
+            viewBox="0 0 16 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.99974 8.96661C7.82196 8.96661 7.64952 8.93328 7.48241 8.86661C7.3153 8.79994 7.17663 8.71105 7.06641 8.59994L0.933072 2.46661C0.688628 2.22217 0.566406 1.91105 0.566406 1.53328C0.566406 1.1555 0.688628 0.844387 0.933072 0.599943C1.17752 0.355498 1.48863 0.233276 1.86641 0.233276C2.24418 0.233276 2.5553 0.355498 2.79974 0.599943L7.99974 5.79994L13.1997 0.599943C13.4442 0.355498 13.7553 0.233276 14.1331 0.233276C14.5109 0.233276 14.822 0.355498 15.0664 0.599943C15.3108 0.844387 15.4331 1.1555 15.4331 1.53328C15.4331 1.91105 15.3108 2.22217 15.0664 2.46661L8.93307 8.59994C8.79974 8.73328 8.6553 8.82794 8.49974 8.88394C8.34418 8.93994 8.17752 8.9675 7.99974 8.96661Z"
+              fill="#DF7B2E"
+            />
+          </svg>
+          </h3>
+           <div class="main-search-filed">
+            <input placeholder="Search..." />
+            <img src="../../../assets/images/search-icon.svg" alt="search" />
+          </div>
+          <div class="search-results-body-content-filtering-filter-items">
+            <div>
+              <p>Exact Match</p>
+              <p>[10]</p>
+            </div>
+            <div>
+              <p>Approximate Match</p>
+              <p>[5]</p>
+            </div>
+            <div>
+              <p>Full text Search</p>
+              <p>[20]</p>
+            </div>
+          </div>
+        </div> -->
+        <!--  -->
+      </div>
+      <!--  -->
+      <div class="search-results-body-content-results" *ngIf="layoutType === 1">
+        <div class="search-results-body-content-results-card">
+          <div class="search-results-body-content-results-card-header">
+            <h3 class="title">Search Result Title</h3>
+            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+          </div>
+          <div class="search-results-body-content-results-card-body">
+            <div class="desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                repellendus assumenda porro possimus deserunt? Accusantium
+                laudantium autem est perferendis dicta labore ipsum, ratione
+                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
+                hic doloribus officia repudiandae ipsum eum velit quibusdam
+                eligendi?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="search-results-body-content-results-card">
+          <div class="search-results-body-content-results-card-header">
+            <h3 class="title">Search Result Title</h3>
+            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+          </div>
+          <div class="search-results-body-content-results-card-body">
+            <div class="desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                repellendus assumenda porro possimus deserunt? Accusantium
+                laudantium autem est perferendis dicta labore ipsum, ratione
+                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
+                hic doloribus officia repudiandae ipsum eum velit quibusdam
+                eligendi?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="search-results-body-content-results-card">
+          <div class="search-results-body-content-results-card-header">
+            <h3 class="title">Search Result Title</h3>
+            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+          </div>
+          <div class="search-results-body-content-results-card-body">
+            <div class="desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                repellendus assumenda porro possimus deserunt? Accusantium
+                laudantium autem est perferendis dicta labore ipsum, ratione
+                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
+                hic doloribus officia repudiandae ipsum eum velit quibusdam
+                eligendi?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="search-results-body-content-results-card">
+          <div class="search-results-body-content-results-card-header">
+            <h3 class="title">Search Result Title</h3>
+            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+          </div>
+          <div class="search-results-body-content-results-card-body">
+            <div class="desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                repellendus assumenda porro possimus deserunt? Accusantium
+                laudantium autem est perferendis dicta labore ipsum, ratione
+                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
+                hic doloribus officia repudiandae ipsum eum velit quibusdam
+                eligendi?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="search-results-body-content-results-card">
+          <div class="search-results-body-content-results-card-header">
+            <h3 class="title">Search Result Title</h3>
+            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+          </div>
+          <div class="search-results-body-content-results-card-body">
+            <div class="desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                repellendus assumenda porro possimus deserunt? Accusantium
+                laudantium autem est perferendis dicta labore ipsum, ratione
+                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
+                hic doloribus officia repudiandae ipsum eum velit quibusdam
+                eligendi?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="search-results-body-content-results-card">
+          <div class="search-results-body-content-results-card-header">
+            <h3 class="title">Search Result Title</h3>
+            <p class="date"><b>Date:</b> 12 Junuary 2022</p>
+          </div>
+          <div class="search-results-body-content-results-card-body">
+            <div class="desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                repellendus assumenda porro possimus deserunt? Accusantium
+                laudantium autem est perferendis dicta labore ipsum, ratione
+                temporibus nam deserunt aut quos. Assumenda, veniam? Consequatur
+                hic doloribus officia repudiandae ipsum eum velit quibusdam
+                eligendi?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div
+        class="search-results-body-content-results card-type"
+        *ngIf="layoutType === 2"
+      >
+        <div class="card" *ngFor="let item of arr">
+          <div class="card-img">
+            <img
+              src="../../../assets/images/dummy_news_photo.png"
+              alt="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <p class="card-body-date"><b>Theme:</b> Theme</p>
+            <!-- <h3 class="card-body-title">{{ item.title }}</h3> -->
+            <!-- <h3 class="card-body-title" *ngIf="item.News.length > 90">
+              {{ item.News.substring(0, 90) }}...
+            </h3> -->
+            <h3 class="card-body-title">News Name</h3>
+            <p class="card-body-industry"><b>Company:</b> Company Name</p>
+            <p class="card-body-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+              facere!
+            </p>
+            <!-- <div class="card-body-action">
+              <app-button
+                [btnText]="'Read More'"
+                [type]="'secondary'"
+                [icon]="false"
+                [iconName]="''"
+              ></app-button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div
+        class="search-results-body-content-actions"
+        style="
+          border-left: 1px solid rgba(63, 63, 63, 0.1529411765);
+          padding-left: 16px;
+        "
+      >
+        <div
+          class="search-results-body-content-filtering-main-sorting"
+          style="padding: 0"
+        >
+          <div style="text-align: left; width: 100%; margin-bottom: 14px">
+            <h3 style="font-size: 20px; font-weight: 600; color: #3f3f3f">
+              Sort By:
+            </h3>
+          </div>
+          <div class="main-sort active"><p>Relevance</p></div>
+          <div class="main-sort"><p>Newest first</p></div>
+          <div class="main-sort"><p>Oldest first</p></div>
+        </div>
+        <div
+          class="search-results-body-content-filtering-main-sorting"
+          style="padding: 0"
+        >
+          <div style="text-align: left; width: 100%; margin-bottom: 14px">
+            <h3 style="font-size: 16px; font-weight: 600; color: #3f3f3f">
+              Accuracy:
+            </h3>
+          </div>
+          <div class="main-sort active"><p>Exact Match</p></div>
+          <div class="main-sort"><p>Approximate Match</p></div>
+          <div class="main-sort"><p>Full text Search</p></div>
+        </div>
+        <div
+          class="search-results-body-content-filtering-main-sorting"
+          style="padding: 0"
+        >
+          <div style="text-align: left; width: 100%; margin-bottom: 14px">
+            <h3 style="font-size: 20px; font-weight: 600; color: #3f3f3f">
+              Tags:
+            </h3>
+          </div>
+          <div class="main-sort active"><p>Tag 1</p></div>
+          <div class="main-sort"><p>Tag 2</p></div>
+          <div class="main-sort"><p>Tag 3</p></div>
+          <div class="main-sort"><p>Tag 4</p></div>
+          <div class="main-sort"><p>Tag 5</p></div>
+          <span class="load-more" (click)="openLoadMoreModal()"
+            >Load more ...</span
+          >
+        </div>
+        <div
+          class="search-results-body-content-filtering-main-sorting"
+          style="padding: 0"
+        >
+          <div style="text-align: left; width: 100%; margin-bottom: 14px">
+            <h3 style="font-size: 20px; font-weight: 600; color: #3f3f3f">
+              Lenguage:
+            </h3>
+          </div>
+          <div class="main-sort active"><p>English</p></div>
+          <div class="main-sort"><p>French</p></div>
+          <div class="main-sort"><p>Spanish</p></div>
         </div>
       </div>
     </div>
@@ -384,6 +986,48 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </app-modal>
+  </div>
+  <div class="modal-area">
+    <app-modal
+      [title]="'Tags'"
+      *ngIf="loadMoreVisible"
+      (onClose)="onCloseLoadMoreModal()"
+    >
+      <div class="modal-content">
+        <div style="display: flex; gap: 16px; flex-wrap: wrap">
+          <div class="main-sort active"><p>Tag [1]</p></div>
+          <div class="main-sort"><p>Tagsd [2]</p></div>
+          <div class="main-sort"><p>Tag [3]</p></div>
+          <div class="main-sort"><p>Tag [4]</p></div>
+          <div class="main-sort"><p>Tfdag 5</p></div>
+          <div class="main-sort active"><p>Tag [1]</p></div>
+          <div class="main-sort"><p>Tag [2]</p></div>
+          <div class="main-sort"><p>Tag sdfg [3]</p></div>
+          <div class="main-sort"><p>Tag [4]</p></div>
+          <div class="main-sort"><p>Tag [5]</p></div>
+          <div class="main-sort active"><p>Tag [1]</p></div>
+          <div class="main-sort"><p>Tag sdfgsdfg [2]</p></div>
+          <div class="main-sort"><p>Tagsfd [3]</p></div>
+          <div class="main-sort"><p>Tag [4]</p></div>
+          <div class="main-sort"><p>Tag dsfg [5]</p></div>
+        </div>
+        <div
+          style="
+            margin-top: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+          "
+        >
+          <app-button
+            [btnText]="'Filter'"
+            [type]="'icon secondary'"
+            [icon]="false"
+            [iconName]="''"
+          ></app-button>
         </div>
       </div>
     </app-modal>

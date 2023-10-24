@@ -62,9 +62,174 @@
                 class="widget-cards-item"
                 *ngFor="let item of selectedDashboard.widgets"
               >
-                <div>
-                 <h3> {{ item.type }} </h3>
-                 <p> {{ item.desc }} </p>
+                <div class="d-widget-header">
+                  <h3 class="d-widget-header-title">{{ item.type }}</h3>
+                  <p class="d-widget-header-desc" *ngIf="item.desc.length > 50">
+                    {{ item.desc.substring(0, 50) }}...
+                  </p>
+                  <p class="d-widget-header-desc" *ngIf="item.desc.length <= 50">
+                    {{ item.desc }}
+                  </p>
+                </div>
+                <div class="d-widget-body">
+                  <div
+                    class="d-widget-body-content"
+                    *ngIf="item.variant === 'line'"
+                  >
+                    <dx-chart
+                      palette="violet"
+                      [dataSource]="dummyLineData"
+                      style="height: 240px"
+                    >
+                      <dxi-series valueField="smp" name="SMP"></dxi-series>
+                      <dxi-series valueField="mmp" name="MMP"></dxi-series>
+                      <dxi-series valueField="cnstl" name="Cnstl"></dxi-series>
+                      <dxi-series
+                        valueField="cluster"
+                        name="Cluster"
+                      ></dxi-series>
+                      <dxo-common-series-settings
+                        #seriesSettings
+                        argumentField="year"
+                        [type]="'spline'"
+                      >
+                      </dxo-common-series-settings>
+
+                      <dxo-tooltip [enabled]="true"></dxo-tooltip>
+                    </dx-chart>
+                  </div>
+
+                  <div
+                    class="d-widget-body-content"
+                    *ngIf="item.variant === 'bar'"
+                  >
+                    <dx-chart
+                      palette="violet"
+                      [dataSource]="dummyLineData"
+                      style="height: 240px"
+                    >
+                      <dxi-series valueField="mmp" name="MMP"></dxi-series>
+
+                      <dxo-common-series-settings
+                        #seriesSettings
+                        argumentField="year"
+                        [type]="'bar'"
+                      >
+                      </dxo-common-series-settings>
+
+                      <dxo-tooltip [enabled]="true"></dxo-tooltip>
+                    </dx-chart>
+                  </div>
+
+                  <div
+                    class="d-widget-body-content"
+                    *ngIf="item.variant === 'pie'"
+                  >
+                    <dx-pie-chart
+                      id="pie"
+                      palette="bright"
+                      [dataSource]="dummyPieData"
+                      style="height: 240px"
+                    >
+                      <dxo-legend
+                        orientation="horizontal"
+                        itemTextPosition="right"
+                        horizontalAlignment="center"
+                        verticalAlignment="bottom"
+                        [columnCount]="4"
+                      ></dxo-legend>
+                      <dxi-series argumentField="country" valueField="area">
+                        <dxo-label [visible]="true"> </dxo-label>
+                      </dxi-series>
+                    </dx-pie-chart>
+                  </div>
+
+                  <div
+                    class="d-widget-body-content"
+                    *ngIf="item.variant === 'one-list'"
+                  >
+                    <div class="widget-one-list">
+                      <ul>
+                        <li>Widget List Item 1</li>
+                        <li>Widget List Item 2</li>
+                        <li>Widget List Item 3</li>
+                        <li>Widget List Item 4</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="d-widget-body-content"
+                    *ngIf="item.variant === 'group-list'"
+                  >
+                    <div class="widget-group-list">
+                      <div style="display: flex">
+                        <div>
+                          <h3>List Title 1</h3>
+                          <ul>
+                            <li>
+                              Widget List Item 1
+                              <ul>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                              </ul>
+                            </li>
+                            <li>
+                              Widget List Item 2
+                              <ul>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h3>List Title 2</h3>
+                          <ul>
+                            <li>
+                              Widget List Item 1
+                              <ul>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                              </ul>
+                            </li>
+                            <li>
+                              Widget List Item 2
+                              <ul>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                                <li>SubList Item 1</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-widget-body-content"
+                    *ngIf="item.variant === 'titled-list'"
+                  >
+                    <div class="widget-group-list">
+                      <div>
+                        <div>
+                          <h3>List Title 1</h3>
+                          <ul>
+                            <li>SubList Item 1</li>
+                            <li>SubList Item 1</li>
+                            <li>SubList Item 1</li>
+                            <li>SubList Item 1</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

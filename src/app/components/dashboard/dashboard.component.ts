@@ -71,72 +71,84 @@ export class DashboardComponent implements OnInit, OnChanges {
           type: 'Business Expansion Trend',
           desc: 'Date-wise timeline of business expansion news',
           selected: false,
+          variant: 'line',
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
           type: 'Negative/Adverse News of Targeted Companies',
           desc: 'Negative/Adverse mentions of targeted companies to track the current pain point at strategic and operational level',
           selected: false,
+          variant: 'bar',
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
           type: 'M&A Trendline',
           desc: 'M&A timeline of targeted companies to track the most active period of inorganic activities ',
           selected: false,
+          variant: 'line',
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
           type: 'New Offering Product Development by Company',
           desc: 'Periodic count of company developments for new offering/product development ',
           selected: false,
+          variant: 'bar',
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
           type: 'New Offering Product Development',
           desc: '',
           selected: false,
+          variant: 'one-list',
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
           type: '<Company Name> Strategic Benchmarking',
           desc: 'A benchmarking company by business, geography, and/or any other variable ',
           selected: false,
+          variant: 'group-list',
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
           type: '<Company Name> Industries',
           desc: "Map the company's industry coverage to understand the focus areas",
           selected: false,
+          variant: 'one-list',
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
           type: 'Key Competitive Themes vs. <Competitor X>',
           desc: 'Mapping of competitors with important MACRO, technological, strategic, and other themes ',
           selected: false,
+          variant: 'titled-list',
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
           type: 'Engaging vs. <Competitor X>',
           desc: '',
           selected: false,
+          variant: 'titled-list',
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
           type: 'Battle Card_Kill Points',
           desc: '',
           selected: false,
+          variant: 'one-list',
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
           type: '<Company Name> Strategy Mix',
           desc: 'Explore the strategic mix of the company to understand the focused strategies',
           selected: false,
+          variant: 'pie',
         },
         {
           id: String(Math.random() * 1000000000000000000000000000000000000),
           type: '<Company Name> Business Revenue Mix',
           desc: 'Explore revenue contribution of reported business segments of company',
           selected: false,
+          variant: 'pie',
         },
       ],
     },
@@ -157,6 +169,72 @@ export class DashboardComponent implements OnInit, OnChanges {
   ];
   public selectedLibraries: any[] = [];
   public showedWidgetsList: any[] = [];
+
+  public dummyLineData: any[] = [
+    {
+      year: 1997,
+      smp: 263,
+      mmp: 208,
+      cnstl: 9,
+      cluster: 1,
+    },
+    {
+      year: 1999,
+      smp: 169,
+      mmp: 270,
+      cnstl: 61,
+      cluster: 7,
+    },
+    {
+      year: 2001,
+      smp: 57,
+      mmp: 261,
+      cnstl: 157,
+      cluster: 45,
+    },
+    {
+      year: 2003,
+      smp: 0,
+      mmp: 154,
+      cnstl: 121,
+      cluster: 211,
+    },
+    {
+      year: 2005,
+      smp: 0,
+      mmp: 97,
+      cnstl: 39,
+      cluster: 382,
+    },
+    {
+      year: 2007,
+      smp: 0,
+      mmp: 83,
+      cnstl: 3,
+      cluster: 437,
+    },
+  ];
+
+  public dummyPieData: any[] = [
+    {
+      country: 'Russia',
+      area: 12,
+    },
+    {
+      country: 'Canada',
+      area: 7,
+    },
+    {
+      country: 'USA',
+      area: 7,
+    },
+    {
+      country: 'China',
+      area: 7,
+    }
+  ];
+
+
   constructor() {}
 
   ngOnInit() {

@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class SearchResultsComponent implements OnInit {
   public advancedOpen: boolean = false
   public isModalVisible: boolean = false;
-  public selectedKeywordsList  : any[] = []
+  public loadMoreVisible: boolean = false;
+  public selectedKeywordsList  : any[] = [];
+  public layoutType : number = 2;
   public breadcrumpData: any[] = [{
     home: 'Search Results',
   }]
@@ -34,10 +36,24 @@ export class SearchResultsComponent implements OnInit {
     label: 'PCMO'
   },
  ]
+ public searchText: string = ''
+ public arr : any[] = [1,2,3,4,5,6,7,8]
+ public booleanOperatorsList: any[] = [1];
+
   ngOnInit(): void {
 
   }
 
+  openLoadMoreModal() {
+    this.loadMoreVisible = true;
+    document.querySelector('.kline-app')?.classList.add('fixed');
+    console.log('searchText',this.searchText);
+    
+  }
+  onCloseLoadMoreModal() {
+    this.loadMoreVisible = false;
+    document.querySelector('.kline-app')?.classList.remove('fixed');
+  }
   openModal() {
     this.isModalVisible = true;
     document.querySelector('.kline-app')?.classList.add('fixed');
